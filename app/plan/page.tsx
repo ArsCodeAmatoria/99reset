@@ -37,7 +37,7 @@ function TableOfContents() {
             <li key={section.id}>
               <a
                 href={`#${section.id}`}
-                className="text-sm text-textDim hover:text-accent transition-colors block py-1"
+                className="text-sm text-textDim hover:text-accent transition-all block py-1 -ml-[2px] border-l-2 border-transparent hover:border-accent pl-3 focus-visible:outline-none focus-visible:border-accent focus-visible:text-accent"
               >
                 {section.label}
               </a>
@@ -52,27 +52,42 @@ function TableOfContents() {
         </h4>
         <ul className="space-y-1.5 text-xs">
           <li>
-            <a href="/resources/bank-switch-toolkit" className="text-textDim hover:text-accent transition-colors block py-1">
+            <a 
+              href="/resources/bank-switch-toolkit" 
+              className="text-textDim hover:text-accent transition-colors block py-1 px-2 rounded hover:bg-border/30 focus-visible:outline-none focus-visible:bg-border/30 focus-visible:text-accent"
+            >
               Bank Switch Guide
             </a>
           </li>
           <li>
-            <a href="/resources/union-organizing-101" className="text-textDim hover:text-accent transition-colors block py-1">
+            <a 
+              href="/resources/union-organizing-101" 
+              className="text-textDim hover:text-accent transition-colors block py-1 px-2 rounded hover:bg-border/30 focus-visible:outline-none focus-visible:bg-border/30 focus-visible:text-accent"
+            >
               Union Organizing
             </a>
           </li>
           <li>
-            <a href="/resources/worker-coop-formation-guide" className="text-textDim hover:text-accent transition-colors block py-1">
+            <a 
+              href="/resources/worker-coop-formation-guide" 
+              className="text-textDim hover:text-accent transition-colors block py-1 px-2 rounded hover:bg-border/30 focus-visible:outline-none focus-visible:bg-border/30 focus-visible:text-accent"
+            >
               Start a Co-op
             </a>
           </li>
           <li>
-            <a href="/resources/community-land-trust-primer" className="text-textDim hover:text-accent transition-colors block py-1">
+            <a 
+              href="/resources/community-land-trust-primer" 
+              className="text-textDim hover:text-accent transition-colors block py-1 px-2 rounded hover:bg-border/30 focus-visible:outline-none focus-visible:bg-border/30 focus-visible:text-accent"
+            >
               CLT Primer
             </a>
           </li>
           <li>
-            <a href="/resources/policy-advocacy-toolkit" className="text-textDim hover:text-accent transition-colors block py-1">
+            <a 
+              href="/resources/policy-advocacy-toolkit" 
+              className="text-textDim hover:text-accent transition-colors block py-1 px-2 rounded hover:bg-border/30 focus-visible:outline-none focus-visible:bg-border/30 focus-visible:text-accent"
+            >
               Policy Toolkit
             </a>
           </li>
@@ -82,7 +97,7 @@ function TableOfContents() {
       <div className="pt-4">
         <a 
           href="/join" 
-          className="block text-center text-sm font-semibold bg-accent text-white py-2 px-4 rounded-lg hover:bg-red-700 transition-colors"
+          className="block text-center text-sm font-semibold bg-accent text-white py-2 px-4 rounded-lg hover:bg-red-700 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-bg"
         >
           Take Action
         </a>
