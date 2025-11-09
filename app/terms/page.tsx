@@ -1,5 +1,6 @@
 import { Container } from "@/components/container";
 import { Section } from "@/components/section";
+import { BackButton } from "@/components/back-button";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -11,6 +12,9 @@ export default function TermsPage() {
   return (
     <Section className="py-20">
       <Container>
+        <div className="mb-6">
+          <BackButton />
+        </div>
         <article className="max-w-3xl mx-auto prose prose-invert">
           <h1>Terms of Use</h1>
           <p className="text-textDim">Last updated: November 9, 2025</p>

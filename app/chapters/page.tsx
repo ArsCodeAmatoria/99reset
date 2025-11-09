@@ -2,6 +2,7 @@ import { Container } from "@/components/container";
 import { Section } from "@/components/section";
 import { Card } from "@/components/card";
 import { CTAButton } from "@/components/cta-button";
+import { BackButton } from "@/components/back-button";
 import { MapPin, Users, Calendar } from "lucide-react";
 import type { Metadata } from "next";
 
@@ -52,6 +53,9 @@ export default function ChaptersPage() {
       {/* Hero */}
       <Section className="pt-20 pb-12">
         <Container>
+          <div className="mb-6">
+            <BackButton />
+          </div>
           <div className="max-w-3xl mx-auto text-center space-y-6">
             <h1 className="text-4xl md:text-6xl font-display font-bold">
               Find Your Chapter

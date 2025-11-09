@@ -7,6 +7,7 @@ import { ArrowRight, Building2, Users, Landmark } from "lucide-react";
 
 // In production, these would be fetched from the database
 async function getStats() {
+  // Return placeholder stats (works without database)
   return {
     depositsMove: 15420000,
     unionDrives: 87,

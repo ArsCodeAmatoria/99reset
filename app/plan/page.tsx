@@ -3,6 +3,7 @@ import path from "path";
 import { Container } from "@/components/container";
 import { Section } from "@/components/section";
 import { MDXRenderer } from "@/components/mdx";
+import { BackButton } from "@/components/back-button";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -53,6 +54,9 @@ export default async function PlanPage() {
   return (
     <Section className="py-12 md:py-20">
       <Container>
+        <div className="mb-6">
+          <BackButton />
+        </div>
         <div className="grid lg:grid-cols-[200px_1fr] gap-12 lg:gap-16">
           {/* Sidebar TOC - hidden on mobile */}
           <aside className="hidden lg:block">
