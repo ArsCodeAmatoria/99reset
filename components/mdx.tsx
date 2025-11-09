@@ -1,6 +1,7 @@
 import { MDXRemote } from "next-mdx-remote/rsc";
 import { highlight } from "sugar-high";
 import React from "react";
+import remarkGfm from "remark-gfm";
 
 // Custom components for MDX
 const components = {
@@ -78,7 +79,15 @@ export function MDXRenderer({ source, hideTitle = false }: MDXRendererProps) {
 
   return (
     <div className="prose prose-invert max-w-none">
-      <MDXRemote source={source} components={customComponents} />
+      <MDXRemote 
+        source={source} 
+        components={customComponents}
+        options={{
+          mdxOptions: {
+            remarkPlugins: [remarkGfm],
+          },
+        }}
+      />
     </div>
   );
 }
