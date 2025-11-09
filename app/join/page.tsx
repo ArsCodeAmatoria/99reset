@@ -4,7 +4,6 @@ import { Card } from "@/components/card";
 import { PledgeForm } from "@/components/pledge-form";
 import { UnionForm } from "@/components/union-form";
 import { FounderForm } from "@/components/founder-form";
-import { BackButton } from "@/components/back-button";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -18,9 +17,6 @@ export default function JoinPage() {
       {/* Hero */}
       <Section className="pt-20 pb-12">
         <Container>
-          <div className="mb-6">
-            <BackButton />
-          </div>
           <div className="max-w-3xl mx-auto text-center space-y-6">
             <h1 className="text-4xl md:text-6xl font-display font-bold">
               Join the Reset
