@@ -5,6 +5,8 @@ import "../styles/prose.css";
 import "../styles/theme.css";
 import { defaultMetadata } from "@/lib/seo";
 import { Analytics } from "@/lib/analytics";
+import { Header } from "@/components/header";
+import { Footer } from "@/components/footer";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -31,7 +33,11 @@ export default function RootLayout({
         <a href="#main-content" className="skip-link">
           Skip to content
         </a>
-        {children}
+        <Header />
+        <main id="main-content">
+          {children}
+        </main>
+        <Footer />
         <Analytics />
       </body>
     </html>
