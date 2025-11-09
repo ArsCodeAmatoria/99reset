@@ -1,0 +1,70 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Pledge {
+  id          String   @id @default(cuid())
+  name        String
+  email       String   @unique
+  postalCode  String
+  amountMoved Int      @default(0)
+  createdAt   DateTime @default(now())
+
+  @@index([email])
+}
+
+model UnionDrive {
+  id                String   @id @default(cuid())
+  name              String
+  email             String
+  employer          String
+  city              String
+  contactPreference String
+  createdAt         DateTime @default(now())
+
+  @@index([email])
+}
+
+model CoopFounder {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  sector    String
+  city      String
+  role      String   // "founder" or "ally"
+  notes     String?
+  createdAt DateTime @default(now())
+
+  @@index([email])
+}
+
+model ChapterApplication {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  city      String
+  region    String
+  message   String?
+  createdAt DateTime @default(now())
+
+  @@index([email])
+}
+
+model Newsletter {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  locale    String   @default("en")
+  createdAt DateTime @default(now())
+
+  @@index([email])
+}
+
+
