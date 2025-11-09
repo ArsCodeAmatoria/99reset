@@ -27,22 +27,66 @@ function TableOfContents() {
   ];
 
   return (
-    <nav className="sticky top-24 space-y-2" aria-label="Table of contents">
-      <h3 className="text-sm font-semibold uppercase tracking-wider text-textDim mb-4">
-        Contents
-      </h3>
-      <ul className="space-y-2">
-        {sections.map((section) => (
-          <li key={section.id}>
-            <a
-              href={`#${section.id}`}
-              className="text-sm text-textDim hover:text-text transition-colors block py-1"
-            >
-              {section.label}
+    <nav className="sticky top-24 space-y-4" aria-label="Table of contents">
+      <div>
+        <h3 className="text-sm font-semibold uppercase tracking-wider text-textDim mb-3">
+          Contents
+        </h3>
+        <ul className="space-y-1.5 border-l-2 border-border pl-4">
+          {sections.map((section) => (
+            <li key={section.id}>
+              <a
+                href={`#${section.id}`}
+                className="text-sm text-textDim hover:text-accent transition-colors block py-1"
+              >
+                {section.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <div className="pt-4 border-t border-border">
+        <h4 className="text-xs font-semibold uppercase tracking-wider text-textDim mb-2">
+          Quick Links
+        </h4>
+        <ul className="space-y-1.5 text-xs">
+          <li>
+            <a href="/resources/bank-switch-toolkit" className="text-textDim hover:text-accent transition-colors block py-1">
+              Bank Switch Guide
             </a>
           </li>
-        ))}
-      </ul>
+          <li>
+            <a href="/resources/union-organizing-101" className="text-textDim hover:text-accent transition-colors block py-1">
+              Union Organizing
+            </a>
+          </li>
+          <li>
+            <a href="/resources/worker-coop-formation-guide" className="text-textDim hover:text-accent transition-colors block py-1">
+              Start a Co-op
+            </a>
+          </li>
+          <li>
+            <a href="/resources/community-land-trust-primer" className="text-textDim hover:text-accent transition-colors block py-1">
+              CLT Primer
+            </a>
+          </li>
+          <li>
+            <a href="/resources/policy-advocacy-toolkit" className="text-textDim hover:text-accent transition-colors block py-1">
+              Policy Toolkit
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div className="pt-4">
+        <a 
+          href="/join" 
+          className="block text-center text-sm font-semibold bg-accent text-white py-2 px-4 rounded-lg hover:bg-red-700 transition-colors"
+        >
+          Take Action
+        </a>
+      </div>
     </nav>
   );
 }
