@@ -15,6 +15,9 @@ async function getUpdate(slug: string) {
     const fileContent = await fs.readFile(filePath, "utf8");
     const { data, content } = matter(fileContent);
     
+    console.log(`Successfully parsed frontmatter for ${slug}`);
+    console.log('Content length:', content.length);
+    
     return {
       title: data.title || 'Untitled',
       date: data.date || '',
@@ -22,6 +25,7 @@ async function getUpdate(slug: string) {
       content,
     };
   } catch (error) {
+    console.error(`Error reading update ${slug}:`, error);
     return null;
   }
 }
