@@ -4,7 +4,7 @@ import matter from "gray-matter";
 import { Container } from "@/components/container";
 import { Section } from "@/components/section";
 import { MDXRenderer } from "@/components/mdx";
-import { Calendar, ArrowLeft } from "lucide-react";
+import { Calendar } from "lucide-react";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
@@ -58,15 +58,6 @@ export default async function UpdatePostPage({ params }: { params: { slug: strin
     <Section className="py-12 md:py-20">
       <Container>
         <div className="max-w-4xl mx-auto">
-          {/* Back link */}
-          <Link 
-            href="/updates" 
-            className="inline-flex items-center gap-2 text-sm text-textDim hover:text-text transition-colors mb-8"
-          >
-            <ArrowLeft className="h-4 w-4" />
-            Back to Updates
-          </Link>
-
           {/* Article header */}
           <header className="mb-12">
             <div className="flex items-center gap-3 text-sm text-textDim mb-4">
@@ -82,8 +73,8 @@ export default async function UpdatePostPage({ params }: { params: { slug: strin
           </header>
 
           {/* Article content */}
-          <article>
-            <MDXRenderer source={update.content} />
+          <article className="mdx-content">
+            <MDXRenderer source={update.content} hideTitle={true} />
           </article>
 
           {/* Footer CTA */}

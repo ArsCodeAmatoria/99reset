@@ -4,6 +4,11 @@ import React from "react";
 
 // Custom components for MDX
 const components = {
+  h1: ({ children, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
+    <h1 className="hidden" {...props}>
+      {children}
+    </h1>
+  ),
   code: ({ children, ...props }: React.HTMLAttributes<HTMLElement>) => {
     const codeHTML = highlight(children as string);
     return <code dangerouslySetInnerHTML={{ __html: codeHTML }} {...props} />;
@@ -23,42 +28,54 @@ const components = {
     );
   },
   table: ({ children, ...props }: React.TableHTMLAttributes<HTMLTableElement>) => (
-    <div className="overflow-x-auto my-6">
-      <table className="w-full border-collapse border border-border" {...props}>
-        {children}
-      </table>
+    <div className="my-8 overflow-hidden rounded-lg border border-border bg-card shadow-lg">
+      <div className="overflow-x-auto">
+        <table className="w-full text-sm" {...props}>
+          {children}
+        </table>
+      </div>
     </div>
   ),
   thead: ({ children, ...props }: React.HTMLAttributes<HTMLTableSectionElement>) => (
-    <thead className="bg-card" {...props}>
+    <thead className="bg-border/30" {...props}>
       {children}
     </thead>
   ),
   tbody: ({ children, ...props }: React.HTMLAttributes<HTMLTableSectionElement>) => (
-    <tbody {...props}>
+    <tbody className="divide-y divide-border" {...props}>
       {children}
     </tbody>
   ),
   th: ({ children, ...props }: React.ThHTMLAttributes<HTMLTableCellElement>) => (
-    <th className="border border-border px-4 py-2 text-left font-semibold" {...props}>
+    <th className="px-4 py-3 text-left text-xs font-semibold uppercase tracking-wider text-text" {...props}>
       {children}
     </th>
   ),
   td: ({ children, ...props }: React.TdHTMLAttributes<HTMLTableCellElement>) => (
-    <td className="border border-border px-4 py-2" {...props}>
+    <td className="px-4 py-3 text-textDim" {...props}>
       {children}
     </td>
+  ),
+  tr: ({ children, ...props }: React.HTMLAttributes<HTMLTableRowElement>) => (
+    <tr className="hover:bg-border/10 transition-colors" {...props}>
+      {children}
+    </tr>
   ),
 };
 
 interface MDXRendererProps {
   source: string;
+  hideTitle?: boolean;
 }
 
-export function MDXRenderer({ source }: MDXRendererProps) {
+export function MDXRenderer({ source, hideTitle = false }: MDXRendererProps) {
+  const customComponents = hideTitle
+    ? components
+    : { ...components, h1: undefined }; // Don't override h1 if hideTitle is false
+
   return (
     <div className="prose prose-invert max-w-none">
-      <MDXRemote source={source} components={components} />
+      <MDXRemote source={source} components={customComponents} />
     </div>
   );
 }
