@@ -22,23 +22,37 @@ async function getUpdates() {
     
     const updates = await Promise.all(
       mdxFiles.map(async (filename) => {
-        const filePath = path.join(updatesDirectory, filename);
-        const fileContent = await fs.readFile(filePath, "utf8");
-        const { data } = matter(fileContent);
-        
-        return {
-          slug: filename.replace('.mdx', ''),
-          title: data.title || 'Untitled',
-          date: data.date || '',
-          excerpt: data.excerpt || '',
-          category: data.category || 'Update',
-        };
+        try {
+          const filePath = path.join(updatesDirectory, filename);
+          const fileContent = await fs.readFile(filePath, "utf8");
+          const { data } = matter(fileContent);
+          
+          return {
+            slug: filename.replace('.mdx', ''),
+            title: data.title || 'Untitled',
+            date: data.date || '',
+            excerpt: data.excerpt || '',
+            category: data.category || 'Update',
+          };
+        } catch (error) {
+          console.error(`Error parsing ${filename}:`, error);
+          return null;
+        }
       })
     );
     
-    // Sort by date descending
-    return updates.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+    // Filter out null entries and sort by date descending
+    const validUpdates = updates.filter(Boolean) as Array<{
+      slug: string;
+      title: string;
+      date: string;
+      excerpt: string;
+      category: string;
+    }>;
+    
+    return validUpdates.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
   } catch (error) {
+    console.error('Error reading updates directory:', error);
     // Return empty array if directory doesn't exist yet
     return [];
   }
