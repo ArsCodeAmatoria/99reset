@@ -69,9 +69,12 @@ interface MDXRendererProps {
 }
 
 export function MDXRenderer({ source, hideTitle = false }: MDXRendererProps) {
+  // If hideTitle is false, exclude the h1 override
   const customComponents = hideTitle
     ? components
-    : { ...components, h1: undefined }; // Don't override h1 if hideTitle is false
+    : Object.fromEntries(
+        Object.entries(components).filter(([key]) => key !== 'h1')
+      );
 
   return (
     <div className="prose prose-invert max-w-none">
