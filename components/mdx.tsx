@@ -34,6 +34,11 @@ const components = {
       {children}
     </thead>
   ),
+  tbody: ({ children, ...props }: React.HTMLAttributes<HTMLTableSectionElement>) => (
+    <tbody {...props}>
+      {children}
+    </tbody>
+  ),
   th: ({ children, ...props }: React.ThHTMLAttributes<HTMLTableCellElement>) => (
     <th className="border border-border px-4 py-2 text-left font-semibold" {...props}>
       {children}
