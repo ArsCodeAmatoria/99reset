@@ -15,12 +15,30 @@ const navigation = [
   { name: "Updates", href: "/updates" },
 ];
 
-export function Header() {
+interface HeaderProps {
+  videoUrl?: string;
+}
+
+export function Header({ videoUrl }: HeaderProps = {}) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-40 border-b border-border bg-bg/95 backdrop-blur supports-[backdrop-filter]:bg-bg/60">
-      <Container>
+    <header className="sticky top-0 z-40 border-b border-border bg-bg/95 backdrop-blur supports-[backdrop-filter]:bg-bg/60 relative overflow-hidden">
+      {/* Optional background video */}
+      {videoUrl && (
+        <div className="absolute inset-0 z-0 opacity-20">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-full object-cover"
+          >
+            <source src={videoUrl} type="video/mp4" />
+          </video>
+        </div>
+      )}
+      <Container className="relative z-10">
         <nav className="flex items-center justify-between py-4 md:py-6">
           {/* Logo */}
           <Link 
