@@ -33,8 +33,8 @@ export default function RootLayout({
         <a href="#main-content" className="skip-link">
           Skip to content
         </a>
-        {/* To add a background video to the header, use: <Header videoUrl="/videos/your-video.mp4" /> */}
-        <Header />
+        {/* Video displays on the right side of the header with play/pause controls */}
+        <Header videoUrl="/videos/your-video.mp4" />
         <main id="main-content">
           {children}
         </main>
