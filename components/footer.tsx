@@ -4,8 +4,10 @@ import { Mail, Github, Twitter } from "lucide-react";
 
 export function Footer() {
   return (
-    <footer className="bg-[#050505] border-t border-border">
-      <Container>
+    <footer className="bg-[#050505] border-t border-border relative overflow-hidden">
+      {/* Gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-t from-accent/5 via-transparent to-transparent pointer-events-none" />
+      <Container className="relative z-10">
         {/* Main footer content */}
         <div className="py-16 md:py-20">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
@@ -55,7 +57,7 @@ export function Footer() {
                   <li>
                     <Link 
                       href="/plan" 
-                      className="text-sm text-textDim hover:text-text transition-colors inline-block"
+                      className="text-sm text-textDim hover:text-accent transition-all inline-block hover:translate-x-1"
                     >
                       The Plan
                     </Link>

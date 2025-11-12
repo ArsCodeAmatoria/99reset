@@ -7,6 +7,8 @@ import { defaultMetadata } from "@/lib/seo";
 import { Analytics } from "@/lib/analytics";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
+import { ScrollProgress } from "@/components/scroll-progress";
+import { BackgroundPattern } from "@/components/background-pattern";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -30,6 +32,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${newsreader.variable}`}>
       <body className="min-h-screen">
+        <ScrollProgress />
+        <BackgroundPattern />
         <a href="#main-content" className="skip-link">
           Skip to content
         </a>
