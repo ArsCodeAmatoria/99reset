@@ -3,7 +3,8 @@ import { Section } from "@/components/section";
 import { CTAButton } from "@/components/cta-button";
 import { StatCounter } from "@/components/stat-counter";
 import { Card } from "@/components/card";
-import { VideoPlayer } from "@/components/video-player";
+import { HomeHero } from "@/components/home-hero";
+import { FadeIn, SlideIn, ScaleIn } from "@/components/motion-wrapper";
 import { ArrowRight, Building2, Users, Landmark, Target, TrendingUp, Shield, Zap, Check, Globe } from "lucide-react";
 import Link from "next/link";
 
@@ -23,39 +24,8 @@ export default async function HomePage() {
 
   return (
     <>
-      {/* Hero Section */}
-      <Section className="pt-20 md:pt-32 pb-24 md:pb-40">
-        <Container>
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            {/* Left side: Text content */}
-            <div className="space-y-8">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-display font-bold tracking-tight text-balance">
-                Starve the 1%. Own the Future.
-              </h1>
-              <p className="text-xl md:text-2xl text-textDim leading-relaxed">
-                A global, non-violent plan to shift ownership and bargaining power to workers 
-                and communities. Not welfare — equity, dividends, and permanent affordability.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                <CTAButton href="/join" variant="primary" className="min-w-[200px]">
-                  Join the Reset
-                </CTAButton>
-                <CTAButton href="/plan" variant="secondary" className="min-w-[200px]">
-                  Read the Plan
-                </CTAButton>
-              </div>
-            </div>
-
-            {/* Right side: Video player */}
-            <div className="w-full max-w-md mx-auto lg:mx-0">
-              <VideoPlayer 
-                videoUrl="/videos/99%25%20Reset.mp4" 
-                className="w-full aspect-square"
-              />
-            </div>
-          </div>
-        </Container>
-      </Section>
+      {/* Hero Section with animations */}
+      <HomeHero />
 
       {/* Stats Section */}
       <Section dark className="border-y border-border">
@@ -83,40 +53,49 @@ export default async function HomePage() {
       </Section>
 
       {/* The Problem Section */}
-      <Section className="py-16 md:py-24 bg-card/30">
-        <Container>
+      <Section className="py-16 md:py-24 bg-card/30 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-accent/5 to-transparent opacity-50" />
+        <Container className="relative z-10">
           <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
+            <FadeIn className="text-center mb-12">
               <h2 className="text-3xl md:text-5xl font-display font-bold mb-4">
-                The Problem: 40 Years of Upward Transfer
+                The Problem: <span className="text-accent">40 Years</span> of Upward Transfer
               </h2>
               <p className="text-lg text-textDim">
                 Since 1979, the economy has grown—but only billionaires benefited.
               </p>
-            </div>
+            </FadeIn>
 
             <div className="grid md:grid-cols-3 gap-6 mb-12">
-              <Card className="text-center space-y-3">
-                <div className="text-4xl font-display font-bold text-accent">25%</div>
-                <div className="text-sm text-textDim">Top 1% now control 25% of wealth (was 8% in 1980)</div>
-              </Card>
-              <Card className="text-center space-y-3">
-                <div className="text-4xl font-display font-bold text-accent">+350%</div>
-                <div className="text-sm text-textDim">Housing prices since 1979 while wages rose only 40%</div>
-              </Card>
-              <Card className="text-center space-y-3">
-                <div className="text-4xl font-display font-bold text-accent">$2.3T</div>
-                <div className="text-sm text-textDim">Household debt (175% of disposable income)</div>
-              </Card>
+              <ScaleIn delay={0.1}>
+                <Card className="text-center space-y-3 hover:border-accent/50 transition-colors">
+                  <div className="text-4xl font-display font-bold text-accent">25%</div>
+                  <div className="text-sm text-textDim">Top 1% now control 25% of wealth (was 8% in 1980)</div>
+                </Card>
+              </ScaleIn>
+              <ScaleIn delay={0.2}>
+                <Card className="text-center space-y-3 hover:border-accent/50 transition-colors">
+                  <div className="text-4xl font-display font-bold text-accent">+350%</div>
+                  <div className="text-sm text-textDim">Housing prices since 1979 while wages rose only 40%</div>
+                </Card>
+              </ScaleIn>
+              <ScaleIn delay={0.3}>
+                <Card className="text-center space-y-3 hover:border-accent/50 transition-colors">
+                  <div className="text-4xl font-display font-bold text-accent">$2.3T</div>
+                  <div className="text-sm text-textDim">Household debt (175% of disposable income)</div>
+                </Card>
+              </ScaleIn>
             </div>
 
-            <div className="bg-bg border border-border rounded-2xl p-8">
-              <p className="text-lg leading-relaxed text-textDim">
-                <span className="text-text font-semibold">The cycle:</span> Billionaires extract wages → Workers borrow to afford housing → 
-                Interest enriches billionaires → Repeat until crash (1929, 2008, 2025?). 
-                <span className="text-accent font-semibold"> We break the cycle by moving money, organizing labour, and owning assets collectively.</span>
-              </p>
-            </div>
+            <FadeIn delay={0.4}>
+              <div className="bg-bg border border-border rounded-2xl p-8">
+                <p className="text-lg leading-relaxed text-textDim">
+                  <span className="text-text font-semibold">The cycle:</span> Billionaires extract wages → Workers borrow to afford housing → 
+                  Interest enriches billionaires → Repeat until crash (1929, 2008, 2025?). 
+                  <span className="text-accent font-semibold"> We break the cycle by moving money, organizing labour, and owning assets collectively.</span>
+                </p>
+              </div>
+            </FadeIn>
           </div>
         </Container>
       </Section>
@@ -125,50 +104,54 @@ export default async function HomePage() {
       <Section className="py-16 md:py-24">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
+            <FadeIn className="text-center mb-12">
               <h2 className="text-3xl md:text-5xl font-display font-bold mb-4">
-                Not Protest. Construction.
+                Not Protest. <span className="text-accent">Construction</span>.
               </h2>
               <p className="text-lg text-textDim max-w-2xl mx-auto">
                 Traditional movements fail because they ask billionaires to change. 
                 We build parallel institutions that make them irrelevant.
               </p>
-            </div>
+            </FadeIn>
 
             <div className="grid md:grid-cols-2 gap-8">
-              <Card className="space-y-4">
-                <div className="flex items-start gap-4">
-                  <div className="h-10 w-10 rounded-full bg-red-900/20 flex items-center justify-center flex-shrink-0">
-                    <span className="text-xl">❌</span>
+              <SlideIn direction="left" delay={0.1}>
+                <Card className="space-y-4 h-full hover:border-red-900/50 transition-colors">
+                  <div className="flex items-start gap-4">
+                    <div className="h-10 w-10 rounded-full bg-red-900/20 flex items-center justify-center flex-shrink-0">
+                      <span className="text-xl">❌</span>
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-display font-bold mb-2">Old Movements</h3>
+                      <ul className="space-y-2 text-textDim text-sm">
+                        <li>• Protests (symbolic, ignored)</li>
+                        <li>• Electoral politics (bought, slow)</li>
+                        <li>• Mutual aid (small-scale, temporary)</li>
+                        <li>• Ask for change</li>
+                      </ul>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="text-xl font-display font-bold mb-2">Old Movements</h3>
-                    <ul className="space-y-2 text-textDim text-sm">
-                      <li>• Protests (symbolic, ignored)</li>
-                      <li>• Electoral politics (bought, slow)</li>
-                      <li>• Mutual aid (small-scale, temporary)</li>
-                      <li>• Ask for change</li>
-                    </ul>
-                  </div>
-                </div>
-              </Card>
+                </Card>
+              </SlideIn>
 
-              <Card className="space-y-4 border-accent/50">
-                <div className="flex items-start gap-4">
-                  <div className="h-10 w-10 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0">
-                    <Check className="h-5 w-5 text-accent" />
+              <SlideIn direction="right" delay={0.2}>
+                <Card className="space-y-4 h-full border-accent/50 hover:border-accent transition-colors">
+                  <div className="flex items-start gap-4">
+                    <div className="h-10 w-10 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0">
+                      <Check className="h-5 w-5 text-accent" />
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-display font-bold mb-2">The Reset</h3>
+                      <ul className="space-y-2 text-textDim text-sm">
+                        <li>• Build institutions (co-ops, CLTs, unions)</li>
+                        <li>• Withdraw consent (boycotts, strikes)</li>
+                        <li>• Lock in wins (wealth taxes, labour law)</li>
+                        <li>• <span className="text-accent font-semibold">Become the change</span></li>
+                      </ul>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="text-xl font-display font-bold mb-2">The Reset</h3>
-                    <ul className="space-y-2 text-textDim text-sm">
-                      <li>• Build institutions (co-ops, CLTs, unions)</li>
-                      <li>• Withdraw consent (boycotts, strikes)</li>
-                      <li>• Lock in wins (wealth taxes, labour law)</li>
-                      <li>• <span className="text-accent font-semibold">Become the change</span></li>
-                    </ul>
-                  </div>
-                </div>
-              </Card>
+                </Card>
+              </SlideIn>
             </div>
           </div>
         </Container>
