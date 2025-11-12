@@ -47,10 +47,10 @@ export default async function HomePage() {
             </div>
 
             {/* Right side: Video player */}
-            <div className="w-full">
+            <div className="w-full max-w-md mx-auto lg:mx-0">
               <VideoPlayer 
                 videoUrl="/videos/99%25%20Reset.mp4" 
-                className="w-full aspect-video"
+                className="w-full aspect-square"
               />
             </div>
           </div>

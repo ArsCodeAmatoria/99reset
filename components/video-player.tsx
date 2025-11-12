@@ -25,7 +25,7 @@ export function VideoPlayer({ videoUrl, className = "" }: VideoPlayerProps) {
   };
 
   return (
-    <div className={`relative rounded-lg overflow-hidden bg-card border border-border ${className}`}>
+    <div className={`relative rounded-2xl overflow-hidden bg-card border-2 border-border ${className}`}>
       <video
         ref={videoRef}
         className="w-full h-full object-cover cursor-pointer"
