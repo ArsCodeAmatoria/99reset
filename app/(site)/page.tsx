@@ -3,6 +3,7 @@ import { Section } from "@/components/section";
 import { CTAButton } from "@/components/cta-button";
 import { StatCounter } from "@/components/stat-counter";
 import { Card } from "@/components/card";
+import { VideoPlayer } from "@/components/video-player";
 import { ArrowRight, Building2, Users, Landmark, Target, TrendingUp, Shield, Zap, Check, Globe } from "lucide-react";
 import Link from "next/link";
 
@@ -25,21 +26,32 @@ export default async function HomePage() {
       {/* Hero Section */}
       <Section className="pt-20 md:pt-32 pb-24 md:pb-40">
         <Container>
-          <div className="max-w-4xl mx-auto text-center space-y-8">
-            <h1 className="text-5xl md:text-7xl font-display font-bold tracking-tight text-balance">
-              Starve the 1%. Own the Future.
-            </h1>
-            <p className="text-xl md:text-2xl text-textDim leading-relaxed max-w-3xl mx-auto">
-              A global, non-violent plan to shift ownership and bargaining power to workers 
-              and communities. Not welfare — equity, dividends, and permanent affordability.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
-              <CTAButton href="/join" variant="primary" className="min-w-[200px]">
-                Join the Reset
-              </CTAButton>
-              <CTAButton href="/plan" variant="secondary" className="min-w-[200px]">
-                Read the Plan
-              </CTAButton>
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            {/* Left side: Text content */}
+            <div className="space-y-8">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-display font-bold tracking-tight text-balance">
+                Starve the 1%. Own the Future.
+              </h1>
+              <p className="text-xl md:text-2xl text-textDim leading-relaxed">
+                A global, non-violent plan to shift ownership and bargaining power to workers 
+                and communities. Not welfare — equity, dividends, and permanent affordability.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                <CTAButton href="/join" variant="primary" className="min-w-[200px]">
+                  Join the Reset
+                </CTAButton>
+                <CTAButton href="/plan" variant="secondary" className="min-w-[200px]">
+                  Read the Plan
+                </CTAButton>
+              </div>
+            </div>
+
+            {/* Right side: Video player */}
+            <div className="w-full">
+              <VideoPlayer 
+                videoUrl="/videos/99% Reset.mp4" 
+                className="w-full aspect-video"
+              />
             </div>
           </div>
         </Container>
