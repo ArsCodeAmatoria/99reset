@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Container } from "./container";
-import { Mail, Github, Twitter } from "lucide-react";
+import { Mail, Youtube } from "lucide-react";
+import { SiTiktok } from "react-icons/si";
 
 export function Footer() {
   return (
@@ -65,7 +66,7 @@ export function Footer() {
                   <li>
                     <Link 
                       href="/join" 
-                      className="text-sm text-textDim hover:text-text transition-colors inline-block"
+                      className="text-sm text-textDim hover:text-accent transition-all inline-block hover:translate-x-1"
                     >
                       Join
                     </Link>
@@ -73,7 +74,7 @@ export function Footer() {
                   <li>
                     <Link 
                       href="/chapters" 
-                      className="text-sm text-textDim hover:text-text transition-colors inline-block"
+                      className="text-sm text-textDim hover:text-accent transition-all inline-block hover:translate-x-1"
                     >
                       Chapters
                     </Link>
@@ -90,7 +91,7 @@ export function Footer() {
                   <li>
                     <Link 
                       href="/resources" 
-                      className="text-sm text-textDim hover:text-text transition-colors inline-block"
+                      className="text-sm text-textDim hover:text-accent transition-all inline-block hover:translate-x-1"
                     >
                       Toolkits
                     </Link>
@@ -98,7 +99,7 @@ export function Footer() {
                   <li>
                     <Link 
                       href="/updates" 
-                      className="text-sm text-textDim hover:text-text transition-colors inline-block"
+                      className="text-sm text-textDim hover:text-accent transition-all inline-block hover:translate-x-1"
                     >
                       Updates
                     </Link>
@@ -106,7 +107,7 @@ export function Footer() {
                   <li>
                     <Link 
                       href="/press" 
-                      className="text-sm text-textDim hover:text-text transition-colors inline-block"
+                      className="text-sm text-textDim hover:text-accent transition-all inline-block hover:translate-x-1"
                     >
                       Press Kit
                     </Link>
@@ -122,30 +123,30 @@ export function Footer() {
                 <ul className="space-y-3">
                   <li>
                     <a 
-                      href="https://twitter.com/99reset" 
+                      href="https://www.youtube.com/@99Reset" 
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-sm text-textDim hover:text-text transition-colors inline-flex items-center gap-2"
+                      className="text-sm text-textDim hover:text-accent transition-all inline-flex items-center gap-2 hover:translate-x-1"
                     >
-                      <Twitter className="h-3.5 w-3.5" />
-                      Twitter
+                      <Youtube className="h-3.5 w-3.5" />
+                      YouTube
                     </a>
                   </li>
                   <li>
                     <a 
-                      href="https://github.com/99reset" 
+                      href="https://www.tiktok.com/@99reset.org" 
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-sm text-textDim hover:text-text transition-colors inline-flex items-center gap-2"
+                      className="text-sm text-textDim hover:text-accent transition-all inline-flex items-center gap-2 hover:translate-x-1"
                     >
-                      <Github className="h-3.5 w-3.5" />
-                      GitHub
+                      <SiTiktok className="h-3.5 w-3.5" />
+                      TikTok
                     </a>
                   </li>
                   <li>
                     <a 
                       href="mailto:press@99reset.ca" 
-                      className="text-sm text-textDim hover:text-text transition-colors inline-block"
+                      className="text-sm text-textDim hover:text-accent transition-all inline-block hover:translate-x-1"
                     >
                       Media
                     </a>
@@ -162,7 +163,7 @@ export function Footer() {
                   <li>
                     <Link 
                       href="/privacy" 
-                      className="text-sm text-textDim hover:text-text transition-colors inline-block"
+                      className="text-sm text-textDim hover:text-accent transition-all inline-block hover:translate-x-1"
                     >
                       Privacy
                     </Link>
@@ -170,7 +171,7 @@ export function Footer() {
                   <li>
                     <Link 
                       href="/terms" 
-                      className="text-sm text-textDim hover:text-text transition-colors inline-block"
+                      className="text-sm text-textDim hover:text-accent transition-all inline-block hover:translate-x-1"
                     >
                       Terms
                     </Link>
