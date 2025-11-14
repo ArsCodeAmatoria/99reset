@@ -6,22 +6,26 @@ This directory contains video files used throughout the 99% Reset website.
 
 Place your video files in this directory. Videos will be accessible at `/videos/your-video-name.mp4`
 
-### Header Video Player
+### Hero Section Video Player
 
-The header includes a video player on the right side with play/pause controls. To enable it:
+The home page hero section includes a video player with play/pause controls. To enable it:
 
 ```tsx
-// app/layout.tsx
-<Header videoUrl="/videos/your-video.mp4" />
+// components/home-hero.tsx
+<VideoPlayer 
+  videoUrl="/videos/your-video.mp4" 
+  className="w-full aspect-square"
+/>
 ```
 
 **Features:**
-- Displays on the right side of the header
+- Displays in the hero section on the right side
+- Perfect square aspect ratio (1:1) with rounded corners
 - Play button overlay when paused
 - Pause button in top-right when playing
 - Click anywhere on video to play/pause
-- Hidden on mobile (< 768px) to save space
-- Responsive sizing: 192px (md) to 256px (lg) wide
+- Animated hover effects
+- Responsive sizing
 
 ### Supported Formats
 
@@ -38,8 +42,8 @@ The header includes a video player on the right side with play/pause controls. T
    - Target bitrate: 1-2 Mbps
 
 2. **Dimensions:**
-   - Header video: 16:9 aspect ratio (e.g., 1280x720 or 1920x1080)
-   - Videos are displayed at 192px-256px wide, scaled proportionally
+   - Hero video: 1:1 aspect ratio (perfect square, e.g., 720x720 or 1080x1080)
+   - Videos are displayed responsively, scaled proportionally to container width
 
 3. **Content:**
    - Include captions/text burned into the video (no separate caption support)
@@ -53,6 +57,4 @@ The header includes a video player on the right side with play/pause controls. T
 
 ## Current Videos
 
-(List your videos here as you add them)
-
-- your-video.mp4 - [Add description]
+- **99reset 1.mp4** - Featured in the hero section of the home page. Main promotional video for the 99% Reset movement.

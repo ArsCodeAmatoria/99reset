@@ -74,7 +74,7 @@ export function HomeHero() {
             className="w-full max-w-md mx-auto lg:mx-0"
           >
             <VideoPlayer 
-              videoUrl="/videos/99%25%20Reset.mp4" 
+              videoUrl="/videos/99reset%201.mp4" 
               className="w-full aspect-square shadow-2xl shadow-accent/20"
             />
           </motion.div>
