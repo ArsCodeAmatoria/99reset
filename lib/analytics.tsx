@@ -2,7 +2,7 @@
 
 import { Analytics as VercelAnalytics } from "@vercel/analytics/react";
 import Script from "next/script";
-import { useEffect } from "react";
+import { useEffect, Suspense } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
 
 declare global {
@@ -19,11 +19,10 @@ declare global {
   }
 }
 
-export function Analytics() {
+// Separate component that uses useSearchParams
+function AnalyticsTracker() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
-  const plausibleDomain = process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN;
-  const gaId = process.env.NEXT_PUBLIC_GA_ID;
 
   useEffect(() => {
     if (pathname) {
@@ -32,8 +31,20 @@ export function Analytics() {
     }
   }, [pathname, searchParams]);
 
+  return null;
+}
+
+export function Analytics() {
+  const plausibleDomain = process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN;
+  const gaId = process.env.NEXT_PUBLIC_GA_ID;
+
   return (
     <>
+      {/* Analytics Tracker wrapped in Suspense */}
+      <Suspense fallback={null}>
+        <AnalyticsTracker />
+      </Suspense>
+
       {/* Vercel Analytics */}
       <VercelAnalytics />
 
