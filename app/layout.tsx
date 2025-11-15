@@ -3,12 +3,13 @@ import { Inter, Newsreader } from "next/font/google";
 import "../styles/globals.css";
 import "../styles/prose.css";
 import "../styles/theme.css";
-import { defaultMetadata } from "@/lib/seo";
+import { defaultMetadata, createOrganizationSchema } from "@/lib/seo";
 import { Analytics } from "@/lib/analytics";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { ScrollProgress } from "@/components/scroll-progress";
 import { BackgroundPattern } from "@/components/background-pattern";
+import { StructuredData } from "@/components/structured-data";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -31,6 +32,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${newsreader.variable}`}>
+      <head>
+        <StructuredData data={createOrganizationSchema()} />
+      </head>
       <body className="min-h-screen">
         <ScrollProgress />
         <BackgroundPattern />
