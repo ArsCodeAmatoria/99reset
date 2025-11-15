@@ -26,7 +26,7 @@ npm install
 cat > .env.local << EOF
 DATABASE_URL="postgresql://user:password@localhost:5432/99reset"
 RESEND_API_KEY=""
-PLAUSIBLE_DOMAIN="99reset.ca"
+PLAUSIBLE_DOMAIN="99reset.org"
 NEXT_PUBLIC_SITE_URL="http://localhost:3000"
 EOF
 ```

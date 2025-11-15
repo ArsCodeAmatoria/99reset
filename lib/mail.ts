@@ -10,7 +10,7 @@ export async function sendPledgeThankYou(email: string, name: string) {
 
   try {
     await resend.emails.send({
-      from: "The 99% Reset <noreply@99reset.ca>",
+      from: "The 99% Reset <noreply@99reset.org>",
       to: email,
       subject: "Thank you for joining the 99% Reset",
       html: `
@@ -23,7 +23,7 @@ export async function sendPledgeThankYou(email: string, name: string) {
           <li>Open an account and move your deposits</li>
           <li>Share the movement with friends and colleagues</li>
         </ul>
-        <p><a href="https://99reset.ca/resources">View our toolkit for switching banks</a></p>
+        <p><a href="https://99reset.org/resources">View our toolkit for switching banks</a></p>
         <p>In solidarity,<br/>The 99% Reset</p>
       `,
     });
@@ -40,7 +40,7 @@ export async function sendUnionDriveConfirmation(email: string, name: string) {
 
   try {
     await resend.emails.send({
-      from: "The 99% Reset <noreply@99reset.ca>",
+      from: "The 99% Reset <noreply@99reset.org>",
       to: email,
       subject: "Union Drive Support — 99% Reset",
       html: `
@@ -52,7 +52,7 @@ export async function sendUnionDriveConfirmation(email: string, name: string) {
           <li>Card-check campaign toolkit and legal overview</li>
           <li>Connection to local labour networks</li>
         </ul>
-        <p><a href="https://99reset.ca/resources">Browse organizing resources</a></p>
+        <p><a href="https://99reset.org/resources">Browse organizing resources</a></p>
         <p>In solidarity,<br/>The 99% Reset</p>
       `,
     });
@@ -69,7 +69,7 @@ export async function sendCoopFounderWelcome(email: string, name: string) {
 
   try {
     await resend.emails.send({
-      from: "The 99% Reset <noreply@99reset.ca>",
+      from: "The 99% Reset <noreply@99reset.org>",
       to: email,
       subject: "Co-op & CLT Founder Support — 99% Reset",
       html: `
@@ -82,7 +82,7 @@ export async function sendCoopFounderWelcome(email: string, name: string) {
           <li>Peer mentorship from established co-ops</li>
         </ul>
         <p>A coordinator will reach out within one week to schedule a consultation.</p>
-        <p><a href="https://99reset.ca/resources">Explore co-op startup resources</a></p>
+        <p><a href="https://99reset.org/resources">Explore co-op startup resources</a></p>
         <p>In solidarity,<br/>The 99% Reset</p>
       `,
     });

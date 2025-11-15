@@ -238,7 +238,7 @@ Required for development:
 ```env
 DATABASE_URL=postgresql://user:password@host:5432/database
 RESEND_API_KEY=re_xxxxxxxxxxxx
-PLAUSIBLE_DOMAIN=99reset.ca
+PLAUSIBLE_DOMAIN=99reset.org
 NEXT_PUBLIC_SITE_URL=http://localhost:3000
 ```
 
@@ -459,10 +459,10 @@ See `CONTRIBUTING.md` for detailed guidelines.
 
 ## Contact
 
-**General Inquiries:** contact@99reset.ca  
-**Press/Media:** press@99reset.ca  
-**Privacy Questions:** privacy@99reset.ca  
-**Technical Support:** tech@99reset.ca  
+**General Inquiries:** contact@99reset.org  
+**Press/Media:** press@99reset.org  
+**Privacy Questions:** privacy@99reset.org  
+**Technical Support:** tech@99reset.org  
 
 ---
 

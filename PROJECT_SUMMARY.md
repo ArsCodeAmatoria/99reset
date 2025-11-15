@@ -189,8 +189,8 @@ Route (app)                              Size     First Load JS
    ```env
    DATABASE_URL=postgresql://...
    RESEND_API_KEY=re_...
-   PLAUSIBLE_DOMAIN=99reset.ca
-   NEXT_PUBLIC_SITE_URL=https://99reset.ca
+   PLAUSIBLE_DOMAIN=99reset.org
+   NEXT_PUBLIC_SITE_URL=https://99reset.org
    ```
 
 4. **Deploy to Vercel**
@@ -281,9 +281,9 @@ npm run postbuild        # Generate sitemap (auto after build)
 ## 📞 Support
 
 - **Code Issues:** Open GitHub issue
-- **Movement Questions:** contact@99reset.ca
-- **Press Inquiries:** press@99reset.ca
-- **Tech Support:** tech@99reset.ca
+- **Movement Questions:** contact@99reset.org
+- **Press Inquiries:** press@99reset.org
+- **Tech Support:** tech@99reset.org
 
 ---
 

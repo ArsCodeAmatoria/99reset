@@ -47,13 +47,13 @@ Example: `re_xxxxxxxxxxxxxxxxxxxxx`
 PLAUSIBLE_DOMAIN
 ```
 Value: Your domain for analytics
-Example: `99reset.ca`
+Example: `99reset.org`
 
 ```
 NEXT_PUBLIC_SITE_URL
 ```
 Value: Your production URL (use Vercel preview URL first, update after custom domain)
-Example: `https://99reset.vercel.app` or `https://99reset.ca`
+Example: `https://99reset.vercel.app` or `https://99reset.org`
 
 ### Important Notes
 
@@ -138,7 +138,7 @@ npm run db:studio
 
 1. Go to Project Settings → Domains
 2. Click "Add"
-3. Enter your domain (e.g., `99reset.ca`)
+3. Enter your domain (e.g., `99reset.org`)
 4. Click "Add"
 
 ### Configure DNS

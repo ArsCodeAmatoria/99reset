@@ -245,8 +245,8 @@ Currently no automated tests (PRs welcome!), but manually test:
 ## Questions?
 
 - **Code:** Open an issue
-- **Movement:** contact@99reset.ca
-- **Press:** press@99reset.ca
+- **Movement:** contact@99reset.org
+- **Press:** press@99reset.org
 
 ## License
 

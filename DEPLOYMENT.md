@@ -22,8 +22,8 @@
    ```
    DATABASE_URL=postgresql://user:pass@host:5432/db
    RESEND_API_KEY=re_xxxxxxxxxxxx
-   PLAUSIBLE_DOMAIN=99reset.ca
-   NEXT_PUBLIC_SITE_URL=https://99reset.ca
+   PLAUSIBLE_DOMAIN=99reset.org
+   NEXT_PUBLIC_SITE_URL=https://99reset.org
    ```
 
 4. **Deploy**
@@ -68,7 +68,7 @@
 
 1. **Add Domain in Vercel**
    - Project Settings → Domains
-   - Add your domain (e.g., 99reset.ca)
+   - Add your domain (e.g., 99reset.org)
 
 2. **Update DNS**
    - Point your domain to Vercel's nameservers
@@ -76,8 +76,8 @@
 
 3. **Update Environment**
    ```
-   NEXT_PUBLIC_SITE_URL=https://99reset.ca
-   PLAUSIBLE_DOMAIN=99reset.ca
+   NEXT_PUBLIC_SITE_URL=https://99reset.org
+   PLAUSIBLE_DOMAIN=99reset.org
    ```
 
 ## Analytics Setup
@@ -88,16 +88,16 @@
 
 ### Plausible
 1. Sign up at [plausible.io](https://plausible.io)
-2. Add your domain (99reset.ca)
+2. Add your domain (99reset.org)
 3. Set `PLAUSIBLE_DOMAIN` environment variable
 4. Redeploy
 
 ## Monitoring
 
 ### Health Checks
-- Home: https://99reset.ca
-- Forms: https://99reset.ca/join
-- Plan: https://99reset.ca/plan
+- Home: https://99reset.org
+- Forms: https://99reset.org/join
+- Plan: https://99reset.org/plan
 
 ### Database
 - Monitor connections in Neon dashboard
@@ -181,9 +181,9 @@ git push
    - Chapter application → Check database
 
 2. **Verify SEO**
-   - Check robots.txt: https://99reset.ca/robots.txt
-   - Check sitemap: https://99reset.ca/sitemap.xml
-   - Test OG image: https://99reset.ca/api/og
+   - Check robots.txt: https://99reset.org/robots.txt
+   - Check sitemap: https://99reset.org/sitemap.xml
+   - Test OG image: https://99reset.org/api/og
 
 3. **Accessibility Audit**
    - Run Lighthouse (aim for 90+ accessibility)
@@ -204,5 +204,5 @@ For deployment issues:
 
 For code issues:
 - Open issue on GitHub
-- Email: tech@99reset.ca
+- Email: tech@99reset.org
 

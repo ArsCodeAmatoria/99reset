@@ -55,7 +55,7 @@ export default function PrivacyPage() {
           <h2>Your Rights</h2>
           <p>
             You can request data deletion, export, or corrections at any time by emailing{" "}
-            <a href="mailto:privacy@99reset.ca">privacy@99reset.ca</a>.
+            <a href="mailto:privacy@99reset.org">privacy@99reset.org</a>.
           </p>
 
           <h2>Security</h2>
@@ -72,7 +72,7 @@ export default function PrivacyPage() {
           <h2>Contact</h2>
           <p>
             Questions? Email{" "}
-            <a href="mailto:privacy@99reset.ca">privacy@99reset.ca</a>
+            <a href="mailto:privacy@99reset.org">privacy@99reset.org</a>
           </p>
         </article>
       </Container>

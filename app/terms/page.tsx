@@ -63,7 +63,7 @@ export default function TermsPage() {
           <h2>Contact</h2>
           <p>
             Questions? Email{" "}
-            <a href="mailto:legal@99reset.ca">legal@99reset.ca</a>
+            <a href="mailto:legal@99reset.org">legal@99reset.org</a>
           </p>
         </article>
       </Container>
