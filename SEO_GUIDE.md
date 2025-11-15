@@ -78,48 +78,14 @@ Dynamic OG image generation for social sharing:
 
 ## Analytics Setup
 
-### Plausible Analytics (Recommended)
+### Google Analytics (Recommended)
 
-**Why Plausible:**
-- Privacy-friendly (no cookies)
-- GDPR compliant
-- Lightweight (< 1KB)
-- Simple, clear dashboard
-- Custom events supported
-
-**Setup Steps:**
-
-1. **Create Account:**
-   ```
-   https://plausible.io → Sign Up
-   ```
-
-2. **Add Site:**
-   - Domain: `99reset.org`
-   - Timezone: Your local timezone
-
-3. **Environment Variable:**
-   ```env
-   NEXT_PUBLIC_PLAUSIBLE_DOMAIN="99reset.org"
-   ```
-
-4. **Verify Installation:**
-   - Visit your site
-   - Check Plausible dashboard (real-time)
-   - Should see pageview within seconds
-
-**Dashboard Access:**
-- URL: `https://plausible.io/99reset.org`
-- Metrics: Page views, visitors, sources, devices
-- Custom events: Form submits, CTA clicks, etc.
-
-### Google Analytics (Optional)
-
-**When to Use:**
-- Need advanced funnels
-- Want demographic data
-- Require Google Ads integration
-- Need e-commerce tracking (future)
+**Why Google Analytics:**
+- Advanced funnel analysis
+- Demographic data
+- Custom event tracking
+- Real-time dashboard
+- Google Ads integration ready
 
 **Setup Steps:**
 
@@ -136,6 +102,21 @@ Dynamic OG image generation for social sharing:
    ```env
    NEXT_PUBLIC_GA_ID="G-XXXXXXXXXX"
    ```
+
+4. **Verify Installation:**
+   - Visit your site
+   - Check Google Analytics dashboard (real-time)
+   - Should see pageview within ~5 minutes
+
+**Dashboard Access:**
+- URL: `https://analytics.google.com`
+- Metrics: Page views, visitors, sources, devices, demographics
+- Custom events: Form submits, CTA clicks, etc.
+
+**Privacy Configuration:**
+- Configured with anonymized IP tracking
+- Cookie consent flags
+- Privacy-focused settings
 
 4. **Privacy Settings (Enabled):**
    - Anonymous IP: ✅
@@ -377,7 +358,7 @@ export async function submitPledge(data: FormData) {
 
 ### Weekly Checks
 
-**Plausible Dashboard:**
+**Google Analytics Dashboard:**
 - [ ] Page views trending up?
 - [ ] Top pages (optimize low performers)
 - [ ] Traffic sources (focus on winners)
@@ -475,8 +456,7 @@ export async function submitPledge(data: FormData) {
 
 ```env
 NEXT_PUBLIC_SITE_URL="https://99reset.org"
-NEXT_PUBLIC_PLAUSIBLE_DOMAIN="99reset.org"
-NEXT_PUBLIC_GA_ID="G-XXXXXXXXXX"  # Optional
+NEXT_PUBLIC_GA_ID="G-XXXXXXXXXX"
 ```
 
 ### Key Files

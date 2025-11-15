@@ -29,11 +29,11 @@ export default function PrivacyPage() {
               sign up for pledges, union drives, or chapter applications.
             </li>
             <li>
-              <strong>Analytics:</strong> Aggregate page views via Plausible (privacy-first, 
-              no cookies, no tracking).
+              <strong>Analytics:</strong> Aggregate page views via Google Analytics with 
+              anonymized IP tracking and privacy-focused configuration.
             </li>
             <li>
-              <strong>Cookies:</strong> None for tracking. Only session cookies for forms.
+              <strong>Cookies:</strong> Minimal cookies for analytics. Session cookies for forms.
             </li>
           </ul>
 
@@ -48,7 +48,7 @@ export default function PrivacyPage() {
           <ul>
             <li>Sell or share your data with third parties</li>
             <li>Track you across the web</li>
-            <li>Use invasive analytics (no Google Analytics, no Facebook Pixel)</li>
+            <li>Use invasive tracking (no Facebook Pixel, no cross-site tracking)</li>
             <li>Store data longer than necessary</li>
           </ul>
 

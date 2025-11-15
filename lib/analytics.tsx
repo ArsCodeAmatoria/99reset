@@ -12,10 +12,6 @@ declare global {
       targetId: string,
       config?: Record<string, unknown>
     ) => void;
-    plausible?: (
-      eventName: string,
-      options?: { props?: Record<string, unknown> }
-    ) => void;
   }
 }
 
@@ -35,7 +31,6 @@ function AnalyticsTracker() {
 }
 
 export function Analytics() {
-  const plausibleDomain = process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN;
   const gaId = process.env.NEXT_PUBLIC_GA_ID;
 
   return (
@@ -69,16 +64,6 @@ export function Analytics() {
           </Script>
         </>
       )}
-
-      {/* Plausible Analytics with custom events */}
-      {plausibleDomain && (
-        <Script
-          defer
-          data-domain={plausibleDomain}
-          src="https://plausible.io/js/script.js"
-          strategy="afterInteractive"
-        />
-      )}
     </>
   );
 }
@@ -91,11 +76,6 @@ function trackPageView(url: string) {
       page_path: url,
     });
   }
-
-  // Plausible
-  if (typeof window !== "undefined" && window.plausible) {
-    window.plausible("pageview");
-  }
 }
 
 // Custom event tracking
@@ -106,11 +86,6 @@ export function trackEvent(
   // Google Analytics
   if (typeof window !== "undefined" && window.gtag) {
     window.gtag("event", eventName, properties);
-  }
-
-  // Plausible
-  if (typeof window !== "undefined" && window.plausible) {
-    window.plausible(eventName, { props: properties });
   }
 }
 

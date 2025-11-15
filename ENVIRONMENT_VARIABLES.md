@@ -24,30 +24,11 @@ Your production domain URL (required for SEO, OG images, sitemaps).
 
 ## Analytics (Recommended)
 
-### Plausible Analytics
-```env
-NEXT_PUBLIC_PLAUSIBLE_DOMAIN="99reset.org"
-```
-Privacy-friendly, GDPR-compliant analytics. Recommended primary analytics platform.
-
-**Setup:**
-1. Sign up at [plausible.io](https://plausible.io)
-2. Add your domain: `99reset.org`
-3. Copy the domain name to this variable
-4. No additional configuration needed
-
-**Features:**
-- No cookies
-- GDPR compliant
-- Lightweight script
-- Real-time dashboard
-- Custom events supported
-
-### Google Analytics (Optional)
+### Google Analytics
 ```env
 NEXT_PUBLIC_GA_ID="G-XXXXXXXXXX"
 ```
-Google Analytics 4 measurement ID (only if you need additional tracking features).
+Google Analytics 4 measurement ID for website analytics.
 
 **Setup:**
 1. Create GA4 property at [analytics.google.com](https://analytics.google.com)
@@ -59,11 +40,12 @@ Google Analytics 4 measurement ID (only if you need additional tracking features
    - Page view tracking
    - Custom event tracking
 
-**When to use:**
-- Need advanced funnel analysis
-- Want demographic data
-- Require Google Ads integration
-- Need e-commerce tracking (future)
+**Features:**
+- Advanced funnel analysis
+- Demographic data
+- Custom event tracking
+- Real-time dashboard
+- Google Ads integration ready
 
 ## Search Engine Verification (Optional)
 
@@ -127,8 +109,7 @@ Create a `.env.local` file (never commit this):
 DATABASE_URL="postgresql://..."
 RESEND_API_KEY="re_..."
 NEXT_PUBLIC_SITE_URL="http://localhost:3000"
-NEXT_PUBLIC_PLAUSIBLE_DOMAIN="99reset.org"
-# NEXT_PUBLIC_GA_ID="G-..."  # Optional
+NEXT_PUBLIC_GA_ID="G-XXXXXXXXXX"
 ```
 
 ## Security Notes
@@ -155,8 +136,8 @@ Before deploying:
 - [ ] `DATABASE_URL` set in Vercel
 - [ ] `RESEND_API_KEY` set in Vercel
 - [ ] `NEXT_PUBLIC_SITE_URL` = `https://99reset.org`
-- [ ] `NEXT_PUBLIC_PLAUSIBLE_DOMAIN` = `99reset.org`
-- [ ] Analytics working (check Plausible dashboard)
+- [ ] `NEXT_PUBLIC_GA_ID` set in Vercel
+- [ ] Analytics working (check Google Analytics dashboard)
 - [ ] Test email sending
 - [ ] Check sitemap: `https://99reset.org/sitemap.xml`
 - [ ] Check robots.txt: `https://99reset.org/robots.txt`
