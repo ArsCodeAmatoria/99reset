@@ -160,7 +160,7 @@ export function createOrganizationSchema() {
     ],
     contactPoint: {
       "@type": "ContactPoint",
-      email: "contact@99reset.org",
+      email: "info@99reset.org",
       contactType: "General Inquiries",
     },
   };

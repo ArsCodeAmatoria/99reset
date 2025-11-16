@@ -18,7 +18,7 @@ const chapters = [
     region: "Ontario",
     members: 342,
     nextMeeting: "Nov 15, 2025",
-    contact: "toronto@99reset.org",
+    contact: "info@99reset.org",
   },
   {
     id: 2,
@@ -26,7 +26,7 @@ const chapters = [
     region: "Quebec",
     members: 287,
     nextMeeting: "Nov 12, 2025",
-    contact: "montreal@99reset.org",
+    contact: "info@99reset.org",
   },
   {
     id: 3,
@@ -34,7 +34,7 @@ const chapters = [
     region: "British Columbia",
     members: 216,
     nextMeeting: "Nov 18, 2025",
-    contact: "vancouver@99reset.org",
+    contact: "info@99reset.org",
   },
   {
     id: 4,
@@ -42,7 +42,7 @@ const chapters = [
     region: "Alberta",
     members: 143,
     nextMeeting: "Nov 20, 2025",
-    contact: "calgary@99reset.org",
+    contact: "info@99reset.org",
   },
 ];
 

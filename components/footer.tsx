@@ -37,12 +37,12 @@ export function Footer() {
               {/* Contact */}
               <div className="flex items-center gap-4 pt-2">
                 <a
-                  href="mailto:contact@99reset.org"
+                  href="mailto:info@99reset.org"
                   className="inline-flex items-center gap-2 text-sm text-textDim hover:text-accent transition-colors"
                   aria-label="Email us"
                 >
                   <Mail className="h-4 w-4" />
-                  <span>contact@99reset.org</span>
+                  <span>info@99reset.org</span>
                 </a>
               </div>
             </div>
@@ -156,7 +156,7 @@ export function Footer() {
                   </li>
                   <li>
                     <a 
-                      href="mailto:press@99reset.org" 
+                      href="mailto:info@99reset.org" 
                       className="text-sm text-textDim hover:text-accent transition-all inline-block hover:translate-x-1"
                     >
                       Media

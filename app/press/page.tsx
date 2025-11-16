@@ -37,10 +37,10 @@ export default function PressPage() {
               For press inquiries, interviews, or background briefings:
             </p>
             <a
-              href="mailto:press@99reset.org"
+              href="mailto:info@99reset.org"
               className="text-accent text-lg font-medium hover:text-accent/80"
             >
-              press@99reset.org
+              info@99reset.org
             </a>
             <p className="text-sm text-textDim">
               We respond within 24 hours. Available for print, broadcast, and podcast interviews.
