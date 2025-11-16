@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { Container } from "@/components/container";
 import { Section } from "@/components/section";
 import { CTAButton } from "@/components/cta-button";
-import { VideoPlayer } from "@/components/video-player";
 
 export function HomeHero() {
   return (
@@ -14,11 +13,11 @@ export function HomeHero() {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-accent/10 via-transparent to-transparent" />
       
       <Container className="relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* Left side: Text content */}
+        <div className="max-w-4xl mx-auto text-center">
+          {/* Text content */}
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            animate={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
             className="space-y-8"
           >
@@ -32,7 +31,7 @@ export function HomeHero() {
             </motion.h1>
             
             <motion.p 
-              className="text-xl md:text-2xl text-textDim leading-relaxed"
+              className="text-xl md:text-2xl text-textDim leading-relaxed max-w-3xl mx-auto"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
@@ -42,7 +41,7 @@ export function HomeHero() {
             </motion.p>
             
             <motion.div 
-              className="flex flex-col sm:flex-row gap-4 pt-4"
+              className="flex flex-col sm:flex-row gap-4 pt-4 justify-center"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
@@ -64,19 +63,6 @@ export function HomeHero() {
                 </CTAButton>
               </motion.div>
             </motion.div>
-          </motion.div>
-
-          {/* Right side: Video player */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95, x: 30 }}
-            animate={{ opacity: 1, scale: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
-            className="w-full max-w-md mx-auto lg:mx-0"
-          >
-            <VideoPlayer 
-              videoUrl="/videos/99reset%201.mp4" 
-              className="w-full aspect-square shadow-2xl shadow-accent/20"
-            />
           </motion.div>
         </div>
       </Container>
