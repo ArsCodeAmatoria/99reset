@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Container } from "./container";
 import { Mail, Youtube } from "lucide-react";
-import { SiTiktok } from "react-icons/si";
+import { SiTiktok, SiX } from "react-icons/si";
 
 export function Footer() {
   return (
@@ -130,6 +130,17 @@ export function Footer() {
                     >
                       <Youtube className="h-3.5 w-3.5" />
                       YouTube
+                    </a>
+                  </li>
+                  <li>
+                    <a 
+                      href="https://x.com/99reset" 
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm text-textDim hover:text-accent transition-all inline-flex items-center gap-2 hover:translate-x-1"
+                    >
+                      <SiX className="h-3.5 w-3.5" />
+                      X
                     </a>
                   </li>
                   <li>

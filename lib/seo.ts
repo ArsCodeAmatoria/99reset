@@ -155,6 +155,7 @@ export function createOrganizationSchema() {
       "A global movement to redistribute economic power from the 1% to the 99% through worker cooperatives, community land trusts, and union organizing.",
     sameAs: [
       "https://www.youtube.com/@99Reset",
+      "https://x.com/99reset",
       "https://www.tiktok.com/@99reset.org",
     ],
     contactPoint: {
