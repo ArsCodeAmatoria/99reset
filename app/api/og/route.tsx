@@ -40,7 +40,7 @@ export async function GET(request: Request) {
                 letterSpacing: "-0.05em",
               }}
             >
-              99% RESET
+              99RESET
             </div>
             <div
               style={{

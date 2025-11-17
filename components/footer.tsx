@@ -16,7 +16,7 @@ export function Footer() {
             <div className="lg:col-span-5 space-y-6">
               <div>
                 <h3 className="text-3xl font-display font-bold tracking-tight mb-4">
-                  99% RESET
+                  99RESET
                 </h3>
                 <p className="text-base text-textDim leading-relaxed max-w-md">
                   Independent, member-owned movement to shift ownership and bargaining power
@@ -197,7 +197,7 @@ export function Footer() {
         <div className="py-6 border-t border-border/50">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-xs text-textDim">
-              &copy; {new Date().getFullYear()} The 99% Reset. All rights reserved.
+              &copy; {new Date().getFullYear()} 99reset. All rights reserved.
             </p>
             <p className="text-xs text-textDim">
               Built for institutional change, not symbolic gestures.

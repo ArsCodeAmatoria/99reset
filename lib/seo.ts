@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://99reset.org";
-const siteName = "The 99% Reset";
+const siteName = "99reset";
 
 export function createMetadata({
   title,
@@ -125,8 +125,8 @@ const defaultKeywords = [
 
 export const defaultMetadata: Metadata = {
   title: {
-    default: "The 99% Reset — Starve the 1%. Own the Future.",
-    template: "%s — The 99% Reset",
+    default: "99reset — Starve the 1%. Own the Future.",
+    template: "%s — 99reset",
   },
   description:
     "A global, non-violent plan to shift ownership and bargaining power to workers and communities through worker co-ops, community land trusts, union organizing, and wealth funds. Not welfare — equity, dividends, and permanent affordability.",

@@ -5,7 +5,7 @@ import { Download, FileText, Mail } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Press & Media Kit — 99% Reset",
+  title: "Press & Media Kit — 99reset",
   description: "Logos, one-pager, media contact, and press releases for journalists covering the movement.",
 };
 
