@@ -235,6 +235,100 @@ export default async function HomePage() {
         </Container>
       </Section>
 
+      {/* Take Action Section - Links to Landing Pages */}
+      <Section className="py-16 md:py-24 bg-accent/5 border-y border-accent/20">
+        <Container>
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-5xl font-display font-bold mb-4">
+                Choose Your Track
+              </h2>
+              <p className="text-lg text-textDim max-w-2xl mx-auto">
+                Pick one area to start. Each track has a 30-90 day action plan, FAQs, and proven results.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8">
+              <Link href="/banking-reset" className="group">
+                <Card className="h-full space-y-4 hover:border-accent transition-all hover:shadow-lg hover:shadow-accent/10">
+                  <div className="flex items-start justify-between">
+                    <div className="h-12 w-12 rounded-full bg-accent/10 flex items-center justify-center">
+                      <Landmark className="h-6 w-6 text-accent" />
+                    </div>
+                    <ArrowRight className="h-5 w-5 text-accent/50 group-hover:translate-x-1 transition-transform" />
+                  </div>
+                  <h3 className="text-2xl font-display font-bold group-hover:text-accent transition-colors">Banking Reset</h3>
+                  <p className="text-textDim">
+                    Switch from Big 5 banks to credit unions in 30 days. Stop funding fossil fuels and billionaire wealth extraction.
+                  </p>
+                  <div className="flex items-center gap-4 text-sm pt-2">
+                    <div className="text-accent font-bold">$150B target</div>
+                    <div className="text-textDim">• 30-day guide</div>
+                  </div>
+                </Card>
+              </Link>
+
+              <Link href="/housing-reset" className="group">
+                <Card className="h-full space-y-4 hover:border-accent transition-all hover:shadow-lg hover:shadow-accent/10">
+                  <div className="flex items-start justify-between">
+                    <div className="h-12 w-12 rounded-full bg-accent/10 flex items-center justify-center">
+                      <Building2 className="h-6 w-6 text-accent" />
+                    </div>
+                    <ArrowRight className="h-5 w-5 text-accent/50 group-hover:translate-x-1 transition-transform" />
+                  </div>
+                  <h3 className="text-2xl font-display font-bold group-hover:text-accent transition-colors">Housing Reset</h3>
+                  <p className="text-textDim">
+                    Launch Community Land Trusts for permanently affordable housing. Keep homes 40-50% below market forever.
+                  </p>
+                  <div className="flex items-center gap-4 text-sm pt-2">
+                    <div className="text-accent font-bold">50,000 homes</div>
+                    <div className="text-textDim">• CLT formation guide</div>
+                  </div>
+                </Card>
+              </Link>
+
+              <Link href="/workplace-reset" className="group">
+                <Card className="h-full space-y-4 hover:border-accent transition-all hover:shadow-lg hover:shadow-accent/10">
+                  <div className="flex items-start justify-between">
+                    <div className="h-12 w-12 rounded-full bg-accent/10 flex items-center justify-center">
+                      <Users className="h-6 w-6 text-accent" />
+                    </div>
+                    <ArrowRight className="h-5 w-5 text-accent/50 group-hover:translate-x-1 transition-transform" />
+                  </div>
+                  <h3 className="text-2xl font-display font-bold group-hover:text-accent transition-colors">Workplace Reset</h3>
+                  <p className="text-textDim">
+                    Unionize your workplace, then transition to worker ownership. Build real power and share the profits.
+                  </p>
+                  <div className="flex items-center gap-4 text-sm pt-2">
+                    <div className="text-accent font-bold">1,200 unions</div>
+                    <div className="text-textDim">• 90-day plan</div>
+                  </div>
+                </Card>
+              </Link>
+
+              <Link href="/wealth-reset" className="group">
+                <Card className="h-full space-y-4 hover:border-accent transition-all hover:shadow-lg hover:shadow-accent/10">
+                  <div className="flex items-start justify-between">
+                    <div className="h-12 w-12 rounded-full bg-accent/10 flex items-center justify-center">
+                      <Target className="h-6 w-6 text-accent" />
+                    </div>
+                    <ArrowRight className="h-5 w-5 text-accent/50 group-hover:translate-x-1 transition-transform" />
+                  </div>
+                  <h3 className="text-2xl font-display font-bold group-hover:text-accent transition-colors">Wealth Reset</h3>
+                  <p className="text-textDim">
+                    Tax billionaires to build a Citizens&apos; Wealth Fund. Universal dividends and permanent economic security for all.
+                  </p>
+                  <div className="flex items-center gap-4 text-sm pt-2">
+                    <div className="text-accent font-bold">$500B fund</div>
+                    <div className="text-textDim">• Policy campaign</div>
+                  </div>
+                </Card>
+              </Link>
+            </div>
+          </div>
+        </Container>
+      </Section>
+
       {/* What We Do Section */}
       <Section className="py-16 md:py-24">
         <Container>
