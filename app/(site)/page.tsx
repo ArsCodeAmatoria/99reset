@@ -33,6 +33,11 @@ export default async function HomePage() {
         <Container className="relative z-10">
           <div className="max-w-4xl mx-auto">
             <FadeIn className="text-center mb-12">
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent/10 border border-accent/20 mb-4">
+                <span className="text-sm font-mono text-accent">理論と実践</span>
+                <div className="h-3 w-px bg-accent/30" />
+                <span className="text-sm text-textDim">riron to jissen</span>
+              </div>
               <h2 className="text-3xl md:text-5xl font-display font-bold mb-4">
                 Democratic Socialism: <span className="text-accent">Theory</span> and Practice
               </h2>
@@ -83,6 +88,11 @@ export default async function HomePage() {
         <Container className="relative z-10">
           <div className="max-w-7xl mx-auto">
             <FadeIn className="text-center mb-16">
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent/10 border border-accent/20 mb-4">
+                <span className="text-sm font-mono text-accent">実践</span>
+                <div className="h-3 w-px bg-accent/30" />
+                <span className="text-sm text-textDim">jissen · praxis</span>
+              </div>
               <h2 className="text-4xl md:text-6xl font-display font-bold mb-6">
                 Theory and <span className="text-accent">Praxis</span>
               </h2>
@@ -198,6 +208,11 @@ export default async function HomePage() {
       <Section dark className="py-20 md:py-32">
         <Container>
           <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent/10 border border-accent/20 mb-4">
+              <span className="text-sm font-mono text-accent">原則</span>
+              <div className="h-3 w-px bg-accent/30" />
+              <span className="text-sm text-textDim">gensoku · principles</span>
+            </div>
             <h2 className="text-4xl md:text-5xl font-display font-bold mb-4">
               Core Principles of Democratic Socialism
             </h2>
@@ -279,9 +294,22 @@ export default async function HomePage() {
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <FadeIn delay={0.1}>
                 <div className="space-y-6">
+                  <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent/10 border border-accent/20">
+                    <span className="text-sm font-mono text-accent">集団の力</span>
+                    <div className="h-3 w-px bg-accent/30" />
+                    <span className="text-sm text-textDim">shūdan no chikara</span>
+                  </div>
                   <h2 className="text-5xl md:text-7xl font-display font-bold">
                     Collective <span className="text-accent">Power</span>
                   </h2>
+                  <div className="p-4 rounded-xl bg-card/50 border border-accent/20 backdrop-blur-sm">
+                    <p className="text-lg text-textDim leading-relaxed italic">
+                      "三人寄れば文殊の知恵" · <span className="text-accent">sannin yoreba monju no chie</span>
+                    </p>
+                    <p className="text-sm text-textDim mt-2">
+                      When three gather, they possess the wisdom of Manjushri—collective intelligence surpasses individual capacity.
+                    </p>
+                  </div>
                   <p className="text-2xl text-textDim leading-relaxed">
                     When workers organize collectively, they build power that transforms 
                     individual vulnerability into shared strength. This is the foundation 
@@ -515,9 +543,20 @@ export default async function HomePage() {
               <SlideIn direction="right" delay={0.2}>
                 <div className="space-y-8">
                   <div>
+                    <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent/10 border border-accent/20 mb-4">
+                      <span className="text-sm font-mono text-accent">覚醒</span>
+                      <div className="h-3 w-px bg-accent/30" />
+                      <span className="text-sm text-textDim">kakusei · awakening</span>
+                    </div>
                     <h2 className="text-5xl md:text-6xl font-display font-bold mb-6">
                       Class <span className="text-accent">Awakening</span>
                     </h2>
+                    <div className="p-4 rounded-xl bg-gradient-to-br from-accent/5 to-transparent border border-accent/20 mb-4">
+                      <p className="text-base text-textDim leading-relaxed">
+                        <span className="text-accent font-semibold">目覚める</span> (mezameru) — to wake up, to become aware. 
+                        The moment of recognizing one's position within the class structure.
+                      </p>
+                    </div>
                     <p className="text-xl text-textDim leading-relaxed mb-6">
                       The moment workers recognize their shared interests marks the beginning 
                       of transformative power. Class consciousness is not bestowed—it emerges 
@@ -641,11 +680,23 @@ export default async function HomePage() {
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <FadeIn delay={0.1}>
                 <div className="space-y-8">
+                  <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent/10 border border-accent/20">
+                    <span className="text-sm font-mono text-accent">進化</span>
+                    <div className="h-3 w-px bg-accent/30" />
+                    <span className="text-sm text-textDim">shinka · evolution</span>
+                  </div>
                   <h2 className="text-5xl md:text-7xl font-display font-bold leading-tight">
                     Not a <span className="text-accent">Revolution</span>
                     <br />
                     An Evolution
                   </h2>
+                  <div className="relative p-5 rounded-2xl bg-card/50 border border-accent/20 backdrop-blur-sm">
+                    <div className="absolute top-3 left-3 w-2 h-2 rounded-full bg-accent animate-pulse" />
+                    <p className="text-lg text-textDim leading-relaxed pl-4">
+                      <span className="text-accent font-semibold">革命ではなく、改革</span> (kakumei dewanaku, kaikaku) 
+                      — Not revolution, but reform. Gradual transformation through democratic participation.
+                    </p>
+                  </div>
                   <p className="text-2xl text-textDim leading-relaxed">
                     Democratic socialism transforms society through democratic means—
                     ballot boxes, not barricades; organization, not insurrection.
@@ -694,6 +745,11 @@ export default async function HomePage() {
         <Container>
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent/10 border border-accent/20 mb-4">
+                <span className="text-sm font-mono text-accent">現代</span>
+                <div className="h-3 w-px bg-accent/30" />
+                <span className="text-sm text-textDim">gendai · contemporary</span>
+              </div>
               <h2 className="text-3xl md:text-5xl font-display font-bold mb-4">
                 Contemporary Relevance
               </h2>
