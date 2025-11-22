@@ -11,9 +11,47 @@ export const metadata: Metadata = {
   keywords: "community land trust Canada, affordable housing Canada, housing co-op Canada, CLT housing, buy affordable home, stop housing speculation, permanent affordability, housing crisis solution",
 };
 
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  name: "How to Launch a Community Land Trust in Canada",
+  description: "A step-by-step guide to creating a Community Land Trust for permanently affordable housing in your city.",
+  step: [
+    {
+      "@type": "HowToStep",
+      name: "Build Coalition",
+      text: "Partner with tenant unions, housing advocates, churches, and local chapters. Need 20-30 core organizers.",
+      position: 1
+    },
+    {
+      "@type": "HowToStep",
+      name: "Incorporate Nonprofit",
+      text: "File as nonprofit corporation. Draft bylaws ensuring community control, resale formulas, and democratic governance.",
+      position: 2
+    },
+    {
+      "@type": "HowToStep",
+      name: "Secure Land",
+      text: "Request municipal land donations. Crowdfund via community bonds. Apply for CMHC grants or speculation tax revenue.",
+      position: 3
+    },
+    {
+      "@type": "HowToStep",
+      name: "Build or Convert Housing",
+      text: "Partner with co-op housing developers or convert existing buildings. Aim for 50-100 units in first phase.",
+      position: 4
+    }
+  ],
+  totalTime: "P36M"
+};
+
 export default function HousingResetPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
       <Section className="py-12 md:py-20">
         <Container>
           {/* Hero Section */}

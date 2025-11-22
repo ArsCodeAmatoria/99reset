@@ -11,9 +11,47 @@ export const metadata: Metadata = {
   keywords: "unionize Canada, worker co-op Canada, worker buyout, union organizing, start a union, worker cooperative, employee ownership, workplace democracy, union drive Canada",
 };
 
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  name: "How to Unionize Your Workplace in Canada",
+  description: "A 90-day guide to organizing a union drive and building worker power in your workplace.",
+  step: [
+    {
+      "@type": "HowToStep",
+      name: "Build Core Committee",
+      text: "Recruit 3-5 trusted coworkers. Meet off-site. Identify workplace issues. Keep organizing confidential from management.",
+      position: 1
+    },
+    {
+      "@type": "HowToStep",
+      name: "Contact Union & Map Workplace",
+      text: "Reach out to established unions (UFCW, SEIU, Unifor). Map coworkers: supporters, undecided, management allies.",
+      position: 2
+    },
+    {
+      "@type": "HowToStep",
+      name: "Collect Union Cards",
+      text: "One-on-one conversations with coworkers. Get 50%+1 to sign union cards. Target 70% support to weather management pressure.",
+      position: 3
+    },
+    {
+      "@type": "HowToStep",
+      name: "File Certification & Negotiate",
+      text: "Submit cards to provincial Labour Board. After certification, negotiate first contract with union bargaining team.",
+      position: 4
+    }
+  ],
+  totalTime: "P90D"
+};
+
 export default function WorkplaceResetPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
       <Section className="py-12 md:py-20">
         <Container>
           {/* Hero Section */}

@@ -86,6 +86,10 @@ We measure institutional change through concrete metrics:
     /page.tsx          Home page with hero and stat counters
   /plan                The Plan (MDX content with TOC)
   /join                Three conversion forms
+  /banking-reset       SEO landing page: Switch to credit unions
+  /housing-reset       SEO landing page: Community Land Trusts
+  /workplace-reset     SEO landing page: Unionize & worker co-ops
+  /wealth-reset        SEO landing page: Citizens' Wealth Fund
   /chapters            Chapter directory and applications
   /press               Media kit and contact
   /resources           Toolkits and guides

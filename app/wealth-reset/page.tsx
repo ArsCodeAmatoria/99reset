@@ -11,9 +11,47 @@ export const metadata: Metadata = {
   keywords: "Citizens Wealth Fund Canada, billionaire tax Canada, wealth tax, universal basic dividend, sovereign wealth fund, tax the rich, economic democracy, Alaska Permanent Fund Canada",
 };
 
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  name: "How to Build a Citizens' Wealth Fund in Canada",
+  description: "A strategic plan to establish a sovereign wealth fund funded by billionaire wealth taxes that pays universal dividends to all Canadians.",
+  step: [
+    {
+      "@type": "HowToStep",
+      name: "Pass Billionaire Wealth Tax",
+      text: "Campaign for 5% annual wealth tax on fortunes over $10M. Fund initial Citizens' Wealth Fund capitalization.",
+      position: 1
+    },
+    {
+      "@type": "HowToStep",
+      name: "Establish Fund Governance",
+      text: "Create independent board: 1/3 citizen lottery, 1/3 elected representatives, 1/3 economic experts. Mandate ethical investments.",
+      position: 2
+    },
+    {
+      "@type": "HowToStep",
+      name: "Invest Strategically",
+      text: "60% worker co-op equity, 25% Community Land Trusts, 15% renewable energy. Target 7% annual returns.",
+      position: 3
+    },
+    {
+      "@type": "HowToStep",
+      name: "Pay Universal Dividends",
+      text: "Once fund reaches $100B, distribute 50% of annual returns as universal dividends to every Canadian citizen.",
+      position: 4
+    }
+  ],
+  totalTime: "P10Y"
+};
+
 export default function WealthResetPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
       <Section className="py-12 md:py-20">
         <Container>
           {/* Hero Section */}

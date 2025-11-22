@@ -11,9 +11,47 @@ export const metadata: Metadata = {
   keywords: "switch to credit union Canada, leave big banks, bank boycott Canada, credit union vs bank, move money credit union, RBC alternatives, TD alternatives, ethical banking Canada, fossil fuel divestment",
 };
 
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  name: "How to Switch from Big Banks to Credit Unions in Canada",
+  description: "A comprehensive 30-day guide to moving your money from Big 5 banks to ethical credit unions in Canada.",
+  step: [
+    {
+      "@type": "HowToStep",
+      name: "Research & Open Credit Union Account",
+      text: "Choose a local credit union and open checking and savings accounts online or in-branch.",
+      position: 1
+    },
+    {
+      "@type": "HowToStep",
+      name: "Redirect Direct Deposits",
+      text: "Update payroll, benefits, and recurring deposits to your new credit union account.",
+      position: 2
+    },
+    {
+      "@type": "HowToStep",
+      name: "Transfer Pre-Authorized Payments",
+      text: "Move rent, utilities, subscriptions, and credit card autopay to your credit union.",
+      position: 3
+    },
+    {
+      "@type": "HowToStep",
+      name: "Close Big Bank Accounts",
+      text: "After 2 payroll cycles, transfer remaining balance and close your Big 5 accounts.",
+      position: 4
+    }
+  ],
+  totalTime: "P30D"
+};
+
 export default function BankingResetPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
       <Section className="py-12 md:py-20">
         <Container>
           {/* Hero Section */}
