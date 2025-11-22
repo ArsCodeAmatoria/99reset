@@ -5,7 +5,7 @@ import { StatCounter } from "@/components/stat-counter";
 import { Card } from "@/components/card";
 import { HomeHero } from "@/components/home-hero";
 import { FadeIn, SlideIn, ScaleIn } from "@/components/motion-wrapper";
-import { ArrowRight, Building2, Users, Landmark, Target, TrendingUp, Shield, Zap, Check, Globe } from "lucide-react";
+import { ArrowRight, Building2, Users, Landmark, Target, TrendingUp, Shield, Zap, Check, Globe, BookOpen } from "lucide-react";
 import Link from "next/link";
 
 // In production, these would be fetched from the database
@@ -76,53 +76,91 @@ export default async function HomePage() {
       </Section>
 
       {/* Philosophy and Praxis Section */}
-      <Section className="py-16 md:py-24">
-        <Container>
-          <div className="max-w-6xl mx-auto">
-            <FadeIn className="text-center mb-12">
-              <h2 className="text-3xl md:text-5xl font-display font-bold mb-4">
+      <Section className="py-16 md:py-24 relative overflow-hidden">
+        {/* Background gradient */}
+        <div className="absolute inset-0 bg-gradient-to-b from-accent/5 via-transparent to-transparent opacity-50" />
+        
+        <Container className="relative z-10">
+          <div className="max-w-7xl mx-auto">
+            <FadeIn className="text-center mb-16">
+              <h2 className="text-4xl md:text-6xl font-display font-bold mb-6">
                 Theory and <span className="text-accent">Praxis</span>
               </h2>
-              <p className="text-lg text-textDim max-w-2xl mx-auto">
+              <p className="text-xl text-textDim max-w-3xl mx-auto leading-relaxed">
                 Democratic socialism bridges philosophical rigor with practical implementation,
                 uniting abstract theory with concrete action.
               </p>
             </FadeIn>
 
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid lg:grid-cols-2 gap-16 items-center">
+              {/* Cards Grid */}
+              <div className="space-y-6">
                 <SlideIn direction="left" delay={0.1}>
-                  <Card className="space-y-4 h-full hover:border-accent/50 transition-colors">
-                    <div className="flex items-start gap-4">
-                      <div className="h-10 w-10 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0">
-                        <span className="text-xl">📚</span>
+                  <Card className="group hover:border-accent/50 transition-all duration-300 hover:shadow-xl hover:shadow-accent/10">
+                    <div className="flex items-start gap-6">
+                      <div className="relative">
+                        <div className="h-14 w-14 rounded-2xl bg-gradient-to-br from-accent/20 to-accent/5 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                          <BookOpen className="h-7 w-7 text-accent" />
+                        </div>
+                        <div className="absolute -inset-1 bg-gradient-to-r from-accent/20 to-red-600/20 rounded-2xl blur opacity-0 group-hover:opacity-100 transition-opacity -z-10" />
                       </div>
-                      <div>
-                        <h3 className="text-xl font-display font-bold mb-2">Theoretical Foundations</h3>
-                        <ul className="space-y-2 text-textDim text-sm">
-                          <li>• Dialectical materialism</li>
-                          <li>• Labour theory of value</li>
-                          <li>• Historical analysis of capitalism</li>
-                          <li>• Democratic political philosophy</li>
+                      <div className="flex-1">
+                        <h3 className="text-2xl font-display font-bold mb-3 group-hover:text-accent transition-colors">
+                          Theoretical Foundations
+                        </h3>
+                        <ul className="space-y-2.5 text-textDim">
+                          <li className="flex items-start gap-2">
+                            <span className="text-accent mt-1">•</span>
+                            <span>Dialectical materialism</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-accent mt-1">•</span>
+                            <span>Labour theory of value</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-accent mt-1">•</span>
+                            <span>Historical analysis of capitalism</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-accent mt-1">•</span>
+                            <span>Democratic political philosophy</span>
+                          </li>
                         </ul>
                       </div>
                     </div>
                   </Card>
                 </SlideIn>
 
-                <SlideIn direction="right" delay={0.2}>
-                  <Card className="space-y-4 h-full border-accent/50 hover:border-accent transition-colors">
-                    <div className="flex items-start gap-4">
-                      <div className="h-10 w-10 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0">
-                        <Check className="h-5 w-5 text-accent" />
+                <SlideIn direction="left" delay={0.2}>
+                  <Card className="group border-accent/30 hover:border-accent transition-all duration-300 hover:shadow-xl hover:shadow-accent/10">
+                    <div className="flex items-start gap-6">
+                      <div className="relative">
+                        <div className="h-14 w-14 rounded-2xl bg-gradient-to-br from-accent/20 to-accent/5 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                          <Zap className="h-7 w-7 text-accent" />
+                        </div>
+                        <div className="absolute -inset-1 bg-gradient-to-r from-accent/20 to-red-600/20 rounded-2xl blur opacity-0 group-hover:opacity-100 transition-opacity -z-10" />
                       </div>
-                      <div>
-                        <h3 className="text-xl font-display font-bold mb-2">Practical Implementation</h3>
-                        <ul className="space-y-2 text-textDim text-sm">
-                          <li>• Worker cooperatives and unions</li>
-                          <li>• Community land trusts</li>
-                          <li>• Democratic workplace governance</li>
-                          <li>• <span className="text-accent font-semibold">Collective ownership structures</span></li>
+                      <div className="flex-1">
+                        <h3 className="text-2xl font-display font-bold mb-3 group-hover:text-accent transition-colors">
+                          Practical Implementation
+                        </h3>
+                        <ul className="space-y-2.5 text-textDim">
+                          <li className="flex items-start gap-2">
+                            <span className="text-accent mt-1">•</span>
+                            <span>Worker cooperatives and unions</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-accent mt-1">•</span>
+                            <span>Community land trusts</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-accent mt-1">•</span>
+                            <span>Democratic workplace governance</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-accent mt-1">•</span>
+                            <span className="font-semibold text-text">Collective ownership structures</span>
+                          </li>
                         </ul>
                       </div>
                     </div>
@@ -132,21 +170,24 @@ export default async function HomePage() {
 
               {/* Video element */}
               <FadeIn delay={0.3}>
-                <div className="relative aspect-square rounded-2xl overflow-hidden border border-border shadow-2xl">
-                  <video
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    className="w-full h-full object-cover"
-                  >
-                    <source src="/videos/praxis.mp4" type="video/mp4" />
-                  </video>
-                  {/* Subtle gradient overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-bg/20 to-transparent pointer-events-none" />
+                <div className="relative">
+                  <div className="relative aspect-square rounded-3xl overflow-hidden border-2 border-accent/20 shadow-2xl">
+                    <video
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      className="w-full h-full object-cover"
+                    >
+                      <source src="/videos/praxis.mp4" type="video/mp4" />
+                    </video>
+                    {/* Gradient overlays */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-bg/30 via-transparent to-transparent pointer-events-none" />
+                    <div className="absolute inset-0 ring-1 ring-inset ring-white/10 rounded-3xl pointer-events-none" />
+                  </div>
+                  {/* Enhanced glow effect */}
+                  <div className="absolute -inset-6 bg-gradient-to-r from-accent/30 via-red-600/20 to-accent/30 rounded-3xl blur-3xl -z-10 opacity-60 animate-pulse" />
                 </div>
-                {/* Accent glow effect */}
-                <div className="absolute -inset-4 bg-gradient-to-r from-accent/20 to-red-600/20 rounded-3xl blur-3xl -z-10 opacity-50" />
               </FadeIn>
             </div>
           </div>
