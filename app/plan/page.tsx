@@ -243,7 +243,7 @@ export default async function PlanPage() {
                 <Target className="h-4 w-4 text-accent" />
                 <span className="text-sm font-mono text-accent">金融</span>
                 <div className="h-3 w-px bg-accent/30" />
-                <span className="text-sm text-textDim">kin'yū · finance</span>
+                <span className="text-sm text-textDim">kin&apos;yū · finance</span>
               </div>
               <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">
                 Starving the <span className="text-accent">Financial Extraction</span> Machine
