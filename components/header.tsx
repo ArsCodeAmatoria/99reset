@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Container } from "./container";
+import { ThemeToggle } from "./theme-toggle";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -41,8 +42,12 @@ export function Header() {
                 {item.name}
               </Link>
             ))}
+            {/* Theme Toggle */}
+            <div className="border-l border-border pl-8">
+              <ThemeToggle />
+            </div>
             {/* Locale switcher placeholder */}
-            <div className="flex items-center gap-2 text-sm border-l border-border pl-8">
+            <div className="flex items-center gap-2 text-sm">
               <button className="text-text font-medium focus-visible:outline-none focus-visible:text-accent transition-colors">EN</button>
               <span className="text-textDim">/</span>
               <button className="text-textDim hover:text-text transition-colors focus-visible:outline-none focus-visible:text-accent">FR</button>
@@ -78,6 +83,9 @@ export function Header() {
               </Link>
             ))}
             <div className="flex items-center gap-3 text-sm pt-4 border-t border-border px-3">
+              <ThemeToggle />
+            </div>
+            <div className="flex items-center gap-3 text-sm px-3">
               <button className="text-text font-medium focus-visible:outline-none focus-visible:text-accent transition-colors">EN</button>
               <span className="text-textDim">/</span>
               <button className="text-textDim hover:text-text transition-colors focus-visible:outline-none focus-visible:text-accent">FR</button>

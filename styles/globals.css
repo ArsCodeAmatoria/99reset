@@ -4,6 +4,17 @@
 
 @layer base {
   :root {
+    --bg: #FFFFFF;
+    --card: #F8F9FA;
+    --border: #E5E7EB;
+    --text: #111827;
+    --text-dim: #6B7280;
+    --accent: #E11D48;
+    --success: #10B981;
+    --warn: #FACC15;
+  }
+
+  .dark {
     --bg: #000000;
     --card: #0A0A0A;
     --border: #1A1A1A;

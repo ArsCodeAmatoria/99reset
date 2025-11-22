@@ -10,6 +10,7 @@ import { Footer } from "@/components/footer";
 import { ScrollProgress } from "@/components/scroll-progress";
 import { BackgroundPattern } from "@/components/background-pattern";
 import { StructuredData } from "@/components/structured-data";
+import { ThemeProvider } from "@/components/theme-provider";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -32,22 +33,24 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${ibmPlexSerif.variable}`}>
+    <html lang="en" className={`${inter.variable} ${ibmPlexSerif.variable}`} suppressHydrationWarning>
       <head>
         <StructuredData data={createOrganizationSchema()} />
       </head>
       <body className="min-h-screen">
-        <ScrollProgress />
-        <BackgroundPattern />
-        <a href="#main-content" className="skip-link">
-          Skip to content
-        </a>
-        <Header />
-        <main id="main-content">
-          {children}
-        </main>
-        <Footer />
-        <Analytics />
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
+          <ScrollProgress />
+          <BackgroundPattern />
+          <a href="#main-content" className="skip-link">
+            Skip to content
+          </a>
+          <Header />
+          <main id="main-content">
+            {children}
+          </main>
+          <Footer />
+          <Analytics />
+        </ThemeProvider>
       </body>
     </html>
   );
