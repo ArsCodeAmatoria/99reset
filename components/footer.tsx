@@ -6,6 +6,20 @@ import { SiTiktok, SiX } from "react-icons/si";
 export function Footer() {
   return (
     <footer className="bg-[#050505] border-t border-border relative overflow-hidden">
+      {/* Video background */}
+      <div className="absolute inset-0 overflow-hidden">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover opacity-20"
+        >
+          <source src="/videos/footer.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-gradient-to-t from-bg via-bg/90 to-bg/70" />
+      </div>
+      
       {/* Gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-t from-accent/5 via-transparent to-transparent pointer-events-none" />
       <Container className="relative z-10">

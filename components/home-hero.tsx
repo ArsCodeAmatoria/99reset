@@ -8,7 +8,21 @@ import { CTAButton } from "@/components/cta-button";
 export function HomeHero() {
   return (
     <Section className="relative pt-20 md:pt-32 pb-24 md:pb-40 overflow-hidden">
-      {/* Animated gradient background */}
+      {/* Video background */}
+      <div className="absolute inset-0 overflow-hidden">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover opacity-30"
+        >
+          <source src="/videos/hero.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-gradient-to-b from-bg/50 via-bg/70 to-bg" />
+      </div>
+      
+      {/* Animated gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-accent/5 via-transparent to-accent/10 opacity-50" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-accent/10 via-transparent to-transparent" />
       
