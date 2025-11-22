@@ -34,7 +34,7 @@ async function getUpdates() {
             date: data.date || '',
             excerpt: data.excerpt || '',
             category: data.category || 'Update',
-            image: data.image || '/images/bank-boycott.png', // fallback image
+            image: data.image || null,
           };
         } catch (error) {
           console.error(`Error parsing ${filename}:`, error);
@@ -50,7 +50,7 @@ async function getUpdates() {
       date: string;
       excerpt: string;
       category: string;
-      image: string;
+      image: string | null;
     }>;
     
     return validUpdates.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
@@ -98,20 +98,46 @@ export default async function UpdatesPage() {
               updates.map((update, index) => (
                 <Link key={update.slug} href={`/updates/${update.slug}`}>
                   <Card className="group overflow-hidden hover:border-accent/50 transition-all hover:shadow-xl hover:shadow-accent/5">
-                    <div className={`grid ${index % 2 === 0 ? 'md:grid-cols-[400px_1fr]' : 'md:grid-cols-[1fr_400px]'} gap-8`}>
-                      {/* Image - Left for even, Right for odd */}
-                      <div className={`relative aspect-[4/3] overflow-hidden rounded-lg ${index % 2 === 0 ? 'md:order-1' : 'md:order-2'}`}>
-                        <Image
-                          src={update.image}
-                          alt={update.title}
-                          fill
-                          className="object-cover group-hover:scale-105 transition-transform duration-500"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-bg/60 to-transparent" />
-                      </div>
+                    {update.image ? (
+                      <div className={`grid ${index % 2 === 0 ? 'md:grid-cols-[400px_1fr]' : 'md:grid-cols-[1fr_400px]'} gap-8`}>
+                        {/* Image - Left for even, Right for odd */}
+                        <div className={`relative aspect-[4/3] overflow-hidden rounded-lg ${index % 2 === 0 ? 'md:order-1' : 'md:order-2'}`}>
+                          <Image
+                            src={update.image}
+                            alt={update.title}
+                            fill
+                            className="object-cover group-hover:scale-105 transition-transform duration-500"
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-bg/60 to-transparent" />
+                        </div>
 
-                      {/* Content */}
-                      <div className={`flex flex-col justify-center space-y-4 ${index % 2 === 0 ? 'md:order-2' : 'md:order-1'}`}>
+                        {/* Content */}
+                        <div className={`flex flex-col justify-center space-y-4 ${index % 2 === 0 ? 'md:order-2' : 'md:order-1'}`}>
+                          <div className="flex items-center gap-3 text-sm text-textDim">
+                            <Calendar className="h-4 w-4" />
+                            <span>{new Date(update.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
+                            <span className="text-xs px-3 py-1 bg-accent/10 text-accent rounded-full font-mono">
+                              {update.category}
+                            </span>
+                          </div>
+
+                          <h2 className="text-2xl md:text-3xl font-display font-bold group-hover:text-accent transition-colors">
+                            {update.title}
+                          </h2>
+
+                          <p className="text-textDim leading-relaxed line-clamp-3">
+                            {update.excerpt}
+                          </p>
+
+                          <div className="flex items-center gap-2 text-accent font-medium pt-2">
+                            <span>Read Full Analysis</span>
+                            <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                          </div>
+                        </div>
+                      </div>
+                    ) : (
+                      /* No image layout */
+                      <div className="space-y-4">
                         <div className="flex items-center gap-3 text-sm text-textDim">
                           <Calendar className="h-4 w-4" />
                           <span>{new Date(update.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
@@ -124,7 +150,7 @@ export default async function UpdatesPage() {
                           {update.title}
                         </h2>
 
-                        <p className="text-textDim leading-relaxed line-clamp-3">
+                        <p className="text-textDim leading-relaxed">
                           {update.excerpt}
                         </p>
 
@@ -133,7 +159,7 @@ export default async function UpdatesPage() {
                           <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
                         </div>
                       </div>
-                    </div>
+                    )}
                   </Card>
                 </Link>
               ))
