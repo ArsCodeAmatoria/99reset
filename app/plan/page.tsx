@@ -5,7 +5,7 @@ import { Section } from "@/components/section";
 import { Card } from "@/components/card";
 import { MDXRenderer } from "@/components/mdx";
 import type { Metadata } from "next";
-import { Target, Users, Building2, Scale, TrendingUp, Zap } from "lucide-react";
+import { Target, Users, Building2, Scale, TrendingUp, Zap, MapPin, Building, Landmark } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "The Plan — Ninety Nine",
@@ -508,7 +508,7 @@ export default async function PlanPage() {
                   <div className="relative p-6 space-y-4">
                     <div className="flex items-center gap-3 mb-3">
                       <div className="h-10 w-10 rounded-lg bg-accent/10 flex items-center justify-center">
-                        <span className="text-xl">🏛️</span>
+                        <MapPin className="h-5 w-5 text-accent" />
                       </div>
                       <div>
                         <h3 className="text-xl font-display font-bold text-accent">Municipal</h3>
@@ -547,7 +547,7 @@ export default async function PlanPage() {
                   <div className="relative p-6 space-y-4">
                     <div className="flex items-center gap-3 mb-3">
                       <div className="h-10 w-10 rounded-lg bg-accent/10 flex items-center justify-center">
-                        <span className="text-xl">🏢</span>
+                        <Building className="h-5 w-5 text-accent" />
                       </div>
                       <div>
                         <h3 className="text-xl font-display font-bold text-accent">Provincial</h3>
@@ -586,7 +586,7 @@ export default async function PlanPage() {
                   <div className="relative p-6 space-y-4">
                     <div className="flex items-center gap-3 mb-3">
                       <div className="h-10 w-10 rounded-lg bg-accent/10 flex items-center justify-center">
-                        <span className="text-xl">🏛️</span>
+                        <Landmark className="h-5 w-5 text-accent" />
                       </div>
                       <div>
                         <h3 className="text-xl font-display font-bold text-accent">Federal</h3>
