@@ -676,7 +676,7 @@ export default async function HomePage() {
                       playsInline
                       className="w-full h-auto"
                     >
-                      <source src="/videos/revolution.mp4" type="video/mp4" />
+                      <source src="/videos/workers-unite.mp4" type="video/mp4" />
                     </video>
                     <div className="absolute inset-0 bg-gradient-to-t from-bg/30 via-transparent to-transparent pointer-events-none" />
                     <div className="absolute inset-0 ring-1 ring-inset ring-white/10 rounded-3xl pointer-events-none" />
