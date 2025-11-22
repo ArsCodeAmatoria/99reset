@@ -27,31 +27,6 @@ export default async function HomePage() {
       {/* Hero Section with animations */}
       <HomeHero />
 
-      {/* Stats Section */}
-      <Section dark className="border-y border-border">
-        <Container>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
-            <StatCounter
-              end={stats.depositsMove}
-              label="Deposits Moved"
-              prefix="$"
-            />
-            <StatCounter
-              end={stats.unionDrives}
-              label="Union Drives Launched"
-            />
-            <StatCounter
-              end={stats.workerCoops}
-              label="Worker Co-ops Formed"
-            />
-            <StatCounter
-              end={stats.cltHomes}
-              label="CLT Homes Secured"
-            />
-          </div>
-        </Container>
-      </Section>
-
       {/* The Philosophy Section */}
       <Section className="py-16 md:py-24 bg-card/30 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-accent/5 to-transparent opacity-50" />
