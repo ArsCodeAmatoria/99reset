@@ -835,24 +835,91 @@ export default async function HomePage() {
         </Container>
       </Section>
 
-      {/* Final CTA Section */}
-      <Section className="py-20 md:py-32 border-t border-border">
-        <Container>
-          <div className="max-w-3xl mx-auto text-center space-y-8">
-            <h2 className="text-4xl md:text-5xl font-display font-bold">
-              Begin Your Journey
+      {/* Begin Your Journey - Enhanced Section */}
+      <Section className="py-20 md:py-32 border-t-2 border-accent/20 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-accent/10 via-transparent to-accent/5" />
+        <Container className="relative z-10">
+          <div className="max-w-7xl mx-auto">
+            <div className="grid lg:grid-cols-2 gap-16 items-center">
+              {/* Content Side */}
+              <FadeIn delay={0.1}>
+                <div className="space-y-8">
+                  <div>
+                    <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent/10 border border-accent/20 mb-4">
+                      <span className="text-sm font-mono text-accent">旅立ち</span>
+                      <div className="h-3 w-px bg-accent/30" />
+                      <span className="text-sm text-textDim">tabidachi · journey begins</span>
+                    </div>
+                    <h2 className="text-4xl md:text-6xl font-display font-bold mb-6">
+                      Begin Your <span className="text-accent">Journey</span>
             </h2>
-            <p className="text-xl text-textDim leading-relaxed">
-              Understanding democratic socialism is an ongoing process of study, reflection, and engagement 
-              with history, theory, and contemporary practice.
-            </p>
-            <p className="text-lg text-textDim">
-              <span className="text-accent font-semibold">&quot;Theory without practice is sterile, practice without theory is blind.&quot;</span> 
-              Explore both to develop a comprehensive understanding of how democratic socialism can address the contradictions of capitalism.
-            </p>
-            <CTAButton href="/updates" variant="primary" className="min-w-[240px] mt-6">
-              Start Exploring
+                  </div>
+
+                  {/* Japanese Wisdom Card */}
+                  <div className="relative p-6 rounded-2xl bg-gradient-to-br from-accent/5 to-transparent border border-accent/20">
+                    <div className="flex items-start gap-4">
+                      <div className="flex-shrink-0 w-1 h-full bg-gradient-to-b from-accent to-accent/20 rounded-full" />
+                      <div className="space-y-2">
+                        <p className="text-xl font-display font-bold">千里の道も一歩から</p>
+                        <p className="text-sm font-mono text-textDim">senri no michi mo ippo kara</p>
+                        <p className="text-base text-textDim italic">
+                          &quot;A journey of a thousand miles begins with a single step.&quot;
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Description */}
+                  <div className="relative p-6 rounded-2xl bg-card/50 border border-border backdrop-blur-sm">
+                    <div className="absolute top-3 left-3 w-2 h-2 rounded-full bg-accent animate-pulse" />
+                    <p className="text-lg text-textDim leading-relaxed pl-4">
+                      Understanding democratic socialism is an ongoing process of study, reflection, 
+                      and engagement with history, theory, and contemporary practice.
+                    </p>
+                  </div>
+
+                  {/* Quote Card */}
+                  <div className="p-5 rounded-xl bg-accent/10 border border-accent/20">
+                    <p className="text-base text-textDim leading-relaxed">
+                      <span className="text-accent font-semibold">&quot;Theory without practice is sterile, practice without theory is blind.&quot;</span>
+                    </p>
+                    <p className="text-sm text-textDim mt-2">
+                      Explore both to develop a comprehensive understanding of how democratic socialism can address the contradictions of capitalism.
+                    </p>
+                  </div>
+
+                  {/* CTA Buttons */}
+                  <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                    <CTAButton href="/updates" variant="primary" className="min-w-[240px]">
+                      Start Exploring
+                    </CTAButton>
+                    <CTAButton href="/resources" variant="secondary" className="min-w-[240px]">
+                      Browse Resources
             </CTAButton>
+                  </div>
+                </div>
+              </FadeIn>
+
+              {/* Video Side */}
+              <FadeIn delay={0.3}>
+                <div className="relative">
+                  <div className="relative rounded-3xl overflow-hidden border-2 border-accent/30 shadow-2xl">
+                    <video
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      className="w-full h-auto"
+                    >
+                      <source src="/videos/begin.mp4" type="video/mp4" />
+                    </video>
+                    <div className="absolute inset-0 bg-gradient-to-t from-bg/30 via-transparent to-transparent pointer-events-none" />
+                    <div className="absolute inset-0 ring-1 ring-inset ring-white/10 rounded-3xl pointer-events-none" />
+                  </div>
+                  <div className="absolute -inset-6 bg-gradient-to-r from-accent/30 via-red-600/20 to-accent/30 rounded-3xl blur-3xl -z-10 opacity-60 animate-pulse" />
+                </div>
+              </FadeIn>
+            </div>
           </div>
         </Container>
       </Section>
