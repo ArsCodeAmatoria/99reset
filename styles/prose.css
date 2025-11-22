@@ -47,7 +47,7 @@
 }
 
 .prose a {
-  @apply text-accent underline underline-offset-4 hover:text-accent/80 transition-colors;
+  @apply text-accent underline underline-offset-4 hover:opacity-80 transition-all;
 }
 
 .prose strong {
