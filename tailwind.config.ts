@@ -10,18 +10,18 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        bg: "#0A0A0A",
-        card: "#111113",
-        border: "#27272A",
-        text: "#F8FAFC",
-        textDim: "#D1D5DB",
-        accent: "#E11D48",
-        success: "#10B981",
-        warn: "#FACC15",
+        bg: "var(--bg)",
+        card: "var(--card)",
+        border: "var(--border)",
+        text: "var(--text)",
+        textDim: "var(--text-dim)",
+        accent: "var(--accent)",
+        success: "var(--success)",
+        warn: "var(--warn)",
       },
       fontFamily: {
-        sans: ["var(--font-ibm-plex-serif)", "Georgia", "serif"],
-        display: ["var(--font-inter)", "system-ui", "sans-serif"],
+        sans: ["var(--font-inter)", "system-ui", "sans-serif"],
+        display: ["var(--font-ibm-plex-serif)", "Georgia", "serif"],
       },
       borderRadius: {
         card: "1.25rem",
