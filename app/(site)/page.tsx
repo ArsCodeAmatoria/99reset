@@ -103,7 +103,7 @@ export default async function HomePage() {
       {/* Philosophy and Praxis Section */}
       <Section className="py-16 md:py-24">
         <Container>
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-6xl mx-auto">
             <FadeIn className="text-center mb-12">
               <h2 className="text-3xl md:text-5xl font-display font-bold mb-4">
                 Theory and <span className="text-accent">Praxis</span>
@@ -114,44 +114,65 @@ export default async function HomePage() {
               </p>
             </FadeIn>
 
-            <div className="grid md:grid-cols-2 gap-8">
-              <SlideIn direction="left" delay={0.1}>
-                <Card className="space-y-4 h-full hover:border-accent/50 transition-colors">
-                  <div className="flex items-start gap-4">
-                    <div className="h-10 w-10 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0">
-                      <span className="text-xl">📚</span>
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div className="grid md:grid-cols-2 gap-6">
+                <SlideIn direction="left" delay={0.1}>
+                  <Card className="space-y-4 h-full hover:border-accent/50 transition-colors">
+                    <div className="flex items-start gap-4">
+                      <div className="h-10 w-10 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0">
+                        <span className="text-xl">📚</span>
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-display font-bold mb-2">Theoretical Foundations</h3>
+                        <ul className="space-y-2 text-textDim text-sm">
+                          <li>• Dialectical materialism</li>
+                          <li>• Labour theory of value</li>
+                          <li>• Historical analysis of capitalism</li>
+                          <li>• Democratic political philosophy</li>
+                        </ul>
+                      </div>
                     </div>
-                    <div>
-                      <h3 className="text-xl font-display font-bold mb-2">Theoretical Foundations</h3>
-                      <ul className="space-y-2 text-textDim text-sm">
-                        <li>• Dialectical materialism</li>
-                        <li>• Labour theory of value</li>
-                        <li>• Historical analysis of capitalism</li>
-                        <li>• Democratic political philosophy</li>
-                      </ul>
-                    </div>
-                  </div>
-                </Card>
-              </SlideIn>
+                  </Card>
+                </SlideIn>
 
-              <SlideIn direction="right" delay={0.2}>
-                <Card className="space-y-4 h-full border-accent/50 hover:border-accent transition-colors">
-                  <div className="flex items-start gap-4">
-                    <div className="h-10 w-10 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0">
-                      <Check className="h-5 w-5 text-accent" />
+                <SlideIn direction="right" delay={0.2}>
+                  <Card className="space-y-4 h-full border-accent/50 hover:border-accent transition-colors">
+                    <div className="flex items-start gap-4">
+                      <div className="h-10 w-10 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0">
+                        <Check className="h-5 w-5 text-accent" />
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-display font-bold mb-2">Practical Implementation</h3>
+                        <ul className="space-y-2 text-textDim text-sm">
+                          <li>• Worker cooperatives and unions</li>
+                          <li>• Community land trusts</li>
+                          <li>• Democratic workplace governance</li>
+                          <li>• <span className="text-accent font-semibold">Collective ownership structures</span></li>
+                        </ul>
+                      </div>
                     </div>
-                    <div>
-                      <h3 className="text-xl font-display font-bold mb-2">Practical Implementation</h3>
-                      <ul className="space-y-2 text-textDim text-sm">
-                        <li>• Worker cooperatives and unions</li>
-                        <li>• Community land trusts</li>
-                        <li>• Democratic workplace governance</li>
-                        <li>• <span className="text-accent font-semibold">Collective ownership structures</span></li>
-                      </ul>
-                    </div>
-                  </div>
-                </Card>
-              </SlideIn>
+                  </Card>
+                </SlideIn>
+              </div>
+
+              {/* Video element */}
+              <FadeIn delay={0.3}>
+                <div className="relative aspect-square rounded-2xl overflow-hidden border border-border shadow-2xl">
+                  <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="w-full h-full object-cover"
+                  >
+                    <source src="/videos/praxis.mp4" type="video/mp4" />
+                  </video>
+                  {/* Subtle gradient overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-bg/20 to-transparent pointer-events-none" />
+                </div>
+                {/* Accent glow effect */}
+                <div className="absolute -inset-4 bg-gradient-to-r from-accent/20 to-red-600/20 rounded-3xl blur-3xl -z-10 opacity-50" />
+              </FadeIn>
             </div>
           </div>
         </Container>

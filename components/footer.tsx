@@ -12,23 +12,8 @@ export function Footer() {
         {/* Main footer content */}
         <div className="py-16 md:py-20">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-            {/* Brand column with video */}
+            {/* Brand column */}
             <div className="lg:col-span-5 space-y-6">
-              {/* Video element */}
-              <div className="relative aspect-square max-w-xs rounded-2xl overflow-hidden border border-border shadow-2xl">
-                <video
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  className="w-full h-full object-cover"
-                >
-                  <source src="/videos/footer.mp4" type="video/mp4" />
-                </video>
-                {/* Subtle gradient overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-bg/20 to-transparent pointer-events-none" />
-              </div>
-              
               <div>
                 <h3 className="text-3xl font-display font-bold tracking-tight mb-4">
                   NINETY NINE
