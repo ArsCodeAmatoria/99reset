@@ -27,7 +27,7 @@ export function HomeHero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
             >
-              Starve the <span className="text-accent">1%</span>. Own the Future.
+              NINETY NINE
             </motion.h1>
             
             <motion.p 
@@ -36,8 +36,8 @@ export function HomeHero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
             >
-              A global, non-violent plan to shift ownership and bargaining power to workers 
-              and communities. Not welfare — <span className="text-text font-semibold">equity, dividends, and permanent affordability</span>.
+              A cerebral exploration of democratic socialism, worker cooperatives, and collective ownership. 
+              Where <span className="text-text font-semibold">philosophy meets praxis</span> at the intersection of theory and practice.
             </motion.p>
             
             <motion.div 
@@ -51,7 +51,7 @@ export function HomeHero() {
                 whileTap={{ scale: 0.95 }}
               >
                 <CTAButton href="/join" variant="primary" className="min-w-[200px]">
-                  Join the Reset
+                  Explore Ideas
                 </CTAButton>
               </motion.div>
               <motion.div
@@ -59,7 +59,7 @@ export function HomeHero() {
                 whileTap={{ scale: 0.95 }}
               >
                 <CTAButton href="/plan" variant="secondary" className="min-w-[200px]">
-                  Read the Plan
+                  Read Theory
                 </CTAButton>
               </motion.div>
             </motion.div>

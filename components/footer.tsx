@@ -16,21 +16,21 @@ export function Footer() {
             <div className="lg:col-span-5 space-y-6">
               <div>
                 <h3 className="text-3xl font-display font-bold tracking-tight mb-4">
-                  99RESET
+                  NINETY NINE
                 </h3>
                 <p className="text-base text-textDim leading-relaxed max-w-md">
-                  Independent, member-owned movement to shift ownership and bargaining power
-                  to workers and communities.
+                  A cerebral exploration of democratic socialism, worker empowerment, 
+                  and collective ownership.
                 </p>
               </div>
               
               {/* Tagline */}
               <div className="pt-4 border-t border-border/50">
                 <p className="text-sm font-medium text-text">
-                  Not welfare. Ownership.
+                  Theory and Praxis
                 </p>
                 <p className="text-xs text-textDim mt-1">
-                  Non-violent, institutional, permanent.
+                  Where philosophy meets practice.
                 </p>
               </div>
 
@@ -49,10 +49,10 @@ export function Footer() {
 
             {/* Navigation columns - spans remaining space */}
             <div className="lg:col-span-7 grid grid-cols-2 md:grid-cols-4 gap-8">
-              {/* Movement */}
+              {/* Theory */}
               <div>
                 <h4 className="text-xs font-semibold uppercase tracking-widest text-text mb-5">
-                  Movement
+                  Theory
                 </h4>
                 <ul className="space-y-3">
                   <li>
@@ -60,7 +60,7 @@ export function Footer() {
                       href="/plan" 
                       className="text-sm text-textDim hover:text-accent transition-all inline-block hover:translate-x-1"
                     >
-                      The Plan
+                      Philosophy
                     </Link>
                   </li>
                   <li>
@@ -68,7 +68,7 @@ export function Footer() {
                       href="/join" 
                       className="text-sm text-textDim hover:text-accent transition-all inline-block hover:translate-x-1"
                     >
-                      Join
+                      Economics
                     </Link>
                   </li>
                   <li>
@@ -76,16 +76,16 @@ export function Footer() {
                       href="/chapters" 
                       className="text-sm text-textDim hover:text-accent transition-all inline-block hover:translate-x-1"
                     >
-                      Chapters
+                      History
                     </Link>
                   </li>
                 </ul>
               </div>
 
-              {/* Learn */}
+              {/* Explore */}
               <div>
                 <h4 className="text-xs font-semibold uppercase tracking-widest text-text mb-5">
-                  Learn
+                  Explore
                 </h4>
                 <ul className="space-y-3">
                   <li>
@@ -93,7 +93,7 @@ export function Footer() {
                       href="/resources" 
                       className="text-sm text-textDim hover:text-accent transition-all inline-block hover:translate-x-1"
                     >
-                      Toolkits
+                      Library
                     </Link>
                   </li>
                   <li>
@@ -101,7 +101,7 @@ export function Footer() {
                       href="/updates" 
                       className="text-sm text-textDim hover:text-accent transition-all inline-block hover:translate-x-1"
                     >
-                      Updates
+                      Articles
                     </Link>
                   </li>
                   <li>
@@ -109,7 +109,7 @@ export function Footer() {
                       href="/press" 
                       className="text-sm text-textDim hover:text-accent transition-all inline-block hover:translate-x-1"
                     >
-                      Press Kit
+                      Analysis
                     </Link>
                   </li>
                 </ul>
@@ -197,10 +197,10 @@ export function Footer() {
         <div className="py-6 border-t border-border/50">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-xs text-textDim">
-              &copy; {new Date().getFullYear()} 99reset. All rights reserved.
+              &copy; {new Date().getFullYear()} Ninety Nine. All rights reserved.
             </p>
             <p className="text-xs text-textDim">
-              Built for institutional change, not symbolic gestures.
+              &quot;From each according to their ability, to each according to their needs.&quot;
             </p>
           </div>
         </div>

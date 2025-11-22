@@ -52,37 +52,37 @@ export default async function HomePage() {
         </Container>
       </Section>
 
-      {/* The Problem Section */}
+      {/* The Philosophy Section */}
       <Section className="py-16 md:py-24 bg-card/30 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-accent/5 to-transparent opacity-50" />
         <Container className="relative z-10">
           <div className="max-w-4xl mx-auto">
             <FadeIn className="text-center mb-12">
               <h2 className="text-3xl md:text-5xl font-display font-bold mb-4">
-                The Problem: <span className="text-accent">40 Years</span> of Upward Transfer
+                Democratic Socialism: <span className="text-accent">Theory</span> and Practice
               </h2>
               <p className="text-lg text-textDim">
-                Since 1979, the economy has grown—but only billionaires benefited.
+                Economic democracy as the logical extension of political democracy.
               </p>
             </FadeIn>
 
             <div className="grid md:grid-cols-3 gap-6 mb-12">
               <ScaleIn delay={0.1}>
                 <Card className="text-center space-y-3 hover:border-accent/50 transition-colors">
-                  <div className="text-4xl font-display font-bold text-accent">25%</div>
-                  <div className="text-sm text-textDim">Top 1% now control 25% of wealth (was 8% in 1980)</div>
+                  <div className="text-4xl font-display font-bold text-accent">Economic</div>
+                  <div className="text-sm text-textDim">Workplace democracy through worker ownership and cooperatives</div>
                 </Card>
               </ScaleIn>
               <ScaleIn delay={0.2}>
                 <Card className="text-center space-y-3 hover:border-accent/50 transition-colors">
-                  <div className="text-4xl font-display font-bold text-accent">+350%</div>
-                  <div className="text-sm text-textDim">Housing prices since 1979 while wages rose only 40%</div>
+                  <div className="text-4xl font-display font-bold text-accent">Political</div>
+                  <div className="text-sm text-textDim">Collective decision-making and participatory governance</div>
                 </Card>
               </ScaleIn>
               <ScaleIn delay={0.3}>
                 <Card className="text-center space-y-3 hover:border-accent/50 transition-colors">
-                  <div className="text-4xl font-display font-bold text-accent">$2.3T</div>
-                  <div className="text-sm text-textDim">Household debt (175% of disposable income)</div>
+                  <div className="text-4xl font-display font-bold text-accent">Social</div>
+                  <div className="text-sm text-textDim">Universal access to housing, healthcare, and education</div>
                 </Card>
               </ScaleIn>
             </div>
@@ -90,9 +90,9 @@ export default async function HomePage() {
             <FadeIn delay={0.4}>
               <div className="bg-bg border border-border rounded-2xl p-8">
                 <p className="text-lg leading-relaxed text-textDim">
-                  <span className="text-text font-semibold">The cycle:</span> Billionaires extract wages → Workers borrow to afford housing → 
-                  Interest enriches billionaires → Repeat until crash (1929, 2008, 2025?). 
-                  <span className="text-accent font-semibold"> We break the cycle by moving money, organizing labour, and owning assets collectively.</span>
+                  <span className="text-text font-semibold">Core principle:</span> If democracy is desirable in governance, 
+                  it must be desirable in economic life. Workers should control the means of production democratically,
+                  <span className="text-accent font-semibold"> not through violent revolution, but through cooperative organization and collective ownership.</span>
                 </p>
               </div>
             </FadeIn>
@@ -100,34 +100,34 @@ export default async function HomePage() {
         </Container>
       </Section>
 
-      {/* How We're Different Section */}
+      {/* Philosophy and Praxis Section */}
       <Section className="py-16 md:py-24">
         <Container>
           <div className="max-w-4xl mx-auto">
             <FadeIn className="text-center mb-12">
               <h2 className="text-3xl md:text-5xl font-display font-bold mb-4">
-                Not Protest. <span className="text-accent">Construction</span>.
+                Theory and <span className="text-accent">Praxis</span>
               </h2>
               <p className="text-lg text-textDim max-w-2xl mx-auto">
-                Traditional movements fail because they ask billionaires to change. 
-                We build parallel institutions that make them irrelevant.
+                Democratic socialism bridges philosophical rigor with practical implementation,
+                uniting abstract theory with concrete action.
               </p>
             </FadeIn>
 
             <div className="grid md:grid-cols-2 gap-8">
               <SlideIn direction="left" delay={0.1}>
-                <Card className="space-y-4 h-full hover:border-red-900/50 transition-colors">
+                <Card className="space-y-4 h-full hover:border-accent/50 transition-colors">
                   <div className="flex items-start gap-4">
-                    <div className="h-10 w-10 rounded-full bg-red-900/20 flex items-center justify-center flex-shrink-0">
-                      <span className="text-xl">❌</span>
+                    <div className="h-10 w-10 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0">
+                      <span className="text-xl">📚</span>
                     </div>
                     <div>
-                      <h3 className="text-xl font-display font-bold mb-2">Old Movements</h3>
+                      <h3 className="text-xl font-display font-bold mb-2">Theoretical Foundations</h3>
                       <ul className="space-y-2 text-textDim text-sm">
-                        <li>• Protests (symbolic, ignored)</li>
-                        <li>• Electoral politics (bought, slow)</li>
-                        <li>• Mutual aid (small-scale, temporary)</li>
-                        <li>• Ask for change</li>
+                        <li>• Dialectical materialism</li>
+                        <li>• Labour theory of value</li>
+                        <li>• Historical analysis of capitalism</li>
+                        <li>• Democratic political philosophy</li>
                       </ul>
                     </div>
                   </div>
@@ -141,12 +141,12 @@ export default async function HomePage() {
                       <Check className="h-5 w-5 text-accent" />
                     </div>
                     <div>
-                      <h3 className="text-xl font-display font-bold mb-2">The Reset</h3>
+                      <h3 className="text-xl font-display font-bold mb-2">Practical Implementation</h3>
                       <ul className="space-y-2 text-textDim text-sm">
-                        <li>• Build institutions (co-ops, CLTs, unions)</li>
-                        <li>• Withdraw consent (boycotts, strikes)</li>
-                        <li>• Lock in wins (wealth taxes, labour law)</li>
-                        <li>• <span className="text-accent font-semibold">Become the change</span></li>
+                        <li>• Worker cooperatives and unions</li>
+                        <li>• Community land trusts</li>
+                        <li>• Democratic workplace governance</li>
+                        <li>• <span className="text-accent font-semibold">Collective ownership structures</span></li>
                       </ul>
                     </div>
                   </div>
@@ -157,77 +157,76 @@ export default async function HomePage() {
         </Container>
       </Section>
 
-      {/* Three Tracks Section */}
+      {/* Core Principles Section */}
       <Section dark className="py-20 md:py-32">
         <Container>
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-display font-bold mb-4">
-              Three Tracks to Reset Power
+              Core Principles of Democratic Socialism
             </h2>
             <p className="text-lg text-textDim max-w-2xl mx-auto">
-              Coordinated, institutional shifts in finance, ownership, and labour that 
-              make the 1% irrelevant within a generation.
+              Economic democracy, collective ownership, and worker empowerment as 
+              foundational pillars of a just society.
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {/* Finance Track */}
-            <Card className="space-y-4 hover:border-accent/50 transition-colors">
-              <div className="h-12 w-12 rounded-full bg-accent/10 flex items-center justify-center">
-                <Landmark className="h-6 w-6 text-accent" />
-              </div>
-              <h3 className="text-2xl font-display font-bold">Finance</h3>
-              <p className="text-textDim leading-relaxed">
-                Move deposits to credit unions and seed a Citizens&apos; Wealth Fund with 
-                transaction fees, wealth taxes, and vacancy receipts. Build permanent 
-                public wealth.
-              </p>
-              <CTAButton 
-                href="/plan#finance" 
-                variant="secondary" 
-                className="inline-flex items-center gap-2 mt-4"
-              >
-                Learn More
-                <ArrowRight className="h-4 w-4" />
-              </CTAButton>
-            </Card>
-
-            {/* Ownership Track */}
-            <Card className="space-y-4 hover:border-accent/50 transition-colors">
-              <div className="h-12 w-12 rounded-full bg-accent/10 flex items-center justify-center">
-                <Building2 className="h-6 w-6 text-accent" />
-              </div>
-              <h3 className="text-2xl font-display font-bold">Ownership</h3>
-              <p className="text-textDim leading-relaxed">
-                Scale worker co-ops and Community Land Trusts for permanent affordability 
-                and profit-sharing. Replace extraction with equity.
-              </p>
-              <CTAButton 
-                href="/plan#ownership" 
-                variant="secondary" 
-                className="inline-flex items-center gap-2 mt-4"
-              >
-                Learn More
-                <ArrowRight className="h-4 w-4" />
-              </CTAButton>
-            </Card>
-
-            {/* Labour Track */}
+            {/* Worker Control */}
             <Card className="space-y-4 hover:border-accent/50 transition-colors">
               <div className="h-12 w-12 rounded-full bg-accent/10 flex items-center justify-center">
                 <Users className="h-6 w-6 text-accent" />
               </div>
-              <h3 className="text-2xl font-display font-bold">Labour</h3>
+              <h3 className="text-2xl font-display font-bold">Worker Control</h3>
               <p className="text-textDim leading-relaxed">
-                Unionize high-leverage employers to raise labour&apos;s share of GDP. 
-                Card-check, first-contract arbitration, sector bargaining.
+                Democratic ownership and governance of workplaces. Workers should control 
+                the means of production through cooperatives, unions, and participatory management.
               </p>
               <CTAButton 
-                href="/plan#labour" 
+                href="/plan#worker-control" 
                 variant="secondary" 
                 className="inline-flex items-center gap-2 mt-4"
               >
-                Learn More
+                Explore Theory
+                <ArrowRight className="h-4 w-4" />
+              </CTAButton>
+            </Card>
+
+            {/* Collective Ownership */}
+            <Card className="space-y-4 hover:border-accent/50 transition-colors">
+              <div className="h-12 w-12 rounded-full bg-accent/10 flex items-center justify-center">
+                <Building2 className="h-6 w-6 text-accent" />
+              </div>
+              <h3 className="text-2xl font-display font-bold">Collective Ownership</h3>
+              <p className="text-textDim leading-relaxed">
+                Social ownership of productive resources. Community land trusts, public utilities,
+                and cooperative enterprises replace private extraction.
+              </p>
+              <CTAButton 
+                href="/plan#collective-ownership" 
+                variant="secondary" 
+                className="inline-flex items-center gap-2 mt-4"
+              >
+                Explore Theory
+                <ArrowRight className="h-4 w-4" />
+              </CTAButton>
+            </Card>
+
+            {/* Democratic Planning */}
+            <Card className="space-y-4 hover:border-accent/50 transition-colors">
+              <div className="h-12 w-12 rounded-full bg-accent/10 flex items-center justify-center">
+                <Landmark className="h-6 w-6 text-accent" />
+              </div>
+              <h3 className="text-2xl font-display font-bold">Democratic Planning</h3>
+              <p className="text-textDim leading-relaxed">
+                Participatory economic decision-making. Communities democratically determine 
+                production priorities, resource allocation, and distribution.
+              </p>
+              <CTAButton 
+                href="/plan#democratic-planning" 
+                variant="secondary" 
+                className="inline-flex items-center gap-2 mt-4"
+              >
+                Explore Theory
                 <ArrowRight className="h-4 w-4" />
               </CTAButton>
             </Card>
@@ -235,16 +234,16 @@ export default async function HomePage() {
         </Container>
       </Section>
 
-      {/* Take Action Section - Links to Landing Pages */}
+      {/* Explore Topics Section */}
       <Section className="py-16 md:py-24 bg-accent/5 border-y border-accent/20">
         <Container>
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-5xl font-display font-bold mb-4">
-                Choose Your Track
+                Explore Topics
               </h2>
               <p className="text-lg text-textDim max-w-2xl mx-auto">
-                Pick one area to start. Each track has a 30-90 day action plan, FAQs, and proven results.
+                Deep dives into democratic socialist theory, practice, and historical examples.
               </p>
             </div>
 
@@ -257,13 +256,13 @@ export default async function HomePage() {
                     </div>
                     <ArrowRight className="h-5 w-5 text-accent/50 group-hover:translate-x-1 transition-transform" />
                   </div>
-                  <h3 className="text-2xl font-display font-bold group-hover:text-accent transition-colors">Banking Reset</h3>
+                  <h3 className="text-2xl font-display font-bold group-hover:text-accent transition-colors">Economic Democracy</h3>
                   <p className="text-textDim">
-                    Switch from Big 5 banks to credit unions in 30 days. Stop funding fossil fuels and billionaire wealth extraction.
+                    Theoretical foundations of workplace democracy, democratic ownership, and participatory economics.
                   </p>
                   <div className="flex items-center gap-4 text-sm pt-2">
-                    <div className="text-accent font-bold">$150B target</div>
-                    <div className="text-textDim">• 30-day guide</div>
+                    <div className="text-accent font-bold">Theory</div>
+                    <div className="text-textDim">• Philosophy</div>
                   </div>
                 </Card>
               </Link>
@@ -276,13 +275,13 @@ export default async function HomePage() {
                     </div>
                     <ArrowRight className="h-5 w-5 text-accent/50 group-hover:translate-x-1 transition-transform" />
                   </div>
-                  <h3 className="text-2xl font-display font-bold group-hover:text-accent transition-colors">Housing Reset</h3>
+                  <h3 className="text-2xl font-display font-bold group-hover:text-accent transition-colors">Worker Cooperatives</h3>
                   <p className="text-textDim">
-                    Launch Community Land Trusts for permanently affordable housing. Keep homes 40-50% below market forever.
+                    Practical models of worker ownership. Historical examples from Mondragon to modern tech cooperatives.
                   </p>
                   <div className="flex items-center gap-4 text-sm pt-2">
-                    <div className="text-accent font-bold">50,000 homes</div>
-                    <div className="text-textDim">• CLT formation guide</div>
+                    <div className="text-accent font-bold">Practice</div>
+                    <div className="text-textDim">• Case studies</div>
                   </div>
                 </Card>
               </Link>
@@ -295,13 +294,13 @@ export default async function HomePage() {
                     </div>
                     <ArrowRight className="h-5 w-5 text-accent/50 group-hover:translate-x-1 transition-transform" />
                   </div>
-                  <h3 className="text-2xl font-display font-bold group-hover:text-accent transition-colors">Workplace Reset</h3>
+                  <h3 className="text-2xl font-display font-bold group-hover:text-accent transition-colors">Labour Movement History</h3>
                   <p className="text-textDim">
-                    Unionize your workplace, then transition to worker ownership. Build real power and share the profits.
+                    From the Paris Commune to modern union organizing. Historical analysis of worker power and solidarity.
                   </p>
                   <div className="flex items-center gap-4 text-sm pt-2">
-                    <div className="text-accent font-bold">1,200 unions</div>
-                    <div className="text-textDim">• 90-day plan</div>
+                    <div className="text-accent font-bold">History</div>
+                    <div className="text-textDim">• Analysis</div>
                   </div>
                 </Card>
               </Link>
@@ -314,13 +313,13 @@ export default async function HomePage() {
                     </div>
                     <ArrowRight className="h-5 w-5 text-accent/50 group-hover:translate-x-1 transition-transform" />
                   </div>
-                  <h3 className="text-2xl font-display font-bold group-hover:text-accent transition-colors">Wealth Reset</h3>
+                  <h3 className="text-2xl font-display font-bold group-hover:text-accent transition-colors">Socialist Philosophy</h3>
                   <p className="text-textDim">
-                    Tax billionaires to build a Citizens&apos; Wealth Fund. Universal dividends and permanent economic security for all.
+                    From Marx to modern democratic socialists. Philosophical foundations of collective ownership and equality.
                   </p>
                   <div className="flex items-center gap-4 text-sm pt-2">
-                    <div className="text-accent font-bold">$500B fund</div>
-                    <div className="text-textDim">• Policy campaign</div>
+                    <div className="text-accent font-bold">Philosophy</div>
+                    <div className="text-textDim">• Dialectics</div>
                   </div>
                 </Card>
               </Link>
@@ -329,53 +328,53 @@ export default async function HomePage() {
         </Container>
       </Section>
 
-      {/* What We Do Section */}
+      {/* Key Concepts Section */}
       <Section className="py-16 md:py-24">
         <Container>
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-5xl font-display font-bold mb-4">
-                Concrete Actions, Real Impact
+                Essential Concepts
               </h2>
               <p className="text-lg text-textDim max-w-2xl mx-auto">
-                Every member takes measurable steps. No symbolic gestures—only institutional shifts.
+                Fundamental ideas that shape democratic socialist thought and practice.
               </p>
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               <Card className="space-y-4 hover:border-accent/50 transition-colors">
                 <Target className="h-10 w-10 text-accent" />
-                <h3 className="text-lg font-display font-bold">Bank Boycotts</h3>
-                <p className="text-sm text-textDim">Switch deposits from Big 5 banks to credit unions. $150B moved crashes ratings 3x.</p>
+                <h3 className="text-lg font-display font-bold">Surplus Value</h3>
+                <p className="text-sm text-textDim">The difference between the value workers create and wages they receive. Core to understanding exploitation.</p>
                 <Link href="/resources/bank-switch-toolkit" className="text-sm text-accent hover:underline">
-                  30-Day Guide →
+                  Read More →
                 </Link>
               </Card>
 
               <Card className="space-y-4 hover:border-accent/50 transition-colors">
                 <Users className="h-10 w-10 text-accent" />
-                <h3 className="text-lg font-display font-bold">Union Drives</h3>
-                <p className="text-sm text-textDim">Organize workplaces. 1,200 drives by year 10 shifts $200B to workers annually.</p>
+                <h3 className="text-lg font-display font-bold">Class Consciousness</h3>
+                <p className="text-sm text-textDim">Workers&apos; awareness of their shared interests and collective power against capital.</p>
                 <Link href="/resources/union-organizing-101" className="text-sm text-accent hover:underline">
-                  90-Day Plan →
+                  Read More →
                 </Link>
               </Card>
 
               <Card className="space-y-4 hover:border-accent/50 transition-colors">
                 <Building2 className="h-10 w-10 text-accent" />
-                <h3 className="text-lg font-display font-bold">Worker Co-ops</h3>
-                <p className="text-sm text-textDim">Start or convert businesses. 2,000 co-ops = 100,000 worker-owners with equity.</p>
+                <h3 className="text-lg font-display font-bold">Means of Production</h3>
+                <p className="text-sm text-textDim">Tools, factories, and resources used to produce goods. Should be collectively owned.</p>
                 <Link href="/resources/worker-coop-formation-guide" className="text-sm text-accent hover:underline">
-                  Formation Guide →
+                  Read More →
                 </Link>
               </Card>
 
               <Card className="space-y-4 hover:border-accent/50 transition-colors">
                 <Landmark className="h-10 w-10 text-accent" />
-                <h3 className="text-lg font-display font-bold">Policy Wins</h3>
-                <p className="text-sm text-textDim">Lobby for wealth taxes, CLT funds, card-check. Lock in grassroots victories.</p>
+                <h3 className="text-lg font-display font-bold">Dialectical Analysis</h3>
+                <p className="text-sm text-textDim">Understanding social change through contradictions and their resolution over time.</p>
                 <Link href="/resources/policy-advocacy-toolkit" className="text-sm text-accent hover:underline">
-                  Campaign Template →
+                  Read More →
                 </Link>
               </Card>
             </div>
@@ -383,16 +382,16 @@ export default async function HomePage() {
         </Container>
       </Section>
 
-      {/* Proof It Works Section */}
+      {/* Historical Examples Section */}
       <Section dark className="py-16 md:py-24">
         <Container>
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-5xl font-display font-bold mb-4">
-                Proof It Works
+                Historical Examples
               </h2>
               <p className="text-lg text-textDim max-w-2xl mx-auto">
-                Every tactic has historical precedent. We&apos;re not inventing—we&apos;re scaling.
+                Democratic socialist principles demonstrated through history and contemporary practice.
               </p>
             </div>
 
@@ -400,83 +399,83 @@ export default async function HomePage() {
               <Card className="space-y-4">
                 <div className="flex items-start justify-between">
                   <div>
-                    <h3 className="text-xl font-display font-bold mb-1">Alaska Permanent Fund</h3>
-                    <p className="text-sm text-accent">1976-Present</p>
+                    <h3 className="text-xl font-display font-bold mb-1">Paris Commune</h3>
+                    <p className="text-sm text-accent">1871</p>
                   </div>
                   <Shield className="h-8 w-8 text-accent/50" />
                 </div>
-                <p className="text-sm text-textDim">$78B fund pays $1,000-$2,000/year dividend to every resident. Reduced poverty 20%.</p>
+                <p className="text-sm text-textDim">First attempt at worker self-government. Direct democracy, worker control of factories, radical egalitarianism.</p>
               </Card>
 
               <Card className="space-y-4">
                 <div className="flex items-start justify-between">
                   <div>
-                    <h3 className="text-xl font-display font-bold mb-1">Québec Co-ops</h3>
-                    <p className="text-sm text-accent">1970s-Present</p>
+                    <h3 className="text-xl font-display font-bold mb-1">Mondragon Corporation</h3>
+                    <p className="text-sm text-accent">1956-Present</p>
                   </div>
                   <TrendingUp className="h-8 w-8 text-accent/50" />
                 </div>
-                <p className="text-sm text-textDim">10,000 co-ops; 200,000 worker-owners. 12% of provincial GDP. Highest wages in Canada.</p>
+                <p className="text-sm text-textDim">80,000 worker-owners; $12B revenue. Demonstrates viability of large-scale cooperative enterprise.</p>
               </Card>
 
               <Card className="space-y-4">
                 <div className="flex items-start justify-between">
                   <div>
-                    <h3 className="text-xl font-display font-bold mb-1">Burlington CLT</h3>
-                    <p className="text-sm text-accent">1984-Present</p>
+                    <h3 className="text-xl font-display font-bold mb-1">Nordic Social Democracy</h3>
+                    <p className="text-sm text-accent">1930s-Present</p>
                   </div>
                   <Zap className="h-8 w-8 text-accent/50" />
                 </div>
-                <p className="text-sm text-textDim">565 homes stay 40-50% below market forever. Zero foreclosures during 2008 crisis.</p>
+                <p className="text-sm text-textDim">Strong unions, universal services, high taxes. Highest quality of life indices globally.</p>
               </Card>
 
               <Card className="space-y-4">
                 <div className="flex items-start justify-between">
                   <div>
-                    <h3 className="text-xl font-display font-bold mb-1">Mondragon Corp</h3>
-                    <p className="text-sm text-accent">1956-Present, Spain</p>
+                    <h3 className="text-xl font-display font-bold mb-1">Allende&apos;s Chile</h3>
+                    <p className="text-sm text-accent">1970-1973</p>
                   </div>
                   <Globe className="h-8 w-8 text-accent/50" />
                 </div>
-                <p className="text-sm text-textDim">80,000 worker-owners; $12B revenue. CEO:worker pay 6:1 vs. 300:1 in corporations.</p>
+                <p className="text-sm text-textDim">Democratic path to socialism. Nationalized copper, land reform, worker participation in management.</p>
               </Card>
 
               <Card className="space-y-4">
                 <div className="flex items-start justify-between">
                   <div>
-                    <h3 className="text-xl font-display font-bold mb-1">Post-WW2 Era</h3>
-                    <p className="text-sm text-accent">1945-1979</p>
+                    <h3 className="text-xl font-display font-bold mb-1">UK Labour Movement</h3>
+                    <p className="text-sm text-accent">1900-1979</p>
                   </div>
                   <TrendingUp className="h-8 w-8 text-accent/50" />
                 </div>
-                <p className="text-sm text-textDim">90% top tax + strong unions. Top 1% share fell from 45% to 20%. Fastest GDP growth in history.</p>
+                <p className="text-sm text-textDim">NHS creation, nationalization of industries, welfare state establishment through democratic means.</p>
               </Card>
 
               <Card className="space-y-4">
                 <div className="flex items-start justify-between">
                   <div>
-                    <h3 className="text-xl font-display font-bold mb-1">BC Speculation Tax</h3>
-                    <p className="text-sm text-accent">2018-Present</p>
+                    <h3 className="text-xl font-display font-bold mb-1">Emilia-Romagna Co-ops</h3>
+                    <p className="text-sm text-accent">1960s-Present</p>
                   </div>
                   <Shield className="h-8 w-8 text-accent/50" />
                 </div>
-                <p className="text-sm text-textDim">$90M/year from vacant homes. Survived legal challenge. Model for national expansion.</p>
+                <p className="text-sm text-textDim">Italian region where co-ops produce 30% of GDP. High wages, low unemployment, strong economy.</p>
               </Card>
             </div>
           </div>
         </Container>
       </Section>
 
-      {/* Why Now Section */}
+      {/* Contemporary Relevance Section */}
       <Section className="py-16 md:py-24 bg-card/30">
         <Container>
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-5xl font-display font-bold mb-4">
-                Why Now? The Window Is Open
+                Contemporary Relevance
               </h2>
               <p className="text-lg text-textDim">
-                Three converging conditions make 2025-2030 uniquely favorable.
+                Why democratic socialism offers solutions to modern crises.
               </p>
             </div>
 
@@ -484,73 +483,73 @@ export default async function HomePage() {
               <Card className="flex items-start gap-4 p-6">
                 <div className="text-3xl font-bold text-accent">1</div>
                 <div>
-                  <h3 className="text-xl font-display font-bold mb-2">Crisis Awareness</h3>
-                  <p className="text-textDim">89% of Canadians say wealth inequality is a problem (C4TF 2025). Housing, debt, wage stagnation hit critical mass. People are ready for systemic solutions.</p>
+                  <h3 className="text-xl font-display font-bold mb-2">Climate Crisis</h3>
+                  <p className="text-textDim">Capitalism&apos;s endless growth imperative is incompatible with ecological sustainability. Democratic planning can prioritize environmental stewardship over profit.</p>
                 </div>
               </Card>
 
               <Card className="flex items-start gap-4 p-6">
                 <div className="text-3xl font-bold text-accent">2</div>
                 <div>
-                  <h3 className="text-xl font-display font-bold mb-2">Political Leverage</h3>
-                  <p className="text-textDim">NDP minority government (2025-2029 window). BC/QC have progressive provincial power. Municipal wins in Vancouver, Toronto, Montréal. Policy openings rare—capitalize now.</p>
+                  <h3 className="text-xl font-display font-bold mb-2">Rising Inequality</h3>
+                  <p className="text-textDim">Wealth concentration reaches historical extremes. Worker ownership and democratic control offer structural solutions to economic injustice.</p>
                 </div>
               </Card>
 
               <Card className="flex items-start gap-4 p-6">
                 <div className="text-3xl font-bold text-accent">3</div>
                 <div>
-                  <h3 className="text-xl font-display font-bold mb-2">Proven Playbook</h3>
-                  <p className="text-textDim">Starbucks unionized 400 stores (2020-2025). #DeleteFacebook moved 10M users. We have tested tactics, legal templates, and organizing infrastructure. Time to scale.</p>
+                  <h3 className="text-xl font-display font-bold mb-2">Automation & AI</h3>
+                  <p className="text-textDim">Technology threatens mass unemployment under capitalism. Collective ownership ensures technological progress benefits all, not just capital owners.</p>
                 </div>
               </Card>
             </div>
 
             <div className="mt-12 text-center">
               <p className="text-lg text-text mb-6">
-                <span className="font-semibold">The best time to organize was 1979.</span> The second best time is November 2025.
+                <span className="font-semibold">&quot;The philosophers have only interpreted the world. The point is to change it.&quot;</span> — Karl Marx
               </p>
               <CTAButton href="/plan" variant="primary">
-                Read the Full Strategy
+                Explore Theory
               </CTAButton>
             </div>
           </div>
         </Container>
       </Section>
 
-      {/* Local Chapters Section */}
+      {/* Reading & Study Section */}
       <Section dark className="py-16 md:py-24">
         <Container>
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-5xl font-display font-bold mb-6">
-              Find Your Local Chapter
+              Further Reading
             </h2>
             <p className="text-lg text-textDim mb-12 max-w-2xl mx-auto">
-              Chapters coordinate bank boycotts, union drives, and policy campaigns in 50+ cities. 
-              Join weekly meetings, access toolkits, and connect with organizers.
+              Essential texts for understanding democratic socialist theory and practice. 
+              From foundational philosophy to contemporary analysis.
             </p>
 
             <div className="grid md:grid-cols-3 gap-6 mb-12">
               <Card className="text-center space-y-3">
-                <div className="text-4xl font-display font-bold text-accent">50+</div>
-                <div className="text-sm text-textDim">Active chapters across Canada and US</div>
+                <div className="text-4xl font-display font-bold text-accent">Theory</div>
+                <div className="text-sm text-textDim">Classical socialist philosophy and political economy</div>
               </Card>
               <Card className="text-center space-y-3">
-                <div className="text-4xl font-display font-bold text-accent">2hrs/wk</div>
-                <div className="text-sm text-textDim">Average member commitment (sustainable pace)</div>
+                <div className="text-4xl font-display font-bold text-accent">History</div>
+                <div className="text-sm text-textDim">Labour movements and socialist experiments worldwide</div>
               </Card>
               <Card className="text-center space-y-3">
-                <div className="text-4xl font-display font-bold text-accent">100%</div>
-                <div className="text-sm text-textDim">Democratic—one member, one vote on strategy</div>
+                <div className="text-4xl font-display font-bold text-accent">Practice</div>
+                <div className="text-sm text-textDim">Contemporary organizing and cooperative models</div>
               </Card>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <CTAButton href="/chapters" variant="primary">
-                Find a Chapter
+                Browse Library
               </CTAButton>
               <CTAButton href="/chapters/apply" variant="secondary">
-                Start a Chapter
+                Study Groups
               </CTAButton>
             </div>
           </div>
@@ -562,18 +561,18 @@ export default async function HomePage() {
         <Container>
           <div className="max-w-3xl mx-auto text-center space-y-8">
             <h2 className="text-4xl md:text-5xl font-display font-bold">
-              Your Next 30 Days
+              Begin Your Journey
             </h2>
             <p className="text-xl text-textDim leading-relaxed">
-              <span className="text-text font-semibold">Week 1:</span> Switch banks. <span className="text-text font-semibold">Week 2:</span> Talk to 3 coworkers about unionizing. 
-              <span className="text-text font-semibold"> Week 3:</span> Attend chapter meeting. <span className="text-text font-semibold">Week 4:</span> Email your councillor about wealth tax.
+              Understanding democratic socialism is an ongoing process of study, reflection, and engagement 
+              with history, theory, and contemporary practice.
             </p>
             <p className="text-lg text-textDim">
-              In 5 years, you&apos;ll have helped move $150B, launch 1,200 unions, create 2,000 co-ops, 
-              and secure 50,000 affordable homes. <span className="text-accent font-semibold">That&apos;s not utopian. That&apos;s arithmetic.</span>
+              <span className="text-accent font-semibold">&quot;Theory without practice is sterile, practice without theory is blind.&quot;</span> 
+              Explore both to develop a comprehensive understanding of how democratic socialism can address the contradictions of capitalism.
             </p>
             <CTAButton href="/join" variant="primary" className="min-w-[240px] mt-6">
-              Join the Reset
+              Start Exploring
             </CTAButton>
           </div>
         </Container>

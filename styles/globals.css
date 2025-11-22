@@ -4,11 +4,11 @@
 
 @layer base {
   :root {
-    --bg: #0A0A0A;
-    --card: #111113;
-    --border: #27272A;
+    --bg: #000000;
+    --card: #0A0A0A;
+    --border: #1A1A1A;
     --text: #F8FAFC;
-    --text-dim: #D1D5DB;
+    --text-dim: #9CA3AF;
     --accent: #E11D48;
     --success: #10B981;
     --warn: #FACC15;

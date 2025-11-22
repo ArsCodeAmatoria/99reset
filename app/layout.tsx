@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Newsreader } from "next/font/google";
+import { Inter, IBM_Plex_Serif } from "next/font/google";
 import "../styles/globals.css";
 import "../styles/prose.css";
 import "../styles/theme.css";
@@ -17,9 +17,10 @@ const inter = Inter({
   display: "swap",
 });
 
-const newsreader = Newsreader({
+const ibmPlexSerif = IBM_Plex_Serif({
   subsets: ["latin"],
-  variable: "--font-newsreader",
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-ibm-plex-serif",
   display: "swap",
 });
 
@@ -31,7 +32,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${newsreader.variable}`}>
+    <html lang="en" className={`${inter.variable} ${ibmPlexSerif.variable}`}>
       <head>
         <StructuredData data={createOrganizationSchema()} />
       </head>

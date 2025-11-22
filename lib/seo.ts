@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://99reset.org";
-const siteName = "99reset";
+const siteName = "Ninety Nine";
 
 export function createMetadata({
   title,
@@ -92,44 +92,43 @@ export function createMetadata({
 
 const defaultKeywords = [
   // Primary keywords
+  "democratic socialism",
   "worker cooperatives",
-  "community land trusts",
-  "union organizing",
-  "wealth redistribution",
+  "collective ownership",
   "economic democracy",
   "labour movement",
-  "credit unions",
+  "worker empowerment",
+  "social democracy",
   // Secondary keywords
-  "income inequality",
-  "wealth gap",
+  "socialism theory",
   "workers rights",
   "cooperative ownership",
-  "housing affordability",
-  "bank boycott",
-  "wealth tax",
-  "citizens wealth fund",
-  "worker ownership",
+  "democratic workplace",
+  "wealth redistribution",
   "economic justice",
+  "social equality",
+  "political philosophy",
+  "socialist praxis",
   // Long-tail keywords
-  "how to start a union",
-  "join worker cooperative",
-  "community land trust housing",
-  "switch to credit union",
-  "fight wealth inequality",
-  "economic reform movement",
-  "non-violent protest",
+  "what is democratic socialism",
+  "worker owned business",
+  "democratic socialist movement",
+  "economic equality solutions",
+  "workplace democracy",
+  "socialist philosophy",
+  "modern socialism",
+  "progressive economics",
   "collective bargaining",
-  "affordable housing solutions",
-  "99 percent movement",
+  "democratic socialism explained",
 ];
 
 export const defaultMetadata: Metadata = {
   title: {
-    default: "99reset — Starve the 1%. Own the Future.",
-    template: "%s — 99reset",
+    default: "Ninety Nine — Democratic Socialism for the Modern Age",
+    template: "%s — Ninety Nine",
   },
   description:
-    "A global, non-violent plan to shift ownership and bargaining power to workers and communities through worker co-ops, community land trusts, union organizing, and wealth funds. Not welfare — equity, dividends, and permanent affordability.",
+    "A cerebral exploration of democratic socialism, worker empowerment, and collective ownership. Where philosophy meets praxis at the intersection of theory and practice.",
   keywords: defaultKeywords,
   authors: [{ name: siteName, url: siteUrl }],
   creator: siteName,
@@ -152,7 +151,7 @@ export function createOrganizationSchema() {
     url: siteUrl,
     logo: `${siteUrl}/logo.png`,
     description:
-      "A global movement to redistribute economic power from the 1% to the 99% through worker cooperatives, community land trusts, and union organizing.",
+      "A cerebral exploration of democratic socialism, collective ownership, and worker empowerment. Where philosophy meets praxis.",
     sameAs: [
       "https://www.youtube.com/@99Reset",
       "https://x.com/99reset",

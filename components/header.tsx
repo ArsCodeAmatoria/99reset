@@ -27,7 +27,7 @@ export function Header() {
             href="/" 
             className="text-xl md:text-2xl font-display font-bold tracking-tight focus-visible:outline-none focus-visible:text-accent transition-colors"
           >
-            99RESET
+            NINETY NINE
           </Link>
 
           {/* Desktop Navigation */}
