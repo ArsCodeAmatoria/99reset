@@ -27,7 +27,7 @@ export function Header() {
           >
             <div className="text-2xl md:text-4xl font-display font-black tracking-tighter uppercase focus-visible:outline-none transition-all duration-300 hover:scale-105">
               <span className="relative inline-block">
-                <span className="relative z-10 text-white">
+                <span className="relative z-10 text-text">
                   NINETY NINE
                 </span>
                 {/* Urban underline effect */}
@@ -46,7 +46,7 @@ export function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-base lg:text-lg font-display font-bold text-white hover:text-white transition-all duration-300 relative py-2 focus-visible:outline-none focus-visible:text-accent group uppercase tracking-tight"
+                className="text-base lg:text-lg font-display font-bold text-text hover:text-accent transition-all duration-300 relative py-2 focus-visible:outline-none focus-visible:text-accent group uppercase tracking-tight"
               >
                 <span className="relative">
                   {item.name}
@@ -85,7 +85,7 @@ export function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="block text-lg font-display font-bold text-white hover:text-accent transition-all duration-300 px-4 py-3 rounded-xl hover:bg-accent/10 focus-visible:outline-none focus-visible:bg-accent/10 focus-visible:text-accent uppercase tracking-tight border-2 border-transparent hover:border-accent/30"
+                className="block text-lg font-display font-bold text-text hover:text-accent transition-all duration-300 px-4 py-3 rounded-xl hover:bg-accent/10 focus-visible:outline-none focus-visible:bg-accent/10 focus-visible:text-accent uppercase tracking-tight border-2 border-transparent hover:border-accent/30"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {item.name}

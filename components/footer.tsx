@@ -5,7 +5,7 @@ import { SiTiktok, SiX } from "react-icons/si";
 
 export function Footer() {
   return (
-    <footer className="bg-[#050505] border-t border-border relative overflow-hidden">
+    <footer className="bg-card border-t border-border relative overflow-hidden">
       {/* Gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-t from-accent/5 via-transparent to-transparent pointer-events-none" />
       <Container className="relative z-10">
@@ -16,7 +16,7 @@ export function Footer() {
             <div className="lg:col-span-5 space-y-6">
               <div>
                 <div className="mb-4">
-                  <h3 className="text-3xl md:text-4xl font-display font-black tracking-tighter uppercase text-white">
+                  <h3 className="text-3xl md:text-4xl font-display font-black tracking-tighter uppercase text-text">
                     NINETY NINE
                   </h3>
                   <div className="text-xs md:text-sm font-mono font-bold text-accent tracking-wider mt-1">
