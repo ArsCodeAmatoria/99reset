@@ -9,9 +9,6 @@ import { ThemeToggle } from "./theme-toggle";
 const navigation = [
   { name: "Home", href: "/" },
   { name: "Plan", href: "/plan" },
-  { name: "Join", href: "/join" },
-  { name: "Chapters", href: "/chapters" },
-  { name: "Press", href: "/press" },
   { name: "Resources", href: "/resources" },
   { name: "Updates", href: "/updates" },
 ];
@@ -46,12 +43,6 @@ export function Header() {
             <div className="border-l border-border pl-8">
               <ThemeToggle />
             </div>
-            {/* Locale switcher placeholder */}
-            <div className="flex items-center gap-2 text-sm">
-              <button className="text-text font-medium focus-visible:outline-none focus-visible:text-accent transition-colors">EN</button>
-              <span className="text-textDim">/</span>
-              <button className="text-textDim hover:text-text transition-colors focus-visible:outline-none focus-visible:text-accent">FR</button>
-            </div>
           </div>
 
           {/* Mobile menu button */}
@@ -84,11 +75,6 @@ export function Header() {
             ))}
             <div className="flex items-center gap-3 text-sm pt-4 border-t border-border px-3">
               <ThemeToggle />
-            </div>
-            <div className="flex items-center gap-3 text-sm px-3">
-              <button className="text-text font-medium focus-visible:outline-none focus-visible:text-accent transition-colors">EN</button>
-              <span className="text-textDim">/</span>
-              <button className="text-textDim hover:text-text transition-colors focus-visible:outline-none focus-visible:text-accent">FR</button>
             </div>
           </div>
         )}

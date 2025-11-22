@@ -65,7 +65,7 @@ export function Footer() {
                   </li>
                   <li>
                     <Link 
-                      href="/join" 
+                      href="/resources" 
                       className="text-sm text-textDim hover:text-accent transition-all inline-block hover:translate-x-1"
                     >
                       Economics
@@ -73,7 +73,7 @@ export function Footer() {
                   </li>
                   <li>
                     <Link 
-                      href="/chapters" 
+                      href="/updates" 
                       className="text-sm text-textDim hover:text-accent transition-all inline-block hover:translate-x-1"
                     >
                       History
@@ -106,7 +106,7 @@ export function Footer() {
                   </li>
                   <li>
                     <Link 
-                      href="/press" 
+                      href="/plan" 
                       className="text-sm text-textDim hover:text-accent transition-all inline-block hover:translate-x-1"
                     >
                       Analysis

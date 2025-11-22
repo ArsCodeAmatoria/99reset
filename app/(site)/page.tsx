@@ -545,11 +545,11 @@ export default async function HomePage() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <CTAButton href="/chapters" variant="primary">
+              <CTAButton href="/resources" variant="primary">
                 Browse Library
               </CTAButton>
-              <CTAButton href="/chapters/apply" variant="secondary">
-                Study Groups
+              <CTAButton href="/updates" variant="secondary">
+                Read Articles
               </CTAButton>
             </div>
           </div>
@@ -571,7 +571,7 @@ export default async function HomePage() {
               <span className="text-accent font-semibold">&quot;Theory without practice is sterile, practice without theory is blind.&quot;</span> 
               Explore both to develop a comprehensive understanding of how democratic socialism can address the contradictions of capitalism.
             </p>
-            <CTAButton href="/join" variant="primary" className="min-w-[240px] mt-6">
+            <CTAButton href="/updates" variant="primary" className="min-w-[240px] mt-6">
               Start Exploring
             </CTAButton>
           </div>
