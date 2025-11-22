@@ -253,7 +253,7 @@ export default async function PlanPage() {
               </p>
             </div>
 
-            <div className="grid lg:grid-cols-2 gap-8 items-center mb-12">
+            <div className="grid lg:grid-cols-2 gap-8 items-center">
               {/* Content */}
               <div className="space-y-6">
                 <Card className="p-6 space-y-4">
@@ -321,7 +321,7 @@ export default async function PlanPage() {
               </p>
             </div>
 
-            <div className="grid lg:grid-cols-2 gap-8 items-center mb-12">
+            <div className="grid lg:grid-cols-2 gap-8 items-center">
               {/* Video */}
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <video
@@ -366,31 +366,6 @@ export default async function PlanPage() {
                 </Card>
               </div>
             </div>
-
-            {/* Additional Video Section */}
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl mt-12">
-              <video
-                autoPlay
-                loop
-                muted
-                playsInline
-                className="w-full h-auto"
-              >
-                <source src="/videos/plan5.mp4" type="video/mp4" />
-              </video>
-              <div className="absolute inset-0 bg-gradient-to-t from-bg/80 to-transparent flex items-end">
-                <div className="p-8">
-                  <Card className="p-6 backdrop-blur-sm bg-card/90 max-w-2xl">
-                    <p className="text-lg font-display font-bold text-text mb-2">
-                      Ownership is the ultimate power—and it must be democratized.
-                    </p>
-                    <p className="text-sm text-textDim">
-                      When workers own their businesses and communities own their land, extraction ends and equity begins.
-                    </p>
-                  </Card>
-                </div>
-              </div>
-            </div>
           </div>
         </Container>
       </Section>
@@ -414,7 +389,7 @@ export default async function PlanPage() {
               </p>
             </div>
 
-            <div className="grid lg:grid-cols-2 gap-8 items-center mb-12">
+            <div className="grid lg:grid-cols-2 gap-8 items-center">
               {/* Content */}
               <div className="space-y-6">
                 <Card className="p-6 space-y-4">
@@ -463,6 +438,15 @@ export default async function PlanPage() {
                     Target: 1,200 drives, +5% labour GDP share
                   </div>
                 </Card>
+
+                <Card className="p-6 backdrop-blur-sm bg-card/90">
+                  <p className="text-xl font-display font-bold text-text mb-3">
+                    連帯 · Solidarity
+                  </p>
+                  <p className="text-base text-textDim">
+                    Union workers earn $5.40/hour more. But the real power is collective: when we organize together, we shift the entire economy.
+                  </p>
+                </Card>
               </div>
 
               {/* Video */}
@@ -476,31 +460,6 @@ export default async function PlanPage() {
                 >
                   <source src="/videos/plan6.mp4" type="video/mp4" />
                 </video>
-              </div>
-            </div>
-
-            {/* Wide Video Section */}
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-              <video
-                autoPlay
-                loop
-                muted
-                playsInline
-                className="w-full h-auto"
-              >
-                <source src="/videos/plan7.mp4" type="video/mp4" />
-              </video>
-              <div className="absolute inset-0 bg-gradient-to-r from-bg/80 to-transparent flex items-center">
-                <div className="p-8 max-w-2xl">
-                  <Card className="p-6 backdrop-blur-sm bg-card/90">
-                    <p className="text-xl font-display font-bold text-text mb-3">
-                      連帯 · Solidarity
-                    </p>
-                    <p className="text-base text-textDim">
-                      Union workers earn $5.40/hour more. But the real power is collective: when we organize together, we shift the entire economy.
-                    </p>
-                  </Card>
-                </div>
               </div>
             </div>
           </div>
@@ -526,7 +485,7 @@ export default async function PlanPage() {
               </p>
             </div>
 
-            <div className="grid lg:grid-cols-2 gap-8 items-center mb-12">
+            <div className="grid lg:grid-cols-2 gap-8 items-center">
               {/* Video */}
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <video
@@ -536,7 +495,7 @@ export default async function PlanPage() {
                   playsInline
                   className="w-full h-auto"
                 >
-                  <source src="/videos/plan8.mp4" type="video/mp4" />
+                  <source src="/videos/plan7.mp4" type="video/mp4" />
                 </video>
               </div>
 
@@ -596,49 +555,54 @@ export default async function PlanPage() {
               </p>
             </div>
 
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl mb-12">
-              <video
-                autoPlay
-                loop
-                muted
-                playsInline
-                className="w-full h-auto"
-              >
-                <source src="/videos/plan.mp4" type="video/mp4" />
-              </video>
-              <div className="absolute inset-0 bg-gradient-to-t from-bg via-bg/50 to-transparent" />
-            </div>
+            <div className="grid lg:grid-cols-2 gap-8 items-center mb-12">
+              {/* Video */}
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-full h-auto"
+                >
+                  <source src="/videos/plan5.mp4" type="video/mp4" />
+                </video>
+              </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <Card className="p-6 text-center space-y-3">
-                <div className="text-4xl font-display font-bold text-accent">$150B</div>
-                <div className="text-sm text-textDim">Deposits moved to credit unions by year 10</div>
-              </Card>
-              <Card className="p-6 text-center space-y-3">
-                <div className="text-4xl font-display font-bold text-accent">1,200</div>
-                <div className="text-sm text-textDim">Union drives launched by year 10</div>
-              </Card>
-              <Card className="p-6 text-center space-y-3">
-                <div className="text-4xl font-display font-bold text-accent">2,000</div>
-                <div className="text-sm text-textDim">Worker co-ops formed by year 10</div>
-              </Card>
-              <Card className="p-6 text-center space-y-3">
-                <div className="text-4xl font-display font-bold text-accent">50,000</div>
-                <div className="text-sm text-textDim">CLT homes secured by year 10</div>
-              </Card>
-            </div>
+              {/* Content */}
+              <div className="space-y-6">
+                <div className="grid grid-cols-2 gap-4">
+                  <Card className="p-6 text-center space-y-3">
+                    <div className="text-4xl font-display font-bold text-accent">$150B</div>
+                    <div className="text-sm text-textDim">Deposits moved to credit unions</div>
+                  </Card>
+                  <Card className="p-6 text-center space-y-3">
+                    <div className="text-4xl font-display font-bold text-accent">1,200</div>
+                    <div className="text-sm text-textDim">Union drives launched</div>
+                  </Card>
+                  <Card className="p-6 text-center space-y-3">
+                    <div className="text-4xl font-display font-bold text-accent">2,000</div>
+                    <div className="text-sm text-textDim">Worker co-ops formed</div>
+                  </Card>
+                  <Card className="p-6 text-center space-y-3">
+                    <div className="text-4xl font-display font-bold text-accent">50,000</div>
+                    <div className="text-sm text-textDim">CLT homes secured</div>
+                  </Card>
+                </div>
 
-            <Card className="p-8 mt-12 text-center">
-              <p className="text-2xl font-display font-bold text-text mb-4">
-                By Year 20: <span className="text-accent">$1 Trillion</span> Wealth Fund
-              </p>
-              <p className="text-lg text-textDim">
-                Annual dividend: <span className="text-accent font-bold">$2,000 per person</span>
-              </p>
-              <p className="text-sm text-textDim mt-2">
-                Top 1% wealth share drops from 25% to 10%. Economic democracy achieved.
-              </p>
-            </Card>
+                <Card className="p-6">
+                  <p className="text-xl font-display font-bold text-text mb-3">
+                    By Year 20: <span className="text-accent">$1 Trillion</span> Wealth Fund
+                  </p>
+                  <p className="text-base text-textDim mb-2">
+                    Annual dividend: <span className="text-accent font-bold">$2,000 per person</span>
+                  </p>
+                  <p className="text-sm text-textDim">
+                    Top 1% wealth share drops from 25% to 10%. Economic democracy achieved.
+                  </p>
+                </Card>
+              </div>
+            </div>
           </div>
         </Container>
       </Section>
