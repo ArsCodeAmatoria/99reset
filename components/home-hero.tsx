@@ -22,14 +22,14 @@ export function HomeHero() {
               transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
               className="space-y-8"
             >
-              <motion.h1 
-                className="text-5xl md:text-6xl lg:text-7xl font-display font-bold tracking-tight text-balance"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-              >
-                99
-              </motion.h1>
+      <motion.h1
+        className="text-5xl md:text-6xl lg:text-7xl font-display font-bold tracking-tight text-balance"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
+      >
+        リセット
+      </motion.h1>
               
               <motion.p 
                 className="text-xl md:text-2xl text-textDim leading-relaxed"
