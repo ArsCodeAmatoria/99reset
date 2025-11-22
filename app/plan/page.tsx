@@ -41,15 +41,15 @@ function TableOfContents() {
           {sections.map((section) => {
             const Icon = section.icon;
             return (
-              <li key={section.id}>
-                <a
-                  href={`#${section.id}`}
+            <li key={section.id}>
+              <a
+                href={`#${section.id}`}
                   className="flex items-center gap-3 text-sm text-textDim hover:text-accent transition-all py-2 px-3 rounded-lg hover:bg-accent/5 group"
-                >
+              >
                   <Icon className="h-4 w-4 group-hover:scale-110 transition-transform" />
                   <span>{section.label}</span>
-                </a>
-              </li>
+              </a>
+            </li>
             );
           })}
         </ul>
@@ -100,8 +100,6 @@ function TableOfContents() {
 }
 
 export default async function PlanPage() {
-  const content = await getPlanContent();
-
   return (
     <>
       {/* Hero Section with Video */}
@@ -178,118 +176,469 @@ export default async function PlanPage() {
         </Container>
       </Section>
 
-      {/* Overview Section */}
+      {/* Theory of Change Section */}
       <Section className="py-20 bg-gradient-to-br from-accent/5 to-bg">
         <Container>
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
               <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent/10 border border-accent/20 mb-4">
-                <span className="text-sm font-mono text-accent">概要</span>
+                <span className="text-sm font-mono text-accent">理論</span>
                 <div className="h-3 w-px bg-accent/30" />
-                <span className="text-sm text-textDim">gaiyō · overview</span>
+                <span className="text-sm text-textDim">riron · theory</span>
               </div>
               <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">
-                Four Pillars of the <span className="text-accent">Reset</span>
+                Theory of <span className="text-accent">Change</span>
               </h2>
               <p className="text-lg text-textDim max-w-3xl mx-auto">
-                We don&apos;t protest for change—we become the change through coordinated action on multiple fronts.
+                Traditional movements fail because they attack one lever. We coordinate three fronts simultaneously.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-6">
-              {/* Finance */}
-              <Card className="group p-8 space-y-4 hover:border-accent/50 transition-all hover:shadow-lg hover:shadow-accent/10">
-                <div className="flex items-start justify-between">
-                  <div className="h-14 w-14 rounded-full bg-accent/10 flex items-center justify-center group-hover:scale-110 transition-transform">
-                    <Target className="h-7 w-7 text-accent" />
-                  </div>
-                  <a href="#finance" className="text-accent hover:underline text-sm font-mono">
-                    → 詳細
-                  </a>
-                </div>
-                <h3 className="text-2xl font-display font-bold">Finance · 金融</h3>
-                <p className="text-textDim leading-relaxed">
-                  Starve extractive banks by moving deposits to democratic credit unions. Build a Citizens&apos; Wealth Fund to distribute dividends.
-                </p>
-                <div className="pt-2 text-sm font-mono text-accent">
-                  Target: $150B moved in 10 years
-                </div>
-              </Card>
+            <div className="grid lg:grid-cols-2 gap-8 items-center">
+              {/* Video */}
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-full aspect-video object-cover"
+                >
+                  <source src="/videos/plan1.mp4" type="video/mp4" />
+                </video>
+              </div>
 
-              {/* Ownership */}
-              <Card className="group p-8 space-y-4 hover:border-accent/50 transition-all hover:shadow-lg hover:shadow-accent/10">
-                <div className="flex items-start justify-between">
-                  <div className="h-14 w-14 rounded-full bg-accent/10 flex items-center justify-center group-hover:scale-110 transition-transform">
-                    <Building2 className="h-7 w-7 text-accent" />
-                  </div>
-                  <a href="#ownership" className="text-accent hover:underline text-sm font-mono">
-                    → 詳細
-                  </a>
-                </div>
-                <h3 className="text-2xl font-display font-bold">Ownership · 所有権</h3>
-                <p className="text-textDim leading-relaxed">
-                  Create worker cooperatives and Community Land Trusts to democratize ownership of businesses and housing.
-                </p>
-                <div className="pt-2 text-sm font-mono text-accent">
-                  Target: 2,000 co-ops, 50,000 CLT homes
-                </div>
-              </Card>
-
-              {/* Labour */}
-              <Card className="group p-8 space-y-4 hover:border-accent/50 transition-all hover:shadow-lg hover:shadow-accent/10">
-                <div className="flex items-start justify-between">
-                  <div className="h-14 w-14 rounded-full bg-accent/10 flex items-center justify-center group-hover:scale-110 transition-transform">
-                    <Users className="h-7 w-7 text-accent" />
-                  </div>
-                  <a href="#labour" className="text-accent hover:underline text-sm font-mono">
-                    → 詳細
-                  </a>
-                </div>
-                <h3 className="text-2xl font-display font-bold">Labour · 労働</h3>
-                <p className="text-textDim leading-relaxed">
-                  Launch strategic unionization drives in tech, retail, care work, and logistics. Restore workers&apos; share of GDP.
-                </p>
-                <div className="pt-2 text-sm font-mono text-accent">
-                  Target: 1,200 union drives, +5% labour share
-                </div>
-              </Card>
-
-              {/* Policy */}
-              <Card className="group p-8 space-y-4 hover:border-accent/50 transition-all hover:shadow-lg hover:shadow-accent/10">
-                <div className="flex items-start justify-between">
-                  <div className="h-14 w-14 rounded-full bg-accent/10 flex items-center justify-center group-hover:scale-110 transition-transform">
-                    <Scale className="h-7 w-7 text-accent" />
-                  </div>
-                  <a href="#policy" className="text-accent hover:underline text-sm font-mono">
-                    → 詳細
-                  </a>
-                </div>
-                <h3 className="text-2xl font-display font-bold">Policy · 政策</h3>
-                <p className="text-textDim leading-relaxed">
-                  Win wealth taxes, labour reforms, and co-op subsidies at municipal, provincial, and federal levels.
-                </p>
-                <div className="pt-2 text-sm font-mono text-accent">
-                  Target: $10B annual wealth fund revenue
-                </div>
-              </Card>
+              {/* Content */}
+              <div className="space-y-6">
+                <Card className="p-6 space-y-3">
+                  <h3 className="text-xl font-display font-bold text-accent">Front 1: Withdrawal of Consent</h3>
+                  <p className="text-textDim">
+                    Move deposits, boycott brands, quit exploitative jobs. Crashes billionaire asset values and credit ratings.
+                  </p>
+                </Card>
+                <Card className="p-6 space-y-3">
+                  <h3 className="text-xl font-display font-bold text-accent">Front 2: Counter-Institutions</h3>
+                  <p className="text-textDim">
+                    Build co-ops, CLTs, credit unions, wealth funds. Creates viable alternatives to capitalism.
+                  </p>
+                </Card>
+                <Card className="p-6 space-y-3">
+                  <h3 className="text-xl font-display font-bold text-accent">Front 3: Policy Capture</h3>
+                  <p className="text-textDim">
+                    Win wealth taxes, labour reforms, co-op subsidies. Locks in gains and scales institutions.
+                  </p>
+                </Card>
+              </div>
             </div>
           </div>
         </Container>
       </Section>
 
-      {/* Main Content with TOC */}
-      <Section className="py-20 border-t border-border">
+      {/* Finance Section */}
+      <Section id="finance" className="py-20 border-t border-border">
         <Container>
-          <div className="grid lg:grid-cols-[280px_1fr] gap-12 lg:gap-16">
-            {/* Sidebar TOC - hidden on mobile */}
-            <aside className="hidden lg:block">
-              <TableOfContents />
-            </aside>
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-16">
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent/10 border border-accent/20 mb-4">
+                <Target className="h-4 w-4 text-accent" />
+                <span className="text-sm font-mono text-accent">金融</span>
+                <div className="h-3 w-px bg-accent/30" />
+                <span className="text-sm text-textDim">kin&apos;yū · finance</span>
+              </div>
+              <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">
+                Starving the <span className="text-accent">Financial Extraction</span> Machine
+              </h2>
+              <p className="text-lg text-textDim max-w-3xl mx-auto">
+                Canada&apos;s Big 5 banks don&apos;t serve the economy—they extract from it. We move our money to democratic alternatives.
+              </p>
+            </div>
 
-            {/* Main content */}
-            <article className="max-w-4xl">
-              <MDXRenderer source={content} />
-            </article>
+            <div className="grid lg:grid-cols-2 gap-8 items-center mb-12">
+              {/* Content */}
+              <div className="space-y-6">
+                <Card className="p-6 space-y-4">
+                  <div className="h-12 w-12 rounded-full bg-accent/10 flex items-center justify-center">
+                    <Target className="h-6 w-6 text-accent" />
+                  </div>
+                  <h3 className="text-2xl font-display font-bold">Credit Union Migration</h3>
+                  <p className="text-textDim leading-relaxed">
+                    Move deposits to member-owned, democratic credit unions that are divested from fossil fuels and serve communities.
+                  </p>
+                  <div className="pt-2">
+                    <div className="text-sm font-mono text-accent">Target: $150B moved in 10 years</div>
+                    <div className="text-sm text-textDim">Phase 1: $10B in years 1-4</div>
+                  </div>
+                </Card>
+
+                <Card className="p-6 space-y-4">
+                  <div className="h-12 w-12 rounded-full bg-accent/10 flex items-center justify-center">
+                    <TrendingUp className="h-6 w-6 text-accent" />
+                  </div>
+                  <h3 className="text-2xl font-display font-bold">Citizens&apos; Wealth Fund</h3>
+                  <p className="text-textDim leading-relaxed">
+                    Build a public wealth fund through wealth taxes, speculation taxes, and financial transaction taxes. Distribute dividends to all citizens.
+                  </p>
+                  <div className="pt-2">
+                    <div className="text-sm font-mono text-accent">Target: $1 trillion fund by year 20</div>
+                    <div className="text-sm text-textDim">Annual dividend: $500-$2,000/person</div>
+                  </div>
+                </Card>
+              </div>
+
+              {/* Video */}
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-full aspect-video object-cover"
+                >
+                  <source src="/videos/plan2.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+          </div>
+        </Container>
+      </Section>
+
+      {/* Ownership Section */}
+      <Section id="ownership" className="py-20 bg-gradient-to-br from-accent/5 to-bg border-t border-border">
+        <Container>
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-16">
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent/10 border border-accent/20 mb-4">
+                <Building2 className="h-4 w-4 text-accent" />
+                <span className="text-sm font-mono text-accent">所有権</span>
+                <div className="h-3 w-px bg-accent/30" />
+                <span className="text-sm text-textDim">shoyūken · ownership</span>
+              </div>
+              <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">
+                From Extraction to <span className="text-accent">Equity</span>
+              </h2>
+              <p className="text-lg text-textDim max-w-3xl mx-auto">
+                Workers create value but own nothing. We democratize ownership through cooperatives and community land trusts.
+              </p>
+            </div>
+
+            <div className="grid lg:grid-cols-2 gap-8 items-center mb-12">
+              {/* Video */}
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-full aspect-video object-cover"
+                >
+                  <source src="/videos/plan3.mp4" type="video/mp4" />
+                </video>
+              </div>
+
+              {/* Content */}
+              <div className="space-y-6">
+                <Card className="p-6 space-y-4">
+                  <div className="h-12 w-12 rounded-full bg-accent/10 flex items-center justify-center">
+                    <Users className="h-6 w-6 text-accent" />
+                  </div>
+                  <h3 className="text-2xl font-display font-bold">Worker Cooperatives</h3>
+                  <p className="text-textDim leading-relaxed">
+                    Businesses owned and controlled by employees. Democratic governance, profit-sharing, and higher wages. Proven in Québec and Mondragon.
+                  </p>
+                  <div className="pt-2">
+                    <div className="text-sm font-mono text-accent">Target: 2,000+ co-ops by year 10</div>
+                    <div className="text-sm text-textDim">100,000 worker-owners</div>
+                  </div>
+                </Card>
+
+                <Card className="p-6 space-y-4">
+                  <div className="h-12 w-12 rounded-full bg-accent/10 flex items-center justify-center">
+                    <Building2 className="h-6 w-6 text-accent" />
+                  </div>
+                  <h3 className="text-2xl font-display font-bold">Community Land Trusts</h3>
+                  <p className="text-textDim leading-relaxed">
+                    Nonprofits that own land and lease it to residents, capping resale prices forever. Permanent affordable housing.
+                  </p>
+                  <div className="pt-2">
+                    <div className="text-sm font-mono text-accent">Target: 50,000 CLT homes by year 10</div>
+                    <div className="text-sm text-textDim">40-50% below market, permanently</div>
+                  </div>
+                </Card>
+              </div>
+            </div>
+
+            {/* Additional Video Section */}
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl mt-12">
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-full aspect-[21/9] object-cover"
+              >
+                <source src="/videos/plan4.mp4" type="video/mp4" />
+              </video>
+              <div className="absolute inset-0 bg-gradient-to-t from-bg/80 to-transparent flex items-end">
+                <div className="p-8">
+                  <Card className="p-6 backdrop-blur-sm bg-card/90 max-w-2xl">
+                    <p className="text-lg font-display font-bold text-text mb-2">
+                      Ownership is the ultimate power—and it must be democratized.
+                    </p>
+                    <p className="text-sm text-textDim">
+                      When workers own their businesses and communities own their land, extraction ends and equity begins.
+                    </p>
+                  </Card>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Container>
+      </Section>
+
+      {/* Labour Section */}
+      <Section id="labour" className="py-20 border-t border-border">
+        <Container>
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-16">
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent/10 border border-accent/20 mb-4">
+                <Users className="h-4 w-4 text-accent" />
+                <span className="text-sm font-mono text-accent">労働</span>
+                <div className="h-3 w-px bg-accent/30" />
+                <span className="text-sm text-textDim">rōdō · labour</span>
+              </div>
+              <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">
+                Restoring <span className="text-accent">Bargaining Power</span>
+              </h2>
+              <p className="text-lg text-textDim max-w-3xl mx-auto">
+                40 years of wage theft through union decline. We rebuild worker power through strategic unionization.
+              </p>
+            </div>
+
+            <div className="grid lg:grid-cols-2 gap-8 items-center mb-12">
+              {/* Content */}
+              <div className="space-y-6">
+                <Card className="p-6 space-y-4">
+                  <h3 className="text-xl font-display font-bold">Strategic Sectors</h3>
+                  <ul className="space-y-3 text-textDim">
+                    <li className="flex items-start gap-3">
+                      <span className="text-accent mt-1">→</span>
+                      <span><strong>Tech:</strong> Amazon, Google, Apple - 100,000+ workers</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-accent mt-1">→</span>
+                      <span><strong>Retail:</strong> Walmart, Loblaws - 500,000+ workers</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-accent mt-1">→</span>
+                      <span><strong>Care Work:</strong> Nursing homes, childcare - 400,000+ workers</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-accent mt-1">→</span>
+                      <span><strong>Logistics:</strong> FedEx, trucking - 200,000+ workers</span>
+                    </li>
+                  </ul>
+                </Card>
+
+                <Card className="p-6 space-y-4">
+                  <h3 className="text-xl font-display font-bold">Labour Law Reform</h3>
+                  <ul className="space-y-2 text-sm text-textDim">
+                    <li className="flex items-center gap-2">
+                      <span className="h-2 w-2 rounded-full bg-accent" />
+                      Card-check certification (55%+ auto-union)
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <span className="h-2 w-2 rounded-full bg-accent" />
+                      First-contract arbitration (prevent stalling)
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <span className="h-2 w-2 rounded-full bg-accent" />
+                      Sectoral bargaining (industry-wide contracts)
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <span className="h-2 w-2 rounded-full bg-accent" />
+                      Ban replacement workers (stop scab labor)
+                    </li>
+                  </ul>
+                  <div className="pt-2 text-sm font-mono text-accent">
+                    Target: 1,200 drives, +5% labour GDP share
+                  </div>
+                </Card>
+              </div>
+
+              {/* Video */}
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-full aspect-video object-cover"
+                >
+                  <source src="/videos/plan5.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+
+            {/* Wide Video Section */}
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-full aspect-[21/9] object-cover"
+              >
+                <source src="/videos/plan6.mp4" type="video/mp4" />
+              </video>
+              <div className="absolute inset-0 bg-gradient-to-r from-bg/80 to-transparent flex items-center">
+                <div className="p-8 max-w-2xl">
+                  <Card className="p-6 backdrop-blur-sm bg-card/90">
+                    <p className="text-xl font-display font-bold text-text mb-3">
+                      連帯 · Solidarity
+                    </p>
+                    <p className="text-base text-textDim">
+                      Union workers earn $5.40/hour more. But the real power is collective: when we organize together, we shift the entire economy.
+                    </p>
+                  </Card>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Container>
+      </Section>
+
+      {/* Policy Section */}
+      <Section id="policy" className="py-20 bg-gradient-to-br from-accent/5 to-bg border-t border-border">
+        <Container>
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-16">
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent/10 border border-accent/20 mb-4">
+                <Scale className="h-4 w-4 text-accent" />
+                <span className="text-sm font-mono text-accent">政策</span>
+                <div className="h-3 w-px bg-accent/30" />
+                <span className="text-sm text-textDim">seisaku · policy</span>
+              </div>
+              <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">
+                Locking In <span className="text-accent">Grassroots Wins</span>
+              </h2>
+              <p className="text-lg text-textDim max-w-3xl mx-auto">
+                Grassroots action builds power, but policy makes it permanent. We win at municipal, provincial, and federal levels.
+              </p>
+            </div>
+
+            <div className="grid lg:grid-cols-2 gap-8 items-center mb-12">
+              {/* Video */}
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-full aspect-video object-cover"
+                >
+                  <source src="/videos/plan7.mp4" type="video/mp4" />
+                </video>
+              </div>
+
+              {/* Content */}
+              <div className="space-y-6">
+                <Card className="p-6 space-y-3">
+                  <h3 className="text-xl font-display font-bold text-accent">Municipal (Years 1-3)</h3>
+                  <ul className="space-y-2 text-sm text-textDim">
+                    <li>• Vacancy taxes (500% on empty homes)</li>
+                    <li>• CLT land donations from city surplus</li>
+                    <li>• Living wage ordinances ($25/hour)</li>
+                    <li>• Co-op zoning preferences</li>
+                  </ul>
+                </Card>
+
+                <Card className="p-6 space-y-3">
+                  <h3 className="text-xl font-display font-bold text-accent">Provincial (Years 2-5)</h3>
+                  <ul className="space-y-2 text-sm text-textDim">
+                    <li>• Wealth tax (1-2% on $10M+)</li>
+                    <li>• Speculation & vacancy tax expansion</li>
+                    <li>• Card-check unionization</li>
+                    <li>• Worker co-op incentives & grants</li>
+                  </ul>
+                </Card>
+
+                <Card className="p-6 space-y-3">
+                  <h3 className="text-xl font-display font-bold text-accent">Federal (Years 3-7)</h3>
+                  <ul className="space-y-2 text-sm text-textDim">
+                    <li>• Capital gains reform (100% inclusion)</li>
+                    <li>• Offshore haven crackdown</li>
+                    <li>• Co-op Development Bank ($1B fund)</li>
+                    <li>• Citizens&apos; Wealth Fund (FTT)</li>
+                  </ul>
+                </Card>
+              </div>
+            </div>
+          </div>
+        </Container>
+      </Section>
+
+      {/* KPIs Section */}
+      <Section id="kpis" className="py-20 border-t border-border">
+        <Container>
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-16">
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent/10 border border-accent/20 mb-4">
+                <TrendingUp className="h-4 w-4 text-accent" />
+                <span className="text-sm font-mono text-accent">指標</span>
+                <div className="h-3 w-px bg-accent/30" />
+                <span className="text-sm text-textDim">shihyō · metrics</span>
+              </div>
+              <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">
+                How We Track <span className="text-accent">Progress</span>
+              </h2>
+              <p className="text-lg text-textDim max-w-3xl mx-auto">
+                We measure institutional change, not symbolic gestures. Real numbers, real impact.
+              </p>
+            </div>
+
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl mb-12">
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-full aspect-[21/9] object-cover"
+              >
+                <source src="/videos/plan8.mp4" type="video/mp4" />
+              </video>
+              <div className="absolute inset-0 bg-gradient-to-t from-bg via-bg/50 to-transparent" />
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <Card className="p-6 text-center space-y-3">
+                <div className="text-4xl font-display font-bold text-accent">$150B</div>
+                <div className="text-sm text-textDim">Deposits moved to credit unions by year 10</div>
+              </Card>
+              <Card className="p-6 text-center space-y-3">
+                <div className="text-4xl font-display font-bold text-accent">1,200</div>
+                <div className="text-sm text-textDim">Union drives launched by year 10</div>
+              </Card>
+              <Card className="p-6 text-center space-y-3">
+                <div className="text-4xl font-display font-bold text-accent">2,000</div>
+                <div className="text-sm text-textDim">Worker co-ops formed by year 10</div>
+              </Card>
+              <Card className="p-6 text-center space-y-3">
+                <div className="text-4xl font-display font-bold text-accent">50,000</div>
+                <div className="text-sm text-textDim">CLT homes secured by year 10</div>
+              </Card>
+            </div>
+
+            <Card className="p-8 mt-12 text-center">
+              <p className="text-2xl font-display font-bold text-text mb-4">
+                By Year 20: <span className="text-accent">$1 Trillion</span> Wealth Fund
+              </p>
+              <p className="text-lg text-textDim">
+                Annual dividend: <span className="text-accent font-bold">$2,000 per person</span>
+              </p>
+              <p className="text-sm text-textDim mt-2">
+                Top 1% wealth share drops from 25% to 10%. Economic democracy achieved.
+              </p>
+            </Card>
           </div>
         </Container>
       </Section>
@@ -344,9 +693,9 @@ export default async function PlanPage() {
                 Your first action—moving your bank account, talking to a coworker, attending a meeting—starts the transformation.
               </p>
             </Card>
-          </div>
-        </Container>
-      </Section>
+        </div>
+      </Container>
+    </Section>
     </>
   );
 }
