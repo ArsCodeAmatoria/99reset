@@ -490,7 +490,7 @@ export default async function HomePage() {
         </Container>
       </Section>
 
-      {/* Class Consciousness Awakening - Split Section */}
+      {/* Class Consciousness Awakening - Single Video */}
       <Section className="py-20 md:py-32 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-accent/10 via-transparent to-accent/5" />
         <Container className="relative z-10">
@@ -525,29 +525,22 @@ export default async function HomePage() {
                     </p>
                   </div>
                   
-                  <div className="relative rounded-2xl overflow-hidden border border-accent/20 shadow-xl">
-                    <video
-                      autoPlay
-                      loop
-                      muted
-                      playsInline
-                      className="w-full h-auto"
-                    >
-                      <source src="/videos/class-consciousness.mp4" type="video/mp4" />
-                    </video>
-                    <div className="absolute inset-0 bg-gradient-to-t from-bg/60 to-transparent flex items-end p-4">
-                      <p className="text-lg font-display font-bold">From Awareness to Action</p>
-                    </div>
-                  </div>
-                  
                   <div className="grid grid-cols-2 gap-4">
-                    <div className="p-6 rounded-xl bg-card/50 border border-accent/10">
-                      <h4 className="font-display font-bold mb-2">Recognize</h4>
-                      <p className="text-sm text-textDim">Understanding exploitation</p>
+                    <div className="p-6 rounded-xl bg-card/50 border border-accent/10 hover:border-accent/30 transition-colors">
+                      <h4 className="font-display font-bold mb-2 text-lg">Recognize</h4>
+                      <p className="text-sm text-textDim">Understanding systemic exploitation and shared class interests</p>
                     </div>
-                    <div className="p-6 rounded-xl bg-card/50 border border-accent/10">
-                      <h4 className="font-display font-bold mb-2">Organize</h4>
-                      <p className="text-sm text-textDim">Building collective power</p>
+                    <div className="p-6 rounded-xl bg-card/50 border border-accent/10 hover:border-accent/30 transition-colors">
+                      <h4 className="font-display font-bold mb-2 text-lg">Organize</h4>
+                      <p className="text-sm text-textDim">Building collective power through solidarity</p>
+                    </div>
+                    <div className="p-6 rounded-xl bg-card/50 border border-accent/10 hover:border-accent/30 transition-colors">
+                      <h4 className="font-display font-bold mb-2 text-lg">Educate</h4>
+                      <p className="text-sm text-textDim">Spreading consciousness through theory and practice</p>
+                    </div>
+                    <div className="p-6 rounded-xl bg-card/50 border border-accent/10 hover:border-accent/30 transition-colors">
+                      <h4 className="font-display font-bold mb-2 text-lg">Transform</h4>
+                      <p className="text-sm text-textDim">Reshaping economic relations democratically</p>
                     </div>
                   </div>
                 </div>
@@ -641,49 +634,59 @@ export default async function HomePage() {
         </Container>
       </Section>
 
-      {/* Revolution - Full Width Cinematic */}
-      <Section dark className="py-0 relative overflow-hidden">
-        <div className="relative h-[80vh] min-h-[600px]">
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="absolute inset-0 w-full h-full object-cover"
-          >
-            <source src="/videos/revolution.mp4" type="video/mp4" />
-          </video>
-          
-          {/* Overlay gradient */}
-          <div className="absolute inset-0 bg-gradient-to-b from-bg/80 via-bg/50 to-bg/80" />
-          
-          {/* Content */}
-          <Container className="relative z-10 h-full flex items-center justify-center">
-            <FadeIn className="text-center max-w-4xl">
-              <h2 className="text-6xl md:text-8xl font-display font-bold mb-8 drop-shadow-2xl">
-                Not a <span className="text-accent">Revolution</span>
-                <br />
-                An Evolution
-              </h2>
-              <p className="text-2xl md:text-3xl text-textDim drop-shadow-lg mb-12">
-                Democratic socialism transforms society through democratic means—
-                <br className="hidden md:block" />
-                ballot boxes, not barricades; organization, not insurrection.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <CTAButton href="/plan" variant="primary" className="text-lg px-8 py-4">
-                  Read The Plan
-                </CTAButton>
-                <CTAButton href="/resources" variant="secondary" className="text-lg px-8 py-4">
-                  Get Resources
-                </CTAButton>
-              </div>
-            </FadeIn>
-          </Container>
-          
-          {/* Bottom fade to next section */}
-          <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-card/30 to-transparent" />
-        </div>
+      {/* Revolution - Side by Side */}
+      <Section dark className="py-20 md:py-32">
+        <Container>
+          <div className="max-w-7xl mx-auto">
+            <div className="grid lg:grid-cols-2 gap-16 items-center">
+              <FadeIn delay={0.1}>
+                <div className="space-y-8">
+                  <h2 className="text-5xl md:text-7xl font-display font-bold leading-tight">
+                    Not a <span className="text-accent">Revolution</span>
+                    <br />
+                    An Evolution
+                  </h2>
+                  <p className="text-2xl text-textDim leading-relaxed">
+                    Democratic socialism transforms society through democratic means—
+                    ballot boxes, not barricades; organization, not insurrection.
+                  </p>
+                  <p className="text-lg text-textDim leading-relaxed">
+                    We reject both violent revolution and passive reformism. Instead, we build 
+                    dual power: creating democratic institutions within capitalism that prefigure 
+                    the socialist future while using electoral politics to expand worker power.
+                  </p>
+                  <div className="flex flex-col sm:flex-row gap-4">
+                    <CTAButton href="/plan" variant="primary" className="text-lg px-8 py-4">
+                      Read The Plan
+                    </CTAButton>
+                    <CTAButton href="/resources" variant="secondary" className="text-lg px-8 py-4">
+                      Get Resources
+                    </CTAButton>
+                  </div>
+                </div>
+              </FadeIn>
+              
+              <FadeIn delay={0.3}>
+                <div className="relative">
+                  <div className="relative rounded-3xl overflow-hidden border-2 border-accent/30 shadow-2xl">
+                    <video
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      className="w-full h-auto"
+                    >
+                      <source src="/videos/revolution.mp4" type="video/mp4" />
+                    </video>
+                    <div className="absolute inset-0 bg-gradient-to-t from-bg/30 via-transparent to-transparent pointer-events-none" />
+                    <div className="absolute inset-0 ring-1 ring-inset ring-white/10 rounded-3xl pointer-events-none" />
+                  </div>
+                  <div className="absolute -inset-6 bg-gradient-to-r from-accent/30 via-red-600/20 to-accent/30 rounded-3xl blur-3xl -z-10 opacity-60 animate-pulse" />
+                </div>
+              </FadeIn>
+            </div>
+          </div>
+        </Container>
       </Section>
 
       {/* Contemporary Relevance Section */}
