@@ -22,17 +22,54 @@ export function HomeHero() {
               transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
               className="space-y-8"
             >
-      <motion.h1
-        className="text-5xl md:text-6xl lg:text-7xl font-display font-bold tracking-tight text-balance"
+      <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
+        className="space-y-6"
       >
-        リセット
-      </motion.h1>
+        <h1 className="text-6xl md:text-7xl lg:text-8xl font-display font-bold tracking-tight">
+          リセット
+        </h1>
+        
+        {/* Translation Badge */}
+        <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-accent/10 border border-accent/20">
+          <span className="text-sm font-mono text-textDim">risetto</span>
+          <div className="h-4 w-px bg-accent/30" />
+          <span className="text-sm font-semibold text-accent">Reset</span>
+        </div>
+        
+        {/* Definition Card */}
+        <div className="relative p-6 rounded-2xl bg-card/50 border border-border backdrop-blur-sm">
+          <div className="absolute top-3 left-3 w-2 h-2 rounded-full bg-accent animate-pulse" />
+          <p className="text-lg text-textDim leading-relaxed pl-4">
+            <span className="text-text font-semibold">To begin anew.</span> A fundamental transformation 
+            that clears the old and creates space for the new. In democratic socialism: 
+            <span className="text-accent font-semibold"> resetting economic relations</span> from 
+            hierarchical exploitation to collective empowerment.
+          </p>
+        </div>
+        
+        {/* Japanese Proverb */}
+        <div className="relative p-6 rounded-2xl bg-gradient-to-br from-accent/5 to-transparent border border-accent/20">
+          <div className="flex items-start gap-4">
+            <div className="flex-shrink-0 w-1 h-full bg-gradient-to-b from-accent to-accent/20 rounded-full" />
+            <div className="space-y-2">
+              <p className="text-2xl font-display font-bold">七転び八起き</p>
+              <p className="text-sm font-mono text-textDim">nanakorobi yaoki</p>
+              <p className="text-base text-textDim italic">
+                "Fall seven times, rise eight."
+              </p>
+              <p className="text-sm text-textDim">
+                The spirit of persistence in struggle—the essence of building worker power.
+              </p>
+            </div>
+          </div>
+        </div>
+      </motion.div>
               
               <motion.p 
-                className="text-xl md:text-2xl text-textDim leading-relaxed"
+                className="text-xl md:text-2xl text-textDim leading-relaxed pt-4"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
