@@ -15,9 +15,14 @@ export function Footer() {
             {/* Brand column */}
             <div className="lg:col-span-5 space-y-6">
               <div>
-                <h3 className="text-3xl font-display font-bold tracking-tight mb-4">
-                  NINETY NINE
-                </h3>
+                <div className="mb-4">
+                  <h3 className="text-3xl md:text-4xl font-display font-black tracking-tighter uppercase text-white">
+                    NINETY NINE
+                  </h3>
+                  <div className="text-xs md:text-sm font-mono font-bold text-accent tracking-wider mt-1">
+                    リセット
+                  </div>
+                </div>
                 <p className="text-base text-textDim leading-relaxed max-w-md">
                   A cerebral exploration of democratic socialism, worker empowerment, 
                   and collective ownership.
