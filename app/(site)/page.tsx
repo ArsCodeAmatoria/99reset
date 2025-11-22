@@ -194,60 +194,6 @@ export default async function HomePage() {
         </Container>
       </Section>
 
-      {/* Solidarity in Action - Video Section */}
-      <Section className="py-16 md:py-24 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-accent/10 to-transparent" />
-        <Container className="relative z-10">
-          <div className="max-w-6xl mx-auto">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <FadeIn delay={0.1}>
-                <div className="space-y-6">
-                  <h2 className="text-4xl md:text-6xl font-display font-bold">
-                    Solidarity <span className="text-accent">in Action</span>
-                  </h2>
-                  <p className="text-xl text-textDim leading-relaxed">
-                    When workers unite, they transform individual struggle into collective power. 
-                    Solidarity is not merely an ideal—it is the fundamental force that builds 
-                    democratic workplaces and reshapes society from the ground up.
-                  </p>
-                  <ul className="space-y-3 text-textDim">
-                    <li className="flex items-start gap-3">
-                      <span className="text-accent text-xl mt-1">•</span>
-                      <span>Mutual aid over competition</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="text-accent text-xl mt-1">•</span>
-                      <span>Collective bargaining power</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <span className="text-accent text-xl mt-1">•</span>
-                      <span>Unified resistance to exploitation</span>
-                    </li>
-                  </ul>
-                </div>
-              </FadeIn>
-              <FadeIn delay={0.3}>
-                <div className="relative">
-                  <div className="relative aspect-video rounded-3xl overflow-hidden border-2 border-accent/20 shadow-2xl">
-                    <video
-                      autoPlay
-                      loop
-                      muted
-                      playsInline
-                      className="w-full h-full object-cover"
-                    >
-                      <source src="/videos/solidarity.mp4" type="video/mp4" />
-                    </video>
-                    <div className="absolute inset-0 bg-gradient-to-t from-bg/40 via-transparent to-transparent pointer-events-none" />
-                  </div>
-                  <div className="absolute -inset-6 bg-gradient-to-r from-accent/30 via-red-600/20 to-accent/30 rounded-3xl blur-3xl -z-10 opacity-60 animate-pulse" />
-                </div>
-              </FadeIn>
-            </div>
-          </div>
-        </Container>
-      </Section>
-
       {/* Core Principles Section */}
       <Section dark className="py-20 md:py-32">
         <Container>
@@ -325,98 +271,73 @@ export default async function HomePage() {
         </Container>
       </Section>
 
-      {/* The Movement - Cinematic Section */}
+      {/* Collective Power - Single Video Section */}
       <Section className="py-24 md:py-32 relative overflow-hidden bg-gradient-to-b from-bg via-accent/5 to-bg">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-accent/20 via-transparent to-transparent" />
         <Container className="relative z-10">
           <div className="max-w-6xl mx-auto">
-            <FadeIn className="text-center mb-12">
-              <h2 className="text-5xl md:text-7xl font-display font-bold mb-6">
-                The <span className="text-accent">Movement</span>
-              </h2>
-              <p className="text-2xl text-textDim max-w-3xl mx-auto leading-relaxed">
-                From theory to streets, from philosophy to action—democratic socialism is a living movement.
-              </p>
-            </FadeIn>
-            
-            <div className="grid md:grid-cols-3 gap-8 mb-16">
-              <SlideIn direction="left" delay={0.2}>
-                <div className="relative aspect-square rounded-2xl overflow-hidden border border-accent/20 shadow-xl group">
-                  <video
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  >
-                    <source src="/videos/workers-unite.mp4" type="video/mp4" />
-                  </video>
-                  <div className="absolute inset-0 bg-gradient-to-t from-bg/70 to-transparent flex items-end p-6">
-                    <h3 className="text-2xl font-display font-bold">Workers Unite</h3>
+            <div className="grid lg:grid-cols-2 gap-16 items-center">
+              <FadeIn delay={0.1}>
+                <div className="space-y-6">
+                  <h2 className="text-5xl md:text-7xl font-display font-bold">
+                    Collective <span className="text-accent">Power</span>
+                  </h2>
+                  <p className="text-2xl text-textDim leading-relaxed">
+                    When workers organize collectively, they build power that transforms 
+                    individual vulnerability into shared strength. This is the foundation 
+                    of democratic socialism—solidarity forged through action.
+                  </p>
+                  <div className="space-y-4 text-lg text-textDim">
+                    <div className="flex items-start gap-4">
+                      <div className="h-8 w-8 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0 mt-1">
+                        <span className="text-accent font-bold">1</span>
+                      </div>
+                      <div>
+                        <h3 className="font-display font-bold text-text mb-1">Organize</h3>
+                        <p className="text-textDim">Build unions and cooperatives</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-4">
+                      <div className="h-8 w-8 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0 mt-1">
+                        <span className="text-accent font-bold">2</span>
+                      </div>
+                      <div>
+                        <h3 className="font-display font-bold text-text mb-1">Mobilize</h3>
+                        <p className="text-textDim">Transform consciousness into action</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-4">
+                      <div className="h-8 w-8 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0 mt-1">
+                        <span className="text-accent font-bold">3</span>
+                      </div>
+                      <div>
+                        <h3 className="font-display font-bold text-text mb-1">Transform</h3>
+                        <p className="text-textDim">Reshape economic relations democratically</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </SlideIn>
+              </FadeIn>
               
-              <SlideIn direction="up" delay={0.3}>
-                <div className="relative aspect-square rounded-2xl overflow-hidden border border-accent/20 shadow-xl group">
-                  <video
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  >
-                    <source src="/videos/collective-power.mp4" type="video/mp4" />
-                  </video>
-                  <div className="absolute inset-0 bg-gradient-to-t from-bg/70 to-transparent flex items-end p-6">
-                    <h3 className="text-2xl font-display font-bold">Collective Power</h3>
+              <FadeIn delay={0.3}>
+                <div className="relative">
+                  <div className="relative rounded-3xl overflow-hidden border-2 border-accent/30 shadow-2xl">
+                    <video
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      className="w-full h-auto"
+                    >
+                      <source src="/videos/collective-power.mp4" type="video/mp4" />
+                    </video>
+                    <div className="absolute inset-0 bg-gradient-to-t from-bg/30 via-transparent to-transparent pointer-events-none" />
+                    <div className="absolute inset-0 ring-1 ring-inset ring-white/10 rounded-3xl pointer-events-none" />
                   </div>
+                  <div className="absolute -inset-6 bg-gradient-to-r from-accent/30 via-red-600/20 to-accent/30 rounded-3xl blur-3xl -z-10 opacity-60 animate-pulse" />
                 </div>
-              </SlideIn>
-              
-              <SlideIn direction="right" delay={0.4}>
-                <div className="relative aspect-square rounded-2xl overflow-hidden border border-accent/20 shadow-xl group">
-                  <video
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  >
-                    <source src="/videos/democratic-future.mp4" type="video/mp4" />
-                  </video>
-                  <div className="absolute inset-0 bg-gradient-to-t from-bg/70 to-transparent flex items-end p-6">
-                    <h3 className="text-2xl font-display font-bold">Democratic Future</h3>
-                  </div>
-                </div>
-              </SlideIn>
+              </FadeIn>
             </div>
-
-            <FadeIn delay={0.5}>
-              <div className="relative aspect-video rounded-3xl overflow-hidden border-2 border-accent/30 shadow-2xl">
-                <video
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  className="w-full h-full object-cover"
-                >
-                  <source src="/videos/movement.mp4" type="video/mp4" />
-                </video>
-                <div className="absolute inset-0 bg-gradient-to-t from-bg/50 via-transparent to-transparent pointer-events-none" />
-                <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                  <div className="text-center px-6">
-                    <h3 className="text-4xl md:text-6xl font-display font-bold mb-4 drop-shadow-lg">
-                      Build the Future
-                    </h3>
-                    <p className="text-xl md:text-2xl text-textDim drop-shadow-lg">
-                      Together we rise
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="absolute -inset-6 bg-gradient-to-r from-accent/30 via-red-600/20 to-accent/30 rounded-3xl blur-3xl -z-10 opacity-50" />
-            </FadeIn>
           </div>
         </Container>
       </Section>
@@ -576,17 +497,17 @@ export default async function HomePage() {
           <div className="max-w-7xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <SlideIn direction="left" delay={0.1}>
-                <div className="relative aspect-square rounded-3xl overflow-hidden border-2 border-accent/30 shadow-2xl">
+                <div className="relative rounded-3xl overflow-hidden border-2 border-accent/30 shadow-2xl">
                   <video
                     autoPlay
                     loop
                     muted
                     playsInline
-                    className="w-full h-full object-cover"
+                    className="w-full h-auto"
                   >
                     <source src="/videos/awakening.mp4" type="video/mp4" />
                   </video>
-                  <div className="absolute inset-0 bg-gradient-to-br from-accent/30 to-transparent mix-blend-overlay" />
+                  <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-transparent mix-blend-overlay" />
                   <div className="absolute inset-0 ring-1 ring-inset ring-white/10 rounded-3xl pointer-events-none" />
                 </div>
               </SlideIn>
@@ -604,13 +525,13 @@ export default async function HomePage() {
                     </p>
                   </div>
                   
-                  <div className="relative aspect-video rounded-2xl overflow-hidden border border-accent/20 shadow-xl">
+                  <div className="relative rounded-2xl overflow-hidden border border-accent/20 shadow-xl">
                     <video
                       autoPlay
                       loop
                       muted
                       playsInline
-                      className="w-full h-full object-cover"
+                      className="w-full h-auto"
                     >
                       <source src="/videos/class-consciousness.mp4" type="video/mp4" />
                     </video>
