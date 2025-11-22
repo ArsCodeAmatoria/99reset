@@ -27,52 +27,199 @@ export default async function HomePage() {
       {/* Hero Section with animations */}
       <HomeHero />
 
-      {/* The Philosophy Section */}
+      {/* The 99% vs 1% Section */}
       <Section className="py-16 md:py-24 bg-card/30 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-accent/5 to-transparent opacity-50" />
         <Container className="relative z-10">
           <div className="max-w-4xl mx-auto">
             <FadeIn className="text-center mb-12">
               <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent/10 border border-accent/20 mb-4">
-                <span className="text-sm font-mono text-accent">理論と実践</span>
+                <span className="text-sm font-mono text-accent">民主社会主義</span>
                 <div className="h-3 w-px bg-accent/30" />
-                <span className="text-sm text-textDim">riron to jissen</span>
+                <span className="text-sm text-textDim">democratic socialism</span>
               </div>
               <h2 className="text-3xl md:text-5xl font-display font-bold mb-4">
-                Democratic Socialism: <span className="text-accent">Theory</span> and Practice
+                The <span className="text-accent">99%</span> vs The 1%
               </h2>
               <p className="text-lg text-textDim">
-                Economic democracy as the logical extension of political democracy.
+                A democratic socialist movement reclaiming power for the working class.
               </p>
             </FadeIn>
 
-            <div className="grid md:grid-cols-3 gap-6 mb-12">
+            <div className="grid md:grid-cols-2 gap-6 mb-12">
               <ScaleIn delay={0.1}>
-                <Card className="text-center space-y-3 hover:border-accent/50 transition-colors">
-                  <div className="text-4xl font-display font-bold text-accent">Economic</div>
-                  <div className="text-sm text-textDim">Workplace democracy through worker ownership and cooperatives</div>
+                <Card className="space-y-3 hover:border-accent/50 transition-colors border-accent/30">
+                  <div className="text-5xl font-display font-black text-accent mb-2">99%</div>
+                  <div className="text-xl font-display font-bold text-text">The Working Class</div>
+                  <ul className="text-sm text-textDim space-y-2">
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Workers who create all value</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Exploited by wage labor</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Organizing for collective power</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-1">•</span>
+                      <span>Building democratic alternatives</span>
+                    </li>
+                  </ul>
                 </Card>
               </ScaleIn>
               <ScaleIn delay={0.2}>
-                <Card className="text-center space-y-3 hover:border-accent/50 transition-colors">
-                  <div className="text-4xl font-display font-bold text-accent">Political</div>
-                  <div className="text-sm text-textDim">Collective decision-making and participatory governance</div>
-                </Card>
-              </ScaleIn>
-              <ScaleIn delay={0.3}>
-                <Card className="text-center space-y-3 hover:border-accent/50 transition-colors">
-                  <div className="text-4xl font-display font-bold text-accent">Social</div>
-                  <div className="text-sm text-textDim">Universal access to housing, healthcare, and education</div>
+                <Card className="space-y-3 hover:border-red-600 transition-colors border-red-600/30">
+                  <div className="text-5xl font-display font-black text-red-600 mb-2">1%</div>
+                  <div className="text-xl font-display font-bold text-text">The Capitalist Class</div>
+                  <ul className="text-sm text-textDim space-y-2">
+                    <li className="flex items-start gap-2">
+                      <span className="text-red-600 mt-1">•</span>
+                      <span>Extract surplus value from workers</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-red-600 mt-1">•</span>
+                      <span>Control means of production</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-red-600 mt-1">•</span>
+                      <span>Hoard wealth and power</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-red-600 mt-1">•</span>
+                      <span>Maintain economic inequality</span>
+                    </li>
+                  </ul>
                 </Card>
               </ScaleIn>
             </div>
 
             <FadeIn delay={0.4}>
-              <div className="bg-bg border border-border rounded-2xl p-8">
+              <div className="bg-bg border border-accent rounded-2xl p-8">
                 <p className="text-lg leading-relaxed text-textDim">
-                  <span className="text-text font-semibold">Core principle:</span> If democracy is desirable in governance, 
-                  it must be desirable in economic life. Workers should control the means of production democratically,
-                  <span className="text-accent font-semibold"> not through violent revolution, but through cooperative organization and collective ownership.</span>
+                  <span className="text-text font-semibold">Our mission:</span> Transfer wealth and power from the 1% to the 99% through 
+                  <span className="text-accent font-semibold"> democratic socialist organizing—unions, co-ops, credit unions, and community land trusts.</span> Not through revolution, but through building collective power that starves the capitalist class of their stolen profits.
+                </p>
+              </div>
+            </FadeIn>
+          </div>
+        </Container>
+      </Section>
+
+      {/* Four Pillars Section */}
+      <Section className="py-20 md:py-32 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-accent/5 to-transparent" />
+        <Container className="relative z-10">
+          <div className="max-w-6xl mx-auto">
+            <FadeIn className="text-center mb-16">
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent/10 border border-accent/20 mb-4">
+                <span className="text-sm font-mono text-accent">四つの柱</span>
+                <div className="h-3 w-px bg-accent/30" />
+                <span className="text-sm text-textDim">yottsu no hashira · four pillars</span>
+              </div>
+              <h2 className="text-4xl md:text-6xl font-display font-bold mb-6">
+                The Four Pillars of <span className="text-accent">The Reset</span>
+              </h2>
+              <p className="text-xl text-textDim max-w-3xl mx-auto">
+                Practical tools for transferring economic power from the 1% to the 99%. 
+                Build the democratic socialist future, one institution at a time.
+              </p>
+            </FadeIn>
+
+            <div className="grid md:grid-cols-2 gap-8">
+              <SlideIn direction="left" delay={0.1}>
+                <Card className="group hover:border-accent transition-all duration-300 hover:shadow-xl">
+                  <div className="space-y-4">
+                    <div className="flex items-start justify-between">
+                      <div className="h-14 w-14 rounded-2xl bg-gradient-to-br from-accent/20 to-accent/5 flex items-center justify-center">
+                        <Users className="h-7 w-7 text-accent" />
+                      </div>
+                      <div className="text-xs font-mono text-accent bg-accent/10 px-3 py-1 rounded-full">組合</div>
+                    </div>
+                    <h3 className="text-2xl font-display font-bold group-hover:text-accent transition-colors">Unions</h3>
+                    <p className="text-textDim leading-relaxed">
+                      Organize your workplace. Collective bargaining gives workers power to demand fair wages, 
+                      better conditions, and democratic control. Every unionized worker is one less exploitation point for the 1%.
+                    </p>
+                    <CTAButton href="/resources/union-organizing-101" variant="secondary" className="w-full">
+                      Start Organizing →
+                    </CTAButton>
+                  </div>
+                </Card>
+              </SlideIn>
+
+              <SlideIn direction="right" delay={0.2}>
+                <Card className="group hover:border-accent transition-all duration-300 hover:shadow-xl">
+                  <div className="space-y-4">
+                    <div className="flex items-start justify-between">
+                      <div className="h-14 w-14 rounded-2xl bg-gradient-to-br from-accent/20 to-accent/5 flex items-center justify-center">
+                        <Building2 className="h-7 w-7 text-accent" />
+                      </div>
+                      <div className="text-xs font-mono text-accent bg-accent/10 px-3 py-1 rounded-full">協同組合</div>
+                    </div>
+                    <h3 className="text-2xl font-display font-bold group-hover:text-accent transition-colors">Worker Co-ops</h3>
+                    <p className="text-textDim leading-relaxed">
+                      Own your workplace democratically. Worker cooperatives eliminate the boss, 
+                      distribute profits equitably, and prove that capitalism isn&apos;t the only way to run a business.
+                    </p>
+                    <CTAButton href="/resources/worker-coop-formation-guide" variant="secondary" className="w-full">
+                      Form a Co-op →
+                    </CTAButton>
+                  </div>
+                </Card>
+              </SlideIn>
+
+              <SlideIn direction="left" delay={0.3}>
+                <Card className="group hover:border-accent transition-all duration-300 hover:shadow-xl">
+                  <div className="space-y-4">
+                    <div className="flex items-start justify-between">
+                      <div className="h-14 w-14 rounded-2xl bg-gradient-to-br from-accent/20 to-accent/5 flex items-center justify-center">
+                        <Landmark className="h-7 w-7 text-accent" />
+                      </div>
+                      <div className="text-xs font-mono text-accent bg-accent/10 px-3 py-1 rounded-full">信用組合</div>
+                    </div>
+                    <h3 className="text-2xl font-display font-bold group-hover:text-accent transition-colors">Credit Unions</h3>
+                    <p className="text-textDim leading-relaxed">
+                      Starve predatory banks. Credit unions are member-owned financial cooperatives that 
+                      return profits to members, not shareholders. Move your money, defund Wall Street.
+                    </p>
+                    <CTAButton href="/banking-reset" variant="secondary" className="w-full">
+                      Switch Banks →
+                    </CTAButton>
+                  </div>
+                </Card>
+              </SlideIn>
+
+              <SlideIn direction="right" delay={0.4}>
+                <Card className="group hover:border-accent transition-all duration-300 hover:shadow-xl">
+                  <div className="space-y-4">
+                    <div className="flex items-start justify-between">
+                      <div className="h-14 w-14 rounded-2xl bg-gradient-to-br from-accent/20 to-accent/5 flex items-center justify-center">
+                        <Target className="h-7 w-7 text-accent" />
+                      </div>
+                      <div className="text-xs font-mono text-accent bg-accent/10 px-3 py-1 rounded-full">土地信託</div>
+                    </div>
+                    <h3 className="text-2xl font-display font-bold group-hover:text-accent transition-colors">Community Land Trusts</h3>
+                    <p className="text-textDim leading-relaxed">
+                      Remove land from the speculative market. CLTs provide permanently affordable housing 
+                      through collective ownership, ending landlord extraction and ensuring housing as a right.
+                    </p>
+                    <CTAButton href="/housing-reset" variant="secondary" className="w-full">
+                      Learn About CLTs →
+                    </CTAButton>
+                  </div>
+                </Card>
+              </SlideIn>
+            </div>
+
+            <FadeIn delay={0.5}>
+              <div className="mt-12 p-8 rounded-2xl bg-gradient-to-br from-accent/5 to-transparent border border-accent/20">
+                <p className="text-center text-lg text-textDim leading-relaxed">
+                  <span className="text-accent font-semibold">These aren&apos;t reforms. They&apos;re weapons.</span> Every dollar moved to a credit union, 
+                  every worker joining a union, every co-op formed, every CLT established—this is how we dismantle capitalism and build democratic socialism from the ground up.
                 </p>
               </div>
             </FadeIn>
@@ -209,36 +356,36 @@ export default async function HomePage() {
         <Container>
           <div className="text-center mb-16">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent/10 border border-accent/20 mb-4">
-              <span className="text-sm font-mono text-accent">原則</span>
+              <span className="text-sm font-mono text-accent">我々の原則</span>
               <div className="h-3 w-px bg-accent/30" />
-              <span className="text-sm text-textDim">gensoku · principles</span>
+              <span className="text-sm text-textDim">wareware no gensoku · our principles</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-display font-bold mb-4">
-              Core Principles of Democratic Socialism
+              Democratic Socialist <span className="text-accent">Movement</span> Principles
             </h2>
             <p className="text-lg text-textDim max-w-2xl mx-auto">
-              Economic democracy, collective ownership, and worker empowerment as 
-              foundational pillars of a just society.
+              Transferring power from the 1% to the 99% through collective action, 
+              democratic ownership, and worker solidarity.
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {/* Worker Control */}
+            {/* Worker Power */}
             <Card className="space-y-4 hover:border-accent/50 transition-colors">
               <div className="h-12 w-12 rounded-full bg-accent/10 flex items-center justify-center">
                 <Users className="h-6 w-6 text-accent" />
               </div>
-              <h3 className="text-2xl font-display font-bold">Worker Control</h3>
+              <h3 className="text-2xl font-display font-bold">Worker Power</h3>
               <p className="text-textDim leading-relaxed">
-                Democratic ownership and governance of workplaces. Workers should control 
-                the means of production through cooperatives, unions, and participatory management.
+                Workers create all value. Through unions and co-ops, we take back control 
+                from bosses and shareholders. Solidarity is our weapon. Democracy is our method.
               </p>
               <CTAButton 
-                href="/plan#worker-control" 
+                href="/resources/union-organizing-101" 
                 variant="secondary" 
                 className="inline-flex items-center gap-2 mt-4"
               >
-                Explore Theory
+                Start Organizing
                 <ArrowRight className="h-4 w-4" />
               </CTAButton>
             </Card>
@@ -250,35 +397,35 @@ export default async function HomePage() {
               </div>
               <h3 className="text-2xl font-display font-bold">Collective Ownership</h3>
               <p className="text-textDim leading-relaxed">
-                Social ownership of productive resources. Community land trusts, public utilities,
-                and cooperative enterprises replace private extraction.
+                Remove wealth from capitalist extraction. Credit unions, CLTs, and co-ops 
+                prove that democratic ownership works. Every institution we build weakens the 1%.
               </p>
               <CTAButton 
-                href="/plan#collective-ownership" 
+                href="/banking-reset" 
                 variant="secondary" 
                 className="inline-flex items-center gap-2 mt-4"
               >
-                Explore Theory
+                Take Action
                 <ArrowRight className="h-4 w-4" />
               </CTAButton>
             </Card>
 
-            {/* Democratic Planning */}
+            {/* Class Solidarity */}
             <Card className="space-y-4 hover:border-accent/50 transition-colors">
               <div className="h-12 w-12 rounded-full bg-accent/10 flex items-center justify-center">
                 <Landmark className="h-6 w-6 text-accent" />
               </div>
-              <h3 className="text-2xl font-display font-bold">Democratic Planning</h3>
+              <h3 className="text-2xl font-display font-bold">Class Solidarity</h3>
               <p className="text-textDim leading-relaxed">
-                Participatory economic decision-making. Communities democratically determine 
-                production priorities, resource allocation, and distribution.
+                The 99% must unite across race, gender, and nation. Our enemy is the capitalist 
+                class. Together, we build the democratic socialist alternative.
               </p>
               <CTAButton 
-                href="/plan#democratic-planning" 
+                href="/plan" 
                 variant="secondary" 
                 className="inline-flex items-center gap-2 mt-4"
               >
-                Explore Theory
+                Read The Plan
                 <ArrowRight className="h-4 w-4" />
               </CTAButton>
             </Card>
@@ -370,16 +517,21 @@ export default async function HomePage() {
         </Container>
       </Section>
 
-      {/* Explore Topics Section */}
+      {/* The Reset Actions Section */}
       <Section className="py-16 md:py-24 bg-accent/5 border-y border-accent/20">
         <Container>
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent/10 border border-accent/20 mb-4">
+                <span className="text-sm font-mono text-accent">行動</span>
+                <div className="h-3 w-px bg-accent/30" />
+                <span className="text-sm text-textDim">kōdō · action</span>
+              </div>
               <h2 className="text-3xl md:text-5xl font-display font-bold mb-4">
-                Explore Topics
+                Take Action. <span className="text-accent">Reset The System.</span>
               </h2>
               <p className="text-lg text-textDim max-w-2xl mx-auto">
-                Deep dives into democratic socialist theory, practice, and historical examples.
+                Practical guides to building democratic socialist alternatives in your community.
               </p>
             </div>
 
@@ -392,13 +544,14 @@ export default async function HomePage() {
                     </div>
                     <ArrowRight className="h-5 w-5 text-accent/50 group-hover:translate-x-1 transition-transform" />
                   </div>
-                  <h3 className="text-2xl font-display font-bold group-hover:text-accent transition-colors">Economic Democracy</h3>
+                  <h3 className="text-2xl font-display font-bold group-hover:text-accent transition-colors">Banking Reset</h3>
                   <p className="text-textDim">
-                    Theoretical foundations of workplace democracy, democratic ownership, and participatory economics.
+                    Defund Wall Street. Switch to credit unions and starve predatory banks of capital. 
+                    Member-owned financial democracy in action.
                   </p>
                   <div className="flex items-center gap-4 text-sm pt-2">
-                    <div className="text-accent font-bold">Theory</div>
-                    <div className="text-textDim">• Philosophy</div>
+                    <div className="text-accent font-bold">Credit Unions</div>
+                    <div className="text-textDim">• Financial Democracy</div>
                   </div>
                 </Card>
               </Link>
@@ -411,13 +564,14 @@ export default async function HomePage() {
                     </div>
                     <ArrowRight className="h-5 w-5 text-accent/50 group-hover:translate-x-1 transition-transform" />
                   </div>
-                  <h3 className="text-2xl font-display font-bold group-hover:text-accent transition-colors">Worker Cooperatives</h3>
+                  <h3 className="text-2xl font-display font-bold group-hover:text-accent transition-colors">Housing Reset</h3>
                   <p className="text-textDim">
-                    Practical models of worker ownership. Historical examples from Mondragon to modern tech cooperatives.
+                    End landlord parasitism. Community Land Trusts provide permanent affordable housing 
+                    through collective ownership. Housing is a right, not a commodity.
                   </p>
                   <div className="flex items-center gap-4 text-sm pt-2">
-                    <div className="text-accent font-bold">Practice</div>
-                    <div className="text-textDim">• Case studies</div>
+                    <div className="text-accent font-bold">CLTs</div>
+                    <div className="text-textDim">• Collective Housing</div>
                   </div>
                 </Card>
               </Link>
@@ -430,13 +584,14 @@ export default async function HomePage() {
                     </div>
                     <ArrowRight className="h-5 w-5 text-accent/50 group-hover:translate-x-1 transition-transform" />
                   </div>
-                  <h3 className="text-2xl font-display font-bold group-hover:text-accent transition-colors">Labour Movement History</h3>
+                  <h3 className="text-2xl font-display font-bold group-hover:text-accent transition-colors">Workplace Reset</h3>
                   <p className="text-textDim">
-                    From the Paris Commune to modern union organizing. Historical analysis of worker power and solidarity.
+                    Organize your workplace. Union power forces bosses to share wealth and control. 
+                    From basic demands to worker control—solidarity builds power.
                   </p>
                   <div className="flex items-center gap-4 text-sm pt-2">
-                    <div className="text-accent font-bold">History</div>
-                    <div className="text-textDim">• Analysis</div>
+                    <div className="text-accent font-bold">Unions</div>
+                    <div className="text-textDim">• Labor Power</div>
                   </div>
                 </Card>
               </Link>
@@ -449,13 +604,14 @@ export default async function HomePage() {
                     </div>
                     <ArrowRight className="h-5 w-5 text-accent/50 group-hover:translate-x-1 transition-transform" />
                   </div>
-                  <h3 className="text-2xl font-display font-bold group-hover:text-accent transition-colors">Socialist Philosophy</h3>
+                  <h3 className="text-2xl font-display font-bold group-hover:text-accent transition-colors">Wealth Reset</h3>
                   <p className="text-textDim">
-                    From Marx to modern democratic socialists. Philosophical foundations of collective ownership and equality.
+                    Seize the means. Worker cooperatives eliminate exploitation by giving workers 
+                    democratic control and equitable profit sharing. Proof capitalism isn&apos;t inevitable.
                   </p>
                   <div className="flex items-center gap-4 text-sm pt-2">
-                    <div className="text-accent font-bold">Philosophy</div>
-                    <div className="text-textDim">• Dialectics</div>
+                    <div className="text-accent font-bold">Co-ops</div>
+                    <div className="text-textDim">• Worker Ownership</div>
                   </div>
                 </Card>
               </Link>
@@ -480,37 +636,37 @@ export default async function HomePage() {
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               <Card className="space-y-4 hover:border-accent/50 transition-colors">
                 <Target className="h-10 w-10 text-accent" />
-                <h3 className="text-lg font-display font-bold">Surplus Value</h3>
-                <p className="text-sm text-textDim">The difference between the value workers create and wages they receive. Core to understanding exploitation.</p>
-                <Link href="/resources/bank-switch-toolkit" className="text-sm text-accent hover:underline">
+                <h3 className="text-lg font-display font-bold">The 1%</h3>
+                <p className="text-sm text-textDim">The capitalist class that extracts surplus value from workers. They hoard wealth through ownership, not labor.</p>
+                <Link href="/plan" className="text-sm text-accent hover:underline">
                   Read More →
                 </Link>
               </Card>
 
               <Card className="space-y-4 hover:border-accent/50 transition-colors">
                 <Users className="h-10 w-10 text-accent" />
-                <h3 className="text-lg font-display font-bold">Class Consciousness</h3>
-                <p className="text-sm text-textDim">Workers&apos; awareness of their shared interests and collective power against capital.</p>
+                <h3 className="text-lg font-display font-bold">The 99%</h3>
+                <p className="text-sm text-textDim">The working class. We create all value but are denied control. Our collective power can reshape society.</p>
                 <Link href="/resources/union-organizing-101" className="text-sm text-accent hover:underline">
-                  Read More →
+                  Organize →
                 </Link>
               </Card>
 
               <Card className="space-y-4 hover:border-accent/50 transition-colors">
                 <Building2 className="h-10 w-10 text-accent" />
-                <h3 className="text-lg font-display font-bold">Means of Production</h3>
-                <p className="text-sm text-textDim">Tools, factories, and resources used to produce goods. Should be collectively owned.</p>
+                <h3 className="text-lg font-display font-bold">Democratic Socialism</h3>
+                <p className="text-sm text-textDim">Economic democracy through worker control, co-ops, unions, and collective ownership. Not reform. Transformation.</p>
                 <Link href="/resources/worker-coop-formation-guide" className="text-sm text-accent hover:underline">
-                  Read More →
+                  Learn More →
                 </Link>
               </Card>
 
               <Card className="space-y-4 hover:border-accent/50 transition-colors">
                 <Landmark className="h-10 w-10 text-accent" />
-                <h3 className="text-lg font-display font-bold">Dialectical Analysis</h3>
-                <p className="text-sm text-textDim">Understanding social change through contradictions and their resolution over time.</p>
-                <Link href="/resources/policy-advocacy-toolkit" className="text-sm text-accent hover:underline">
-                  Read More →
+                <h3 className="text-lg font-display font-bold">Dual Power</h3>
+                <p className="text-sm text-textDim">Build alternative institutions now. CLTs, credit unions, co-ops—create the socialist future within capitalism&apos;s shell.</p>
+                <Link href="/housing-reset" className="text-sm text-accent hover:underline">
+                  Take Action →
                 </Link>
               </Card>
             </div>
