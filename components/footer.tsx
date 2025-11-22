@@ -13,11 +13,11 @@ export function Footer() {
           loop
           muted
           playsInline
-          className="absolute inset-0 w-full h-full object-cover opacity-20"
+          className="absolute inset-0 w-full h-full object-cover opacity-50"
         >
           <source src="/videos/footer.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-gradient-to-t from-bg via-bg/90 to-bg/70" />
+        <div className="absolute inset-0 bg-gradient-to-t from-bg/60 via-bg/75 to-bg/50" />
       </div>
       
       {/* Gradient overlay */}

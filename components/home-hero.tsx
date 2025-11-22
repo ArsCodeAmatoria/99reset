@@ -15,11 +15,11 @@ export function HomeHero() {
           loop
           muted
           playsInline
-          className="absolute inset-0 w-full h-full object-cover opacity-30"
+          className="absolute inset-0 w-full h-full object-cover opacity-60"
         >
           <source src="/videos/hero.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-gradient-to-b from-bg/50 via-bg/70 to-bg" />
+        <div className="absolute inset-0 bg-gradient-to-b from-bg/30 via-bg/50 to-bg/80" />
       </div>
       
       {/* Animated gradient overlay */}
