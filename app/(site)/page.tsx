@@ -304,7 +304,7 @@ export default async function HomePage() {
                   </h2>
                   <div className="p-4 rounded-xl bg-card/50 border border-accent/20 backdrop-blur-sm">
                     <p className="text-lg text-textDim leading-relaxed italic">
-                      "三人寄れば文殊の知恵" · <span className="text-accent">sannin yoreba monju no chie</span>
+                      &quot;三人寄れば文殊の知恵&quot; · <span className="text-accent">sannin yoreba monju no chie</span>
                     </p>
                     <p className="text-sm text-textDim mt-2">
                       When three gather, they possess the wisdom of Manjushri—collective intelligence surpasses individual capacity.
@@ -554,7 +554,7 @@ export default async function HomePage() {
                     <div className="p-4 rounded-xl bg-gradient-to-br from-accent/5 to-transparent border border-accent/20 mb-4">
                       <p className="text-base text-textDim leading-relaxed">
                         <span className="text-accent font-semibold">目覚める</span> (mezameru) — to wake up, to become aware. 
-                        The moment of recognizing one's position within the class structure.
+                        The moment of recognizing one&apos;s position within the class structure.
                       </p>
                     </div>
                     <p className="text-xl text-textDim leading-relaxed mb-6">

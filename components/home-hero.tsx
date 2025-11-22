@@ -58,7 +58,7 @@ export function HomeHero() {
               <p className="text-2xl font-display font-bold">七転び八起き</p>
               <p className="text-sm font-mono text-textDim">nanakorobi yaoki</p>
               <p className="text-base text-textDim italic">
-                "Fall seven times, rise eight."
+                &quot;Fall seven times, rise eight.&quot;
               </p>
               <p className="text-sm text-textDim">
                 The spirit of persistence in struggle—the essence of building worker power.
