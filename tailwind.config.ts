@@ -20,8 +20,8 @@ const config: Config = {
         warn: "var(--warn)",
       },
       fontFamily: {
-        sans: ["var(--font-inter)", "system-ui", "sans-serif"],
-        display: ["var(--font-ibm-plex-serif)", "Georgia", "serif"],
+        sans: ["var(--font-ibm-plex-serif)", "Georgia", "serif"],
+        display: ["var(--font-inter)", "system-ui", "sans-serif"],
       },
       borderRadius: {
         card: "1.25rem",
