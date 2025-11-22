@@ -6,28 +6,29 @@ import { SiTiktok, SiX } from "react-icons/si";
 export function Footer() {
   return (
     <footer className="bg-[#050505] border-t border-border relative overflow-hidden">
-      {/* Video background */}
-      <div className="absolute inset-0 overflow-hidden">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover opacity-50"
-        >
-          <source src="/videos/footer.mp4" type="video/mp4" />
-        </video>
-        <div className="absolute inset-0 bg-gradient-to-t from-bg/60 via-bg/75 to-bg/50" />
-      </div>
-      
       {/* Gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-t from-accent/5 via-transparent to-transparent pointer-events-none" />
       <Container className="relative z-10">
         {/* Main footer content */}
         <div className="py-16 md:py-20">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
-            {/* Brand column - spans more space */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+            {/* Brand column with video */}
             <div className="lg:col-span-5 space-y-6">
+              {/* Video element */}
+              <div className="relative aspect-square max-w-xs rounded-2xl overflow-hidden border border-border shadow-2xl">
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-full h-full object-cover"
+                >
+                  <source src="/videos/footer.mp4" type="video/mp4" />
+                </video>
+                {/* Subtle gradient overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-bg/20 to-transparent pointer-events-none" />
+              </div>
+              
               <div>
                 <h3 className="text-3xl font-display font-bold tracking-tight mb-4">
                   NINETY NINE
