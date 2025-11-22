@@ -202,9 +202,9 @@ export default async function PlanPage() {
                   loop
                   muted
                   playsInline
-                  className="w-full aspect-video object-cover"
+                  className="w-full h-auto"
                 >
-                  <source src="/videos/plan1.mp4" type="video/mp4" />
+                  <source src="/videos/plan2.mp4" type="video/mp4" />
                 </video>
               </div>
 
@@ -292,9 +292,9 @@ export default async function PlanPage() {
                   loop
                   muted
                   playsInline
-                  className="w-full aspect-video object-cover"
+                  className="w-full h-auto"
                 >
-                  <source src="/videos/plan2.mp4" type="video/mp4" />
+                  <source src="/videos/plan3.mp4" type="video/mp4" />
                 </video>
               </div>
             </div>
@@ -329,9 +329,9 @@ export default async function PlanPage() {
                   loop
                   muted
                   playsInline
-                  className="w-full aspect-video object-cover"
+                  className="w-full h-auto"
                 >
-                  <source src="/videos/plan3.mp4" type="video/mp4" />
+                  <source src="/videos/plan4.mp4" type="video/mp4" />
                 </video>
               </div>
 
@@ -374,9 +374,9 @@ export default async function PlanPage() {
                 loop
                 muted
                 playsInline
-                className="w-full aspect-[21/9] object-cover"
+                className="w-full h-auto"
               >
-                <source src="/videos/plan4.mp4" type="video/mp4" />
+                <source src="/videos/plan5.mp4" type="video/mp4" />
               </video>
               <div className="absolute inset-0 bg-gradient-to-t from-bg/80 to-transparent flex items-end">
                 <div className="p-8">
@@ -472,9 +472,9 @@ export default async function PlanPage() {
                   loop
                   muted
                   playsInline
-                  className="w-full aspect-video object-cover"
+                  className="w-full h-auto"
                 >
-                  <source src="/videos/plan5.mp4" type="video/mp4" />
+                  <source src="/videos/plan6.mp4" type="video/mp4" />
                 </video>
               </div>
             </div>
@@ -486,9 +486,9 @@ export default async function PlanPage() {
                 loop
                 muted
                 playsInline
-                className="w-full aspect-[21/9] object-cover"
+                className="w-full h-auto"
               >
-                <source src="/videos/plan6.mp4" type="video/mp4" />
+                <source src="/videos/plan7.mp4" type="video/mp4" />
               </video>
               <div className="absolute inset-0 bg-gradient-to-r from-bg/80 to-transparent flex items-center">
                 <div className="p-8 max-w-2xl">
@@ -534,9 +534,9 @@ export default async function PlanPage() {
                   loop
                   muted
                   playsInline
-                  className="w-full aspect-video object-cover"
+                  className="w-full h-auto"
                 >
-                  <source src="/videos/plan7.mp4" type="video/mp4" />
+                  <source src="/videos/plan8.mp4" type="video/mp4" />
                 </video>
               </div>
 
@@ -602,9 +602,9 @@ export default async function PlanPage() {
                 loop
                 muted
                 playsInline
-                className="w-full aspect-[21/9] object-cover"
+                className="w-full h-auto"
               >
-                <source src="/videos/plan8.mp4" type="video/mp4" />
+                <source src="/videos/plan.mp4" type="video/mp4" />
               </video>
               <div className="absolute inset-0 bg-gradient-to-t from-bg via-bg/50 to-transparent" />
             </div>
