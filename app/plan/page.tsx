@@ -485,9 +485,9 @@ export default async function PlanPage() {
               </p>
             </div>
 
-            <div className="grid lg:grid-cols-2 gap-8 items-center">
+            <div className="grid lg:grid-cols-2 gap-8 items-start">
               {/* Video */}
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl lg:sticky lg:top-24">
                 <video
                   autoPlay
                   loop
@@ -497,38 +497,145 @@ export default async function PlanPage() {
                 >
                   <source src="/videos/plan7.mp4" type="video/mp4" />
                 </video>
+                <div className="absolute inset-0 bg-gradient-to-t from-bg/60 to-transparent pointer-events-none" />
               </div>
 
               {/* Content */}
               <div className="space-y-6">
-                <Card className="p-6 space-y-3">
-                  <h3 className="text-xl font-display font-bold text-accent">Municipal (Years 1-3)</h3>
-                  <ul className="space-y-2 text-sm text-textDim">
-                    <li>• Vacancy taxes (500% on empty homes)</li>
-                    <li>• CLT land donations from city surplus</li>
-                    <li>• Living wage ordinances ($25/hour)</li>
-                    <li>• Co-op zoning preferences</li>
-                  </ul>
+                {/* Municipal */}
+                <Card className="group relative overflow-hidden hover:border-accent/50 transition-all">
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-accent/5 rounded-full blur-3xl -mr-16 -mt-16 group-hover:bg-accent/10 transition-colors" />
+                  <div className="relative p-6 space-y-4">
+                    <div className="flex items-center gap-3 mb-3">
+                      <div className="h-10 w-10 rounded-lg bg-accent/10 flex items-center justify-center">
+                        <span className="text-xl">🏛️</span>
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-display font-bold text-accent">Municipal</h3>
+                        <p className="text-xs text-textDim font-mono">Years 1-3 · 地方</p>
+                      </div>
+                    </div>
+                    <ul className="space-y-3 text-sm text-textDim">
+                      <li className="flex items-start gap-3 group/item">
+                        <span className="text-accent mt-0.5 group-hover/item:scale-110 transition-transform">→</span>
+                        <span>Vacancy taxes (500% on empty homes)</span>
+                      </li>
+                      <li className="flex items-start gap-3 group/item">
+                        <span className="text-accent mt-0.5 group-hover/item:scale-110 transition-transform">→</span>
+                        <span>CLT land donations from city surplus</span>
+                      </li>
+                      <li className="flex items-start gap-3 group/item">
+                        <span className="text-accent mt-0.5 group-hover/item:scale-110 transition-transform">→</span>
+                        <span>Living wage ordinances ($25/hour)</span>
+                      </li>
+                      <li className="flex items-start gap-3 group/item">
+                        <span className="text-accent mt-0.5 group-hover/item:scale-110 transition-transform">→</span>
+                        <span>Co-op zoning preferences</span>
+                      </li>
+                    </ul>
+                    <div className="pt-3 border-t border-border">
+                      <p className="text-xs text-textDim italic">
+                        Start local: cities move faster than provinces or federal government.
+                      </p>
+                    </div>
+                  </div>
                 </Card>
 
-                <Card className="p-6 space-y-3">
-                  <h3 className="text-xl font-display font-bold text-accent">Provincial (Years 2-5)</h3>
-                  <ul className="space-y-2 text-sm text-textDim">
-                    <li>• Wealth tax (1-2% on $10M+)</li>
-                    <li>• Speculation & vacancy tax expansion</li>
-                    <li>• Card-check unionization</li>
-                    <li>• Worker co-op incentives & grants</li>
-                  </ul>
+                {/* Provincial */}
+                <Card className="group relative overflow-hidden hover:border-accent/50 transition-all">
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-accent/5 rounded-full blur-3xl -mr-16 -mt-16 group-hover:bg-accent/10 transition-colors" />
+                  <div className="relative p-6 space-y-4">
+                    <div className="flex items-center gap-3 mb-3">
+                      <div className="h-10 w-10 rounded-lg bg-accent/10 flex items-center justify-center">
+                        <span className="text-xl">🏢</span>
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-display font-bold text-accent">Provincial</h3>
+                        <p className="text-xs text-textDim font-mono">Years 2-5 · 州</p>
+                      </div>
+                    </div>
+                    <ul className="space-y-3 text-sm text-textDim">
+                      <li className="flex items-start gap-3 group/item">
+                        <span className="text-accent mt-0.5 group-hover/item:scale-110 transition-transform">→</span>
+                        <span>Wealth tax (1-2% on $10M+)</span>
+                      </li>
+                      <li className="flex items-start gap-3 group/item">
+                        <span className="text-accent mt-0.5 group-hover/item:scale-110 transition-transform">→</span>
+                        <span>Speculation & vacancy tax expansion</span>
+                      </li>
+                      <li className="flex items-start gap-3 group/item">
+                        <span className="text-accent mt-0.5 group-hover/item:scale-110 transition-transform">→</span>
+                        <span>Card-check unionization</span>
+                      </li>
+                      <li className="flex items-start gap-3 group/item">
+                        <span className="text-accent mt-0.5 group-hover/item:scale-110 transition-transform">→</span>
+                        <span>Worker co-op incentives & grants</span>
+                      </li>
+                    </ul>
+                    <div className="pt-3 border-t border-border">
+                      <p className="text-xs text-textDim italic">
+                        Scale up: use municipal wins to build momentum for provincial policy.
+                      </p>
+                    </div>
+                  </div>
                 </Card>
 
-                <Card className="p-6 space-y-3">
-                  <h3 className="text-xl font-display font-bold text-accent">Federal (Years 3-7)</h3>
-                  <ul className="space-y-2 text-sm text-textDim">
-                    <li>• Capital gains reform (100% inclusion)</li>
-                    <li>• Offshore haven crackdown</li>
-                    <li>• Co-op Development Bank ($1B fund)</li>
-                    <li>• Citizens&apos; Wealth Fund (FTT)</li>
-                  </ul>
+                {/* Federal */}
+                <Card className="group relative overflow-hidden hover:border-accent/50 transition-all">
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-accent/5 rounded-full blur-3xl -mr-16 -mt-16 group-hover:bg-accent/10 transition-colors" />
+                  <div className="relative p-6 space-y-4">
+                    <div className="flex items-center gap-3 mb-3">
+                      <div className="h-10 w-10 rounded-lg bg-accent/10 flex items-center justify-center">
+                        <span className="text-xl">🏛️</span>
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-display font-bold text-accent">Federal</h3>
+                        <p className="text-xs text-textDim font-mono">Years 3-7 · 連邦</p>
+                      </div>
+                    </div>
+                    <ul className="space-y-3 text-sm text-textDim">
+                      <li className="flex items-start gap-3 group/item">
+                        <span className="text-accent mt-0.5 group-hover/item:scale-110 transition-transform">→</span>
+                        <span>Capital gains reform (100% inclusion)</span>
+                      </li>
+                      <li className="flex items-start gap-3 group/item">
+                        <span className="text-accent mt-0.5 group-hover/item:scale-110 transition-transform">→</span>
+                        <span>Offshore haven crackdown</span>
+                      </li>
+                      <li className="flex items-start gap-3 group/item">
+                        <span className="text-accent mt-0.5 group-hover/item:scale-110 transition-transform">→</span>
+                        <span>Co-op Development Bank ($1B fund)</span>
+                      </li>
+                      <li className="flex items-start gap-3 group/item">
+                        <span className="text-accent mt-0.5 group-hover/item:scale-110 transition-transform">→</span>
+                        <span>Citizens&apos; Wealth Fund (FTT)</span>
+                      </li>
+                    </ul>
+                    <div className="pt-3 border-t border-border">
+                      <p className="text-xs text-textDim italic">
+                        Lock it in: national policy ensures permanence and prevents capital flight.
+                      </p>
+                    </div>
+                  </div>
+                </Card>
+
+                {/* Strategy Card */}
+                <Card className="p-6 bg-gradient-to-br from-accent/5 to-card border-accent/30">
+                  <div className="flex items-start gap-4">
+                    <div className="h-12 w-12 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0">
+                      <Zap className="h-6 w-6 text-accent" />
+                    </div>
+                    <div className="space-y-2">
+                      <h4 className="text-lg font-display font-bold text-text">
+                        戦略 · Strategy
+                      </h4>
+                      <p className="text-sm text-textDim leading-relaxed">
+                        Each level builds on the last. Municipal victories prove viability. 
+                        Provincial wins show scale. Federal policy makes it irreversible. 
+                        This is how movements become systems.
+                      </p>
+                    </div>
+                  </div>
                 </Card>
               </div>
             </div>
