@@ -104,18 +104,28 @@ export function ResourceLayout({
       </Section>
 
       {/* Content Section - Magazine Style */}
-      <Section className="py-16 bg-card">
-        <article className="max-w-4xl mx-auto px-8">
-          {/* Serif typography, narrow column */}
-          <div className="prose prose-lg prose-neutral dark:prose-invert mx-auto
-            prose-headings:font-serif prose-headings:font-bold
-            prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-6 prose-h2:border-b prose-h2:border-border prose-h2:pb-3
-            prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-4
-            prose-p:text-base prose-p:leading-relaxed prose-p:mb-6 prose-p:text-text/90
-            prose-a:text-accent prose-a:no-underline hover:prose-a:underline
-            prose-strong:text-text prose-strong:font-semibold
-            prose-ul:my-6 prose-li:my-2
-            prose-table:text-sm
+      <Section className="py-20 bg-bg">
+        <article className="max-w-3xl mx-auto px-6">
+          {/* Optimized for reading: 65-75 char line length */}
+          <div className="prose prose-xl dark:prose-invert mx-auto
+            prose-headings:font-display prose-headings:font-bold prose-headings:tracking-tight
+            prose-h2:text-4xl prose-h2:mt-16 prose-h2:mb-8 prose-h2:leading-tight
+            prose-h2:border-b-2 prose-h2:border-accent/20 prose-h2:pb-4
+            prose-h3:text-2xl prose-h3:mt-12 prose-h3:mb-6 prose-h3:text-accent
+            prose-p:text-lg prose-p:leading-[1.8] prose-p:mb-8 prose-p:text-text
+            prose-a:text-accent prose-a:font-medium prose-a:no-underline hover:prose-a:underline prose-a:underline-offset-4
+            prose-strong:text-text prose-strong:font-bold prose-strong:text-accent
+            prose-ul:my-8 prose-ul:space-y-3 prose-li:text-lg prose-li:leading-relaxed prose-li:pl-2
+            prose-ol:my-8 prose-ol:space-y-3 prose-ol:pl-6
+            prose-code:text-accent prose-code:bg-accent/10 prose-code:px-2 prose-code:py-1 prose-code:rounded
+            prose-pre:bg-card prose-pre:border prose-pre:border-border
+            prose-blockquote:border-l-4 prose-blockquote:border-accent prose-blockquote:bg-accent/5 prose-blockquote:py-4 prose-blockquote:px-6 prose-blockquote:italic
+            prose-table:border-collapse prose-table:w-full prose-table:my-8
+            prose-thead:border-b-2 prose-thead:border-accent
+            prose-th:text-left prose-th:font-bold prose-th:text-base prose-th:py-4 prose-th:px-4
+            prose-td:py-4 prose-td:px-4 prose-td:border-b prose-td:border-border
+            prose-tr:transition-colors hover:prose-tr:bg-card/50
+            prose-hr:border-border prose-hr:my-12
             max-w-none">
             {children}
           </div>
@@ -168,15 +178,24 @@ export function ResourceSection({ children, className = "" }: { children: ReactN
 
 export function ResourceCallout({ children, type = "info" }: { children: ReactNode; type?: "info" | "warning" | "success" }) {
   const colors = {
-    info: "border-accent/20 bg-accent/5",
-    warning: "border-warn/20 bg-warn/5",
-    success: "border-success/20 bg-success/5",
+    info: "border-accent bg-accent/5",
+    warning: "border-warn bg-warn/5",
+    success: "border-success bg-success/5",
+  };
+  
+  const icons = {
+    info: "💡",
+    warning: "⚠️",
+    success: "✓",
   };
 
   return (
-    <Card className={`p-6 border-l-4 ${colors[type]} my-6`}>
-      <div className="prose dark:prose-invert max-w-none">
-        {children}
+    <Card className={`p-8 border-l-4 ${colors[type]} my-8 shadow-sm`}>
+      <div className="flex gap-4">
+        <div className="text-2xl flex-shrink-0">{icons[type]}</div>
+        <div className="prose dark:prose-invert max-w-none prose-p:text-base prose-p:leading-relaxed prose-p:mb-4">
+          {children}
+        </div>
       </div>
     </Card>
   );
@@ -184,7 +203,7 @@ export function ResourceCallout({ children, type = "info" }: { children: ReactNo
 
 export function ResourceStats({ children }: { children: ReactNode }) {
   return (
-    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 my-8">
+    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 my-12 not-prose">
       {children}
     </div>
   );
@@ -192,9 +211,9 @@ export function ResourceStats({ children }: { children: ReactNode }) {
 
 export function ResourceStat({ label, value }: { label: string; value: string }) {
   return (
-    <Card className="p-6 text-center border-l-4 border-accent">
-      <div className="text-3xl font-bold text-accent mb-2">{value}</div>
-      <div className="text-sm text-textDim">{label}</div>
+    <Card className="p-6 text-center border-l-4 border-accent hover:shadow-lg transition-shadow">
+      <div className="text-4xl font-bold text-accent mb-3">{value}</div>
+      <div className="text-sm text-textDim font-medium uppercase tracking-wide">{label}</div>
     </Card>
   );
 }
