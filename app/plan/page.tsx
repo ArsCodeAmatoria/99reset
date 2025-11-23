@@ -253,9 +253,8 @@ export default async function PlanPage() {
               </p>
             </div>
 
-            <div className="grid lg:grid-cols-2 gap-8 items-center">
-              {/* Content */}
-              <div className="space-y-6">
+            <div className="max-w-4xl mx-auto">
+              <div className="grid md:grid-cols-2 gap-6">
                 <Card className="p-6 space-y-4">
                   <div className="h-12 w-12 rounded-full bg-accent/10 flex items-center justify-center">
                     <Target className="h-6 w-6 text-accent" />
@@ -283,19 +282,6 @@ export default async function PlanPage() {
                     <div className="text-sm text-textDim">Annual dividend: $500-$2,000/person</div>
                   </div>
                 </Card>
-              </div>
-
-              {/* Video */}
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-                <video
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  className="w-full h-auto"
-                >
-                  <source src="/videos/plan3.mp4" type="video/mp4" />
-                </video>
               </div>
             </div>
           </div>
@@ -389,9 +375,8 @@ export default async function PlanPage() {
               </p>
             </div>
 
-            <div className="grid lg:grid-cols-2 gap-8 items-center">
-              {/* Content */}
-              <div className="space-y-6">
+            <div className="max-w-5xl mx-auto">
+              <div className="grid md:grid-cols-2 gap-8">
                 <Card className="p-6 space-y-4">
                   <h3 className="text-xl font-display font-bold">Strategic Sectors</h3>
                   <ul className="space-y-3 text-textDim">
@@ -438,29 +423,16 @@ export default async function PlanPage() {
                     Target: 1,200 drives, +5% labour GDP share
                   </div>
                 </Card>
-
-                <Card className="p-6 backdrop-blur-sm bg-card/90">
-                  <p className="text-xl font-display font-bold text-text mb-3">
-                    連帯 · Solidarity
-                  </p>
-                  <p className="text-base text-textDim">
-                    Union workers earn $5.40/hour more. But the real power is collective: when we organize together, we shift the entire economy.
-                  </p>
-                </Card>
               </div>
 
-              {/* Video */}
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-                <video
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  className="w-full h-auto"
-                >
-                  <source src="/videos/plan6.mp4" type="video/mp4" />
-                </video>
-              </div>
+              <Card className="p-8 backdrop-blur-sm bg-card/90 mt-8 max-w-3xl mx-auto">
+                <p className="text-xl font-display font-bold text-text mb-3 text-center">
+                  連帯 · Solidarity
+                </p>
+                <p className="text-base text-textDim text-center">
+                  Union workers earn $5.40/hour more. But the real power is collective: when we organize together, we shift the entire economy.
+                </p>
+              </Card>
             </div>
           </div>
         </Container>
@@ -662,53 +634,37 @@ export default async function PlanPage() {
               </p>
             </div>
 
-            <div className="grid lg:grid-cols-2 gap-8 items-center mb-12">
-              {/* Video */}
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-                <video
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  className="w-full h-auto"
-                >
-                  <source src="/videos/plan5.mp4" type="video/mp4" />
-                </video>
-              </div>
-
-              {/* Content */}
-              <div className="space-y-6">
-                <div className="grid grid-cols-2 gap-4">
-                  <Card className="p-6 text-center space-y-3">
-                    <div className="text-4xl font-display font-bold text-accent">$150B</div>
-                    <div className="text-sm text-textDim">Deposits moved to credit unions</div>
-                  </Card>
-                  <Card className="p-6 text-center space-y-3">
-                    <div className="text-4xl font-display font-bold text-accent">1,200</div>
-                    <div className="text-sm text-textDim">Union drives launched</div>
-                  </Card>
-                  <Card className="p-6 text-center space-y-3">
-                    <div className="text-4xl font-display font-bold text-accent">2,000</div>
-                    <div className="text-sm text-textDim">Worker co-ops formed</div>
-                  </Card>
-                  <Card className="p-6 text-center space-y-3">
-                    <div className="text-4xl font-display font-bold text-accent">50,000</div>
-                    <div className="text-sm text-textDim">CLT homes secured</div>
-                  </Card>
-                </div>
-
-                <Card className="p-6">
-                  <p className="text-xl font-display font-bold text-text mb-3">
-                    By Year 20: <span className="text-accent">$1 Trillion</span> Wealth Fund
-                  </p>
-                  <p className="text-base text-textDim mb-2">
-                    Annual dividend: <span className="text-accent font-bold">$2,000 per person</span>
-                  </p>
-                  <p className="text-sm text-textDim">
-                    Top 1% wealth share drops from 25% to 10%. Economic democracy achieved.
-                  </p>
+            <div className="max-w-5xl mx-auto mb-12">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                <Card className="p-6 text-center space-y-3">
+                  <div className="text-4xl font-display font-bold text-accent">$150B</div>
+                  <div className="text-sm text-textDim">Deposits moved to credit unions</div>
+                </Card>
+                <Card className="p-6 text-center space-y-3">
+                  <div className="text-4xl font-display font-bold text-accent">1,200</div>
+                  <div className="text-sm text-textDim">Union drives launched</div>
+                </Card>
+                <Card className="p-6 text-center space-y-3">
+                  <div className="text-4xl font-display font-bold text-accent">2,000</div>
+                  <div className="text-sm text-textDim">Worker co-ops formed</div>
+                </Card>
+                <Card className="p-6 text-center space-y-3">
+                  <div className="text-4xl font-display font-bold text-accent">50,000</div>
+                  <div className="text-sm text-textDim">CLT homes secured</div>
                 </Card>
               </div>
+
+              <Card className="p-8 max-w-3xl mx-auto">
+                <p className="text-xl font-display font-bold text-text mb-3 text-center">
+                  By Year 20: <span className="text-accent">$1 Trillion</span> Wealth Fund
+                </p>
+                <p className="text-base text-textDim mb-2 text-center">
+                  Annual dividend: <span className="text-accent font-bold">$2,000 per person</span>
+                </p>
+                <p className="text-sm text-textDim text-center">
+                  Top 1% wealth share drops from 25% to 10%. Economic democracy achieved.
+                </p>
+              </Card>
             </div>
           </div>
         </Container>
