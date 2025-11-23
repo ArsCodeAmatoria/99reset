@@ -37,7 +37,7 @@ export default function RootLayout({
       <head>
         <StructuredData data={createOrganizationSchema()} />
       </head>
-      <body className="min-h-screen">
+      <body className="min-h-screen overflow-x-hidden">
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
           <ScrollProgress />
           <BackgroundPattern />
@@ -45,7 +45,7 @@ export default function RootLayout({
             Skip to content
           </a>
           <Header />
-          <main id="main-content">
+          <main id="main-content" className="overflow-x-hidden">
             {children}
           </main>
           <Footer />
