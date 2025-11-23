@@ -111,13 +111,7 @@ export default function CoalitionStrategyArticle() {
       <h2>Tactical Allies: Small Capitalists</h2>
       <JapaneseHeading japanese="戦術的同盟" english="The Co-op Converts" />
 
-      <p>Small capitalists can become tactical allies if their trajectory aligns with the Reset:</p>
-
-      <ul className="list-disc pl-6 space-y-2 my-4">
-        <li><strong>Credit Union Members:</strong> Individuals in institutions like Vancity (500K members, $35B assets) who can redirect capital from Big 5 banks.</li>
-        <li><strong>Small Landlords:</strong> Those owning 1-3 properties ($500K-$1M net worth) willing to sell to CLTs at 110% market value.</li>
-        <li><strong>Co-op Suppliers:</strong> Contractors building UCI projects, incentivized toward worker ownership (Colorado model: 2% equity/year to worker trust).</li>
-      </ul>
+      <p>Small capitalists can become tactical allies when their trajectory aligns with Reset objectives. <strong>Credit union members</strong> in institutions like Vancity—with 500,000 members controlling $35 billion in assets—possess leverage to redirect capital away from Big 5 banks toward democratic finance. <strong>Small landlords</strong> owning 1-3 properties with $500,000-$1,000,000 net worth become allies when willing to sell to Community Land Trusts at 110% of market value, securing modest profit while enabling permanent affordability. <strong>Co-op suppliers</strong>—contractors building UCI projects—can be incentivized toward worker ownership through mechanisms like Colorado&apos;s model transferring 2% equity annually to worker trusts.</p>
 
       <ArticleCallout type="info">
         <p><strong>Rule:</strong> They remain allies only if they actively vest equity to workers and communities. If they refuse worker ownership, they&apos;re opponents.</p>
@@ -223,12 +217,7 @@ export default function CoalitionStrategyArticle() {
 
       <ColoredSection>
         <JapaneseHeading japanese="結論" english="Conclusion" />
-        <p>This is a <strong>democratic socialist movement</strong>. Our strategy is clear:</p>
-        <ul className="list-disc pl-6 space-y-2 my-4">
-          <li><strong>Align with:</strong> Anyone under $1M who builds <strong>credit unions, CLTs, worker co-ops, and unions</strong>.</li>
-          <li><strong>Reject:</strong> Anyone over $1M who blocks ownership.</li>
-          <li><strong>Win by:</strong> Owning the future together.</li>
-        </ul>
+        <p>This is a <strong>democratic socialist movement</strong> with a crystalline strategy. We <strong>align with anyone</strong> holding less than $1 million in net worth who actively builds <strong>credit unions, CLTs, worker co-ops, and unions</strong>—the four pillars of economic democracy. We <strong>reject anyone</strong> hoarding wealth exceeding $1 million who blocks worker ownership, regardless of their progressive rhetoric or identity markers. We <strong>win by owning</strong> the economic infrastructure together rather than petitioning the powerful for crumbs.</p>
       </ColoredSection>
 
       <p>In Vancouver, November 14, 2025, we will host the <strong>99% Ownership Summit</strong>—bringing together Jews, Muslims, Christians, LGBTQ, democratic socialists, and small capitalists. The agenda: <strong>$100M bank boycott</strong>, <strong>5 new CLTs</strong>, <strong>10 worker co-ops</strong>.</p>
