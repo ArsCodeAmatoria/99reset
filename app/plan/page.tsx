@@ -463,165 +463,142 @@ export default async function PlanPage() {
               </p>
             </div>
 
-            <div className="grid lg:grid-cols-2 gap-8 items-start">
-              {/* Left Column: Video */}
-              <div className="lg:sticky lg:top-24">
-                <div className="relative rounded-3xl overflow-hidden border-2 border-accent/30 shadow-2xl group">
-                  <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none z-10" />
-                  <video
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    className="w-full h-auto"
-                  >
-                    <source src="/videos/class-consciousness.mp4" type="video/mp4" />
-                  </video>
-                  <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-bg via-bg/80 to-transparent">
-                    <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent/20 border border-accent/30 backdrop-blur-md">
-                      <Scale className="h-4 w-4 text-accent" />
-                      <span className="text-sm font-mono text-accent font-bold">三段階戦略</span>
-                      <div className="h-3 w-px bg-accent/30" />
-                      <span className="text-xs text-textDim">three-tier strategy</span>
+            {/* Video Feature */}
+            <div className="max-w-5xl mx-auto mb-16">
+              <div className="relative rounded-3xl overflow-hidden border-2 border-accent/30 shadow-2xl group">
+                <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none z-10" />
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-full h-auto"
+                >
+                  <source src="/videos/class-consciousness.mp4" type="video/mp4" />
+                </video>
+                <div className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-bg via-bg/90 to-transparent">
+                  <div className="flex items-center justify-between flex-wrap gap-4">
+                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/20 border border-accent/30 backdrop-blur-md">
+                      <Scale className="h-5 w-5 text-accent" />
+                      <span className="text-base font-mono text-accent font-bold">三段階戦略</span>
+                      <div className="h-4 w-px bg-accent/30" />
+                      <span className="text-sm text-textDim">three-tier strategy</span>
                     </div>
+                    <p className="text-sm text-textDim italic">Each tier reinforces the next</p>
                   </div>
                 </div>
               </div>
+            </div>
 
-              {/* Right Column: Policy Cards */}
-              <div className="space-y-6">
-                {/* Municipal */}
-                <Card className="group relative overflow-hidden hover:border-accent/50 transition-all">
-                  <div className="absolute top-0 right-0 w-32 h-32 bg-accent/5 rounded-full blur-3xl -mr-16 -mt-16 group-hover:bg-accent/10 transition-colors duration-500" />
-                  <div className="absolute inset-y-0 left-0 w-1 bg-gradient-to-b from-accent to-transparent" />
-                  <div className="relative p-6 space-y-3">
-                    <div className="flex items-center gap-3 mb-2">
-                      <div className="h-10 w-10 rounded-lg bg-gradient-to-br from-accent/20 to-accent/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                        <MapPin className="h-5 w-5 text-accent" />
-                      </div>
-                      <div className="flex-1">
-                        <h3 className="text-xl font-display font-bold text-text group-hover:text-accent transition-colors">Municipal</h3>
-                        <p className="text-xs text-textDim font-mono">地方 · Years 1-3</p>
-                      </div>
+            {/* Three Policy Tiers */}
+            <div className="grid md:grid-cols-3 gap-8 mb-12">
+              {/* Municipal */}
+              <Card className="group relative overflow-hidden hover:border-accent transition-all">
+                <div className="absolute inset-0 bg-gradient-to-br from-accent/5 via-transparent to-transparent" />
+                <div className="relative p-6 space-y-4">
+                  <div className="flex flex-col items-center text-center">
+                    <div className="h-16 w-16 rounded-2xl bg-gradient-to-br from-accent/30 to-accent/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                      <MapPin className="h-8 w-8 text-accent" />
                     </div>
-                    <ul className="space-y-2 text-sm text-textDim">
-                      <li className="flex items-start gap-2">
-                        <span className="text-accent mt-0.5">→</span>
-                        <span>Vacancy taxes (500% on empty homes)</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="text-accent mt-0.5">→</span>
-                        <span>CLT land donations from city surplus</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="text-accent mt-0.5">→</span>
-                        <span>Living wage ordinances ($25/hour)</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="text-accent mt-0.5">→</span>
-                        <span>Co-op zoning preferences</span>
-                      </li>
-                    </ul>
+                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/10 border border-accent/20 mb-2">
+                      <span className="text-xs font-mono text-accent font-bold">地方</span>
+                    </div>
+                    <h3 className="text-2xl font-display font-bold text-text mb-1">Municipal</h3>
+                    <p className="text-xs text-accent font-bold uppercase tracking-wider mb-4">Years 1-3</p>
                   </div>
-                </Card>
+                  <ul className="space-y-3 text-sm text-textDim">
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-0.5 font-bold">•</span>
+                      <span>Vacancy taxes (500%)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-0.5 font-bold">•</span>
+                      <span>CLT land donations</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-0.5 font-bold">•</span>
+                      <span>Living wage ($25/hr)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-0.5 font-bold">•</span>
+                      <span>Co-op zoning</span>
+                    </li>
+                  </ul>
+                </div>
+                <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-accent to-transparent" />
+              </Card>
 
-                {/* Provincial */}
-                <Card className="group relative overflow-hidden hover:border-accent/50 transition-all">
-                  <div className="absolute top-0 right-0 w-32 h-32 bg-accent/5 rounded-full blur-3xl -mr-16 -mt-16 group-hover:bg-accent/10 transition-colors duration-500" />
-                  <div className="absolute inset-y-0 left-0 w-1 bg-gradient-to-b from-accent to-transparent" />
-                  <div className="relative p-6 space-y-3">
-                    <div className="flex items-center gap-3 mb-2">
-                      <div className="h-10 w-10 rounded-lg bg-gradient-to-br from-accent/20 to-accent/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                        <Building className="h-5 w-5 text-accent" />
-                      </div>
-                      <div className="flex-1">
-                        <h3 className="text-xl font-display font-bold text-text group-hover:text-accent transition-colors">Provincial</h3>
-                        <p className="text-xs text-textDim font-mono">州 · Years 2-5</p>
-                      </div>
+              {/* Provincial */}
+              <Card className="group relative overflow-hidden hover:border-accent transition-all md:translate-y-8">
+                <div className="absolute inset-0 bg-gradient-to-br from-accent/5 via-transparent to-transparent" />
+                <div className="relative p-6 space-y-4">
+                  <div className="flex flex-col items-center text-center">
+                    <div className="h-16 w-16 rounded-2xl bg-gradient-to-br from-accent/30 to-accent/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                      <Building className="h-8 w-8 text-accent" />
                     </div>
-                    <ul className="space-y-2 text-sm text-textDim">
-                      <li className="flex items-start gap-2">
-                        <span className="text-accent mt-0.5">→</span>
-                        <span>Wealth tax (1-2% on $10M+)</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="text-accent mt-0.5">→</span>
-                        <span>Speculation & vacancy tax expansion</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="text-accent mt-0.5">→</span>
-                        <span>Card-check unionization</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="text-accent mt-0.5">→</span>
-                        <span>Worker co-op incentives & grants</span>
-                      </li>
-                    </ul>
+                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/10 border border-accent/20 mb-2">
+                      <span className="text-xs font-mono text-accent font-bold">州</span>
+                    </div>
+                    <h3 className="text-2xl font-display font-bold text-text mb-1">Provincial</h3>
+                    <p className="text-xs text-accent font-bold uppercase tracking-wider mb-4">Years 2-5</p>
                   </div>
-                </Card>
+                  <ul className="space-y-3 text-sm text-textDim">
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-0.5 font-bold">•</span>
+                      <span>Wealth tax (1-2% on $10M+)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-0.5 font-bold">•</span>
+                      <span>Speculation tax expansion</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-0.5 font-bold">•</span>
+                      <span>Card-check unionization</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-0.5 font-bold">•</span>
+                      <span>Worker co-op grants</span>
+                    </li>
+                  </ul>
+                </div>
+                <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-accent to-transparent" />
+              </Card>
 
-                {/* Federal */}
-                <Card className="group relative overflow-hidden hover:border-accent/50 transition-all">
-                  <div className="absolute top-0 right-0 w-32 h-32 bg-accent/5 rounded-full blur-3xl -mr-16 -mt-16 group-hover:bg-accent/10 transition-colors duration-500" />
-                  <div className="absolute inset-y-0 left-0 w-1 bg-gradient-to-b from-accent to-transparent" />
-                  <div className="relative p-6 space-y-3">
-                    <div className="flex items-center gap-3 mb-2">
-                      <div className="h-10 w-10 rounded-lg bg-gradient-to-br from-accent/20 to-accent/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                        <Landmark className="h-5 w-5 text-accent" />
-                      </div>
-                      <div className="flex-1">
-                        <h3 className="text-xl font-display font-bold text-text group-hover:text-accent transition-colors">Federal</h3>
-                        <p className="text-xs text-textDim font-mono">連邦 · Years 3-7</p>
-                      </div>
+              {/* Federal */}
+              <Card className="group relative overflow-hidden hover:border-accent transition-all md:translate-y-16">
+                <div className="absolute inset-0 bg-gradient-to-br from-accent/5 via-transparent to-transparent" />
+                <div className="relative p-6 space-y-4">
+                  <div className="flex flex-col items-center text-center">
+                    <div className="h-16 w-16 rounded-2xl bg-gradient-to-br from-accent/30 to-accent/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                      <Landmark className="h-8 w-8 text-accent" />
                     </div>
-                    <ul className="space-y-2 text-sm text-textDim">
-                      <li className="flex items-start gap-2">
-                        <span className="text-accent mt-0.5">→</span>
-                        <span>Capital gains reform (100% inclusion)</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="text-accent mt-0.5">→</span>
-                        <span>Offshore haven crackdown</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="text-accent mt-0.5">→</span>
-                        <span>Co-op Development Bank ($1B fund)</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="text-accent mt-0.5">→</span>
-                        <span>Citizens&apos; Wealth Fund (FTT)</span>
-                      </li>
-                    </ul>
+                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/10 border border-accent/20 mb-2">
+                      <span className="text-xs font-mono text-accent font-bold">連邦</span>
+                    </div>
+                    <h3 className="text-2xl font-display font-bold text-text mb-1">Federal</h3>
+                    <p className="text-xs text-accent font-bold uppercase tracking-wider mb-4">Years 3-7</p>
                   </div>
-                </Card>
-
-                {/* Timeline Card */}
-                <Card className="group relative overflow-hidden hover:border-accent/50 transition-all">
-                  <div className="absolute top-0 right-0 w-32 h-32 bg-accent/5 rounded-full blur-3xl -mr-16 -mt-16 group-hover:bg-accent/10 transition-colors duration-500" />
-                  <div className="absolute inset-y-0 left-0 w-1 bg-gradient-to-b from-accent via-accent/50 to-transparent" />
-                  <div className="relative p-6 space-y-3">
-                    <div className="flex items-center gap-3 mb-2">
-                      <div className="h-10 w-10 rounded-lg bg-gradient-to-br from-accent/20 to-accent/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                        <Zap className="h-5 w-5 text-accent" />
-                      </div>
-                      <div className="flex-1">
-                        <h3 className="text-xl font-display font-bold text-text group-hover:text-accent transition-colors">The Cascade</h3>
-                        <p className="text-xs text-textDim font-mono">順次展開 · sequential</p>
-                      </div>
-                    </div>
-                    <div className="space-y-2 text-sm text-textDim">
-                      <p className="leading-relaxed">
-                        Each tier reinforces the next. Municipal victories prove viability, 
-                        provincial wins demonstrate scale, federal policy locks it in permanently.
-                      </p>
-                      <p className="text-xs italic pt-2 border-t border-border">
-                        By year 10, the reset becomes irreversible.
-                      </p>
-                    </div>
-                  </div>
-                </Card>
-
-              </div>
+                  <ul className="space-y-3 text-sm text-textDim">
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-0.5 font-bold">•</span>
+                      <span>Capital gains reform (100%)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-0.5 font-bold">•</span>
+                      <span>Offshore haven crackdown</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-0.5 font-bold">•</span>
+                      <span>Co-op Dev Bank ($1B)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent mt-0.5 font-bold">•</span>
+                      <span>Citizens&apos; Wealth Fund</span>
+                    </li>
+                  </ul>
+                </div>
+                <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-accent to-transparent" />
+              </Card>
             </div>
 
             {/* Japanese Proverb Card */}
