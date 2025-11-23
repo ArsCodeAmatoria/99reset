@@ -5,6 +5,8 @@ import Image from 'next/image';
 import { Container } from './container';
 import { Section } from './section';
 import { XComments } from './x-comments';
+import { Comments } from './comments';
+import { getComments, getCommentCount } from '@/app/api/actions/comment';
 
 interface RelatedArticle {
   slug: string;
@@ -29,9 +31,15 @@ interface ArticleLayoutProps {
   slug: string;
 }
 
-export function ArticleLayout({ children, title, date, category, excerpt, image, prevArticle, nextArticle, relatedArticles, discussionTweetUrl, slug }: ArticleLayoutProps) {
+export async function ArticleLayout({ children, title, date, category, excerpt, image, prevArticle, nextArticle, relatedArticles, discussionTweetUrl, slug }: ArticleLayoutProps) {
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://99reset.vercel.app';
   const postUrl = `${siteUrl}/updates/${slug}`;
+
+  // Fetch comments data
+  const [comments, commentCount] = await Promise.all([
+    getComments(slug),
+    getCommentCount(slug),
+  ]);
 
   return (
     <div className="min-h-screen bg-white dark:bg-black">
@@ -158,6 +166,13 @@ export function ArticleLayout({ children, title, date, category, excerpt, image,
           title={title}
         />
       )}
+
+      {/* Website Comments Section */}
+      <Comments
+        articleSlug={slug}
+        initialComments={comments}
+        commentCount={commentCount}
+      />
 
       {/* Related Articles */}
       {relatedArticles && relatedArticles.length > 0 && (

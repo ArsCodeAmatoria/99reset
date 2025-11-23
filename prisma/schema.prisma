@@ -67,4 +67,16 @@ model Newsletter {
   @@index([email])
 }
 
+model Comment {
+  id          String   @id @default(cuid())
+  articleSlug String
+  name        String
+  email       String?  // Optional, for notifications
+  content     String   @db.Text
+  approved    Boolean  @default(false) // Moderation
+  createdAt   DateTime @default(now())
 
+  @@index([articleSlug])
+  @@index([approved])
+  @@index([createdAt])
+}
