@@ -78,7 +78,7 @@ export function ArticleLayout({ children, title, date, category, excerpt, image 
       {/* Article Content */}
       <Section className="py-12 md:py-20 bg-card/30">
         <Container>
-          <article className="max-w-4xl mx-auto prose dark:prose-invert">
+          <article className="max-w-2xl mx-auto prose dark:prose-invert prose-lg prose-headings:font-display prose-headings:font-bold prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-6 prose-h3:text-2xl prose-h3:mt-8 prose-h3:mb-4 prose-p:leading-relaxed prose-p:mb-6 prose-li:mb-2 prose-a:text-accent prose-a:no-underline hover:prose-a:underline">
             {children}
           </article>
         </Container>
@@ -90,13 +90,13 @@ export function ArticleLayout({ children, title, date, category, excerpt, image 
 // Reusable article components
 export function ColoredSection({ children, color = 'dark' }: { children: React.ReactNode; color?: 'dark' | 'darker' | 'accent' }) {
   const styles = {
-    dark: 'bg-card/50 border-y border-border',
-    darker: 'bg-card border-y border-border',
-    accent: 'bg-accent/5 border-y border-accent/20',
+    dark: 'bg-card/50 border-l-4 border-border',
+    darker: 'bg-card border-l-4 border-border',
+    accent: 'bg-accent/5 border-l-4 border-accent',
   };
 
   return (
-    <div className={`-mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8 py-8 my-8 ${styles[color]}`}>
+    <div className={`px-6 py-6 my-8 rounded-r-lg ${styles[color]}`}>
       {children}
     </div>
   );
@@ -104,21 +104,21 @@ export function ColoredSection({ children, color = 'dark' }: { children: React.R
 
 export function Highlight({ children }: { children: React.ReactNode }) {
   return (
-    <div className="my-6 rounded-lg bg-accent/10 border-2 border-accent/30 p-6">
-      <div className="font-semibold text-accent">{children}</div>
+    <div className="my-8 p-6 bg-accent/10 border-l-4 border-accent rounded-r-lg">
+      <div className="text-lg font-medium text-accent leading-relaxed">{children}</div>
     </div>
   );
 }
 
 export function ArticleCallout({ children, type = 'info' }: { children: React.ReactNode; type?: 'info' | 'success' | 'warning' }) {
   const styles = {
-    info: 'bg-blue-100 dark:bg-blue-950/30 border-blue-300 dark:border-blue-900/50 text-blue-900 dark:text-blue-100',
-    success: 'bg-green-100 dark:bg-green-950/30 border-green-300 dark:border-green-900/50 text-green-900 dark:text-green-100',
-    warning: 'bg-yellow-100 dark:bg-yellow-950/30 border-yellow-300 dark:border-yellow-900/50 text-yellow-900 dark:text-yellow-100',
+    info: 'bg-blue-100 dark:bg-blue-950/30 border-blue-500 text-blue-900 dark:text-blue-100',
+    success: 'bg-green-100 dark:bg-green-950/30 border-green-500 text-green-900 dark:text-green-100',
+    warning: 'bg-yellow-100 dark:bg-yellow-950/30 border-yellow-500 text-yellow-900 dark:text-yellow-100',
   };
 
   return (
-    <div className={`my-6 rounded-lg border-2 p-6 ${styles[type]}`}>
+    <div className={`my-8 p-6 border-l-4 rounded-r-lg ${styles[type]}`}>
       {children}
     </div>
   );
@@ -126,7 +126,7 @@ export function ArticleCallout({ children, type = 'info' }: { children: React.Re
 
 export function Stats({ children }: { children: React.ReactNode }) {
   return (
-    <div className="my-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+    <div className="my-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 not-prose">
       {children}
     </div>
   );
@@ -134,19 +134,19 @@ export function Stats({ children }: { children: React.ReactNode }) {
 
 export function Stat({ value, label }: { value: string; label: string }) {
   return (
-    <Card className="p-6">
+    <div className="p-6 bg-card border-l-4 border-accent rounded-r-lg hover:shadow-lg transition-shadow">
       <div className="text-3xl font-display font-bold text-accent mb-2">{value}</div>
-      <div className="text-sm text-textDim">{label}</div>
-    </Card>
+      <div className="text-sm text-textDim leading-snug">{label}</div>
+    </div>
   );
 }
 
 export function JapaneseHeading({ japanese, english }: { japanese: string; english: string }) {
   return (
-    <h2 className="text-3xl md:text-4xl font-display font-bold mb-6">
-      <span className="font-japanese-fat text-accent">{japanese}</span>
-      <span className="text-textDim"> · {english}</span>
-    </h2>
+    <div className="flex items-center gap-3 my-6 not-prose">
+      <span className="text-2xl font-japaneseFat text-accent">{japanese}</span>
+      <span className="text-lg text-textDim font-mono">· {english}</span>
+    </div>
   );
 }
 
