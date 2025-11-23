@@ -4,7 +4,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Container } from './container';
 import { Section } from './section';
-import { XComments } from './x-comments';
 import { Comments } from './comments';
 import { getComments, getCommentCount } from '@/app/api/actions/comment';
 import { getDemoComments, getDemoCommentCount } from '@/lib/demo-comments';
@@ -172,16 +171,7 @@ export async function ArticleLayout({ children, title, date, category, excerpt, 
         )}
       </article>
 
-      {/* X Comments Section */}
-      {discussionTweetUrl && (
-        <XComments
-          tweetUrl={discussionTweetUrl}
-          postUrl={postUrl}
-          title={title}
-        />
-      )}
-
-      {/* Website Comments Section */}
+      {/* Comments Section */}
       <Comments
         articleSlug={slug}
         initialComments={comments}
