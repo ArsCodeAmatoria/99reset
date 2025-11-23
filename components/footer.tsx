@@ -56,9 +56,9 @@ export function Footer() {
                     <Image
                       src="/svg/NDP-orange.png"
                       alt="NDP Logo"
-                      width={100}
-                      height={67}
-                      className="h-12 w-auto"
+                      width={140}
+                      height={93}
+                      className="h-16 w-auto"
                     />
                   </a>
                   <a
