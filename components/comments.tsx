@@ -1,6 +1,7 @@
 'use client';
 
-import React, { useEffect, useActionState } from 'react';
+import React, { useEffect } from 'react';
+import { useFormState } from 'react-dom';
 import { createComment, type CommentFormState } from '@/app/api/actions/comment';
 import { MessageCircle, Send } from 'lucide-react';
 
@@ -23,15 +24,24 @@ const initialState: CommentFormState = {
 };
 
 export function Comments({ articleSlug, initialComments, commentCount }: CommentsProps) {
-  const [state, formAction, isPending] = useActionState(createComment, initialState);
+  const [state, formAction] = useFormState(createComment, initialState);
   const formRef = React.useRef<HTMLFormElement>(null);
+  const [isPending, setIsPending] = React.useState(false);
 
   // Reset form on success
   useEffect(() => {
     if (state.success) {
       formRef.current?.reset();
+      setIsPending(false);
+    } else if (state.message && !state.success) {
+      setIsPending(false);
     }
-  }, [state.success]);
+  }, [state.success, state.message]);
+
+  const handleSubmit = async (formData: FormData) => {
+    setIsPending(true);
+    formAction(formData);
+  };
 
   return (
     <section className="max-w-4xl mx-auto px-6 py-16 border-t-2 border-gray-200 dark:border-gray-800">
@@ -45,7 +55,7 @@ export function Comments({ articleSlug, initialComments, commentCount }: Comment
         </div>
 
         {/* Comment Form */}
-        <form ref={formRef} action={formAction} className="space-y-4">
+        <form ref={formRef} action={handleSubmit} className="space-y-4">
           <input type="hidden" name="articleSlug" value={articleSlug} />
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
