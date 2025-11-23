@@ -464,29 +464,79 @@ export default async function PlanPage() {
             </div>
 
             <div className="grid lg:grid-cols-2 gap-12 items-start">
-              {/* Video */}
-              <div className="relative rounded-3xl overflow-hidden border-2 border-accent/30 shadow-2xl lg:sticky lg:top-24 group">
-                <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none z-10" />
-                <video
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  className="w-full h-auto"
-                >
-                  <source src="/videos/class-consciousness.mp4" type="video/mp4" />
-                </video>
-                <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-bg via-bg/80 to-transparent">
-                  <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent/20 border border-accent/30 backdrop-blur-md">
-                    <Scale className="h-4 w-4 text-accent" />
-                    <span className="text-sm font-mono text-accent font-bold">三段階戦略</span>
-                    <div className="h-3 w-px bg-accent/30" />
-                    <span className="text-xs text-textDim">three-tier strategy</span>
+              {/* Left Column: Video + Card */}
+              <div className="space-y-6">
+                {/* Video */}
+                <div className="relative rounded-3xl overflow-hidden border-2 border-accent/30 shadow-2xl group">
+                  <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none z-10" />
+                  <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="w-full h-auto"
+                  >
+                    <source src="/videos/class-consciousness.mp4" type="video/mp4" />
+                  </video>
+                  <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-bg via-bg/80 to-transparent">
+                    <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent/20 border border-accent/30 backdrop-blur-md">
+                      <Scale className="h-4 w-4 text-accent" />
+                      <span className="text-sm font-mono text-accent font-bold">三段階戦略</span>
+                      <div className="h-3 w-px bg-accent/30" />
+                      <span className="text-xs text-textDim">three-tier strategy</span>
+                    </div>
                   </div>
                 </div>
+
+                {/* Timeline Card */}
+                <Card className="group relative overflow-hidden hover:border-accent/50 transition-all hover:shadow-xl hover:shadow-accent/10">
+                  <div className="absolute top-0 right-0 w-40 h-40 bg-accent/5 rounded-full blur-3xl -mr-20 -mt-20 group-hover:bg-accent/10 transition-colors duration-500" />
+                  <div className="absolute inset-y-0 left-0 w-1 bg-gradient-to-b from-accent to-transparent" />
+                  <div className="relative p-8 space-y-4">
+                    <div className="flex items-start justify-between mb-4">
+                      <div className="flex items-center gap-3">
+                        <div className="h-12 w-12 rounded-xl bg-gradient-to-br from-accent/20 to-accent/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                          <Zap className="h-6 w-6 text-accent" />
+                        </div>
+                        <div>
+                          <h3 className="text-2xl font-display font-bold text-text group-hover:text-accent transition-colors">Policy Cascade</h3>
+                          <p className="text-xs text-textDim font-mono tracking-wider">順次展開 · sequential deployment</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="space-y-4">
+                      <div className="flex items-start gap-3">
+                        <div className="h-2 w-2 rounded-full bg-accent mt-2 flex-shrink-0" />
+                        <div>
+                          <p className="text-sm font-bold text-text">Year 1-3: Municipal Foundation</p>
+                          <p className="text-sm text-textDim">Prove concepts work at city scale. Build coalitions.</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-3">
+                        <div className="h-2 w-2 rounded-full bg-accent mt-2 flex-shrink-0" />
+                        <div>
+                          <p className="text-sm font-bold text-text">Year 2-5: Provincial Scale</p>
+                          <p className="text-sm text-textDim">Leverage local wins for provincial mandates.</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-3">
+                        <div className="h-2 w-2 rounded-full bg-accent mt-2 flex-shrink-0" />
+                        <div>
+                          <p className="text-sm font-bold text-text">Year 3-7: Federal Lock-In</p>
+                          <p className="text-sm text-textDim">Institutionalize change at the national level.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="pt-4 mt-4 border-t border-border">
+                      <p className="text-sm text-textDim italic leading-relaxed">
+                        Each tier reinforces the next. By year 10, the reset becomes irreversible.
+                      </p>
+                    </div>
+                  </div>
+                </Card>
               </div>
 
-              {/* Content */}
+              {/* Right Column: Content */}
               <div className="space-y-6">
                 {/* Municipal */}
                 <Card className="group relative overflow-hidden hover:border-accent/50 transition-all hover:shadow-xl hover:shadow-accent/10">
