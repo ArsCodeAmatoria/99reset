@@ -16,6 +16,7 @@ export default function UnionOrganizing101() {
       difficulty="Hard"
       timeframe="3-6 months"
       impact="Very High"
+      videoPosition="right"
     >
       <h2>Why Unionize?</h2>
       <p>

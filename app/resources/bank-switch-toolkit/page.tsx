@@ -16,6 +16,7 @@ export default function BankSwitchToolkit() {
       difficulty="Easy"
       timeframe="4 weeks"
       impact="High"
+      videoPosition="left"
     >
       <h2>Why Switch?</h2>
       <p>

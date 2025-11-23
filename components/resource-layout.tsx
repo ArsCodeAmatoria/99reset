@@ -15,6 +15,7 @@ interface ResourceLayoutProps {
   difficulty?: string;
   timeframe?: string;
   impact?: string;
+  videoPosition?: "left" | "right";
   children: ReactNode;
 }
 
@@ -26,6 +27,7 @@ export function ResourceLayout({
   difficulty,
   timeframe,
   impact,
+  videoPosition = "left",
   children,
 }: ResourceLayoutProps) {
   return (
@@ -43,9 +45,9 @@ export function ResourceLayout({
             </Link>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Left: Text Content */}
-            <div className="space-y-6">
+          <div className={`grid lg:grid-cols-2 gap-12 items-center ${videoPosition === "right" ? "lg:flex lg:flex-row-reverse" : ""}`}>
+            {/* Text Content */}
+            <div className="space-y-6 flex-1">
               <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent/10 border border-accent/20">
                 <span className="text-xs font-mono text-accent">リソース</span>
                 <div className="h-3 w-px bg-accent/30" />
@@ -85,8 +87,8 @@ export function ResourceLayout({
               )}
             </div>
 
-            {/* Right: Video */}
-            <div className="relative">
+            {/* Video */}
+            <div className="relative flex-1">
               <div className="relative rounded-lg overflow-hidden border border-border bg-card shadow-lg">
                 <video
                   src={video}

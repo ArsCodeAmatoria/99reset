@@ -16,6 +16,7 @@ export default function WorkerCoopFormationGuide() {
       difficulty="Hard"
       timeframe="12-18 months"
       impact="Very High"
+      videoPosition="left"
     >
       <h2>What is a Worker Co-op?</h2>
       <p>

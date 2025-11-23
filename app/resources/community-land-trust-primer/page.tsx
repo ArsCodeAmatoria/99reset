@@ -16,6 +16,7 @@ export default function CommunityLandTrustPrimer() {
       difficulty="Hard"
       timeframe="18-24 months"
       impact="Very High"
+      videoPosition="right"
     >
       <h2>What is a Community Land Trust?</h2>
       <p>
