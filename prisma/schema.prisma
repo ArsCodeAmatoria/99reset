@@ -74,9 +74,15 @@ model Comment {
   email       String?  // Optional, for notifications
   content     String   @db.Text
   approved    Boolean  @default(false) // Moderation
+  parentId    String?  // For nested replies
   createdAt   DateTime @default(now())
+
+  // Relations
+  parent      Comment?  @relation("CommentReplies", fields: [parentId], references: [id], onDelete: Cascade)
+  replies     Comment[] @relation("CommentReplies")
 
   @@index([articleSlug])
   @@index([approved])
   @@index([createdAt])
+  @@index([parentId])
 }

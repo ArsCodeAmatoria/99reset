@@ -10,6 +10,7 @@ const commentSchema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters').max(100),
   email: z.string().email('Invalid email').optional().or(z.literal('')),
   content: z.string().min(10, 'Comment must be at least 10 characters').max(2000, 'Comment must be less than 2000 characters'),
+  parentId: z.string().optional(),
 });
 
 export type CommentFormState = {
@@ -36,6 +37,7 @@ export async function createComment(
       name: formData.get('name') as string,
       email: formData.get('email') as string,
       content: formData.get('content') as string,
+      parentId: formData.get('parentId') as string | undefined,
     };
 
     // Validate
@@ -56,6 +58,7 @@ export async function createComment(
         name: validatedData.data.name,
         email: validatedData.data.email || null,
         content: validatedData.data.content,
+        parentId: validatedData.data.parentId || null,
         approved: true, // Auto-approve (change to false for moderation)
       },
     });
@@ -77,7 +80,7 @@ export async function createComment(
 }
 
 /**
- * Get all approved comments for an article
+ * Get all approved comments for an article with replies
  */
 export async function getComments(articleSlug: string) {
   try {
@@ -85,6 +88,7 @@ export async function getComments(articleSlug: string) {
       where: {
         articleSlug,
         approved: true,
+        parentId: null, // Only get top-level comments
       },
       orderBy: {
         createdAt: 'desc',
@@ -94,6 +98,20 @@ export async function getComments(articleSlug: string) {
         name: true,
         content: true,
         createdAt: true,
+        replies: {
+          where: {
+            approved: true,
+          },
+          orderBy: {
+            createdAt: 'asc',
+          },
+          select: {
+            id: true,
+            name: true,
+            content: true,
+            createdAt: true,
+          },
+        },
       },
     });
 

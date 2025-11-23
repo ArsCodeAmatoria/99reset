@@ -5,11 +5,19 @@ import { useFormState } from 'react-dom';
 import { createComment, type CommentFormState } from '@/app/api/actions/comment';
 import { MessageCircle, Send } from 'lucide-react';
 
+interface Reply {
+  id: string;
+  name: string;
+  content: string;
+  createdAt: Date;
+}
+
 interface Comment {
   id: string;
   name: string;
   content: string;
   createdAt: Date;
+  replies?: Reply[];
 }
 
 interface CommentsProps {
@@ -27,12 +35,14 @@ export function Comments({ articleSlug, initialComments, commentCount }: Comment
   const [state, formAction] = useFormState(createComment, initialState);
   const formRef = React.useRef<HTMLFormElement>(null);
   const [isPending, setIsPending] = React.useState(false);
+  const [replyingTo, setReplyingTo] = React.useState<string | null>(null);
 
   // Reset form on success
   useEffect(() => {
     if (state.success) {
       formRef.current?.reset();
       setIsPending(false);
+      setReplyingTo(null);
     } else if (state.message && !state.success) {
       setIsPending(false);
     }
@@ -57,6 +67,22 @@ export function Comments({ articleSlug, initialComments, commentCount }: Comment
         {/* Comment Form */}
         <form ref={formRef} action={handleSubmit} className="space-y-4">
           <input type="hidden" name="articleSlug" value={articleSlug} />
+          <input type="hidden" name="parentId" value={replyingTo || ''} />
+          
+          {replyingTo && (
+            <div className="flex items-center justify-between p-3 bg-red-50 dark:bg-red-950/20 border-l-4 border-red-600">
+              <span className="text-sm text-gray-700 dark:text-gray-300">
+                Replying to a comment
+              </span>
+              <button
+                type="button"
+                onClick={() => setReplyingTo(null)}
+                className="text-sm text-red-600 hover:text-red-700 font-bold"
+              >
+                Cancel
+              </button>
+            </div>
+          )}
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {/* Name */}
@@ -158,23 +184,61 @@ export function Comments({ articleSlug, initialComments, commentCount }: Comment
               Recent Comments
             </h3>
             {initialComments.map((comment) => (
-              <div
-                key={comment.id}
-                className="p-6 bg-gray-50 dark:bg-gray-900 border-l-4 border-gray-300 dark:border-gray-700"
-              >
-                <div className="flex items-center justify-between mb-3">
-                  <span className="font-bold text-black dark:text-white">{comment.name}</span>
-                  <time className="text-sm text-gray-500 dark:text-gray-400">
-                    {new Date(comment.createdAt).toLocaleDateString('en-US', {
-                      year: 'numeric',
-                      month: 'long',
-                      day: 'numeric',
-                    })}
-                  </time>
+              <div key={comment.id} className="space-y-4">
+                {/* Main Comment */}
+                <div className="p-6 bg-gray-50 dark:bg-gray-900 border-l-4 border-gray-300 dark:border-gray-700">
+                  <div className="flex items-center justify-between mb-3">
+                    <span className="font-bold text-black dark:text-white">{comment.name}</span>
+                    <time className="text-sm text-gray-500 dark:text-gray-400">
+                      {new Date(comment.createdAt).toLocaleDateString('en-US', {
+                        year: 'numeric',
+                        month: 'long',
+                        day: 'numeric',
+                      })}
+                    </time>
+                  </div>
+                  <p className="text-gray-800 dark:text-gray-200 leading-relaxed whitespace-pre-wrap mb-4">
+                    {comment.content}
+                  </p>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setReplyingTo(comment.id);
+                      window.scrollTo({ top: 0, behavior: 'smooth' });
+                    }}
+                    className="text-sm text-red-600 hover:text-red-700 font-bold"
+                  >
+                    Reply
+                  </button>
                 </div>
-                <p className="text-gray-800 dark:text-gray-200 leading-relaxed whitespace-pre-wrap">
-                  {comment.content}
-                </p>
+
+                {/* Replies */}
+                {comment.replies && comment.replies.length > 0 && (
+                  <div className="ml-8 space-y-4">
+                    {comment.replies.map((reply) => (
+                      <div
+                        key={reply.id}
+                        className="p-4 bg-white dark:bg-black border-l-4 border-red-600"
+                      >
+                        <div className="flex items-center justify-between mb-2">
+                          <span className="font-bold text-sm text-black dark:text-white">
+                            {reply.name}
+                          </span>
+                          <time className="text-xs text-gray-500 dark:text-gray-400">
+                            {new Date(reply.createdAt).toLocaleDateString('en-US', {
+                              year: 'numeric',
+                              month: 'long',
+                              day: 'numeric',
+                            })}
+                          </time>
+                        </div>
+                        <p className="text-sm text-gray-800 dark:text-gray-200 leading-relaxed whitespace-pre-wrap">
+                          {reply.content}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                )}
               </div>
             ))}
           </div>
