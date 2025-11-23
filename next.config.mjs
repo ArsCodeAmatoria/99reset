@@ -4,6 +4,9 @@ const nextConfig = {
   experimental: {
     mdxRs: false,
   },
+  images: {
+    formats: ['image/avif', 'image/webp'],
+  },
 };
 
 export default nextConfig;
