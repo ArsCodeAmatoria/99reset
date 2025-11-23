@@ -27,7 +27,7 @@ const ibmPlexSerif = IBM_Plex_Serif({
 
 const bagelFatOne = Bagel_Fat_One({
   subsets: ["latin"],
-  weight: ["400"],
+  weight: "400",
   variable: "--font-bagel-fat",
   display: "swap",
 });
