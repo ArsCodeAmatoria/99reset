@@ -99,22 +99,52 @@ export default function CoalitionStrategyArticle() {
       </ArticleCallout>
 
       <h3>Working-Class Faith Communities & LGBTQ</h3>
-      <p><strong>Jewish communities</strong> are actively involved, with DSA Jewish caucuses running <strong>co-op bakeries</strong> and JVP employing economic boycott models. <strong>Muslim communities</strong> are building mosque <strong>credit unions</strong> (e.g., UMAA in Vancouver) and tenant unions through CAIR. <strong>Christian communities</strong> see labor priests leading <strong>union drives</strong> (VDLC faith caucus) and evangelical networks forming food <strong>co-ops</strong>. <strong>LGBTQ communities</strong> are establishing <strong>Pride CLTs</strong> to combat housing discrimination and create worker-owned spaces.</p>
+      <p>
+        <strong>Jewish communities bring generations of cooperative tradition</strong> stretching back to the kibbutzim and credit union movements that sustained immigrant communities through the early 20th century. Today, DSA Jewish caucuses operate cooperative bakeries applying those historical lessons to modern economic democracy. Jewish Voice for Peace deploys economic boycott models refined through decades of social justice organizing, targeting banks financing occupation and extraction.
+      </p>
+
+      <p>
+        <strong>Muslim communities are building sophisticated financial alternatives</strong> rooted in Islamic principles prohibiting usury and emphasizing community welfare through zakat. The United Muslims Association of America launched a mosque-based credit union in Vancouver serving members who reject interest-bearing conventional banking. CAIR chapters across Canada organize tenant unions addressing discrimination in housing markets while building collective power among renters facing exploitation.
+      </p>
+
+      <p>
+        <strong>Christian communities provide crucial union organizing infrastructure</strong> through labor priests and progressive evangelical networks. The Vancouver and District Labour Council&apos;s faith caucus mobilizes clergy who view union drives as moral imperatives rather than merely economic struggles. Evangelical food cooperative networks apply biblical principles of mutual aid to creating alternative distribution systems that bypass corporate grocery monopolies, demonstrating that cooperative economics transcends theological differences.
+      </p>
+
+      <p>
+        <strong>LGBTQ communities face particular housing discrimination</strong> that makes Community Land Trusts essential infrastructure. Pride CLTs modeled on Toronto&apos;s successful 50-unit project create permanently affordable housing while building queer-owned economic spaces. These developments prevent displacement that typically follows neighborhood gentrification, maintaining community cohesion across generations. Worker-owned queer spaces from cafes to bookstores provide employment free from discrimination while serving community needs.
+      </p>
 
       <h3>Democratic Socialists & Progressives</h3>
       <Highlight>
-        <p><strong>Why they&apos;re core allies:</strong> These groups are instrumental in building the four pillars—<strong>credit unions, CLTs, worker co-ops, and unions</strong>. Electoral victories like Mamdani&apos;s <strong>$4B tax win</strong> in NYC provide crucial funding.</p>
+        <p><strong>Why they&apos;re core allies:</strong> Democratic socialists and progressive electoral coalitions provide the legislative infrastructure enabling cooperative economics at scale. Zohran Mamdani&apos;s <strong>$4 billion tax victory</strong> in New York City demonstrates how electoral power translates directly into funding for credit unions, CLTs, worker co-ops, and union organizing drives.</p>
       </Highlight>
 
-      <p><strong>DSA chapters</strong> are actively <strong>unionizing</strong> Amazon and Lululemon, building <strong>worker co-ops</strong>, and advocating for bank-to-<strong>credit union</strong> conversions. <strong>NDP and Green parties</strong> push for SVT to generate <strong>CLT funding</strong> (<strong>$90M/year</strong> in BC) and support <strong>credit unions</strong> through legislation.</p>
+      <p>
+        <strong>DSA chapters across North America coordinate sophisticated multi-front campaigns.</strong> Their Amazon unionization drives at fulfillment centers combine traditional labor organizing with modern digital solidarity networks. Lululemon workers receive organizing support connecting retail employees across dozens of locations. Simultaneously, DSA cooperative working groups provide technical assistance for worker co-op formation while pressuring credit unions to accept conversions from conventional banks. This integrated approach builds all four pillars of economic democracy simultaneously rather than pursuing isolated single-issue campaigns.
+      </p>
+
+      <p>
+        <strong>NDP and Green parties translate grassroots organizing into legislative victories</strong> when elected to power. British Columbia&apos;s speculation and vacancy tax generates $90 million annually—revenue that could fund thousands of Community Land Trust units if properly allocated. Provincial NDP governments have enacted credit union protection legislation preventing hostile takeovers by conventional banks while providing capital access for cooperative expansion. Green parties push land use policies favoring CLT development over market-rate speculation, using zoning authority to enable affordable housing construction.
+      </p>
 
       <h2>Tactical Allies: Small Capitalists</h2>
       <JapaneseHeading japanese="戦術的同盟" english="The Co-op Converts" />
 
-      <p>Small capitalists can become tactical allies when their trajectory aligns with Reset objectives. <strong>Credit union members</strong> in institutions like Vancity—with 500,000 members controlling $35 billion in assets—possess leverage to redirect capital away from Big 5 banks toward democratic finance. <strong>Small landlords</strong> owning 1-3 properties with $500,000-$1,000,000 net worth become allies when willing to sell to Community Land Trusts at 110% of market value, securing modest profit while enabling permanent affordability. <strong>Co-op suppliers</strong>—contractors building UCI projects—can be incentivized toward worker ownership through mechanisms like Colorado&apos;s model transferring 2% equity annually to worker trusts.</p>
+      <p>
+        Small capitalists occupy an ambiguous position in the economic transformation toward worker ownership. Their trajectory matters more than their current class position—those moving toward cooperative models become allies, while those defending private accumulation remain opponents. <strong>Credit union members</strong> demonstrate this potential. Vancity&apos;s 500,000 members collectively control $35 billion in assets, capital that could be systematically redirected from Big 5 banks financing fossil fuels and speculation toward democratic finance supporting community development. These members aren&apos;t yet worker-owners of the credit union itself, but their deposits provide the foundation for that eventual conversion.
+      </p>
+
+      <p>
+        <strong>Small landlords present a more contentious case</strong> given housing&apos;s role in wealth extraction. Those owning 1-3 properties with $500,000-$1,000,000 net worth can become tactical allies through specific mechanisms. Community Land Trusts offer these property owners 110% of market value—modest profit securing their retirement while transferring land into permanent community ownership. This 10% premium costs less than decades of future speculation while immediately creating affordable housing. However, landlords demanding maximum profit through continued speculation or refusing CLT sales remain opponents regardless of how &quot;mom and pop&quot; their operation appears. Small-scale exploitation remains exploitation.
+      </p>
+
+      <p>
+        <strong>Cooperative suppliers and contractors</strong> building worker-owned projects face structural incentives toward conversion. Colorado&apos;s pioneering model mandates 2% annual equity transfers to worker trusts in companies receiving state contracts or subsidies. Contractors repeatedly working on UCI or CLT projects encounter worker ownership as practical reality rather than abstract ideology. Those who embrace gradual conversion—perhaps selling 51% equity over 25 years—become allies helping scale the cooperative economy. Those treating worker ownership as merely another revenue stream while maintaining conventional business models contribute nothing to economic transformation.
+      </p>
 
       <ArticleCallout type="info">
-        <p><strong>Rule:</strong> They remain allies only if they actively vest equity to workers and communities. If they refuse worker ownership, they&apos;re opponents.</p>
+        <p><strong>The non-negotiable standard:</strong> Small capitalists remain allies only through active equity vesting to workers and communities. Passive support or rhetorical endorsement while maintaining extractive ownership models accomplishes nothing. The test is simple—are they transferring ownership or just extracting profit? Those refusing democratization become opponents indistinguishable from large capital, regardless of their scale.</p>
       </ArticleCallout>
 
       <h2>Opponents: The 1% in Any Clothing</h2>
