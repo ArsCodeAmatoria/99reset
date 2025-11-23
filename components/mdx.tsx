@@ -72,6 +72,10 @@ const ColoredSection = ({ children, color = "dark" }: { children: React.ReactNod
   );
 };
 
+const JapaneseText = ({ children }: { children: React.ReactNode }) => (
+  <span className="japanese-fat">{children}</span>
+);
+
 // Custom components for MDX
 const components = {
   h1: ({ children, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
@@ -137,6 +141,7 @@ const components = {
   Stats,
   Stat,
   ColoredSection,
+  JapaneseText,
 };
 
 interface MDXRendererProps {
