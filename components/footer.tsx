@@ -56,9 +56,9 @@ export function Footer() {
                     <Image
                       src="/svg/NDP-orange.png"
                       alt="NDP Logo"
-                      width={60}
-                      height={40}
-                      className="h-8 w-auto"
+                      width={100}
+                      height={67}
+                      className="h-12 w-auto"
                     />
                   </a>
                   <a
@@ -71,9 +71,9 @@ export function Footer() {
                     <Image
                       src="/svg/Green_Party_logo.svg.png"
                       alt="Green Party Logo"
-                      width={60}
-                      height={40}
-                      className="h-8 w-auto"
+                      width={100}
+                      height={67}
+                      className="h-12 w-auto"
                     />
                   </a>
                 </div>
