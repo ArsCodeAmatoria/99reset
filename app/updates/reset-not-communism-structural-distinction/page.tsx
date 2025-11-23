@@ -4,6 +4,18 @@ import { getArticleNavigation, getRelatedArticles, articles } from '@/lib/articl
 export const metadata = {
   title: "The Reset Is Not Communism — Ninety Nine",
   description: "The Reset transfers capital to workers via co-ops, CLTs, and wealth funds—all private, democratic, and irrevocable. Communism centralized power and failed.",
+  openGraph: {
+    title: "The 99% Reset Is Not Communism: A Structural and Historical Distinction",
+    description: "The Reset transfers capital to workers via co-ops, CLTs, and wealth funds—all private, democratic, and irrevocable. Communism centralized power and failed.",
+    images: ['/images/reset-not-communism.png'],
+    type: 'article',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "The 99% Reset Is Not Communism: A Structural and Historical Distinction",
+    description: "The Reset transfers capital to workers via co-ops, CLTs, and wealth funds—all private, democratic, and irrevocable.",
+    images: ['/images/reset-not-communism.png'],
+  },
 };
 
 export default function ResetNotCommunismArticle() {

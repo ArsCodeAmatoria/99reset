@@ -4,6 +4,18 @@ import { getArticleNavigation, getRelatedArticles, articles } from '@/lib/articl
 export const metadata = {
   title: "The 99% Reset's Coalition Strategy — Ninety Nine",
   description: "The Reset is not a culture war. It's an economic ownership war. Align with anyone under $1M who builds co-ops, CLTs, and unions.",
+  openGraph: {
+    title: "The 99% Reset's Coalition Strategy: Who to Align With — And Why",
+    description: "The Reset is not a culture war. It's an economic ownership war. Align with anyone under $1M who builds co-ops, CLTs, and unions.",
+    images: ['/images/coalition-strategy.png'],
+    type: 'article',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "The 99% Reset's Coalition Strategy: Who to Align With — And Why",
+    description: "The Reset is not a culture war. It's an economic ownership war. Align with anyone under $1M who builds co-ops, CLTs, and unions.",
+    images: ['/images/coalition-strategy.png'],
+  },
 };
 
 export default function CoalitionStrategyArticle() {

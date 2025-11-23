@@ -4,6 +4,18 @@ import { getArticleNavigation, getRelatedArticles, articles } from '@/lib/articl
 export const metadata = {
   title: "BC Politicians for the 99% Reset — Ninety Nine",
   description: "Strategic guide to BC politicians advancing wealth taxes, co-ops, and CLTs—versus those blocking reform.",
+  openGraph: {
+    title: "BC Politicians for the 99% Reset: Support & Oppose Guide",
+    description: "Strategic guide to BC politicians advancing wealth taxes, co-ops, and CLTs—versus those blocking reform.",
+    images: ['/images/bc-politicians.png'],
+    type: 'article',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "BC Politicians for the 99% Reset: Support & Oppose Guide",
+    description: "Who to support, who to oppose, and how to leverage provincial power for institutional change.",
+    images: ['/images/bc-politicians.png'],
+  },
 };
 
 export default function BCPoliticiansArticle() {

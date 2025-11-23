@@ -4,6 +4,18 @@ import { getArticleNavigation, getRelatedArticles, articles } from '@/lib/articl
 export const metadata = {
   title: "Strategic Targeting: Canadian Billionaires — Ninety Nine",
   description: "Seven priority billionaires whose disruption unlocks $10-15B annually for citizens' funds and affordable housing.",
+  openGraph: {
+    title: "Strategic Targeting: Prioritizing Canadian Billionaires for Economic Disruption",
+    description: "Seven priority billionaires controlling $52B whose disruption unlocks $10-15B annually for citizens' funds and affordable housing.",
+    images: ['/images/billionaires-targeting.png'],
+    type: 'article',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Strategic Targeting: Prioritizing Canadian Billionaires for Economic Disruption",
+    description: "Seven priority billionaires whose disruption unlocks $10-15B annually for citizens' funds and affordable housing.",
+    images: ['/images/billionaires-targeting.png'],
+  },
 };
 
 export default function BillionairesArticle() {

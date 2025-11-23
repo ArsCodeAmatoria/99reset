@@ -4,6 +4,18 @@ import { getArticleNavigation, getRelatedArticles, articles } from '@/lib/articl
 export const metadata = {
   title: "The Cascade Effect: Bank Boycott Strategy — Ninety Nine",
   description: "A coordinated $10B deposit outflow from Big Five banks triggers credit rating reviews, regulatory probes, and policy momentum for wealth taxes.",
+  openGraph: {
+    title: "The Cascade Effect: How a $10 Billion Bank Boycott Can Propel Wealth Tax Reforms",
+    description: "A coordinated $10B deposit outflow from Big Five banks triggers credit rating reviews, regulatory probes, and policy momentum for wealth taxes.",
+    images: ['/images/bank-boycott.png'],
+    type: 'article',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "The Cascade Effect: How a $10 Billion Bank Boycott Can Propel Wealth Tax Reforms",
+    description: "A coordinated $10B deposit outflow from Big Five banks triggers credit rating reviews and wealth tax reforms.",
+    images: ['/images/bank-boycott.png'],
+  },
 };
 
 export default function BankBoycottArticle() {

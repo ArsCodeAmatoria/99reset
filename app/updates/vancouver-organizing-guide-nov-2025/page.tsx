@@ -4,6 +4,18 @@ import { getArticleNavigation, getRelatedArticles, articles } from '@/lib/articl
 export const metadata = {
   title: "Vancouver Organizing Guide — Ninety Nine",
   description: "Vancouver-specific tactics for bank boycotts, union drives, worker co-ops, CLTs, and wealth taxes.",
+  openGraph: {
+    title: "Organizing for the 99% Reset in Vancouver: A Local Action Guide",
+    description: "Vancouver-specific tactics for bank boycotts, union drives, worker co-ops, CLTs, and wealth taxes. 10K new union members and 1K CLT units in 24 months.",
+    images: ['/images/vancouver-organizing.png'],
+    type: 'article',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Organizing for the 99% Reset in Vancouver: A Local Action Guide",
+    description: "Vancouver-specific tactics for bank boycotts, union drives, worker co-ops, CLTs, and wealth taxes.",
+    images: ['/images/vancouver-organizing.png'],
+  },
 };
 
 export default function VancouverOrganzingArticle() {
