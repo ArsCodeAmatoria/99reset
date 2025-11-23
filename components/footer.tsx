@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Container } from "./container";
 import { Mail, Youtube } from "lucide-react";
 import { SiTiktok, SiX } from "react-icons/si";
@@ -37,6 +38,45 @@ export function Footer() {
                 <p className="text-xs text-textDim mt-1">
                   Where philosophy meets practice.
                 </p>
+              </div>
+
+              {/* Aligned Organizations */}
+              <div className="pt-4 border-t border-border/50">
+                <p className="text-xs font-semibold uppercase tracking-widest text-text mb-3">
+                  Democratic Socialist Allies
+                </p>
+                <div className="flex items-center gap-4">
+                  <a
+                    href="https://www.ndp.ca"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="opacity-70 hover:opacity-100 transition-opacity"
+                    aria-label="NDP"
+                  >
+                    <Image
+                      src="/svg/NDP-orange.png"
+                      alt="NDP Logo"
+                      width={60}
+                      height={40}
+                      className="h-8 w-auto"
+                    />
+                  </a>
+                  <a
+                    href="https://www.greenparty.ca"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="opacity-70 hover:opacity-100 transition-opacity"
+                    aria-label="Green Party"
+                  >
+                    <Image
+                      src="/svg/Green_Party_logo.svg.png"
+                      alt="Green Party Logo"
+                      width={60}
+                      height={40}
+                      className="h-8 w-auto"
+                    />
+                  </a>
+                </div>
               </div>
 
               {/* Contact */}
