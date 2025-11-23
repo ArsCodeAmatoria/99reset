@@ -76,7 +76,7 @@ export default function ResetNotCommunismArticle() {
       <ul className="list-disc pl-6 space-y-2 my-4">
         <li><strong>Bureaucratic tyranny:</strong> Stalin&apos;s purges (700K executed); Mao&apos;s Great Leap (30M+ dead). <strong>No worker voice</strong>—party elites controlled everything.</li>
         <li><strong>Economic miscalculation:</strong> Soviet GDP $3.5K vs U.S. $23K (1991). <strong>No price signals</strong>—planners guessed demand; co-ops use market feedback.</li>
-        <li><strong>Incentive collapse:</strong> "They pretend to pay us, we pretend to work" (Soviet joke). <strong>No equity stake</strong>; co-ops pay dividends.</li>
+        <li><strong>Incentive collapse:</strong> &quot;They pretend to pay us, we pretend to work&quot; (Soviet joke). <strong>No equity stake</strong>; co-ops pay dividends.</li>
         <li><strong>Corruption:</strong> Venezuela&apos;s PDVSA looted; hyperinflation 1M%. State monopoly enabled theft; <strong>co-ops have transparent bylaws</strong>.</li>
       </ul>
 

@@ -36,7 +36,7 @@ export default function MamdaniArticle() {
 
       <ArticleCallout type="warning">
         <p><strong>1. State cooperation:</strong> Hochul must approve NYC&apos;s tax surcharges. She killed congestion pricing in 2024. <strong>One veto collapses the $4B model</strong>.</p>
-        <p><strong>2. Federal funding:</strong> NYC receives <strong>$7.4B annually</strong> from Washington. Trump&apos;s threat to cut "communist" cities is credible.</p>
+        <p><strong>2. Federal funding:</strong> NYC receives <strong>$7.4B annually</strong> from Washington. Trump&apos;s threat to cut &quot;communist&quot; cities is credible.</p>
         <p><strong>3. Continuous electoral wins:</strong> Mamdani needs 2026, 2028, and 2029 wins. <strong>Losing any one reverses gains</strong>.</p>
       </ArticleCallout>
 
@@ -48,7 +48,7 @@ export default function MamdaniArticle() {
       <ArticleCallout type="success">
         <p><strong>No state needed:</strong> Credit unions, co-ops, and CLTs operate via private contracts. Alberta can&apos;t ban BC co-ops.</p>
         <p><strong>No federal dependency:</strong> Wealth funds invest locally. Federal cuts don&apos;t touch Vancouver&apos;s <strong>Vancity</strong>.</p>
-        <p><strong>No electoral clock:</strong> Co-op equity vests over 5-7 years. Once workers own 51%, no mayor can "un-own" them. <strong>CLT leases run 99 years</strong>.</p>
+        <p><strong>No electoral clock:</strong> Co-op equity vests over 5-7 years. Once workers own 51%, no mayor can &quot;un-own&quot; them. <strong>CLT leases run 99 years</strong>.</p>
       </ArticleCallout>
 
       <h2>The Capital Capture Advantage</h2>

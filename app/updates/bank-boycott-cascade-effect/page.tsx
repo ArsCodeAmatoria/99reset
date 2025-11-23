@@ -54,12 +54,12 @@ export default function BankBoycottArticle() {
         <p><strong>Historical precedent:</strong> The 1955 <strong>Montgomery Bus Boycott</strong> (381 days, 75% Black ridership) cost the system $3,000/day ($30,000 today), forcing desegregation via Supreme Court ruling. Economic pressure, not legislation, drove change.</p>
       </ArticleCallout>
 
-      <p>By redirecting funds to <strong>credit unions</strong>, the movement builds parallel power while destabilizing enablers of the 1%. OSFI&apos;s Annual Risk Outlook (2024-2025) warns of "digitalization enabling abrupt outflows," as seen in <strong>SVB&apos;s 2023 collapse</strong> where $42 billion fled in hours.</p>
+      <p>By redirecting funds to <strong>credit unions</strong>, the movement builds parallel power while destabilizing enablers of the 1%. OSFI&apos;s Annual Risk Outlook (2024-2025) warns of &quot;digitalization enabling abrupt outflows,&quot; as seen in <strong>SVB&apos;s 2023 collapse</strong> where $42 billion fled in hours.</p>
 
       <h2>2. Credit Rating Review: The Domino Effect</h2>
       <JapaneseHeading japanese="信用格付け" english="Market Signal of Vulnerability" />
       
-      <p>Deposit outflows cascade directly to credit ratings. Agencies like <strong>S&P and Moody&apos;s</strong> monitor deposit betas (sensitivity to stress). A $10 billion hit flags "funding instability." The Canadian precedent: <strong>Laurentian Bank&apos;s 2022 near-failure</strong> (deposit flight amid pension shortfalls) led to a Moody&apos;s downgrade and swift OSFI intervention.</p>
+      <p>Deposit outflows cascade directly to credit ratings. Agencies like <strong>S&P and Moody&apos;s</strong> monitor deposit betas (sensitivity to stress). A $10 billion hit flags &quot;funding instability.&quot; The Canadian precedent: <strong>Laurentian Bank&apos;s 2022 near-failure</strong> (deposit flight amid pension shortfalls) led to a Moody&apos;s downgrade and swift OSFI intervention.</p>
 
       <ArticleCallout type="warning">
         <p><strong>Climate risk amplifies vulnerability:</strong> OSFI&apos;s B-15 climate guideline ties ratings to fossil risks. The Big Five&apos;s $131 billion in 2024 fossil financing (InfluenceMap) makes them especially exposed to scrutiny.</p>
@@ -68,7 +68,7 @@ export default function BankBoycottArticle() {
       <h2>3. Regulatory Investigations: Institutional Pressure</h2>
       <JapaneseHeading japanese="規制調査" english="OSFI and FCAC Mobilize" />
       
-      <p>Credit rating reviews summon the regulators. <strong>OSFI</strong>, per its 2024-2025 mandate, probes "liquidity shocks" through on-site examinations. A $10 billion outflow breaches early warning thresholds, triggering formal investigations.</p>
+      <p>Credit rating reviews summon the regulators. <strong>OSFI</strong>, per its 2024-2025 mandate, probes &quot;liquidity shocks&quot; through on-site examinations. A $10 billion outflow breaches early warning thresholds, triggering formal investigations.</p>
 
       <p>In Canada, these probes will reveal uncomfortable truths: Big Five&apos;s <strong>uninsured deposits</strong> (~45%) and <strong>billionaire ties</strong>—like Thomson&apos;s $240M tax avoidance via Bermuda subsidiaries (C4TF 2025).</p>
 

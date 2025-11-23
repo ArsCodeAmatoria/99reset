@@ -66,14 +66,14 @@ export default function BCPoliticiansArticle() {
         <ArticleCallout type="warning">
           <h3 className="font-bold text-lg mb-2">John Rustad — Nechako Lakes (Conservative)</h3>
           <p><strong>Score: 8/40</strong></p>
-          <p>Pledges SVT cancellation ("tax grab for speculators"); nuclear push over green co-ops; opposes wealth taxes as "aspiration killers."</p>
+          <p>Pledges SVT cancellation (&quot;tax grab for speculators&quot;); nuclear push over green co-ops; opposes wealth taxes as &quot;aspiration killers.&quot;</p>
           <p className="text-sm mt-2"><strong>Reset Counter-Actions:</strong> Boycott oil-tied firms; petition CRA audits.</p>
         </ArticleCallout>
 
         <ArticleCallout type="warning">
           <h3 className="font-bold text-lg mb-2">Elaine McLean — Kamloops-North Thompson (Conservative)</h3>
           <p><strong>Score: 10/40</strong></p>
-          <p>House Leader: Scraps "home-killing" DCCs/SVT; prioritizes luxury builders over <strong>CLTs</strong>.</p>
+          <p>House Leader: Scraps &quot;home-killing&quot; DCCs/SVT; prioritizes luxury builders over <strong>CLTs</strong>.</p>
           <p className="text-sm mt-2"><strong>Reset Counter-Actions:</strong> <strong>Union drives</strong> at Kamloops retail; expose fossil loans.</p>
         </ArticleCallout>
       </div>

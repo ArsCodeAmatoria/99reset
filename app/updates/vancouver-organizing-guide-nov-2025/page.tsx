@@ -101,7 +101,7 @@ export default function VancouverOrganzingArticle() {
         <li><strong>Union/organize:</strong> Contact <strong>CUPE</strong> (cupe.bc.ca) about your workplace. Start a <strong>tenant union</strong> via <strong>COPE</strong>.</li>
         <li><strong>CLT/co-op boost:</strong> Email <strong>CHF BC</strong> (chf.bc.ca) for tours; divert $50/month to <strong>UCI</strong>. Petition Minister <strong>Kahlon</strong> for CLT funding.</li>
         <li><strong>Event blitz:</strong> Nov 19 NDP workshop—pitch wealth tax. Host <strong>#99ResetVan meetup Nov 22</strong>.</li>
-        <li><strong>Amplify:</strong> Post: "<strong>Vancouver Reset: Boycott Big Five, Build Co-ops</strong>." Tag @BCNDP, @COPEVancouver, @BCGreens.</li>
+        <li><strong>Amplify:</strong> Post: &quot;<strong>Vancouver Reset: Boycott Big Five, Build Co-ops</strong>.&quot; Tag @BCNDP, @COPEVancouver, @BCGreens.</li>
       </ol>
 
       <ColoredSection color="darker">

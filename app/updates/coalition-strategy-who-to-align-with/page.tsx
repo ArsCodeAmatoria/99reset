@@ -156,7 +156,7 @@ export default function CoalitionStrategyArticle() {
 
         <ArticleCallout type="info">
           <h3 className="font-bold mb-2">January 2026: Mamdani North Townhall</h3>
-          <p>Feature Mamdani (NYC) and Kshama Sawant (Seattle) with Vancouver&apos;s COPE. Topic: "How Electoral Wins Fund Co-ops." Ask NDP to redirect SVT revenue to UCI co-op fund ($10M/year).</p>
+          <p>Feature Mamdani (NYC) and Kshama Sawant (Seattle) with Vancouver&apos;s COPE. Topic: &quot;How Electoral Wins Fund Co-ops.&quot; Ask NDP to redirect SVT revenue to UCI co-op fund ($10M/year).</p>
         </ArticleCallout>
 
         <ArticleCallout type="info">
@@ -218,13 +218,13 @@ export default function CoalitionStrategyArticle() {
       <JapaneseHeading japanese="オーガナイザー向け" english="Organizer Toolkit" />
 
       <h3>When recruiting allies:</h3>
-      <p>Focus on shared economic realities: <em>"Do you own your workplace? No? Then you&apos;re one of us."</em> Highlight community strengths: <em>"Your mosque/synagogue/church has co-op roots. Let&apos;s revive them."</em> Connect to social justice: <em>"Pride isn&apos;t just about rights—it&apos;s about owning our community."</em></p>
+      <p>Focus on shared economic realities: <em>&quot;Do you own your workplace? No? Then you&apos;re one of us.&quot;</em> Highlight community strengths: <em>&quot;Your mosque/synagogue/church has co-op roots. Let&apos;s revive them.&quot;</em> Connect to social justice: <em>&quot;Pride isn&apos;t just about rights—it&apos;s about owning our community.&quot;</em></p>
 
       <h3>When rejecting opponents:</h3>
-      <p>Be direct about wealth and opposition to democratic ownership: <em>"You have $5M? Great. Sell $4M to the wealth fund or you&apos;re the enemy."</em> Counter state-centric arguments: <em>"You want state control? We tried that in the USSR. It failed. Co-ops work."</em></p>
+      <p>Be direct about wealth and opposition to democratic ownership: <em>&quot;You have $5M? Great. Sell $4M to the wealth fund or you&apos;re the enemy.&quot;</em> Counter state-centric arguments: <em>&quot;You want state control? We tried that in the USSR. It failed. Co-ops work.&quot;</em></p>
 
       <Highlight>
-        <p><strong>The unifying frame:</strong> <em>"In 20 years, either billionaires own everything, or we do. Pick a side."</em></p>
+        <p><strong>The unifying frame:</strong> <em>&quot;In 20 years, either billionaires own everything, or we do. Pick a side.&quot;</em></p>
       </Highlight>
 
       <p className="text-sm text-textDim italic mt-8">
