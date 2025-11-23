@@ -123,43 +123,44 @@ export default async function ResourcesPage() {
               
               return (
                 <Link key={resource.slug} href={`/resources/${resource.slug}`}>
-                  <Card className="group overflow-hidden hover:border-accent/50 transition-all duration-300 hover:shadow-xl h-full">
+                  <Card className="group overflow-hidden hover:border-accent/50 transition-all duration-300 hover:shadow-xl h-full flex flex-col">
                     {/* Image */}
-                    <div className="relative h-48 overflow-hidden bg-gradient-to-br from-accent/5 to-accent/20">
+                    <div className="relative overflow-hidden bg-card">
                       <Image
                         src={image}
                         alt={resource.title}
-                        fill
-                        className="object-cover group-hover:scale-105 transition-transform duration-300"
+                        width={800}
+                        height={600}
+                        className="w-full h-auto group-hover:scale-105 transition-transform duration-300"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-bg/80 to-transparent" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-bg/60 via-transparent to-transparent" />
                       
                       {/* Category Badge */}
                       <div className="absolute top-4 left-4">
-                        <span className="px-3 py-1 bg-accent/90 text-white text-xs font-bold rounded-full">
+                        <span className="px-3 py-1.5 bg-accent/90 backdrop-blur-sm text-white text-xs font-bold rounded-full shadow-lg">
                           {resource.category}
                         </span>
                       </div>
                       
                       {/* Icon */}
                       <div className="absolute bottom-4 right-4">
-                        <div className="p-2 bg-bg/90 rounded-full border border-accent/20">
+                        <div className="p-2.5 bg-bg/95 backdrop-blur-sm rounded-full border-2 border-accent/30 shadow-lg">
                           <Icon className="h-5 w-5 text-accent" />
                         </div>
                       </div>
                     </div>
 
                     {/* Content */}
-                    <div className="p-6 space-y-4">
+                    <div className="p-6 space-y-4 flex-1 flex flex-col">
                       <h3 className="text-xl font-display font-bold group-hover:text-accent transition-colors">
                         {resource.title}
                       </h3>
-                      <p className="text-sm text-textDim leading-relaxed line-clamp-3">
+                      <p className="text-sm text-textDim leading-relaxed flex-1">
                         {resource.description}
                       </p>
                       
                       {/* Japanese Sub-heading */}
-                      <div className="flex items-center gap-2 text-xs text-accent/70 font-mono pt-2 border-t border-border/50">
+                      <div className="flex items-center gap-2 text-xs text-accent/70 font-mono pt-3 border-t border-border/50">
                         <span>実践的なガイド</span>
                         <ArrowRight className="h-3 w-3 group-hover:translate-x-1 transition-transform" />
                       </div>
