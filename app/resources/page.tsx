@@ -219,6 +219,9 @@ export default async function ResourcesPage() {
               const Icon = iconMap[resource.icon as keyof typeof iconMap] || FileText;
               const image = imageMap[resource.slug] || '/images/resources.png';
               
+              // Log for debugging
+              console.log('Resource:', resource.slug, 'Image:', image);
+              
               return (
                 <Link key={resource.slug} href={`/resources/${resource.slug}`}>
                   <Card className="group overflow-hidden hover:border-accent/50 transition-all duration-300 hover:shadow-xl h-full flex flex-col">
