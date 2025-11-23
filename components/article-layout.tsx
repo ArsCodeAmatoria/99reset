@@ -7,6 +7,7 @@ import { Section } from './section';
 import { XComments } from './x-comments';
 import { Comments } from './comments';
 import { getComments, getCommentCount } from '@/app/api/actions/comment';
+import { getDemoComments, getDemoCommentCount } from '@/lib/demo-comments';
 
 interface RelatedArticle {
   slug: string;
@@ -35,11 +36,24 @@ export async function ArticleLayout({ children, title, date, category, excerpt, 
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://99reset.vercel.app';
   const postUrl = `${siteUrl}/updates/${slug}`;
 
-  // Fetch comments data
-  const [comments, commentCount] = await Promise.all([
-    getComments(slug),
-    getCommentCount(slug),
-  ]);
+  // Fetch comments data - with fallback to demo comments if database not available
+  let comments, commentCount;
+  try {
+    [comments, commentCount] = await Promise.all([
+      getComments(slug),
+      getCommentCount(slug),
+    ]);
+    // If no database comments, use demo
+    if (comments.length === 0) {
+      comments = getDemoComments(slug);
+      commentCount = getDemoCommentCount(slug);
+    }
+  } catch (error) {
+    // Database not available, use demo comments
+    console.log('Using demo comments (database not connected)');
+    comments = getDemoComments(slug);
+    commentCount = getDemoCommentCount(slug);
+  }
 
   return (
     <div className="min-h-screen bg-white dark:bg-black">
