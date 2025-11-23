@@ -1,7 +1,9 @@
 import React from 'react';
-import { Calendar, ArrowLeft } from 'lucide-react';
+import { Calendar, Share2, ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { Container } from './container';
+import { Section } from './section';
 
 interface ArticleLayoutProps {
   children: React.ReactNode;
@@ -15,54 +17,65 @@ interface ArticleLayoutProps {
 export function ArticleLayout({ children, title, date, category, excerpt, image }: ArticleLayoutProps) {
   return (
     <div className="min-h-screen bg-white dark:bg-black">
-      {/* Back Button */}
-      <div className="border-b border-gray-200 dark:border-gray-800">
-        <div className="max-w-4xl mx-auto px-6 py-4">
-          <Link 
-            href="/updates" 
-            className="inline-flex items-center gap-2 text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors text-sm"
-          >
-            <ArrowLeft className="h-4 w-4" />
-            <span>All Articles</span>
+      {/* Back to Updates Button */}
+      <Section className="py-6 md:py-8 bg-card/30">
+        <Container>
+          <Link href="/updates" className="inline-flex items-center gap-2 text-textDim hover:text-accent transition-colors group">
+            <ArrowLeft className="h-4 w-4 group-hover:-translate-x-1 transition-transform" />
+            <span className="font-medium">Back to Updates</span>
           </Link>
-        </div>
-      </div>
+        </Container>
+      </Section>
 
-      {/* Article Header */}
+      {/* Hero Section */}
+      <Section className="py-12 md:py-20 relative overflow-hidden">
+        <Container>
+          <div className={`grid ${image ? 'lg:grid-cols-2' : 'lg:grid-cols-1'} gap-12 md:gap-16 items-center`}>
+            {/* Content */}
+            <div className="space-y-6">
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent/10 border border-accent/20">
+                <span className="text-sm font-mono text-accent">{category}</span>
+                <div className="h-3 w-px bg-accent/30" />
+                <span className="text-sm text-textDim">記事 (kiji)</span>
+              </div>
+              <h1 className="text-3xl md:text-5xl font-display font-bold text-balance">
+                {title}
+              </h1>
+              <p className="text-lg text-textDim leading-relaxed">
+                {excerpt}
+              </p>
+              <div className="flex items-center gap-4 text-sm text-textDim">
+                <div className="flex items-center gap-2">
+                  <Calendar className="h-4 w-4 text-accent" />
+                  <span>{date}</span>
+                </div>
+                <button className="flex items-center gap-2 hover:text-accent transition-colors">
+                  <Share2 className="h-4 w-4" />
+                  <span>Share</span>
+                </button>
+              </div>
+            </div>
+
+            {/* Image */}
+            {image && (
+              <div className="relative rounded-2xl overflow-hidden border-2 border-accent/20 shadow-2xl">
+                <Image
+                  src={image}
+                  alt={title}
+                  width={1200}
+                  height={800}
+                  className="w-full h-auto object-cover"
+                  priority
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-bg/50 to-transparent" />
+              </div>
+            )}
+          </div>
+        </Container>
+      </Section>
+
+      {/* Article Content */}
       <article className="max-w-4xl mx-auto px-6 py-12">
-        {/* Category & Date */}
-        <div className="flex items-center gap-3 text-xs uppercase tracking-wider mb-6">
-          <span className="font-bold text-red-600">{category}</span>
-          <span className="text-gray-400">|</span>
-          <div className="flex items-center gap-1.5 text-gray-500 dark:text-gray-400">
-            <Calendar className="h-3.5 w-3.5" />
-            <time>{date}</time>
-          </div>
-        </div>
-
-        {/* Title */}
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-black dark:text-white leading-tight mb-6">
-          {title}
-        </h1>
-
-        {/* Excerpt */}
-        <p className="text-xl md:text-2xl text-gray-700 dark:text-gray-300 leading-relaxed font-serif mb-8 pb-8 border-b border-gray-200 dark:border-gray-800">
-          {excerpt}
-        </p>
-
-        {/* Featured Image */}
-        {image && (
-          <div className="mb-12">
-            <Image
-              src={image}
-              alt={title}
-              width={1200}
-              height={675}
-              className="w-full h-auto"
-              priority
-            />
-          </div>
-        )}
 
         {/* Article Body */}
         <div className="prose prose-lg dark:prose-invert max-w-none
