@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, IBM_Plex_Serif } from "next/font/google";
+import { Inter, IBM_Plex_Serif, Bagel_Fat_One } from "next/font/google";
 import "../styles/globals.css";
 import "../styles/prose.css";
 import "../styles/theme.css";
@@ -25,6 +25,13 @@ const ibmPlexSerif = IBM_Plex_Serif({
   display: "swap",
 });
 
+const bagelFatOne = Bagel_Fat_One({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-bagel-fat",
+  display: "swap",
+});
+
 export const metadata: Metadata = defaultMetadata;
 
 export default function RootLayout({
@@ -33,7 +40,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${ibmPlexSerif.variable}`} suppressHydrationWarning>
+    <html lang="en" className={`${inter.variable} ${ibmPlexSerif.variable} ${bagelFatOne.variable}`} suppressHydrationWarning>
       <head>
         <StructuredData data={createOrganizationSchema()} />
       </head>

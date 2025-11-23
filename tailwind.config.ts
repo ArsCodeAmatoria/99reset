@@ -22,6 +22,7 @@ const config: Config = {
       fontFamily: {
         sans: ["var(--font-ibm-plex-serif)", "Georgia", "serif"],
         display: ["var(--font-inter)", "system-ui", "sans-serif"],
+        bagel: ["var(--font-bagel-fat)", "cursive"],
       },
       borderRadius: {
         card: "1.25rem",

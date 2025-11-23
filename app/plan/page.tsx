@@ -647,6 +647,16 @@ export default async function PlanPage() {
                 </div>
               </Card>
             </div>
+
+            {/* Big Japanese Statement */}
+            <div className="text-center mt-16 mb-8">
+              <h2 className="text-6xl md:text-8xl lg:text-9xl font-bagel text-accent leading-none tracking-tight">
+                力は人民に
+              </h2>
+              <p className="text-lg md:text-xl text-textDim font-mono mt-4 tracking-wide">
+                chikara wa jinmin ni · power to the people
+              </p>
+            </div>
           </div>
         </Container>
       </Section>
