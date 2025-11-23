@@ -467,7 +467,7 @@ export default async function PlanPage() {
                   playsInline
                   className="w-full h-auto"
                 >
-                  <source src="/videos/plan7.mp4" type="video/mp4" />
+                  <source src="/videos/plan3.mp4" type="video/mp4" />
                 </video>
                 <div className="absolute inset-0 bg-gradient-to-t from-bg/60 to-transparent pointer-events-none" />
               </div>
