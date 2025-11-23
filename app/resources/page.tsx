@@ -126,8 +126,8 @@ export default async function ResourcesPage() {
                   <span className="text-xs text-textDim">Philosophy</span>
                 </div>
                 
-                <h2 className="text-4xl font-display font-bold">
-                  相互扶助<br />
+                <h2 className="text-4xl font-bold">
+                  <span className="bagel-fat-one-regular">相互扶助</span><br />
                   <span className="text-2xl text-accent">Sōgo Fujo</span>
                 </h2>
                 
@@ -152,7 +152,7 @@ export default async function ResourcesPage() {
                       <Users className="h-5 w-5 text-accent" />
                     </div>
                     <div>
-                      <h3 className="font-bold text-text mb-1">連帯 (Rentai)</h3>
+                      <h3 className="font-bold text-text mb-1"><span className="bagel-fat-one-regular">連帯</span> (Rentai)</h3>
                       <p className="text-sm text-textDim">
                         <strong>Solidarity:</strong> Worker power grows when we organize together across industries, 
                         borders, and identities.
@@ -167,7 +167,7 @@ export default async function ResourcesPage() {
                       <Scale className="h-5 w-5 text-accent" />
                     </div>
                     <div>
-                      <h3 className="font-bold text-text mb-1">公正 (Kōsei)</h3>
+                      <h3 className="font-bold text-text mb-1"><span className="bagel-fat-one-regular">公正</span> (Kōsei)</h3>
                       <p className="text-sm text-textDim">
                         <strong>Equity:</strong> True fairness means redistributing wealth and power, 
                         not just access.
@@ -182,7 +182,7 @@ export default async function ResourcesPage() {
                       <Building2 className="h-5 w-5 text-accent" />
                     </div>
                     <div>
-                      <h3 className="font-bold text-text mb-1">自治 (Jichi)</h3>
+                      <h3 className="font-bold text-text mb-1"><span className="bagel-fat-one-regular">自治</span> (Jichi)</h3>
                       <p className="text-sm text-textDim">
                         <strong>Self-Governance:</strong> Workers and communities control their own institutions 
                         through democratic ownership.
@@ -291,8 +291,8 @@ export default async function ResourcesPage() {
                 <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mx-auto">
                   <span className="text-2xl font-bold text-accent">1</span>
                 </div>
-                <h3 className="font-display font-bold text-lg">
-                  学ぶ (Manabu)
+                <h3 className="font-bold text-lg">
+                  <span className="bagel-fat-one-regular">学ぶ</span> (Manabu)
                 </h3>
                 <p className="text-sm text-textDim">
                   <strong>Learn:</strong> Read the guide thoroughly. Understand the theory, 
@@ -304,8 +304,8 @@ export default async function ResourcesPage() {
                 <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mx-auto">
                   <span className="text-2xl font-bold text-accent">2</span>
                 </div>
-                <h3 className="font-display font-bold text-lg">
-                  適応 (Tekiō)
+                <h3 className="font-bold text-lg">
+                  <span className="bagel-fat-one-regular">適応</span> (Tekiō)
                 </h3>
                 <p className="text-sm text-textDim">
                   <strong>Adapt:</strong> Customize for your local context. Every community 
@@ -317,8 +317,8 @@ export default async function ResourcesPage() {
                 <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mx-auto">
                   <span className="text-2xl font-bold text-accent">3</span>
                 </div>
-                <h3 className="font-display font-bold text-lg">
-                  実行 (Jikkō)
+                <h3 className="font-bold text-lg">
+                  <span className="bagel-fat-one-regular">実行</span> (Jikkō)
                 </h3>
                 <p className="text-sm text-textDim">
                   <strong>Execute:</strong> Take action with your collective. Document results 
@@ -448,8 +448,8 @@ export default async function ResourcesPage() {
               <span className="text-xs text-textDim">Unity is strength</span>
             </div>
             
-            <h2 className="text-3xl md:text-4xl font-display font-bold">
-              力を合わせて<br />
+            <h2 className="text-3xl md:text-4xl font-bold">
+              <span className="bagel-fat-one-regular">力を合わせて</span><br />
               <span className="text-xl text-accent">Build Together</span>
             </h2>
             <p className="text-lg text-textDim leading-relaxed">
