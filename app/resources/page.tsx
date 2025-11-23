@@ -6,7 +6,7 @@ import Image from "next/image";
 import { Container } from "@/components/container";
 import { Section } from "@/components/section";
 import { Card } from "@/components/card";
-import { FileText, BookOpen, Users, ArrowRight } from "lucide-react";
+import { FileText, BookOpen, Users, ArrowRight, Scale, Building2, Building, Megaphone, Home } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -148,7 +148,9 @@ export default async function ResourcesPage() {
               <div className="space-y-4">
                 <Card className="p-4 border-l-4 border-accent">
                   <div className="flex items-start gap-3">
-                    <div className="text-2xl">🤝</div>
+                    <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0">
+                      <Users className="h-5 w-5 text-accent" />
+                    </div>
                     <div>
                       <h3 className="font-bold text-text mb-1">連帯 (Rentai)</h3>
                       <p className="text-sm text-textDim">
@@ -161,7 +163,9 @@ export default async function ResourcesPage() {
 
                 <Card className="p-4 border-l-4 border-accent">
                   <div className="flex items-start gap-3">
-                    <div className="text-2xl">⚖️</div>
+                    <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0">
+                      <Scale className="h-5 w-5 text-accent" />
+                    </div>
                     <div>
                       <h3 className="font-bold text-text mb-1">公正 (Kōsei)</h3>
                       <p className="text-sm text-textDim">
@@ -174,7 +178,9 @@ export default async function ResourcesPage() {
 
                 <Card className="p-4 border-l-4 border-accent">
                   <div className="flex items-start gap-3">
-                    <div className="text-2xl">🏛️</div>
+                    <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0">
+                      <Building2 className="h-5 w-5 text-accent" />
+                    </div>
                     <div>
                       <h3 className="font-bold text-text mb-1">自治 (Jichi)</h3>
                       <p className="text-sm text-textDim">
@@ -346,7 +352,9 @@ export default async function ResourcesPage() {
               <Card className="p-6 border-l-4 border-accent">
                 <div className="space-y-3">
                   <div className="flex items-center gap-2">
-                    <span className="text-3xl">🏦</span>
+                    <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center">
+                      <Building className="h-5 w-5 text-accent" />
+                    </div>
                     <span className="text-xs px-2 py-1 bg-accent/10 text-accent rounded-full font-bold">
                       Vancouver, BC
                     </span>
@@ -365,7 +373,9 @@ export default async function ResourcesPage() {
               <Card className="p-6 border-l-4 border-accent">
                 <div className="space-y-3">
                   <div className="flex items-center gap-2">
-                    <span className="text-3xl">✊</span>
+                    <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center">
+                      <Megaphone className="h-5 w-5 text-accent" />
+                    </div>
                     <span className="text-xs px-2 py-1 bg-accent/10 text-accent rounded-full font-bold">
                       Toronto, ON
                     </span>
@@ -384,7 +394,9 @@ export default async function ResourcesPage() {
               <Card className="p-6 border-l-4 border-accent">
                 <div className="space-y-3">
                   <div className="flex items-center gap-2">
-                    <span className="text-3xl">🏘️</span>
+                    <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center">
+                      <Home className="h-5 w-5 text-accent" />
+                    </div>
                     <span className="text-xs px-2 py-1 bg-accent/10 text-accent rounded-full font-bold">
                       Montreal, QC
                     </span>
@@ -403,7 +415,9 @@ export default async function ResourcesPage() {
               <Card className="p-6 border-l-4 border-accent">
                 <div className="space-y-3">
                   <div className="flex items-center gap-2">
-                    <span className="text-3xl">🤝</span>
+                    <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center">
+                      <Users className="h-5 w-5 text-accent" />
+                    </div>
                     <span className="text-xs px-2 py-1 bg-accent/10 text-accent rounded-full font-bold">
                       Calgary, AB
                     </span>
