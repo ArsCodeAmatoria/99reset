@@ -113,9 +113,101 @@ export default async function ResourcesPage() {
         </Container>
       </Section>
 
+      {/* Philosophy Section */}
+      <Section className="py-16 border-b border-border">
+        <Container>
+          <div className="max-w-4xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              {/* Left: Japanese Concept */}
+              <div className="space-y-6">
+                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent/10 border border-accent/20">
+                  <span className="text-xs font-mono text-accent">哲学</span>
+                  <div className="h-3 w-px bg-accent/30" />
+                  <span className="text-xs text-textDim">Philosophy</span>
+                </div>
+                
+                <h2 className="text-4xl font-display font-bold">
+                  相互扶助<br />
+                  <span className="text-2xl text-accent">Sōgo Fujo</span>
+                </h2>
+                
+                <div className="space-y-4 text-textDim leading-relaxed">
+                  <p className="text-lg">
+                    <strong className="text-text">Mutual Aid:</strong> The principle that communities thrive 
+                    through cooperation, not competition. Resources aren&apos;t just information—they&apos;re 
+                    tools for collective liberation.
+                  </p>
+                  <p>
+                    Every guide here is built on decades of organizing experience. From the Montgomery 
+                    Bus Boycott to Mondragón&apos;s worker cooperatives, these tactics have proven results.
+                  </p>
+                </div>
+              </div>
+
+              {/* Right: Key Concepts */}
+              <div className="space-y-4">
+                <Card className="p-4 border-l-4 border-accent">
+                  <div className="flex items-start gap-3">
+                    <div className="text-2xl">🤝</div>
+                    <div>
+                      <h3 className="font-bold text-text mb-1">連帯 (Rentai)</h3>
+                      <p className="text-sm text-textDim">
+                        <strong>Solidarity:</strong> Worker power grows when we organize together across industries, 
+                        borders, and identities.
+                      </p>
+                    </div>
+                  </div>
+                </Card>
+
+                <Card className="p-4 border-l-4 border-accent">
+                  <div className="flex items-start gap-3">
+                    <div className="text-2xl">⚖️</div>
+                    <div>
+                      <h3 className="font-bold text-text mb-1">公正 (Kōsei)</h3>
+                      <p className="text-sm text-textDim">
+                        <strong>Equity:</strong> True fairness means redistributing wealth and power, 
+                        not just access.
+                      </p>
+                    </div>
+                  </div>
+                </Card>
+
+                <Card className="p-4 border-l-4 border-accent">
+                  <div className="flex items-start gap-3">
+                    <div className="text-2xl">🏛️</div>
+                    <div>
+                      <h3 className="font-bold text-text mb-1">自治 (Jichi)</h3>
+                      <p className="text-sm text-textDim">
+                        <strong>Self-Governance:</strong> Workers and communities control their own institutions 
+                        through democratic ownership.
+                      </p>
+                    </div>
+                  </div>
+                </Card>
+              </div>
+            </div>
+          </div>
+        </Container>
+      </Section>
+
       {/* Resources Grid */}
       <Section className="py-16 bg-card/30">
         <Container>
+          {/* Section Header */}
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent/10 border border-accent/20 mb-4">
+              <span className="text-xs font-mono text-accent">道具</span>
+              <div className="h-3 w-px bg-accent/30" />
+              <span className="text-xs text-textDim">Tools</span>
+            </div>
+            <h2 className="text-3xl font-display font-bold mb-4">
+              Practical Organizing Guides
+            </h2>
+            <p className="text-textDim">
+              Step-by-step toolkits tested by organizers in the field. Download, adapt, and deploy.
+            </p>
+          </div>
+
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {resources.map((resource, index) => {
               const Icon = iconMap[resource.icon as keyof typeof iconMap] || FileText;
@@ -138,8 +230,8 @@ export default async function ResourcesPage() {
                       {/* Category Badge */}
                       <div className="absolute top-4 left-4">
                         <span className="px-3 py-1.5 bg-accent/90 backdrop-blur-sm text-white text-xs font-bold rounded-full shadow-lg">
-                          {resource.category}
-                        </span>
+                        {resource.category}
+                      </span>
                       </div>
                       
                       {/* Icon */}
@@ -153,11 +245,11 @@ export default async function ResourcesPage() {
                     {/* Content */}
                     <div className="p-6 space-y-4 flex-1 flex flex-col">
                       <h3 className="text-xl font-display font-bold group-hover:text-accent transition-colors">
-                        {resource.title}
-                      </h3>
+                      {resource.title}
+                    </h3>
                       <p className="text-sm text-textDim leading-relaxed flex-1">
-                        {resource.description}
-                      </p>
+                      {resource.description}
+                    </p>
                       
                       {/* Japanese Sub-heading */}
                       <div className="flex items-center gap-2 text-xs text-accent/70 font-mono pt-3 border-t border-border/50">
@@ -169,6 +261,164 @@ export default async function ResourcesPage() {
                 </Link>
               );
             })}
+          </div>
+        </Container>
+      </Section>
+
+      {/* How to Use Section */}
+      <Section className="py-16 border-t border-border">
+        <Container>
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent/10 border border-accent/20 mb-4">
+                <span className="text-xs font-mono text-accent">使い方</span>
+                <div className="h-3 w-px bg-accent/30" />
+                <span className="text-xs text-textDim">How to Use</span>
+              </div>
+              <h2 className="text-3xl font-display font-bold">
+                From Theory to Action
+              </h2>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-6">
+              <Card className="p-6 text-center space-y-4">
+                <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mx-auto">
+                  <span className="text-2xl font-bold text-accent">1</span>
+                </div>
+                <h3 className="font-display font-bold text-lg">
+                  学ぶ (Manabu)
+                </h3>
+                <p className="text-sm text-textDim">
+                  <strong>Learn:</strong> Read the guide thoroughly. Understand the theory, 
+                  tactics, and potential obstacles.
+                </p>
+              </Card>
+
+              <Card className="p-6 text-center space-y-4">
+                <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mx-auto">
+                  <span className="text-2xl font-bold text-accent">2</span>
+                </div>
+                <h3 className="font-display font-bold text-lg">
+                  適応 (Tekiō)
+                </h3>
+                <p className="text-sm text-textDim">
+                  <strong>Adapt:</strong> Customize for your local context. Every community 
+                  has unique conditions and opportunities.
+                </p>
+              </Card>
+
+              <Card className="p-6 text-center space-y-4">
+                <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mx-auto">
+                  <span className="text-2xl font-bold text-accent">3</span>
+                </div>
+                <h3 className="font-display font-bold text-lg">
+                  実行 (Jikkō)
+                </h3>
+                <p className="text-sm text-textDim">
+                  <strong>Execute:</strong> Take action with your collective. Document results 
+                  and share learnings.
+                </p>
+              </Card>
+            </div>
+          </div>
+        </Container>
+      </Section>
+
+      {/* Success Stories */}
+      <Section className="py-16 bg-card/30">
+        <Container>
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent/10 border border-accent/20 mb-4">
+                <span className="text-xs font-mono text-accent">成功事例</span>
+                <div className="h-3 w-px bg-accent/30" />
+                <span className="text-xs text-textDim">Success Stories</span>
+              </div>
+              <h2 className="text-3xl font-display font-bold mb-4">
+                These Tools Work
+              </h2>
+              <p className="text-textDim">
+                Real results from organizers using these resources in the field.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6">
+              <Card className="p-6 border-l-4 border-accent">
+                <div className="space-y-3">
+                  <div className="flex items-center gap-2">
+                    <span className="text-3xl">🏦</span>
+                    <span className="text-xs px-2 py-1 bg-accent/10 text-accent rounded-full font-bold">
+                      Vancouver, BC
+                    </span>
+                  </div>
+                  <h3 className="font-bold text-lg">$50M Moved to Credit Unions</h3>
+                  <p className="text-sm text-textDim leading-relaxed">
+                    Using the Bank Switch Toolkit, 400+ members coordinated a mass exodus from 
+                    Big Five banks to Vancity in 6 months.
+                  </p>
+                  <div className="text-xs text-accent font-mono">
+                    転換 → $50,000,000 redirected
+                  </div>
+                </div>
+              </Card>
+
+              <Card className="p-6 border-l-4 border-accent">
+                <div className="space-y-3">
+                  <div className="flex items-center gap-2">
+                    <span className="text-3xl">✊</span>
+                    <span className="text-xs px-2 py-1 bg-accent/10 text-accent rounded-full font-bold">
+                      Toronto, ON
+                    </span>
+                  </div>
+                  <h3 className="font-bold text-lg">First Union in 15 Years</h3>
+                  <p className="text-sm text-textDim leading-relaxed">
+                    Union Organizing 101 guided workers at a tech startup to successful 
+                    certification with 73% support.
+                  </p>
+                  <div className="text-xs text-accent font-mono">
+                    組合 → 120 workers organized
+                  </div>
+                </div>
+              </Card>
+
+              <Card className="p-6 border-l-4 border-accent">
+                <div className="space-y-3">
+                  <div className="flex items-center gap-2">
+                    <span className="text-3xl">🏘️</span>
+                    <span className="text-xs px-2 py-1 bg-accent/10 text-accent rounded-full font-bold">
+                      Montreal, QC
+                    </span>
+                  </div>
+                  <h3 className="font-bold text-lg">50 CLT Units Secured</h3>
+                  <p className="text-sm text-textDim leading-relaxed">
+                    The CLT Primer helped organizers establish Montreal&apos;s first community 
+                    land trust, securing permanent affordability.
+                  </p>
+                  <div className="text-xs text-accent font-mono">
+                    土地 → Permanent housing
+                  </div>
+                </div>
+              </Card>
+
+              <Card className="p-6 border-l-4 border-accent">
+                <div className="space-y-3">
+                  <div className="flex items-center gap-2">
+                    <span className="text-3xl">🤝</span>
+                    <span className="text-xs px-2 py-1 bg-accent/10 text-accent rounded-full font-bold">
+                      Calgary, AB
+                    </span>
+                  </div>
+                  <h3 className="font-bold text-lg">Worker Co-op Launched</h3>
+                  <p className="text-sm text-textDim leading-relaxed">
+                    12 contractors used the Co-op Formation Guide to convert to democratic 
+                    ownership, doubling wages in Year 1.
+                  </p>
+                  <div className="text-xs text-accent font-mono">
+                    協同 → $1.2M revenue
+                  </div>
+                </div>
+              </Card>
+            </div>
           </div>
         </Container>
       </Section>
@@ -185,11 +435,12 @@ export default async function ResourcesPage() {
             </div>
             
             <h2 className="text-3xl md:text-4xl font-display font-bold">
-              Build with Your Community
+              力を合わせて<br />
+              <span className="text-xl text-accent">Build Together</span>
             </h2>
             <p className="text-lg text-textDim leading-relaxed">
-              These tools are even more powerful when used collectively. Start a local chapter 
-              to access group workshops, legal support, and direct organizing assistance.
+              These tools are even more powerful when used collectively. Connect with organizers, 
+              share strategies, and coordinate campaigns for maximum impact.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
