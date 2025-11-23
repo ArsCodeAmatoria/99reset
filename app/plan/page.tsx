@@ -474,7 +474,7 @@ export default async function PlanPage() {
                   playsInline
                   className="w-full h-auto"
                 >
-                  <source src="/videos/plan3.mp4" type="video/mp4" />
+                  <source src="/videos/class-consciousness.mp4" type="video/mp4" />
                 </video>
                 <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-bg via-bg/80 to-transparent">
                   <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent/20 border border-accent/30 backdrop-blur-md">
