@@ -103,13 +103,23 @@ export function ResourceLayout({
         </Container>
       </Section>
 
-      {/* Content Section */}
-      <Section className="py-16">
-        <Container>
-          <article className="max-w-4xl mx-auto prose prose-lg dark:prose-invert">
+      {/* Content Section - Magazine Style */}
+      <Section className="py-16 bg-card">
+        <article className="max-w-4xl mx-auto px-8">
+          {/* Serif typography, narrow column */}
+          <div className="prose prose-lg prose-neutral dark:prose-invert mx-auto
+            prose-headings:font-serif prose-headings:font-bold
+            prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-6 prose-h2:border-b prose-h2:border-border prose-h2:pb-3
+            prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-4
+            prose-p:text-base prose-p:leading-relaxed prose-p:mb-6 prose-p:text-text/90
+            prose-a:text-accent prose-a:no-underline hover:prose-a:underline
+            prose-strong:text-text prose-strong:font-semibold
+            prose-ul:my-6 prose-li:my-2
+            prose-table:text-sm
+            max-w-none">
             {children}
-          </article>
-        </Container>
+          </div>
+        </article>
       </Section>
 
       {/* CTA Section */}
