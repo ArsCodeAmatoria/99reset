@@ -114,8 +114,8 @@ export default function BankSwitchToolkit() {
 
       <p>
         <strong>The final step is recruitment.</strong> This isn&apos;t charity work; it&apos;s strategic economic warfare. 
-        Tell five friends: "I switched to [Credit Union]. The Big 5 banks have financed $900 billion in fossil fuels with 
-        our deposits." Share your experience on social media with #99Reset and #BankSwitch. Every conversation plants a seed. 
+        Tell five friends: &ldquo;I switched to [Credit Union]. The Big 5 banks have financed $900 billion in fossil fuels with 
+        our deposits.&rdquo; Share your experience on social media with #99Reset and #BankSwitch. Every conversation plants a seed. 
         Every switch compounds the pressure on extractive finance. The cascade effect begins with you.
       </p>
 
