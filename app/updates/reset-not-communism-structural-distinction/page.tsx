@@ -55,6 +55,14 @@ export default function ResetNotCommunismArticle() {
       <h2>Core Structural Difference</h2>
       <JapaneseHeading japanese="所有権の構造" english="Who Owns Production?" />
 
+      <p>
+        <strong>The fundamental distinction lies in ownership structure and control mechanisms,</strong> not abstract ideological commitments or revolutionary rhetoric. Historical communist regimes consolidated ownership in state apparatuses controlled by party elites claiming to represent workers while systematically excluding them from decision-making. The Soviet Union&apos;s Supreme Soviet functioned as rubber stamp for Politburo decrees. China&apos;s &quot;people&apos;s congresses&quot; provided democratic theater masking authoritarian control. Workers had no voice in production decisions, no ability to elect management, no recourse against bureaucratic incompetence. State ownership meant party ownership, which meant elite extraction rebranded as socialist progress.
+      </p>
+
+      <p>
+        <strong>The 99% Reset inverts this power structure entirely.</strong> Ownership vests directly in workers through cooperative shares and residents through Community Land Trust leaseholds. These aren&apos;t state property but private trusts legally owned by members who elect boards through one-member-one-vote governance. Mondragón&apos;s 80,000 worker-owners vote annually on strategic direction, elect management, and receive patronage dividends tied to cooperative surplus. Burlington&apos;s CLT maintains ground leases ensuring perpetual affordability while leaseholders build equity through home improvements. The legal architecture prevents state seizure—cooperatives and CLTs exist as private entities protected by property law from government confiscation. This ownership model combines socialist distribution with capitalist legal protections, creating hybrid institutions resistant to both state capture and market commodification.
+      </p>
+
       <div className="overflow-x-auto my-8">
         <table className="w-full border-collapse">
           <thead>
@@ -90,7 +98,7 @@ export default function ResetNotCommunismArticle() {
       </div>
 
       <ArticleCallout type="warning">
-        <p><strong>Communism nationalized everything into the state.</strong><br /><strong>The Reset privatizes everything into the 99%.</strong></p>
+        <p><strong>Communism nationalized everything into the state, concentrating power in party hands.</strong><br /><strong>The Reset privatizes everything into the 99%, distributing power through member ownership.</strong></p>
       </ArticleCallout>
 
       <h2>Why Communism Failed</h2>
@@ -111,9 +119,13 @@ export default function ResetNotCommunismArticle() {
       <h2>The Reset&apos;s Anti-Communist Safeguards</h2>
       <JapaneseHeading japanese="民主的所有権" english="Democratic Ownership" />
 
+      <p>
+        <strong>Democratic socialist ownership structures incorporate specific safeguards</strong> preventing the bureaucratic capture and authoritarian consolidation that destroyed historical communist experiments. These aren&apos;t abstract principles but concrete legal and governance mechanisms embedded in cooperative charters, CLT ground leases, and credit union bylaws. Each safeguard addresses a specific failure mode that undermined communist regimes, creating institutional antibodies against the pathologies that transformed revolutionary movements into authoritarian nightmares. The architecture matters—legal form determines political possibility.
+      </p>
+
       <div className="my-8 space-y-4">
         <ArticleCallout type="success">
-          <p><strong>No state dependency:</strong> All assets in <strong>private trusts</strong>. Burlington VT CLT (0% inflation in 30 years); Mondragón (80% surplus reinvested).</p>
+          <p><strong>No state dependency eliminates political capture risk.</strong> All Reset assets exist in private trusts legally owned by members rather than government entities subject to regime change. Burlington&apos;s CLT maintained 0% price inflation across 30 years spanning multiple administrations from progressive to conservative. Mondragón reinvests 80% of surplus through member democratic decisions, not political priorities. Governments may provide initial subsidies or favorable policy, but cannot seize assets or override member governance once cooperatives and CLTs establish independent operations. This legal architecture survived Franco&apos;s fascist dictatorship in Spain and neoliberal austerity in Vermont, proving resilience across hostile political environments.</p>
         </ArticleCallout>
 
         <ArticleCallout type="success">
