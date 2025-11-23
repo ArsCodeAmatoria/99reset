@@ -330,21 +330,21 @@ export default async function ResourcesPage() {
         </Container>
       </Section>
 
-      {/* Success Stories */}
+      {/* What's Possible */}
       <Section className="py-16 bg-card/30">
         <Container>
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
               <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent/10 border border-accent/20 mb-4">
-                <span className="text-xs font-mono text-accent">成功事例</span>
+                <span className="text-xs font-mono text-accent">可能性</span>
                 <div className="h-3 w-px bg-accent/30" />
-                <span className="text-xs text-textDim">Success Stories</span>
+                <span className="text-xs text-textDim">What&apos;s Possible</span>
               </div>
               <h2 className="text-3xl font-display font-bold mb-4">
-                These Tools Work
+                The Power of Collective Action
               </h2>
               <p className="text-textDim">
-                Real results from organizers using these resources in the field.
+                These tools enable coordinated campaigns that shift real economic power.
               </p>
             </div>
 
@@ -356,16 +356,16 @@ export default async function ResourcesPage() {
                       <Building className="h-5 w-5 text-accent" />
                     </div>
                     <span className="text-xs px-2 py-1 bg-accent/10 text-accent rounded-full font-bold">
-                      Vancouver, BC
+                      Credit Unions
                     </span>
                   </div>
-                  <h3 className="font-bold text-lg">$50M Moved to Credit Unions</h3>
+                  <h3 className="font-bold text-lg">Redirect Capital Flow</h3>
                   <p className="text-sm text-textDim leading-relaxed">
-                    Using the Bank Switch Toolkit, 400+ members coordinated a mass exodus from 
-                    Big Five banks to Vancity in 6 months.
+                    Coordinated bank switches can move millions from extractive institutions 
+                    to democratic financial cooperatives that serve communities.
                   </p>
                   <div className="text-xs text-accent font-mono">
-                    転換 → $50,000,000 redirected
+                    転換 → Capital redirection
                   </div>
                 </div>
               </Card>
@@ -377,16 +377,16 @@ export default async function ResourcesPage() {
                       <Megaphone className="h-5 w-5 text-accent" />
                     </div>
                     <span className="text-xs px-2 py-1 bg-accent/10 text-accent rounded-full font-bold">
-                      Toronto, ON
+                      Union Organizing
                     </span>
                   </div>
-                  <h3 className="font-bold text-lg">First Union in 15 Years</h3>
+                  <h3 className="font-bold text-lg">Build Worker Power</h3>
                   <p className="text-sm text-textDim leading-relaxed">
-                    Union Organizing 101 guided workers at a tech startup to successful 
-                    certification with 73% support.
+                    Step-by-step organizing guides help workers win certification votes, 
+                    negotiate contracts, and secure democratic voice at work.
                   </p>
                   <div className="text-xs text-accent font-mono">
-                    組合 → 120 workers organized
+                    組合 → Collective bargaining
                   </div>
                 </div>
               </Card>
@@ -398,16 +398,16 @@ export default async function ResourcesPage() {
                       <Home className="h-5 w-5 text-accent" />
                     </div>
                     <span className="text-xs px-2 py-1 bg-accent/10 text-accent rounded-full font-bold">
-                      Montreal, QC
+                      Community Land Trusts
                     </span>
                   </div>
-                  <h3 className="font-bold text-lg">50 CLT Units Secured</h3>
+                  <h3 className="font-bold text-lg">Secure Permanent Affordability</h3>
                   <p className="text-sm text-textDim leading-relaxed">
-                    The CLT Primer helped organizers establish Montreal&apos;s first community 
-                    land trust, securing permanent affordability.
+                    CLT models remove housing from speculative markets permanently, 
+                    ensuring affordability for generations.
                   </p>
                   <div className="text-xs text-accent font-mono">
-                    土地 → Permanent housing
+                    土地 → Democratic housing
                   </div>
                 </div>
               </Card>
@@ -419,16 +419,16 @@ export default async function ResourcesPage() {
                       <Users className="h-5 w-5 text-accent" />
                     </div>
                     <span className="text-xs px-2 py-1 bg-accent/10 text-accent rounded-full font-bold">
-                      Calgary, AB
+                      Worker Co-ops
                     </span>
                   </div>
-                  <h3 className="font-bold text-lg">Worker Co-op Launched</h3>
+                  <h3 className="font-bold text-lg">Democratic Ownership</h3>
                   <p className="text-sm text-textDim leading-relaxed">
-                    12 contractors used the Co-op Formation Guide to convert to democratic 
-                    ownership, doubling wages in Year 1.
+                    Worker cooperatives distribute profits equitably and give every 
+                    member an equal vote in business decisions.
                   </p>
                   <div className="text-xs text-accent font-mono">
-                    協同 → $1.2M revenue
+                    協同 → Shared prosperity
                   </div>
                 </div>
               </Card>
