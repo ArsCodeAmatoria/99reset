@@ -14,7 +14,7 @@ export default function CoalitionStrategyArticle() {
       excerpt="The Reset is not a culture war. It's an economic ownership war. Align with anyone under $1M who builds co-ops, CLTs, and unions. Reject anyone over $1M who blocks worker ownership—regardless of identity."
       image="/images/coalition-strategy.png"
     >
-      <ColoredSection color="accent">
+      <ColoredSection>
         <JapaneseHeading japanese="要約" english="Executive Summary" />
         <p>The 99% Reset is a <strong>democratic socialist movement</strong>, not a culture war. It is an <strong>economic ownership war</strong> against the 1%, built on the four pillars of <strong>credit unions, Community Land Trusts (CLTs), worker co-ops, and unions</strong>.</p>
       </ColoredSection>
@@ -198,7 +198,7 @@ export default function CoalitionStrategyArticle() {
         <p><strong>The 1% want you fighting over pronouns, prayers, or passports.<br />The Reset fights over who owns the bakery.</strong></p>
       </Highlight>
 
-      <ColoredSection color="darker">
+      <ColoredSection>
         <JapaneseHeading japanese="結論" english="Conclusion" />
         <p>This is a <strong>democratic socialist movement</strong>. Our strategy is clear:</p>
         <ul className="list-disc pl-6 space-y-2 my-4">

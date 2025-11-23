@@ -14,7 +14,7 @@ export default function MamdaniArticle() {
       excerpt="Mamdani's $4B NYC agenda faces federal cuts, state vetoes, and billionaire flight. The 99% Reset's decentralized ownership model bypasses these pitfalls through irreversible parallel institutions."
       image="/images/mamdani-electoral.png"
     >
-      <ColoredSection color="accent">
+      <ColoredSection>
         <JapaneseHeading japanese="要約" english="Executive Summary" />
         <p>Zohran Mamdani&apos;s November 4, 2025 victory as NYC mayor marks a high-water mark for <strong>democratic socialism</strong>, with promises of <strong>$4 billion in annual revenue</strong> from taxing the ultra-rich. Yet early analyses signal profound risks that every electoral socialist must confront.</p>
       </ColoredSection>
@@ -67,7 +67,7 @@ export default function MamdaniArticle() {
         <p><strong>Example:</strong> <strong>Alaska Permanent Fund</strong> (1976-present) holds $78B, pays $1-2K/year to all residents, survived <strong>12 governors</strong>. Constitutional amendment requires statewide vote to repeal (never happened in 49 years).</p>
       </ArticleCallout>
 
-      <ColoredSection color="darker">
+      <ColoredSection>
         <JapaneseHeading japanese="結論" english="Conclusion" />
         <p>Mamdani&apos;s method—electoral boldness—courts failure through dependency. The <strong>99% Reset</strong> thrives by design: <strong>Decentralized, ownership-driven actions</strong> mirror successes like <strong>Montgomery</strong> (economic coercion sans violence) and <strong>Québec</strong> (co-op equality since 1930s).</p>
       </ColoredSection>

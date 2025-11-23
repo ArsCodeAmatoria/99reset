@@ -14,7 +14,7 @@ export default function ResetNotCommunismArticle() {
       excerpt="The Reset transfers capital to workers via co-ops, CLTs, and wealth funds—all private, democratic, and irrevocable. Communism centralized power in the state and failed. We succeed where they failed: cooperation over politics."
       image="/images/reset-not-communism.png"
     >
-      <ColoredSection color="accent">
+      <ColoredSection>
         <JapaneseHeading japanese="要約" english="Executive Summary" />
         <p>The <strong>99% Reset</strong> is a decentralized, ownership-based <strong>democratic socialist movement</strong> that transfers capital from the 1% to the 99% through <strong>worker co-ops, Community Land Trusts (CLTs), credit unions, and Citizens&apos; Wealth Funds</strong>—all <strong>private, democratic, and irrevocable</strong> institutions.</p>
       </ColoredSection>
@@ -142,7 +142,7 @@ export default function ResetNotCommunismArticle() {
         </table>
       </div>
 
-      <ColoredSection color="darker">
+      <ColoredSection>
         <JapaneseHeading japanese="結論" english="Conclusion" />
         <p><strong>Communism failed</strong> because it was political: state ownership → elite capture, central planning → economic collapse. The <strong>99% Reset succeeds</strong> because it is cooperative: worker ownership → aligned incentives, market democracy → adaptive efficiency, irrevocable trusts → permanent power.</p>
       </ColoredSection>

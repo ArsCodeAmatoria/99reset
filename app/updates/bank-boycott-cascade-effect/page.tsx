@@ -14,7 +14,7 @@ export default function BankBoycottArticle() {
       excerpt="A coordinated $10B deposit outflow from Big Five banks triggers credit rating reviews, regulatory probes, and policy momentum for wealth taxes—unlocking $30B annually in progressive revenue."
       image="/images/bank-boycott.png"
     >
-      <ColoredSection color="accent">
+      <ColoredSection>
         <JapaneseHeading japanese="要約" english="Executive Summary" />
         <p>In an era of unprecedented wealth concentration—where Canada&apos;s 61 billionaires control $324 billion amid record inequality—the <strong>99% Reset movement</strong> proposes a non-violent strategy to redistribute power: a coordinated boycott of the <strong>Big Five banks</strong> (RBC, TD, Scotiabank, BMO, CIBC), which hold over 80% of retail deposits and financed $900 billion in fossil fuels since 2016.</p>
       </ColoredSection>
@@ -35,7 +35,7 @@ export default function BankBoycottArticle() {
         <p><strong>Projected timeline:</strong> 12-24 months to policy wins that fundamentally reshape Canadian finance.</p>
       </ArticleCallout>
 
-      <ColoredSection color="darker">
+      <ColoredSection>
         <JapaneseHeading japanese="序章" english="Introduction" />
         <p>Canada&apos;s financial system is a linchpin of inequality. The <strong>Big Five banks</strong> dominate with $6.5 trillion in total assets (Q1 2025), including $3-4 trillion in retail deposits, yet they enable wealth hoarding through low-wage financing and tax havens ($682 billion hidden offshore). Household debt hit <strong>$18.2 trillion</strong> in Q3 2025—higher than 2008 adjusted—as wages stagnate (-2.1% YoY real median).</p>
         <p>The <strong>99% Reset</strong> counters this via <strong>Phase 1: Starve the parasite</strong> through boycotts, targeting $10 billion in outflows (0.25-0.33% of Big Five deposits, per Forbes/StatsCan data). This isn&apos;t just a protest—it&apos;s a strategic intervention.</p>
@@ -81,7 +81,7 @@ export default function BankBoycottArticle() {
         <p>In Canada, momentum peaks when the NDP leverages minority government power for budget insertions. PBO estimates a wealth tax would yield <strong>$11-13B annually</strong>. <strong>Projected yield: $30B/year</strong> (NDP model + loophole closures), funding <strong>Phase 2</strong> initiatives like <strong>10K CLT units</strong>.</p>
       </ArticleCallout>
 
-      <ColoredSection color="darker">
+      <ColoredSection>
         <JapaneseHeading japanese="結論" english="Conclusion" />
         <p>A <strong>$10 billion boycott</strong> is the spark that lights the fire. It destabilizes credit ratings, unleashes regulatory probes, and ignites wealth tax momentum—transforming $324B in billionaire wealth into <strong>democratic assets</strong> owned by the 99%.</p>
       </ColoredSection>

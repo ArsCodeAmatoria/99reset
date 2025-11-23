@@ -14,7 +14,7 @@ export default function VancouverOrganzingArticle() {
       excerpt="Vancouver-specific tactics for bank boycotts, union drives, worker co-ops, CLTs, and wealth taxes. Leverage NDP's SVT, COPE's tenant unions, and local allies. 10K new union members and 1K CLT units in 24 months."
       image="/images/vancouver-organizing.png"
     >
-      <ColoredSection color="accent">
+      <ColoredSection>
         <JapaneseHeading japanese="要約" english="Executive Summary" />
         <p>Vancouver exemplifies Canada&apos;s wealth crisis: average home prices exceed <strong>$1.2 million</strong> (up 350% since 1979), rents surged 20% YoY, and the top 1% controls ~25% of wealth. Billionaires like <strong>Chip Wilson</strong> ($7.5B) and <strong>Jim Pattison</strong> ($11.4B) amplify speculation.</p>
       </ColoredSection>
@@ -104,7 +104,7 @@ export default function VancouverOrganzingArticle() {
         <li><strong>Amplify:</strong> Post: &quot;<strong>Vancouver Reset: Boycott Big Five, Build Co-ops</strong>.&quot; Tag @BCNDP, @COPEVancouver, @BCGreens.</li>
       </ol>
 
-      <ColoredSection color="darker">
+      <ColoredSection>
         <JapaneseHeading japanese="結論" english="Conclusion" />
         <p>Vancouver—ground zero for housing speculation—can lead the <strong>99% Reset</strong> as the vanguard city of <strong>democratic socialism</strong>. <strong>UCI co-ops</strong> starve parasites, <strong>CHF CLTs</strong> flood counter-power, and <strong>SVT revenue</strong> ($90M annually) funds the infrastructure.</p>
       </ColoredSection>

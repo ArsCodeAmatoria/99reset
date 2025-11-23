@@ -14,7 +14,7 @@ export default function BCPoliticiansArticle() {
       excerpt="Strategic guide to BC politicians advancing wealth taxes, co-ops, and CLTs—versus those blocking reform. Who to support, who to oppose, and how to leverage provincial power for institutional change."
       image="/images/bc-politicians.png"
     >
-      <ColoredSection color="accent">
+      <ColoredSection>
         <JapaneseHeading japanese="要約" english="Executive Summary" />
         <p>British Columbia&apos;s extreme wealth concentration—where the top 1% controls approximately 25% of wealth amid 350%+ home price surges since 1979—fuels the debt bubbles and crashes outlined in the <strong>99% Reset playbook</strong>. With the <strong>NDP holding a slim majority</strong> post-2024 election, the <strong>Greens</strong> in confidence-and-supply, and <strong>Conservatives</strong> as opposition, the movement can leverage provincial levers like the <strong>Speculation & Vacancy Tax (SVT)</strong> to accelerate democratic socialist change.</p>
       </ColoredSection>
@@ -78,7 +78,7 @@ export default function BCPoliticiansArticle() {
         </ArticleCallout>
       </div>
 
-      <ColoredSection color="darker">
+      <ColoredSection>
         <JapaneseHeading japanese="結論" english="Conclusion" />
         <p>Support <strong>NDP&apos;s Eby/Kahlon core</strong> + <strong>Greens&apos; Furstenau/Lowan flank</strong> to operationalize BC as the Reset&apos;s vanguard. <strong>SVT hikes alone</strong> could redirect $90M+ annually to CLTs and co-ops, dropping the top 1% wealth share by 7 percentage points.</p>
       </ColoredSection>

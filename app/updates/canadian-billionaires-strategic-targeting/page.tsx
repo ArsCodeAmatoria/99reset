@@ -14,7 +14,7 @@ export default function BillionairesArticle() {
       excerpt="Seven priority billionaires controlling $52B whose disruption unlocks $10-15B annually for citizens' funds and affordable housing. Thomson, Gilgan, Bouchard, Wilson, Pattison, Fidani, and Katz—ranked by wealth scale, systemic harm, and vulnerability to coordinated action."
       image="/images/billionaires-targeting.png"
     >
-      <ColoredSection color="accent">
+      <ColoredSection>
         <JapaneseHeading japanese="要約" english="Executive Summary" />
         <p>The <strong>99% Reset</strong> is a global, non-violent <strong>democratic socialist movement</strong> aimed at redistributing economic power through targeted boycotts, tax activism, unionization, and <strong>community ownership structures</strong>—specifically <strong>credit unions, Community Land Trusts (CLTs), worker co-ops, and Citizens&apos; Wealth Funds</strong>.</p>
       </ColoredSection>
@@ -79,7 +79,7 @@ export default function BillionairesArticle() {
         <li><strong>CLT expansion:</strong> <strong>10K affordable housing units</strong> from speculative holdings (Wilson&apos;s Vancouver sites).</li>
       </ul>
 
-      <ColoredSection color="darker">
+      <ColoredSection>
         <JapaneseHeading japanese="結論" english="Conclusion" />
         <p>Focusing on these <strong>seven billionaires</strong> transforms $324B in concentrated wealth into <strong>democratic assets</strong>—<strong>credit unions, CLTs, co-ops, and wealth funds</strong> owned by the people. This is not punishment but <strong>structural rebalancing</strong>.</p>
       </ColoredSection>
