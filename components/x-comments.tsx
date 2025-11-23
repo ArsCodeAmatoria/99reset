@@ -42,7 +42,9 @@ export function XComments({ tweetUrl, postUrl, title }: XCommentsProps) {
   }, [tweetUrl]);
 
   // Create the X intent URL for replying
-  const replyIntentUrl = `https://x.com/intent/tweet?text=${encodeURIComponent(title)}&url=${encodeURIComponent(postUrl)}`;
+  // Format: Title + blank line + URL (so X fetches the card preview)
+  const tweetText = `${title}\n\n${postUrl}`;
+  const replyIntentUrl = `https://x.com/intent/tweet?text=${encodeURIComponent(tweetText)}`;
 
   return (
     <>
