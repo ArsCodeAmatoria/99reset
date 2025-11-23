@@ -17,10 +17,10 @@ export const metadata: Metadata = {
 const videoMap: Record<string, string> = {
   'bank-switch-toolkit': '/videos/resources.mp4',
   'union-organizing-101': '/videos/resources1.mp4',
-  'worker-coop-formation-guide': '/videos/resources2.mp4',
-  'community-land-trust-primer': '/videos/resources3.mp4',
-  'policy-advocacy-toolkit': '/videos/resources4.mp4',
-  'chapter-organizer-handbook': '/videos/resources5.mp4',
+  'worker-coop-formation-guide': '/videos/resources3.mp4',
+  'community-land-trust-primer': '/videos/resources4.mp4',
+  'policy-advocacy-toolkit': '/videos/resources5.mp4',
+  'chapter-organizer-handbook': '/videos/resources6.mp4',
 };
 
 const iconMap = {
@@ -236,8 +236,8 @@ export default async function ResourcesPage() {
                       {/* Category Badge */}
                       <div className="absolute top-4 left-4 z-10">
                         <span className="px-3 py-1.5 bg-accent/90 backdrop-blur-sm text-white text-xs font-bold rounded-full shadow-lg">
-                          {resource.category}
-                        </span>
+                        {resource.category}
+                      </span>
                       </div>
                       
                       {/* Icon */}
