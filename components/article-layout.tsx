@@ -76,9 +76,9 @@ export function ArticleLayout({ children, title, date, category, excerpt, image 
       </Section>
 
       {/* Article Content */}
-      <Section className="py-12 md:py-20 bg-card/30">
+      <Section className="py-12 md:py-20">
         <Container>
-          <article className="max-w-2xl mx-auto prose dark:prose-invert prose-lg prose-headings:font-display prose-headings:font-bold prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-6 prose-h3:text-2xl prose-h3:mt-8 prose-h3:mb-4 prose-p:leading-relaxed prose-p:mb-6 prose-li:mb-2 prose-a:text-accent prose-a:no-underline hover:prose-a:underline">
+          <article className="max-w-xl mx-auto prose dark:prose-invert prose-headings:font-display prose-headings:font-bold prose-h2:text-2xl prose-h2:mt-10 prose-h2:mb-4 prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3 prose-p:text-base prose-p:leading-relaxed prose-p:mb-5 prose-li:mb-1 prose-a:text-accent prose-a:underline hover:prose-a:text-accent/80 prose-strong:text-text prose-strong:font-semibold">
             {children}
           </article>
         </Container>
@@ -90,13 +90,13 @@ export function ArticleLayout({ children, title, date, category, excerpt, image 
 // Reusable article components
 export function ColoredSection({ children, color = 'dark' }: { children: React.ReactNode; color?: 'dark' | 'darker' | 'accent' }) {
   const styles = {
-    dark: 'bg-card/50 border-l-4 border-border',
-    darker: 'bg-card border-l-4 border-border',
-    accent: 'bg-accent/5 border-l-4 border-accent',
+    dark: 'bg-card/30 border-l-2 border-border/50',
+    darker: 'bg-card/50 border-l-2 border-border',
+    accent: 'bg-accent/5 border-l-2 border-accent',
   };
 
   return (
-    <div className={`px-6 py-6 my-8 rounded-r-lg ${styles[color]}`}>
+    <div className={`px-5 py-5 my-6 ${styles[color]}`}>
       {children}
     </div>
   );
@@ -104,29 +104,29 @@ export function ColoredSection({ children, color = 'dark' }: { children: React.R
 
 export function Highlight({ children }: { children: React.ReactNode }) {
   return (
-    <div className="my-8 p-6 bg-accent/10 border-l-4 border-accent rounded-r-lg">
-      <div className="text-lg font-medium text-accent leading-relaxed">{children}</div>
+    <div className="my-6 px-5 py-4 bg-accent/5 border-l-2 border-accent">
+      <div className="text-base font-medium text-accent/90 leading-relaxed">{children}</div>
     </div>
   );
 }
 
 export function ArticleCallout({ children, type = 'info' }: { children: React.ReactNode; type?: 'info' | 'success' | 'warning' }) {
   const styles = {
-    info: 'bg-blue-100 dark:bg-blue-950/30 border-blue-500 text-blue-900 dark:text-blue-100',
-    success: 'bg-green-100 dark:bg-green-950/30 border-green-500 text-green-900 dark:text-green-100',
-    warning: 'bg-yellow-100 dark:bg-yellow-950/30 border-yellow-500 text-yellow-900 dark:text-yellow-100',
+    info: 'bg-blue-50 dark:bg-blue-950/20 border-blue-400 dark:border-blue-600',
+    success: 'bg-green-50 dark:bg-green-950/20 border-green-400 dark:border-green-600',
+    warning: 'bg-yellow-50 dark:bg-yellow-950/20 border-yellow-400 dark:border-yellow-600',
   };
 
   return (
-    <div className={`my-8 p-6 border-l-4 rounded-r-lg ${styles[type]}`}>
-      {children}
+    <div className={`my-6 px-5 py-4 border-l-2 ${styles[type]}`}>
+      <div className="text-sm leading-relaxed">{children}</div>
     </div>
   );
 }
 
 export function Stats({ children }: { children: React.ReactNode }) {
   return (
-    <div className="my-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 not-prose">
+    <div className="my-8 grid gap-3 grid-cols-1 not-prose">
       {children}
     </div>
   );
@@ -134,18 +134,18 @@ export function Stats({ children }: { children: React.ReactNode }) {
 
 export function Stat({ value, label }: { value: string; label: string }) {
   return (
-    <div className="p-6 bg-card border-l-4 border-accent rounded-r-lg hover:shadow-lg transition-shadow">
-      <div className="text-3xl font-display font-bold text-accent mb-2">{value}</div>
-      <div className="text-sm text-textDim leading-snug">{label}</div>
+    <div className="px-5 py-4 bg-card/30 border-l-2 border-accent">
+      <div className="text-2xl font-display font-bold text-accent mb-1">{value}</div>
+      <div className="text-sm text-textDim">{label}</div>
     </div>
   );
 }
 
 export function JapaneseHeading({ japanese, english }: { japanese: string; english: string }) {
   return (
-    <div className="flex items-center gap-3 my-6 not-prose">
-      <span className="text-2xl font-japaneseFat text-accent">{japanese}</span>
-      <span className="text-lg text-textDim font-mono">· {english}</span>
+    <div className="flex items-baseline gap-2 mb-3 mt-6 not-prose">
+      <span className="text-lg font-japaneseFat text-accent">{japanese}</span>
+      <span className="text-sm text-textDim">· {english}</span>
     </div>
   );
 }
