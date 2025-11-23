@@ -55,7 +55,13 @@ export default function VancouverOrganzingArticle() {
       <h2>Local Context and Opportunities</h2>
       <JapaneseHeading japanese="地域の機会" english="Vancouver's Ecosystem" />
 
-      <p>Vancouver&apos;s organizing ecosystem is ripe for <strong>democratic socialist</strong> transformation. Private-sector <strong>union density</strong> sits at just 15% (vs. 72% public), but <strong>VDLC</strong> affiliates represent 90+ unions and 60K workers. Politically, the <strong>NDP&apos;s slim majority</strong> needs <strong>Green support</strong> in a confidence-and-supply arrangement.</p>
+      <p>
+        <strong>Vancouver&apos;s organizing infrastructure contains both structural weakness and institutional strength</strong> creating strategic openings for democratic socialist transformation. Private-sector union density languishes at just 15% compared to 72% public sector density—massive untapped organizing potential among retail, service, and tech workers who currently face employers individually. Yet the Vancouver and District Labour Council coordinates 90+ affiliated unions representing 60,000 workers, providing established networks for campaign mobilization. This combination of low private unionization and high organizational capacity means coordinated drives could rapidly expand union coverage across strategic sectors from Lululemon retail to Amazon warehouses.
+      </p>
+
+      <p>
+        <strong>Political arithmetic creates unusual leverage for progressive policy.</strong> The NDP&apos;s slim legislative majority depends on confidence-and-supply agreements with Green MLAs whose platforms align on wealth redistribution, speculation taxes, and cooperative economics. This minority government situation means organized constituencies can extract concessions through strategic pressure on swing votes. The Greens need to demonstrate policy wins to justify their coalition partnership, creating opportunities to push Speculation and Vacancy Tax expansion, CLT funding increases, and cooperative development subsidies that wouldn&apos;t pass under NDP majority or Conservative control. The next 18 months before potential election calls represent a window for securing legislative gains that outlast the current government.
+      </p>
 
       <div className="overflow-x-auto my-8">
         <table className="w-full border-collapse">
@@ -94,11 +100,17 @@ export default function VancouverOrganzingArticle() {
       <h2>Phase 1: Starve the Parasite (2-4 Years)</h2>
       <JapaneseHeading japanese="フェーズ１" english="Bank Boycotts & Unions" />
 
-      <p><strong>Bank Boycott:</strong> Switch to <strong>Vancity</strong> (ethical, +3.26% Q1 2025 growth). <strong>Target: $500M outflow</strong>. Launch at Nov 14 Green social—VDLC rally Nov 22. Every dollar moved to <strong>Vancity</strong> is a dollar starved from billionaire-enabling banks.</p>
+      <p>
+        <strong>Bank boycotts operate as precision strikes against capital concentration.</strong> Vancity Credit Union maintains ethical lending policies excluding fossil fuel financing while growing assets 3.26% in Q1 2025—demonstrating capacity to absorb significant deposit transfers. The $500 million outflow target represents approximately 1.5% of Vancity&apos;s current $35 billion asset base, achievable through coordinated campaigns launched at the November 14 Green Party social and amplified through VDLC&apos;s November 22 rally. Every dollar switched from Royal Bank or TD to Vancity simultaneously starves the Big Five banks financing Wilson&apos;s speculation and Pattison&apos;s extractive holdings while capitalizing democratic financial infrastructure governed by depositor-members. The mechanism isn&apos;t symbolic but material—banks losing deposits face credit rating scrutiny, regulatory investigations, and rising borrowing costs that cascade through their entire lending portfolios.
+      </p>
 
-      <p><strong>Union Drives:</strong> <strong>VDLC and CUPE</strong> target <strong>Lululemon</strong> (Wilson, anti-union), <strong>Science World</strong>, and <strong>Amazon</strong>. Every 10% density increase = <strong>+4-6% wages</strong> (OECD). Organize card-check campaigns in BC.</p>
+      <p>
+        <strong>Union drives transform isolated workers into collective agents</strong> capable of challenging employer power through coordinated withdrawal of labor. VDLC and CUPE campaigns targeting Lululemon retail locations strike directly at Chip Wilson&apos;s anti-union business model while Amazon warehouse organizing builds solidarity among logistics workers facing algorithmic management. Science World organizing creates public sector precedent for cultural workers. OECD research demonstrates that every 10 percentage point increase in union density generates 4-6% wage gains across affected sectors through both direct bargaining and spillover effects pressuring non-union employers. British Columbia&apos;s card-check certification process—requiring 55% employee signatures rather than prolonged elections—enables rapid union recognition when organizing succeeds. The timeline requires sustained outreach: 5,000 new Vancouver members across 2-4 years translates to approximately 100 successful card drives among medium-sized workplaces.
+      </p>
 
-      <p><strong>Tax Activism:</strong> Petition <strong>Premier Eby</strong> for SVT expansion to billionaire ranches. Join <strong>C4TF</strong> campaigns (89% public support for wealth taxes).</p>
+      <p>
+        <strong>Tax activism mobilizes public pressure for progressive revenue generation.</strong> Premier Eby&apos;s willingness to expand the Speculation and Vacancy Tax to 13 additional municipalities demonstrates political receptiveness when constituent demand materializes. Extending SVT coverage to billionaire ranch holdings and luxury secondary properties could generate an additional $50-100 million annually beyond current $90 million provincial revenue. Canadians for Tax Fairness polling shows 89% public support for wealth taxes—overwhelming consensus rarely translating into policy absent organized campaigns forcing legislative action. Petition drives, town halls with NDP MLAs, and media advocacy create the political cover enabling progressive taxation that otherwise dies in committee facing business lobby opposition.
+      </p>
 
       <ArticleCallout type="info">
         <p><strong>Milestone:</strong> 1K bank switchers by Dec 2025; <strong>$50M outflow</strong> triggers OSFI review. <strong>5K new union members</strong> by mid-2027.</p>
@@ -107,12 +119,16 @@ export default function VancouverOrganzingArticle() {
       <h2>Phase 2: Flood the Zone (4-8 Years)</h2>
       <JapaneseHeading japanese="フェーズ２" english="Co-ops & CLTs" />
 
-      <p><strong>Worker Co-op Explosion:</strong> <strong>UCI&apos;s BUILD program</strong> and the <strong>VALU model</strong> for arts. <strong>CWCF JEDDI</strong> funds BIPOC conversions ($50K grants). <strong>Goal: 10 co-ops by 2030</strong>—retail, tech, food service, creative industries.</p>
+      <p>
+        <strong>Worker cooperative expansion requires capital, technical assistance, and market access</strong>—infrastructure the Union Co-op Initiative and Vancouver Arts, Leisure, and Unique workers model provide through established programs. UCI&apos;s BUILD program offers patient capital loans, cooperative governance training, and shared services reducing startup costs that typically kill worker ownership conversions. The Vancouver Arts model demonstrates viability in creative sectors where irregular income and project-based work historically prevented collective ownership. Citizens&apos; Wealth Fund JEDDI grants targeting BIPOC-led conversions address the racial wealth gap systematically excluding communities of color from business ownership through discriminatory lending. Each $50,000 JEDDI grant capitalizes one cooperative—10 cooperatives by 2030 requires $500,000 in seed funding, achievable through municipal social procurement policies and provincial cooperative development funds. Strategic sectors include retail replacing corporate chains, tech cooperatives offering ethical alternatives to surveillance capitalism, food service building community-controlled restaurants, and creative industries democratizing cultural production currently concentrated in corporate hands.
+      </p>
 
-      <p><strong>CLT Takeover:</strong> <strong>CHF BC tour</strong>: Acquire vacant lots (East Pender, Aaron Webster site). Advocate for <strong>500% tax on investor homes</strong> (BlackRock owns 22% of rentals). <strong>Target: 1K units</strong> by 2030, including <strong>Indigenous CLTs</strong>.</p>
+      <p>
+        <strong>Community Land Trusts permanently remove housing from speculative markets</strong> through ground lease structures separating land ownership from building ownership. Co-operative Housing Federation of BC tours showcase existing CLT models while identifying acquisition targets including East Pender vacant lots and the Aaron Webster memorial site—properties transitioning to community ownership rather than market-rate development. BlackRock&apos;s 22% ownership of Vancouver rental units demonstrates institutional investor dominance driving rent inflation; 500% tax penalties on investor-owned homes would force portfolio sales creating CLT acquisition opportunities at distressed prices. The 1,000 unit target by 2030 requires approximately 100 units annually—aggressive but achievable given Vancouver currently adds 5,000+ market units yearly. Indigenous-led CLTs incorporating traditional governance structures would address colonial land dispossession through contemporary legal mechanisms creating perpetual community stewardship.
+      </p>
 
       <Highlight>
-        <p><strong>CLTs are irreversible.</strong> Once land is in trust with 99-year leases, no developer can buy it, no politician can sell it, no market crash can inflate it. This is <strong>permanent affordability</strong>.</p>
+        <p><strong>Community Land Trusts create irreversible democratic ownership through legal architecture.</strong> Once land enters trust structures with 99-year ground leases ensuring affordability, no developer can purchase it for market-rate conversion, no politician can sell it for budget revenue, no market crash can inflate it beyond affordability formulas. Burlington&apos;s CLT maintained price stability through the 2008 financial crisis, 2020 pandemic disruption, and current speculation mania—30 years of permanent affordability across radically different economic conditions. This is structural change, not temporary subsidy. The legal form determines the outcome.</p>
       </Highlight>
 
       <h2>Your 30-Day Action List (Start Nov 10, 2025)</h2>
