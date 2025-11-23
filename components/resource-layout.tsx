@@ -182,20 +182,11 @@ export function ResourceCallout({ children, type = "info" }: { children: ReactNo
     warning: "border-warn bg-warn/5",
     success: "border-success bg-success/5",
   };
-  
-  const icons = {
-    info: "💡",
-    warning: "⚠️",
-    success: "✓",
-  };
 
   return (
     <Card className={`p-8 border-l-4 ${colors[type]} my-8 shadow-sm`}>
-      <div className="flex gap-4">
-        <div className="text-2xl flex-shrink-0">{icons[type]}</div>
-        <div className="prose dark:prose-invert max-w-none prose-p:text-base prose-p:leading-relaxed prose-p:mb-4">
-          {children}
-        </div>
+      <div className="prose dark:prose-invert max-w-none prose-p:text-base prose-p:leading-relaxed prose-p:mb-4">
+        {children}
       </div>
     </Card>
   );

@@ -180,7 +180,7 @@ export default function BankSwitchToolkit() {
       <h3>Online Post</h3>
       <ResourceCallout>
         <p>
-          &quot;Just completed my #BankSwitch to [Credit Union]! 🎉 No more funding fossil fuels with my savings. 
+          &quot;Just completed my #BankSwitch to [Credit Union]! No more funding fossil fuels with my savings. 
           Took 4 weeks, saved $15/month in fees, and now I&apos;m a co-owner. If 1% of Canadians do this, we crash 
           Big 5 credit ratings. Who&apos;s next? #99Reset&quot;
         </p>
