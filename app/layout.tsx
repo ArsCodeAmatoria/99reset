@@ -42,6 +42,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${ibmPlexSerif.variable} ${bagelFatOne.variable}`} suppressHydrationWarning>
       <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <StructuredData data={createOrganizationSchema()} />
       </head>
       <body className="min-h-screen overflow-x-hidden">
