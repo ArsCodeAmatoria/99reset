@@ -1,5 +1,5 @@
 import { ArticleLayout, ColoredSection, Highlight, Stats, Stat, ArticleCallout, JapaneseHeading } from '@/components/article-layout';
-import { getArticleNavigation, getRelatedArticles } from '@/lib/articles';
+import { getArticleNavigation, getRelatedArticles, articles } from '@/lib/articles';
 
 export const metadata = {
   title: "The Reset Is Not Communism — Ninety Nine",
@@ -8,6 +8,7 @@ export const metadata = {
 
 export default function ResetNotCommunismArticle() {
   const slug = 'reset-not-communism-structural-distinction';
+  const article = articles.find(a => a.slug === slug);
   const { prev, next } = getArticleNavigation(slug);
   const related = getRelatedArticles(slug, 4);
 
@@ -18,6 +19,8 @@ export default function ResetNotCommunismArticle() {
       category="Theory"
       excerpt="The Reset transfers capital to workers via co-ops, CLTs, and wealth funds—all private, democratic, and irrevocable. Communism centralized power in the state and failed. We succeed where they failed: cooperation over politics."
       image="/images/reset-not-communism.png"
+      slug={slug}
+      discussionTweetUrl={article?.discussionTweetUrl}
       prevArticle={prev}
       nextArticle={next}
       relatedArticles={related}

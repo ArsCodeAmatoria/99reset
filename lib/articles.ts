@@ -5,6 +5,7 @@ export interface Article {
   date: string;
   category: string;
   image?: string;
+  discussionTweetUrl?: string; // Optional: URL of the X discussion tweet
 }
 
 // All articles in chronological order (newest first)
@@ -16,6 +17,7 @@ export const articles: Article[] = [
     date: '2025-11-15',
     category: 'Strategy',
     image: '/images/coalition-strategy.png',
+    discussionTweetUrl: undefined, // TODO: Add X discussion tweet URL
   },
   {
     slug: 'reset-not-communism-structural-distinction',
@@ -24,6 +26,7 @@ export const articles: Article[] = [
     date: '2025-11-14',
     category: 'Theory',
     image: '/images/reset-not-communism.png',
+    discussionTweetUrl: undefined, // TODO: Add X discussion tweet URL
   },
   {
     slug: 'vancouver-organizing-guide-nov-2025',
@@ -32,6 +35,7 @@ export const articles: Article[] = [
     date: '2025-11-12',
     category: 'Local Organizing',
     image: '/images/vancouver-organizing.png',
+    discussionTweetUrl: undefined, // TODO: Add X discussion tweet URL
   },
   {
     slug: 'bank-boycott-cascade-effect',
@@ -40,6 +44,7 @@ export const articles: Article[] = [
     date: '2025-11-11',
     category: 'Strategy',
     image: '/images/bank-boycott.png',
+    discussionTweetUrl: undefined, // TODO: Add X discussion tweet URL
   },
   {
     slug: 'bc-politicians-guide-nov-2025',
@@ -48,6 +53,7 @@ export const articles: Article[] = [
     date: '2025-11-09',
     category: 'Policy',
     image: '/images/bc-politicians.png',
+    discussionTweetUrl: undefined, // TODO: Add X discussion tweet URL
   },
   {
     slug: 'canadian-billionaires-strategic-targeting',
@@ -56,6 +62,7 @@ export const articles: Article[] = [
     date: '2025-11-09',
     category: 'Strategy',
     image: '/images/billionaires-targeting.png',
+    discussionTweetUrl: undefined, // TODO: Add X discussion tweet URL
   },
 ];
 

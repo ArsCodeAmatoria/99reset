@@ -1,5 +1,5 @@
 import { ArticleLayout, ColoredSection, Highlight, Stats, Stat, ArticleCallout, JapaneseHeading } from '@/components/article-layout';
-import { getArticleNavigation, getRelatedArticles } from '@/lib/articles';
+import { getArticleNavigation, getRelatedArticles, articles } from '@/lib/articles';
 
 export const metadata = {
   title: "Strategic Targeting: Canadian Billionaires — Ninety Nine",
@@ -8,6 +8,7 @@ export const metadata = {
 
 export default function BillionairesArticle() {
   const slug = 'canadian-billionaires-strategic-targeting';
+  const article = articles.find(a => a.slug === slug);
   const { prev, next } = getArticleNavigation(slug);
   const related = getRelatedArticles(slug, 4);
 
@@ -18,6 +19,8 @@ export default function BillionairesArticle() {
       category="Strategy"
       excerpt="Seven priority billionaires controlling $52B whose disruption unlocks $10-15B annually for citizens' funds and affordable housing. Thomson, Gilgan, Bouchard, Wilson, Pattison, Fidani, and Katz—ranked by wealth scale, systemic harm, and vulnerability to coordinated action."
       image="/images/billionaires-targeting.png"
+      slug={slug}
+      discussionTweetUrl={article?.discussionTweetUrl}
       prevArticle={prev}
       nextArticle={next}
       relatedArticles={related}

@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Container } from './container';
 import { Section } from './section';
+import { XComments } from './x-comments';
 
 interface RelatedArticle {
   slug: string;
@@ -24,9 +25,14 @@ interface ArticleLayoutProps {
   prevArticle?: RelatedArticle;
   nextArticle?: RelatedArticle;
   relatedArticles?: RelatedArticle[];
+  discussionTweetUrl?: string;
+  slug: string;
 }
 
-export function ArticleLayout({ children, title, date, category, excerpt, image, prevArticle, nextArticle, relatedArticles }: ArticleLayoutProps) {
+export function ArticleLayout({ children, title, date, category, excerpt, image, prevArticle, nextArticle, relatedArticles, discussionTweetUrl, slug }: ArticleLayoutProps) {
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://99reset.vercel.app';
+  const postUrl = `${siteUrl}/updates/${slug}`;
+
   return (
     <div className="min-h-screen bg-white dark:bg-black">
       {/* Back to Updates Button */}
@@ -143,6 +149,15 @@ export function ArticleLayout({ children, title, date, category, excerpt, image,
           </nav>
         )}
       </article>
+
+      {/* X Comments Section */}
+      {discussionTweetUrl && (
+        <XComments
+          tweetUrl={discussionTweetUrl}
+          postUrl={postUrl}
+          title={title}
+        />
+      )}
 
       {/* Related Articles */}
       {relatedArticles && relatedArticles.length > 0 && (
