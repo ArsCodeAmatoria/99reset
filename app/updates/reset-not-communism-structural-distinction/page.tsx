@@ -1,4 +1,5 @@
 import { ArticleLayout, ColoredSection, Highlight, Stats, Stat, ArticleCallout, JapaneseHeading } from '@/components/article-layout';
+import { getArticleNavigation, getRelatedArticles } from '@/lib/articles';
 
 export const metadata = {
   title: "The Reset Is Not Communism — Ninety Nine",
@@ -6,6 +7,10 @@ export const metadata = {
 };
 
 export default function ResetNotCommunismArticle() {
+  const slug = 'reset-not-communism-structural-distinction';
+  const { prev, next } = getArticleNavigation(slug);
+  const related = getRelatedArticles(slug, 4);
+
   return (
     <ArticleLayout
       title="The 99% Reset Is Not Communism: A Structural and Historical Distinction"
@@ -13,6 +18,9 @@ export default function ResetNotCommunismArticle() {
       category="Theory"
       excerpt="The Reset transfers capital to workers via co-ops, CLTs, and wealth funds—all private, democratic, and irrevocable. Communism centralized power in the state and failed. We succeed where they failed: cooperation over politics."
       image="/images/reset-not-communism.png"
+      prevArticle={prev}
+      nextArticle={next}
+      relatedArticles={related}
     >
       <ColoredSection>
         <JapaneseHeading japanese="要約" english="Executive Summary" />

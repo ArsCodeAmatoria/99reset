@@ -1,4 +1,5 @@
 import { ArticleLayout, ColoredSection, Highlight, Stats, Stat, ArticleCallout, JapaneseHeading } from '@/components/article-layout';
+import { getArticleNavigation, getRelatedArticles } from '@/lib/articles';
 
 export const metadata = {
   title: "Vancouver Organizing Guide — Ninety Nine",
@@ -6,6 +7,10 @@ export const metadata = {
 };
 
 export default function VancouverOrganzingArticle() {
+  const slug = 'vancouver-organizing-guide-nov-2025';
+  const { prev, next } = getArticleNavigation(slug);
+  const related = getRelatedArticles(slug, 4);
+
   return (
     <ArticleLayout
       title="Organizing for the 99% Reset in Vancouver: A Local Action Guide – November 2025"
@@ -13,6 +18,9 @@ export default function VancouverOrganzingArticle() {
       category="Local Organizing"
       excerpt="Vancouver-specific tactics for bank boycotts, union drives, worker co-ops, CLTs, and wealth taxes. Leverage NDP's SVT, COPE's tenant unions, and local allies. 10K new union members and 1K CLT units in 24 months."
       image="/images/vancouver-organizing.png"
+      prevArticle={prev}
+      nextArticle={next}
+      relatedArticles={related}
     >
       <ColoredSection>
         <JapaneseHeading japanese="要約" english="Executive Summary" />

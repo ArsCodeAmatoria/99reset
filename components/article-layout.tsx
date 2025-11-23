@@ -1,9 +1,18 @@
 import React from 'react';
-import { Calendar, Share2, ArrowLeft } from 'lucide-react';
+import { Calendar, Share2, ArrowLeft, ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Container } from './container';
 import { Section } from './section';
+
+interface RelatedArticle {
+  slug: string;
+  title: string;
+  excerpt: string;
+  date: string;
+  category: string;
+  image?: string;
+}
 
 interface ArticleLayoutProps {
   children: React.ReactNode;
@@ -12,9 +21,12 @@ interface ArticleLayoutProps {
   category: string;
   excerpt: string;
   image?: string;
+  prevArticle?: RelatedArticle;
+  nextArticle?: RelatedArticle;
+  relatedArticles?: RelatedArticle[];
 }
 
-export function ArticleLayout({ children, title, date, category, excerpt, image }: ArticleLayoutProps) {
+export function ArticleLayout({ children, title, date, category, excerpt, image, prevArticle, nextArticle, relatedArticles }: ArticleLayoutProps) {
   return (
     <div className="min-h-screen bg-white dark:bg-black">
       {/* Back to Updates Button */}
@@ -93,7 +105,92 @@ export function ArticleLayout({ children, title, date, category, excerpt, image 
           prose-td:border prose-td:border-gray-300 dark:prose-td:border-gray-700 prose-td:p-3">
           {children}
         </div>
+
+        {/* Article Navigation */}
+        {(prevArticle || nextArticle) && (
+          <nav className="mt-16 pt-8 border-t-2 border-gray-200 dark:border-gray-800">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {prevArticle ? (
+                <Link 
+                  href={`/updates/${prevArticle.slug}`}
+                  className="group p-6 border-2 border-gray-200 dark:border-gray-800 hover:border-red-600 dark:hover:border-red-600 transition-colors"
+                >
+                  <div className="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 mb-2">
+                    <ChevronLeft className="h-4 w-4" />
+                    <span className="uppercase tracking-wider">Previous</span>
+                  </div>
+                  <h3 className="font-serif font-bold text-lg text-black dark:text-white group-hover:text-red-600 transition-colors line-clamp-2">
+                    {prevArticle.title}
+                  </h3>
+                </Link>
+              ) : <div />}
+              
+              {nextArticle && (
+                <Link 
+                  href={`/updates/${nextArticle.slug}`}
+                  className="group p-6 border-2 border-gray-200 dark:border-gray-800 hover:border-red-600 dark:hover:border-red-600 transition-colors text-right"
+                >
+                  <div className="flex items-center justify-end gap-2 text-sm text-gray-500 dark:text-gray-400 mb-2">
+                    <span className="uppercase tracking-wider">Next</span>
+                    <ChevronRight className="h-4 w-4" />
+                  </div>
+                  <h3 className="font-serif font-bold text-lg text-black dark:text-white group-hover:text-red-600 transition-colors line-clamp-2">
+                    {nextArticle.title}
+                  </h3>
+                </Link>
+              )}
+            </div>
+          </nav>
+        )}
       </article>
+
+      {/* Related Articles */}
+      {relatedArticles && relatedArticles.length > 0 && (
+        <Section className="py-16 bg-gray-50 dark:bg-gray-900">
+          <Container>
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl font-serif font-bold text-black dark:text-white mb-8 pb-4 border-b-2 border-gray-200 dark:border-gray-800">
+                Recent & Suggested Articles
+              </h2>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                {relatedArticles.map((article) => (
+                  <Link
+                    key={article.slug}
+                    href={`/updates/${article.slug}`}
+                    className="group"
+                  >
+                    {article.image && (
+                      <div className="mb-4 overflow-hidden border-2 border-gray-200 dark:border-gray-800 group-hover:border-red-600 transition-colors">
+                        <Image
+                          src={article.image}
+                          alt={article.title}
+                          width={600}
+                          height={400}
+                          className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                    )}
+                    <div className="space-y-2">
+                      <div className="flex items-center gap-2 text-xs uppercase tracking-wider">
+                        <span className="text-red-600 font-bold">{article.category}</span>
+                        <span className="text-gray-400">·</span>
+                        <span className="text-gray-500 dark:text-gray-400">{article.date}</span>
+                      </div>
+                      <h3 className="font-serif font-bold text-xl text-black dark:text-white group-hover:text-red-600 transition-colors line-clamp-2">
+                        {article.title}
+                      </h3>
+                      <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed line-clamp-3">
+                        {article.excerpt}
+                      </p>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </Container>
+        </Section>
+      )}
     </div>
   );
 }

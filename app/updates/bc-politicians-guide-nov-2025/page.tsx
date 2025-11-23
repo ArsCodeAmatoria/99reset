@@ -1,4 +1,5 @@
 import { ArticleLayout, ColoredSection, Highlight, Stats, Stat, ArticleCallout, JapaneseHeading } from '@/components/article-layout';
+import { getArticleNavigation, getRelatedArticles } from '@/lib/articles';
 
 export const metadata = {
   title: "BC Politicians for the 99% Reset — Ninety Nine",
@@ -6,6 +7,10 @@ export const metadata = {
 };
 
 export default function BCPoliticiansArticle() {
+  const slug = 'bc-politicians-guide-nov-2025';
+  const { prev, next } = getArticleNavigation(slug);
+  const related = getRelatedArticles(slug, 4);
+
   return (
     <ArticleLayout
       title="BC Politicians for the 99% Reset: Support & Oppose Guide – November 2025"
@@ -13,6 +18,9 @@ export default function BCPoliticiansArticle() {
       category="Policy"
       excerpt="Strategic guide to BC politicians advancing wealth taxes, co-ops, and CLTs—versus those blocking reform. Who to support, who to oppose, and how to leverage provincial power for institutional change."
       image="/images/bc-politicians.png"
+      prevArticle={prev}
+      nextArticle={next}
+      relatedArticles={related}
     >
       <ColoredSection>
         <JapaneseHeading japanese="要約" english="Executive Summary" />

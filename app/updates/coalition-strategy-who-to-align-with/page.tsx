@@ -1,4 +1,5 @@
 import { ArticleLayout, ColoredSection, Highlight, Stats, Stat, ArticleCallout, JapaneseHeading } from '@/components/article-layout';
+import { getArticleNavigation, getRelatedArticles } from '@/lib/articles';
 
 export const metadata = {
   title: "The 99% Reset's Coalition Strategy — Ninety Nine",
@@ -6,6 +7,10 @@ export const metadata = {
 };
 
 export default function CoalitionStrategyArticle() {
+  const slug = 'coalition-strategy-who-to-align-with';
+  const { prev, next } = getArticleNavigation(slug);
+  const related = getRelatedArticles(slug, 4);
+
   return (
     <ArticleLayout
       title="The 99% Reset's Coalition Strategy: Who to Align With — And Why"
@@ -13,6 +18,9 @@ export default function CoalitionStrategyArticle() {
       category="Strategy"
       excerpt="The Reset is not a culture war. It's an economic ownership war. Align with anyone under $1M who builds co-ops, CLTs, and unions. Reject anyone over $1M who blocks worker ownership—regardless of identity."
       image="/images/coalition-strategy.png"
+      prevArticle={prev}
+      nextArticle={next}
+      relatedArticles={related}
     >
       <ColoredSection>
         <JapaneseHeading japanese="要約" english="Executive Summary" />

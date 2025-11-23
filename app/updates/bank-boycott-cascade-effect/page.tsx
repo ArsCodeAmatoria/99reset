@@ -1,4 +1,5 @@
 import { ArticleLayout, ColoredSection, Highlight, Stats, Stat, ArticleCallout, JapaneseHeading } from '@/components/article-layout';
+import { getArticleNavigation, getRelatedArticles } from '@/lib/articles';
 
 export const metadata = {
   title: "The Cascade Effect: Bank Boycott Strategy — Ninety Nine",
@@ -6,6 +7,10 @@ export const metadata = {
 };
 
 export default function BankBoycottArticle() {
+  const slug = 'bank-boycott-cascade-effect';
+  const { prev, next } = getArticleNavigation(slug);
+  const related = getRelatedArticles(slug, 4);
+
   return (
     <ArticleLayout
       title="The Cascade Effect: How a $10 Billion Bank Boycott in Canada Can Ignite Regulatory Scrutiny and Propel Wealth Tax Reforms"
@@ -13,6 +18,9 @@ export default function BankBoycottArticle() {
       category="Strategy"
       excerpt="A coordinated $10B deposit outflow from Big Five banks triggers credit rating reviews, regulatory probes, and policy momentum for wealth taxes—unlocking $30B annually in progressive revenue."
       image="/images/bank-boycott.png"
+      prevArticle={prev}
+      nextArticle={next}
+      relatedArticles={related}
     >
       <ColoredSection>
         <JapaneseHeading japanese="要約" english="Executive Summary" />
