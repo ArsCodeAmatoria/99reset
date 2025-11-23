@@ -55,7 +55,9 @@ export default function BCPoliticiansArticle() {
       <h2>Support: Champions of the Reset</h2>
       <JapaneseHeading japanese="支持すべき人々" english="NDP & Green Allies" />
       
-      <p>These politicians align with <strong>starving parasites</strong> (SVT hikes targeting billionaires like Wilson) and <strong>flooding counter-power</strong> (co-op subsidies, CLT grants). These are the democratic socialists building the infrastructure of collective ownership.</p>
+      <p>
+        <strong>These politicians control the legislative levers enabling democratic socialist transformation</strong> through specific policy mechanisms aligned with Phase 1 (starve the parasites) and Phase 2 (flood counter-power) strategies. Speculation and Vacancy Tax increases target billionaires like Chip Wilson whose real estate portfolios depend on artificially constrained supply. Co-op development subsidies and CLT land grants build parallel ownership infrastructure while extractive capital faces mounting costs. These aren&apos;t symbolic gestures but material interventions redistributing wealth through tax policy, land use authority, and public financing—the essential tools for constructing worker ownership at scale. Each politician&apos;s alignment gets measured through concrete legislative actions enabling credit unions, CLTs, worker cooperatives, and union organizing rather than rhetorical support divorced from budgetary commitment.
+      </p>
 
       <div className="my-8 space-y-6">
         <ArticleCallout type="success">
@@ -83,7 +85,9 @@ export default function BCPoliticiansArticle() {
       <h2>Oppose: Barriers to the Reset</h2>
       <JapaneseHeading japanese="反対すべき人々" english="Conservative Opponents" />
       
-      <p>These politicians block <strong>Phases 1-3</strong> via SVT repeal, deregulation, and pro-speculator cuts. They represent the <strong>1%&apos;s interests</strong>, not the 99%. Expose them via boycotts, op-eds, and direct action.</p>
+      <p>
+        <strong>Conservative politicians systematically dismantle the policy architecture</strong> enabling democratic ownership through legislative attacks on speculation taxes, development cost charges, and cooperative financing mechanisms. Their SVT repeal proposals explicitly benefit speculative capital accumulation over affordable housing development. Deregulation eliminates the land use controls that enable Community Land Trust prioritization in rezoning processes. Tax cuts defund the public programs providing seed capital for worker cooperative conversion. These policy positions don&apos;t emerge from ideological confusion but clear alignment with the 1% whose wealth depends on blocking democratic alternatives to extractive capitalism. Opposition requires systematic exposure of their billionaire donors, boycotts of the companies financing their campaigns, and direct action disrupting their legislative agenda. Political theater accomplishes nothing; material consequences force accountability.
+      </p>
 
       <div className="my-8 space-y-6">
         <ArticleCallout type="warning">
@@ -103,11 +107,18 @@ export default function BCPoliticiansArticle() {
 
       <ColoredSection>
         <JapaneseHeading japanese="結論" english="Conclusion" />
-        <p>Support <strong>NDP&apos;s Eby/Kahlon core</strong> + <strong>Greens&apos; Furstenau/Lowan flank</strong> to operationalize BC as the Reset&apos;s vanguard. <strong>SVT hikes alone</strong> could redirect $90M+ annually to CLTs and co-ops, dropping the top 1% wealth share by 7 percentage points.</p>
+        <p>
+          <strong>Supporting the NDP core of Eby and Kahlon</strong> combined with Green flanking from Furstenau and Lowan creates the legislative coalition capable of operationalizing British Columbia as the 99% Reset&apos;s North American vanguard. These politicians control budgetary authority directing Speculation and Vacancy Tax revenue—currently $90 million annually but expandable to $200+ million through rate increases and expanded coverage—toward CLT land acquisition and cooperative development subsidies. Parliamentary arithmetic matters: the NDP&apos;s slim majority depends on confidence-and-supply agreements with Greens whose policy platforms align on wealth redistribution and cooperative economics. Strategic support concentrating resources on these champions maximizes legislative output enabling all four pillars of democratic ownership.
+        </p>
+        <p>
+          <strong>The tangible outcomes are quantifiable.</strong> SVT expansion alone redirects $90+ million annually from speculative hoarding toward permanently affordable housing and worker-owned enterprises. Paired with land value capture on transit investments, vacancy control enforcement, and cooperative financing programs, these policies could reduce the top 1%&apos;s wealth share by 7 percentage points over a decade—transferring approximately $50 billion in accumulated assets into democratic control. This represents the largest wealth redistribution in BC history, accomplished through democratic legislative processes rather than authoritarian seizure.
+        </p>
       </ColoredSection>
 
       <Highlight>
-        <p>Oppose <strong>Rustad-led Conservatives</strong> as 1% enablers. Their tax cuts and deregulation would inflate asset bubbles like 2008. The choice is stark: <strong>co-ops or oligarchs</strong>.</p>
+        <p>
+          <strong>Opposing Rustad&apos;s Conservative coalition becomes equally critical.</strong> Their platform explicitly dismantles every mechanism enabling the Reset: SVT repeal returns $90 million annually to speculative landlords, development charge cuts defund affordable housing infrastructure, and tax reductions starve cooperative financing programs. These policies don&apos;t accidentally harm worker ownership—they deliberately protect the extractive capital flows enriching Wilson, Thomson, and Pattison. Their tax cuts and deregulation agenda replicates the conditions generating 2008&apos;s financial collapse, inflating asset bubbles benefiting wealth holders while workers face mounting debt. The choice facing British Columbians is stark and material: <strong>cooperatives building collective prosperity or oligarchs hoarding concentrated wealth.</strong>
+        </p>
       </Highlight>
 
       <p className="text-sm text-textDim italic mt-8">
