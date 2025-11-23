@@ -75,13 +75,13 @@ export function ArticleLayout({ children, title, date, category, excerpt, image 
         </Container>
       </Section>
 
-      {/* Article Content */}
+      {/* Article Content - Narrow Magazine Style */}
       <Section className="py-12 md:py-20">
-        <Container>
-          <article className="max-w-xl mx-auto prose dark:prose-invert prose-headings:font-display prose-headings:font-bold prose-h2:text-2xl prose-h2:mt-10 prose-h2:mb-4 prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3 prose-p:text-base prose-p:leading-relaxed prose-p:mb-5 prose-li:mb-1 prose-a:text-accent prose-a:underline hover:prose-a:text-accent/80 prose-strong:text-text prose-strong:font-semibold">
+        <div className="w-full px-4">
+          <article className="max-w-2xl mx-auto prose dark:prose-invert prose-lg prose-headings:font-display prose-headings:font-bold prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-6 prose-h3:text-2xl prose-h3:mt-10 prose-h3:mb-4 prose-p:text-lg prose-p:leading-relaxed prose-p:mb-6 prose-li:mb-2 prose-li:leading-relaxed prose-ul:my-6 prose-ol:my-6 prose-a:text-accent prose-a:underline prose-a:decoration-accent/30 hover:prose-a:decoration-accent prose-strong:text-text prose-strong:font-semibold prose-table:text-base">
             {children}
           </article>
-        </Container>
+        </div>
       </Section>
     </>
   );
@@ -90,13 +90,13 @@ export function ArticleLayout({ children, title, date, category, excerpt, image 
 // Reusable article components
 export function ColoredSection({ children, color = 'dark' }: { children: React.ReactNode; color?: 'dark' | 'darker' | 'accent' }) {
   const styles = {
-    dark: 'bg-card/30 border-l-2 border-border/50',
-    darker: 'bg-card/50 border-l-2 border-border',
-    accent: 'bg-accent/5 border-l-2 border-accent',
+    dark: 'bg-card/20 border-l-4 border-border',
+    darker: 'bg-card/40 border-l-4 border-border',
+    accent: 'bg-accent/5 border-l-4 border-accent',
   };
 
   return (
-    <div className={`px-5 py-5 my-6 ${styles[color]}`}>
+    <div className={`px-6 py-6 my-8 rounded-r-lg ${styles[color]}`}>
       {children}
     </div>
   );
@@ -104,29 +104,29 @@ export function ColoredSection({ children, color = 'dark' }: { children: React.R
 
 export function Highlight({ children }: { children: React.ReactNode }) {
   return (
-    <div className="my-6 px-5 py-4 bg-accent/5 border-l-2 border-accent">
-      <div className="text-base font-medium text-accent/90 leading-relaxed">{children}</div>
+    <div className="my-8 px-6 py-5 bg-accent/10 border-l-4 border-accent rounded-r-lg">
+      <div className="text-lg font-semibold text-accent leading-relaxed">{children}</div>
     </div>
   );
 }
 
 export function ArticleCallout({ children, type = 'info' }: { children: React.ReactNode; type?: 'info' | 'success' | 'warning' }) {
   const styles = {
-    info: 'bg-blue-50 dark:bg-blue-950/20 border-blue-400 dark:border-blue-600',
-    success: 'bg-green-50 dark:bg-green-950/20 border-green-400 dark:border-green-600',
-    warning: 'bg-yellow-50 dark:bg-yellow-950/20 border-yellow-400 dark:border-yellow-600',
+    info: 'bg-blue-50 dark:bg-blue-950/30 border-blue-500',
+    success: 'bg-green-50 dark:bg-green-950/30 border-green-500',
+    warning: 'bg-yellow-50 dark:bg-yellow-950/30 border-yellow-500',
   };
 
   return (
-    <div className={`my-6 px-5 py-4 border-l-2 ${styles[type]}`}>
-      <div className="text-sm leading-relaxed">{children}</div>
+    <div className={`my-8 px-6 py-5 border-l-4 rounded-r-lg ${styles[type]}`}>
+      <div className="text-base leading-relaxed">{children}</div>
     </div>
   );
 }
 
 export function Stats({ children }: { children: React.ReactNode }) {
   return (
-    <div className="my-8 grid gap-3 grid-cols-1 not-prose">
+    <div className="my-10 grid gap-4 grid-cols-1 not-prose">
       {children}
     </div>
   );
@@ -134,18 +134,18 @@ export function Stats({ children }: { children: React.ReactNode }) {
 
 export function Stat({ value, label }: { value: string; label: string }) {
   return (
-    <div className="px-5 py-4 bg-card/30 border-l-2 border-accent">
-      <div className="text-2xl font-display font-bold text-accent mb-1">{value}</div>
-      <div className="text-sm text-textDim">{label}</div>
+    <div className="px-6 py-5 bg-card/30 border-l-4 border-accent rounded-r-lg">
+      <div className="text-3xl font-display font-bold text-accent mb-2">{value}</div>
+      <div className="text-base text-textDim leading-snug">{label}</div>
     </div>
   );
 }
 
 export function JapaneseHeading({ japanese, english }: { japanese: string; english: string }) {
   return (
-    <div className="flex items-baseline gap-2 mb-3 mt-6 not-prose">
-      <span className="text-lg font-japaneseFat text-accent">{japanese}</span>
-      <span className="text-sm text-textDim">· {english}</span>
+    <div className="flex items-baseline gap-3 mb-4 mt-8 not-prose">
+      <span className="text-2xl font-japaneseFat text-accent">{japanese}</span>
+      <span className="text-base text-textDim font-mono">· {english}</span>
     </div>
   );
 }
