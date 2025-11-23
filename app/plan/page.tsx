@@ -488,7 +488,7 @@ export default async function PlanPage() {
                 
                 {/* Japanese Statement */}
                 <div className="text-center py-6">
-                  <h3 className="text-5xl md:text-6xl text-white leading-tight tracking-tight font-bagel">
+                  <h3 className="bagel-fat-one-regular text-5xl md:text-6xl text-white leading-tight tracking-tight">
                     力は人民に
                   </h3>
                   <p className="text-sm text-textDim font-mono mt-3 tracking-wide">
