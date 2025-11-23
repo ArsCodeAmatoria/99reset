@@ -89,18 +89,10 @@ export default function BillionairesArticle() {
       <JapaneseHeading japanese="戦略的行動" english="Reset Phases 1-3" />
 
       <p><strong>Phase 1: Starve the Parasite (2-4 Years)</strong></p>
-      <ul className="list-disc pl-6 space-y-2 my-4">
-        <li><strong>Tax activism:</strong> Mass CRA audit demands (Thomson&apos;s $240M avoidance). <strong>Projected: $2-3B immediate revenue</strong> to <strong>credit union development</strong>.</li>
-        <li><strong>Bank boycotts:</strong> Shift $5T from Big 5. Target Lululemon/Mattamy sales (-10% YoY). Every dollar to <strong>Vancity</strong> starves billionaire enablers.</li>
-        <li><strong>Union drives:</strong> <strong>5M workers</strong> via Unifor at Couche-Tard/Mattamy. Every unionized worker is a democratic socialist in training.</li>
-      </ul>
+      <p><strong>Tax activism</strong> launches through mass CRA audit demands targeting Thomson&apos;s $240 million in tax avoidance schemes. Projected immediate revenue of $2-3 billion flows directly to <strong>credit union development</strong>, building democratic financial infrastructure. <strong>Bank boycotts</strong> systematically shift Canada&apos;s $5 trillion in deposits away from Big 5 banks, directly targeting companies like Lululemon and Mattamy with projected 10% year-over-year sales declines. Every dollar redirected to <strong>Vancity</strong> and similar credit unions starves the billionaire enablers who depend on concentrated capital. <strong>Union drives</strong> mobilize <strong>5 million workers</strong> through Unifor campaigns at Couche-Tard and Mattamy construction sites. Every newly unionized worker becomes a democratic socialist in training, understanding collective power through lived experience.</p>
 
       <p><strong>Phase 2: Flood the Zone (4-8 Years)</strong></p>
-      <ul className="list-disc pl-6 space-y-2 my-4">
-        <li><strong>Progressive taxes:</strong> BC model yields <strong>$30B/year</strong>. Vacancy penalties force sales to <strong>CLTs</strong>.</li>
-        <li><strong>Co-op conversions:</strong> Colorado-style equity mandates. <strong>CWCF JEDDI funds</strong> seed 1K <strong>co-ops</strong>.</li>
-        <li><strong>CLT expansion:</strong> <strong>10K affordable housing units</strong> from speculative holdings (Wilson&apos;s Vancouver sites).</li>
-      </ul>
+      <p><strong>Progressive taxation</strong> following British Columbia&apos;s model generates <strong>$30 billion annually</strong>, while vacancy penalties force speculative property sales to <strong>Community Land Trusts</strong> at below-market rates. <strong>Co-op conversions</strong> accelerate through Colorado-style equity mandates requiring businesses to vest ownership in worker trusts. <strong>CWCF JEDDI funds</strong> provide seed capital for 1,000 new <strong>worker cooperatives</strong> across strategic sectors. <strong>CLT expansion</strong> creates <strong>10,000 affordable housing units</strong> seized from speculative holdings, including Wilson&apos;s prime Vancouver development sites, permanently removing them from market speculation.</p>
 
       <ColoredSection>
         <JapaneseHeading japanese="結論" english="Conclusion" />

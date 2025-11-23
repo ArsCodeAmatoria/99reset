@@ -96,12 +96,13 @@ export default function ResetNotCommunismArticle() {
       <h2>Why Communism Failed</h2>
       <JapaneseHeading japanese="共産主義の崩壊" english="Politics Over Cooperation" />
 
-      <ul className="list-disc pl-6 space-y-2 my-4">
-        <li><strong>Bureaucratic tyranny:</strong> Stalin&apos;s purges (700K executed); Mao&apos;s Great Leap (30M+ dead). <strong>No worker voice</strong>—party elites controlled everything.</li>
-        <li><strong>Economic miscalculation:</strong> Soviet GDP $3.5K vs U.S. $23K (1991). <strong>No price signals</strong>—planners guessed demand; co-ops use market feedback.</li>
-        <li><strong>Incentive collapse:</strong> &quot;They pretend to pay us, we pretend to work&quot; (Soviet joke). <strong>No equity stake</strong>; co-ops pay dividends.</li>
-        <li><strong>Corruption:</strong> Venezuela&apos;s PDVSA looted; hyperinflation 1M%. State monopoly enabled theft; <strong>co-ops have transparent bylaws</strong>.</li>
-      </ul>
+      <p><strong>Bureaucratic tyranny</strong> defined communist regimes from their inception. Stalin&apos;s purges executed 700,000 people while Mao&apos;s Great Leap Forward killed over 30 million through forced collectivization. <strong>Workers had no voice</strong>—party elites controlled every decision through centralized planning divorced from ground-level reality. Democratic socialist cooperatives operate through one-member-one-vote governance that makes such top-down brutality structurally impossible.</p>
+
+      <p><strong>Economic miscalculation</strong> plagued centrally planned economies unable to process distributed information. Soviet GDP per capita reached only $3,500 compared to America&apos;s $23,000 by 1991&apos;s collapse. <strong>Price signals vanished</strong>—central planners guessed at demand while warehouses filled with unwanted goods and shortages paralyzed essential services. Worker cooperatives use market feedback to adjust production dynamically, combining socialist ownership with capitalist efficiency signals.</p>
+
+      <p><strong>Incentive structures collapsed</strong> under state ownership disconnected from worker effort. The bitter Soviet joke captured the dynamic: &quot;They pretend to pay us, we pretend to work.&quot; <strong>Workers held no equity stake</strong> in production success, breeding cynicism and minimal effort. Cooperatives distribute patronage dividends directly tied to individual contribution, aligning personal interest with collective prosperity.</p>
+
+      <p><strong>Corruption flourished</strong> in state monopolies lacking accountability mechanisms. Venezuela&apos;s PDVSA got systematically looted by connected elites, triggering hyperinflation exceeding 1,000,000%. State control enabled theft at massive scale with no worker oversight. <strong>Cooperatives maintain transparent bylaws</strong> and annual general assemblies where members vote on budgets, creating democratic accountability that communist parties deliberately destroyed.</p>
 
       <Highlight>
         <p><strong>Politics killed communism.<br />Cooperation powers the Reset.</strong></p>
