@@ -144,7 +144,7 @@ export default function CoalitionStrategyArticle() {
       <div className="my-8 space-y-6">
         <ArticleCallout type="info">
           <h3 className="font-bold mb-2">November 14, 2025: Interfaith Co-op Summit</h3>
-          <p>Vancouver Central Mosque, Beth Israel Synagogue, Christ Church Cathedral (rotating hosts). Panel: "Co-ops in Our Traditions" led by Rabbi, Imam, Priest. Breakout sessions: bank boycotts (Jewish), credit unions (Muslim), union organizing (Christian).</p>
+          <p>Vancouver Central Mosque, Beth Israel Synagogue, Christ Church Cathedral (rotating hosts). Panel: &quot;Co-ops in Our Traditions&quot; led by Rabbi, Imam, Priest. Breakout sessions: bank boycotts (Jewish), credit unions (Muslim), union organizing (Christian).</p>
           <p className="font-bold mt-2">Goal: 1,000 bank switchers by Dec 31, redirecting $100M to Vancity.</p>
         </ArticleCallout>
 

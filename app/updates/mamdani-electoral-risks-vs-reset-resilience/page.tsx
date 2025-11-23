@@ -29,7 +29,7 @@ export default function MamdaniArticle() {
         <Stat value="53% vs 26%" label="Nonviolent vs Violent Success Rate" />
       </Stats>
 
-      <h2>Why Mamdani's Method Risks Failure</h2>
+      <h2>Why Mamdani&apos;s Method Risks Failure</h2>
       <JapaneseHeading japanese="選挙の脆弱性" english="Electoral Dependency" />
 
       <p>Mamdani&apos;s strategy hinges on <strong>institutional capture</strong>, exposing it to three fatal dependencies:</p>

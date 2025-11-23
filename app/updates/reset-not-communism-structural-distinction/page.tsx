@@ -84,7 +84,7 @@ export default function ResetNotCommunismArticle() {
         <p><strong>Politics killed communism.<br />Cooperation powers the Reset.</strong></p>
       </Highlight>
 
-      <h2>The Reset's Anti-Communist Safeguards</h2>
+      <h2>The Reset&apos;s Anti-Communist Safeguards</h2>
       <JapaneseHeading japanese="民主的所有権" english="Democratic Ownership" />
 
       <div className="my-8 space-y-4">
