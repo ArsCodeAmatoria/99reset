@@ -7,10 +7,10 @@ import { Info, Lightbulb, AlertTriangle, CheckCircle2, Target, TrendingUp } from
 // Callout Components
 const Callout = ({ children, type = "info" }: { children: React.ReactNode; type?: "info" | "tip" | "warning" | "success" }) => {
   const styles = {
-    info: "bg-blue-950/30 border-blue-900/50 text-blue-100",
-    tip: "bg-purple-950/30 border-purple-900/50 text-purple-100",
-    warning: "bg-yellow-950/30 border-yellow-900/50 text-yellow-100",
-    success: "bg-green-950/30 border-green-900/50 text-green-100",
+    info: "bg-blue-100 dark:bg-blue-950/30 border-blue-300 dark:border-blue-900/50 text-blue-900 dark:text-blue-100",
+    tip: "bg-purple-100 dark:bg-purple-950/30 border-purple-300 dark:border-purple-900/50 text-purple-900 dark:text-purple-100",
+    warning: "bg-yellow-100 dark:bg-yellow-950/30 border-yellow-300 dark:border-yellow-900/50 text-yellow-900 dark:text-yellow-100",
+    success: "bg-green-100 dark:bg-green-950/30 border-green-300 dark:border-green-900/50 text-green-900 dark:text-green-100",
   };
   
   const icons = {
@@ -26,7 +26,7 @@ const Callout = ({ children, type = "info" }: { children: React.ReactNode; type?
     <div className={`my-6 rounded-lg border-2 p-6 ${styles[type]}`}>
       <div className="flex gap-3">
         <Icon className="h-6 w-6 flex-shrink-0 mt-0.5" />
-        <div className="prose prose-invert prose-sm max-w-none">{children}</div>
+        <div className="prose dark:prose-invert prose-sm max-w-none">{children}</div>
       </div>
     </div>
   );
@@ -34,7 +34,7 @@ const Callout = ({ children, type = "info" }: { children: React.ReactNode; type?
 
 const Highlight = ({ children }: { children: React.ReactNode }) => (
   <div className="my-6 rounded-lg bg-accent/10 border-2 border-accent/30 p-6">
-    <div className="prose prose-invert max-w-none font-semibold text-accent">{children}</div>
+    <div className="prose dark:prose-invert max-w-none font-semibold text-accent">{children}</div>
   </div>
 );
 
@@ -60,14 +60,14 @@ const Stat = ({ label, value, icon }: { label: string; value: string; icon?: str
 
 const ColoredSection = ({ children, color = "dark" }: { children: React.ReactNode; color?: "dark" | "darker" | "accent" }) => {
   const styles = {
-    dark: "bg-card/30",
-    darker: "bg-[#0a0a0a]",
+    dark: "bg-card/50 border-y border-border",
+    darker: "bg-card border-y border-border",
     accent: "bg-accent/5 border-y border-accent/20",
   };
   
   return (
     <div className={`-mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8 py-8 my-8 ${styles[color]}`}>
-      <div className="prose prose-invert max-w-none">{children}</div>
+      <div className="prose dark:prose-invert max-w-none">{children}</div>
     </div>
   );
 };
@@ -158,7 +158,7 @@ export function MDXRenderer({ source, hideTitle = false }: MDXRendererProps) {
       );
 
   return (
-    <div className="prose prose-invert max-w-none">
+    <div className="prose dark:prose-invert max-w-none">
       <MDXRemote 
         source={source} 
         components={customComponents}
