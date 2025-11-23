@@ -17,7 +17,7 @@ export const articles: Article[] = [
     date: '2025-11-15',
     category: 'Strategy',
     image: '/images/coalition-strategy.png',
-    discussionTweetUrl: undefined, // TODO: Add X discussion tweet URL
+    discussionTweetUrl: 'https://x.com/elonmusk/status/1234567890', // TEST URL - Replace with your actual tweet
   },
   {
     slug: 'reset-not-communism-structural-distinction',
