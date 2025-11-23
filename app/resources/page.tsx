@@ -2,7 +2,6 @@ import { promises as fs } from "fs";
 import path from "path";
 import matter from "gray-matter";
 import Link from "next/link";
-import Image from "next/image";
 import { Container } from "@/components/container";
 import { Section } from "@/components/section";
 import { Card } from "@/components/card";
@@ -14,14 +13,14 @@ export const metadata: Metadata = {
   description: "Guides, templates, and toolkits for bank switching, union organizing, and co-op formation.",
 };
 
-// Map resources to images
-const imageMap: Record<string, string> = {
-  'bank-switch-toolkit': '/images/resources.png',
-  'union-organizing-101': '/images/resources1.png',
-  'worker-coop-formation-guide': '/images/resources2.png',
-  'community-land-trust-primer': '/images/resources3.png',
-  'policy-advocacy-toolkit': '/images/resources4.png',
-  'chapter-organizer-handbook': '/images/resources5.png',
+// Map resources to videos
+const videoMap: Record<string, string> = {
+  'bank-switch-toolkit': '/videos/resources.mp4',
+  'union-organizing-101': '/videos/resources1.mp4',
+  'worker-coop-formation-guide': '/videos/resources2.mp4',
+  'community-land-trust-primer': '/videos/resources3.mp4',
+  'policy-advocacy-toolkit': '/videos/resources4.mp4',
+  'chapter-organizer-handbook': '/videos/resources5.mp4',
 };
 
 const iconMap = {
@@ -217,34 +216,32 @@ export default async function ResourcesPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {resources.map((resource, index) => {
               const Icon = iconMap[resource.icon as keyof typeof iconMap] || FileText;
-              const image = imageMap[resource.slug] || '/images/resources.png';
-              
-              // Log for debugging
-              console.log('Resource:', resource.slug, 'Image:', image);
+              const video = videoMap[resource.slug] || '/videos/resources.mp4';
               
               return (
                 <Link key={resource.slug} href={`/resources/${resource.slug}`}>
                   <Card className="group overflow-hidden hover:border-accent/50 transition-all duration-300 hover:shadow-xl h-full flex flex-col">
-                    {/* Image */}
+                    {/* Video */}
                     <div className="relative overflow-hidden bg-card">
-                      <Image
-                        src={image}
-                        alt={resource.title}
-                        width={800}
-                        height={600}
+                      <video
+                        src={video}
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
                         className="w-full h-auto group-hover:scale-105 transition-transform duration-300"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-bg/60 via-transparent to-transparent" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-bg/60 via-transparent to-transparent pointer-events-none" />
                       
                       {/* Category Badge */}
-                      <div className="absolute top-4 left-4">
+                      <div className="absolute top-4 left-4 z-10">
                         <span className="px-3 py-1.5 bg-accent/90 backdrop-blur-sm text-white text-xs font-bold rounded-full shadow-lg">
-                        {resource.category}
-                      </span>
+                          {resource.category}
+                        </span>
                       </div>
                       
                       {/* Icon */}
-                      <div className="absolute bottom-4 right-4">
+                      <div className="absolute bottom-4 right-4 z-10">
                         <div className="p-2.5 bg-bg/95 backdrop-blur-sm rounded-full border-2 border-accent/30 shadow-lg">
                           <Icon className="h-5 w-5 text-accent" />
                         </div>
