@@ -466,7 +466,7 @@ export default async function PlanPage() {
             {/* Golden Ratio Layout: Video (38.2%) + Content (61.8%) */}
             <div className="grid lg:grid-cols-[38.2%_1fr] gap-10 items-start">
               {/* Video Column (Smaller - 1) */}
-              <div className="lg:sticky lg:top-24">
+              <div className="lg:sticky lg:top-24 space-y-6">
                 <div className="relative rounded-2xl overflow-hidden border-2 border-accent/30 shadow-2xl group">
                   <video
                     autoPlay
@@ -484,6 +484,19 @@ export default async function PlanPage() {
                       <span className="text-xs font-mono text-accent font-bold">三段階</span>
                     </div>
                   </div>
+                </div>
+                
+                {/* Japanese Statement */}
+                <div className="text-center py-6">
+                  <h3 style={{ fontFamily: 'var(--font-bagel-fat)' }} className="text-5xl md:text-6xl text-white leading-tight tracking-tight">
+                    力は人民に
+                  </h3>
+                  <p className="text-sm text-textDim font-mono mt-3 tracking-wide">
+                    chikara wa jinmin ni
+                  </p>
+                  <p className="text-xs text-textDim mt-1">
+                    power to the people
+                  </p>
                 </div>
               </div>
 
@@ -646,16 +659,6 @@ export default async function PlanPage() {
                   </p>
                 </div>
               </Card>
-            </div>
-
-            {/* Big Japanese Statement */}
-            <div className="text-center mt-16 mb-8">
-              <h2 className="text-6xl md:text-8xl lg:text-9xl font-bagel text-accent leading-none tracking-tight">
-                力は人民に
-              </h2>
-              <p className="text-lg md:text-xl text-textDim font-mono mt-4 tracking-wide">
-                chikara wa jinmin ni · power to the people
-              </p>
             </div>
           </div>
         </Container>
