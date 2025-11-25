@@ -5,6 +5,7 @@ import { Container } from "@/components/container";
 import { Section } from "@/components/section";
 import { Card } from "@/components/card";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowLeft, Download } from "lucide-react";
 
 interface ResourceLayoutProps {
@@ -87,17 +88,27 @@ export function ResourceLayout({
               )}
             </div>
 
-            {/* Video */}
+            {/* Media (Video or Image) */}
             <div className="relative flex-1">
               <div className="relative rounded-lg overflow-hidden border border-border bg-card shadow-lg">
-                <video
-                  src={video}
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  className="w-full h-auto"
-                />
+                {video.endsWith('.mp4') || video.endsWith('.webm') ? (
+                  <video
+                    src={video}
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="w-full h-auto"
+                  />
+                ) : (
+                  <Image
+                    src={video}
+                    alt={title}
+                    width={800}
+                    height={450}
+                    className="w-full h-auto"
+                  />
+                )}
                 <div className="absolute inset-0 bg-gradient-to-t from-bg/40 via-transparent to-transparent pointer-events-none" />
               </div>
             </div>

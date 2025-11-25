@@ -12,7 +12,7 @@ export default function CommunityLandTrustPrimer() {
       title="Community Land Trust Primer"
       category="Housing"
       description="How CLTs work, resale formulas, governance structures, and step-by-step guide to launching a CLT in your city."
-      video="/videos/resources4.mp4"
+      video="/images/resourcenew3.png"
       difficulty="Hard"
       timeframe="18-24 months"
       impact="Very High"

@@ -12,7 +12,7 @@ export default function PolicyAdvocacyToolkit() {
       title="Policy Advocacy Toolkit"
       category="Policy"
       description="Template legislation, lobbying strategies, and coalition-building for wealth taxes, labour law reform, and co-op incentives."
-      video="/videos/resources5.mp4"
+      video="/images/resourcenew4.png"
       difficulty="Medium-Hard"
       timeframe="12-36 months"
       impact="Very High"

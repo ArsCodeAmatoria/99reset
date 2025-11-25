@@ -12,7 +12,7 @@ export default function ChapterOrganizerHandbook() {
       title="Chapter Organizer Handbook"
       category="Organizing"
       description="How to run meetings, plan campaigns, build coalitions, and grow your chapter from 10 to 1000 members."
-      video="/videos/resources6.mp4"
+      video="/videos/resourcenew.mp4"
       difficulty="Medium"
       timeframe="Ongoing"
       impact="Very High"

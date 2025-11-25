@@ -12,7 +12,7 @@ export default function WorkerCoopFormationGuide() {
       title="Worker Co-op Formation Guide"
       category="Ownership"
       description="Legal structures, governance models, financing options, and sector-specific case studies for starting a co-op."
-      video="/videos/resources3.mp4"
+      video="/images/resourcenew2.png"
       difficulty="Hard"
       timeframe="12-18 months"
       impact="Very High"

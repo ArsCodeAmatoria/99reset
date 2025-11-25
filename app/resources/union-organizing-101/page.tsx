@@ -12,7 +12,7 @@ export default function UnionOrganizing101() {
       title="Union Organizing 101"
       category="Labour"
       description="Card-check campaigns, legal rights, employer tactics, and how to build majority support in your workplace."
-      video="/videos/resources1.mp4"
+      video="/images/resourcenew1.png"
       difficulty="Hard"
       timeframe="3-6 months"
       impact="Very High"

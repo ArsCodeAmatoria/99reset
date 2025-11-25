@@ -12,7 +12,7 @@ export default function BankSwitchToolkit() {
       title="Bank Switch Toolkit"
       category="Finance"
       description="Step-by-step guide to moving deposits from corporate banks to credit unions. Includes comparison charts and conversation scripts."
-      video="/videos/resources.mp4"
+      video="/images/resourcenew.png"
       difficulty="Easy"
       timeframe="4 weeks"
       impact="High"
