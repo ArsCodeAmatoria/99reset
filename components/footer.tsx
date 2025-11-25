@@ -18,7 +18,7 @@ export function Footer() {
               <div>
                 <div className="mb-4">
                   <h3 className="text-3xl md:text-4xl font-display font-black tracking-tighter uppercase text-text">
-                    99% RESET
+                    NINETY NINE
                   </h3>
                   <div className="text-xs md:text-sm font-mono font-bold text-accent tracking-wider mt-1">
                     リセット
@@ -242,7 +242,7 @@ export function Footer() {
         <div className="py-6 border-t border-border/50">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-xs text-textDim">
-              &copy; {new Date().getFullYear()} 99% Reset. All rights reserved.
+              &copy; {new Date().getFullYear()} Ninety Nine. All rights reserved.
             </p>
             <p className="text-xs text-textDim">
               &quot;Not welfare. Ownership.&quot;
