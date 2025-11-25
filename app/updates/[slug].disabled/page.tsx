@@ -45,7 +45,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   }
 
   return {
-    title: `${update.title} — Ninety Nine`,
+    title: `${update.title} — 99% Reset`,
     description: update.excerpt || `${update.category} update from the 99% Reset movement.`,
   };
 }

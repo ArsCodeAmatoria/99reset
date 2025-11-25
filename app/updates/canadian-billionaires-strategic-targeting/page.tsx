@@ -2,7 +2,7 @@ import { ArticleLayout, ColoredSection, Highlight, Stats, Stat, ArticleCallout, 
 import { getArticleNavigation, getRelatedArticles, articles } from '@/lib/articles';
 
 export const metadata = {
-  title: "Strategic Targeting: Canadian Billionaires — Ninety Nine",
+  title: "Strategic Targeting: Canadian Billionaires — 99% Reset",
   description: "Seven priority billionaires whose disruption unlocks $10-15B annually for citizens' funds and affordable housing.",
   openGraph: {
     title: "Strategic Targeting: Prioritizing Canadian Billionaires for Economic Disruption",

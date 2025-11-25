@@ -2,7 +2,7 @@ import { ArticleLayout, ColoredSection, Highlight, Stats, Stat, ArticleCallout, 
 import { getArticleNavigation, getRelatedArticles, articles } from '@/lib/articles';
 
 export const metadata = {
-  title: "Vancouver Organizing Guide — Ninety Nine",
+  title: "Vancouver Organizing Guide — 99% Reset",
   description: "Vancouver-specific tactics for bank boycotts, union drives, worker co-ops, CLTs, and wealth taxes.",
   openGraph: {
     title: "Organizing for the 99% Reset in Vancouver: A Local Action Guide",

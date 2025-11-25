@@ -2,7 +2,7 @@ import { ArticleLayout, ColoredSection, Highlight, Stats, Stat, ArticleCallout, 
 import { getArticleNavigation, getRelatedArticles, articles } from '@/lib/articles';
 
 export const metadata = {
-  title: "The Cascade Effect: Bank Boycott Strategy — Ninety Nine",
+  title: "The Cascade Effect: Bank Boycott Strategy — 99% Reset",
   description: "A coordinated $10B deposit outflow from Big Five banks triggers credit rating reviews, regulatory probes, and policy momentum for wealth taxes.",
   openGraph: {
     title: "The Cascade Effect: How a $10 Billion Bank Boycott Can Propel Wealth Tax Reforms",

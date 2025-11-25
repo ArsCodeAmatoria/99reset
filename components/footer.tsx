@@ -18,25 +18,25 @@ export function Footer() {
               <div>
                 <div className="mb-4">
                   <h3 className="text-3xl md:text-4xl font-display font-black tracking-tighter uppercase text-text">
-                    NINETY NINE
+                    99% RESET
                   </h3>
                   <div className="text-xs md:text-sm font-mono font-bold text-accent tracking-wider mt-1">
                     リセット
                   </div>
                 </div>
                 <p className="text-base text-textDim leading-relaxed max-w-md">
-                  A cerebral exploration of democratic socialism, worker empowerment, 
-                  and collective ownership.
+                  Starve the 1%. Own the Future. Building economic democracy through 
+                  bank boycotts, union organizing, and worker ownership.
                 </p>
               </div>
               
               {/* Tagline */}
               <div className="pt-4 border-t border-border/50">
                 <p className="text-sm font-medium text-text">
-                  Theory and Praxis
+                  Collective Power
                 </p>
                 <p className="text-xs text-textDim mt-1">
-                  Where philosophy meets practice.
+                  Where institutional change meets coordinated action.
                 </p>
               </div>
 
@@ -242,10 +242,10 @@ export function Footer() {
         <div className="py-6 border-t border-border/50">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-xs text-textDim">
-              &copy; {new Date().getFullYear()} Ninety Nine. All rights reserved.
+              &copy; {new Date().getFullYear()} 99% Reset. All rights reserved.
             </p>
             <p className="text-xs text-textDim">
-              &quot;From each according to their ability, to each according to their needs.&quot;
+              &quot;Not welfare. Ownership.&quot;
             </p>
           </div>
         </div>

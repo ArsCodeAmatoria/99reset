@@ -8,8 +8,9 @@ import type { Metadata } from "next";
 import { Target, Users, Building2, Scale, TrendingUp, Zap, MapPin, Building, Landmark } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "The Plan — Ninety Nine",
-  description: "A comprehensive strategy for democratic socialism: finance, labour, ownership, policy. Building collective power from the ground up.",
+  title: "The Plan — Make the 1% Irrelevant Within a Generation",
+  description: "A comprehensive strategy to shift economic power through three coordinated tracks: bank boycotts to credit unions, union organizing, and worker co-ops. Building collective power from the ground up.",
+  keywords: "99% reset plan, economic democracy plan, wealth redistribution strategy, union organizing strategy, worker cooperative movement, credit union movement, community land trust strategy, citizens wealth fund",
 };
 
 async function getPlanContent() {

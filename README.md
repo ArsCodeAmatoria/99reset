@@ -7,7 +7,11 @@
  ╚═════╝  ╚═════╝ ╚═╝  ╚═╝    ╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝   ╚═╝   
 ```
 
-<img width="928" height="1232" alt="Image" src="https://github.com/user-attachments/assets/86490d64-9415-4742-a61a-8308dde04a6e" />
+<div align="center">
+  <img width="600" alt="99% Reset Movement" src="https://github.com/user-attachments/assets/86490d64-9415-4742-a61a-8308dde04a6e" />
+</div>
+
+<br />
 
 **Starve the 1%. Own the Future.**
 

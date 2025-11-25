@@ -2,7 +2,7 @@ import { ArticleLayout, ColoredSection, Highlight, Stats, Stat, ArticleCallout, 
 import { getArticleNavigation, getRelatedArticles, articles } from '@/lib/articles';
 
 export const metadata = {
-  title: "The Reset Is Not Communism — Ninety Nine",
+  title: "The Reset Is Not Communism — 99% Reset",
   description: "The Reset transfers capital to workers via co-ops, CLTs, and wealth funds—all private, democratic, and irrevocable. Communism centralized power and failed.",
   openGraph: {
     title: "The 99% Reset Is Not Communism: A Structural and Historical Distinction",

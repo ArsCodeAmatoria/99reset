@@ -2,7 +2,7 @@ import { ArticleLayout, ColoredSection, Highlight, Stats, Stat, ArticleCallout, 
 import { getArticleNavigation, getRelatedArticles, articles } from '@/lib/articles';
 
 export const metadata = {
-  title: "The 99% Reset's Coalition Strategy — Ninety Nine",
+  title: "The 99% Reset's Coalition Strategy — 99% Reset",
   description: "The Reset is not a culture war. It's an economic ownership war. Align with anyone under $1M who builds co-ops, CLTs, and unions.",
   openGraph: {
     title: "The 99% Reset's Coalition Strategy: Who to Align With — And Why",

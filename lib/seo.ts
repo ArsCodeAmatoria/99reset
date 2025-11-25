@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://99reset.org";
-const siteName = "Ninety Nine";
+const siteName = "99% Reset";
 
 export function createMetadata({
   title,
@@ -91,44 +91,48 @@ export function createMetadata({
 }
 
 const defaultKeywords = [
-  // Primary keywords
-  "democratic socialism",
-  "worker cooperatives",
-  "collective ownership",
-  "economic democracy",
-  "labour movement",
-  "worker empowerment",
-  "social democracy",
-  // Secondary keywords
-  "socialism theory",
-  "workers rights",
-  "cooperative ownership",
-  "democratic workplace",
-  "wealth redistribution",
+  // Primary keywords - Movement focus
+  "99% reset",
   "economic justice",
-  "social equality",
-  "political philosophy",
-  "socialist praxis",
-  // Long-tail keywords
-  "what is democratic socialism",
-  "worker owned business",
-  "democratic socialist movement",
-  "economic equality solutions",
-  "workplace democracy",
-  "socialist philosophy",
-  "modern socialism",
-  "progressive economics",
-  "collective bargaining",
-  "democratic socialism explained",
+  "worker cooperatives",
+  "credit unions",
+  "bank boycott",
+  "community land trust",
+  "union organizing",
+  "wealth redistribution",
+  "worker ownership",
+  "economic democracy",
+  // Secondary keywords - Action-oriented
+  "switch to credit union",
+  "start a union",
+  "worker co-op",
+  "democratize wealth",
+  "fight inequality",
+  "collective ownership",
+  "democratic workplace",
+  "community organizing",
+  "workers rights",
+  "affordable housing",
+  // Long-tail keywords - Solutions
+  "how to switch banks to credit union",
+  "how to start a union at work",
+  "how to form a worker cooperative",
+  "community land trust explained",
+  "citizens wealth fund",
+  "bank switch toolkit",
+  "union organizing guide",
+  "economic inequality solutions",
+  "worker power movement",
+  "institutional economic change",
 ];
 
 export const defaultMetadata: Metadata = {
   title: {
-    default: "Ninety Nine — Democratic Socialism for the Modern Age",
-    template: "%s — Ninety Nine",
+    default: "99% Reset — Starve the 1%. Own the Future.",
+    template: "%s — 99% Reset",
   },
   description:
-    "A cerebral exploration of democratic socialism, worker empowerment, and collective ownership. Where philosophy meets praxis at the intersection of theory and practice.",
+    "Make the 1% irrelevant through coordinated institutional change. Switch to credit unions, unionize your workplace, form worker co-ops, and build community land trusts. Economic democracy through collective action.",
   keywords: defaultKeywords,
   authors: [{ name: siteName, url: siteUrl }],
   creator: siteName,
@@ -151,7 +155,7 @@ export function createOrganizationSchema() {
     url: siteUrl,
     logo: `${siteUrl}/logo.png`,
     description:
-      "A cerebral exploration of democratic socialism, collective ownership, and worker empowerment. Where philosophy meets praxis.",
+      "A global movement to make the 1% irrelevant through coordinated institutional change. Bank boycotts, union organizing, worker cooperatives, and community land trusts to shift economic power to workers and communities.",
     sameAs: [
       "https://www.youtube.com/@99Reset",
       "https://x.com/99reset",

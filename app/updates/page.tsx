@@ -10,8 +10,9 @@ import { Calendar, ArrowRight, BookOpen } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Updates & Briefings — Ninety Nine",
-  description: "Campaign updates, policy wins, analysis, and strategic briefings from the movement.",
+  title: "Updates & Briefings — 99% Reset Campaign News",
+  description: "Latest updates from the 99% Reset movement: bank boycott progress, union organizing wins, worker co-op launches, and strategic analysis. Track the economic revolution in real-time.",
+  keywords: "99% reset news, bank boycott updates, union organizing wins, worker cooperative news, economic justice updates, movement briefings, credit union movement, labor movement news",
 };
 
 async function getUpdates() {

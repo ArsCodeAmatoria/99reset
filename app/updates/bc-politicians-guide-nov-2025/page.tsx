@@ -2,7 +2,7 @@ import { ArticleLayout, ColoredSection, Highlight, Stats, Stat, ArticleCallout, 
 import { getArticleNavigation, getRelatedArticles, articles } from '@/lib/articles';
 
 export const metadata = {
-  title: "BC Politicians for the 99% Reset — Ninety Nine",
+  title: "BC Politicians for the 99% Reset — 99% Reset",
   description: "Strategic guide to BC politicians advancing wealth taxes, co-ops, and CLTs—versus those blocking reform.",
   openGraph: {
     title: "BC Politicians for the 99% Reset: Support & Oppose Guide",
