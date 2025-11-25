@@ -7,6 +7,8 @@
  ╚═════╝  ╚═════╝ ╚═╝  ╚═╝    ╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝   ╚═╝   
 ```
 
+<img width="928" height="1232" alt="Image" src="https://github.com/user-attachments/assets/86490d64-9415-4742-a61a-8308dde04a6e" />
+
 **Starve the 1%. Own the Future.**
 
 A production-ready Next.js 14 website for the 99% Reset movement — a global, non-violent plan to shift ownership and bargaining power to workers and communities through coordinated institutional change.
