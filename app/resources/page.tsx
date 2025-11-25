@@ -2,6 +2,7 @@ import { promises as fs } from "fs";
 import path from "path";
 import matter from "gray-matter";
 import Link from "next/link";
+import Image from "next/image";
 import { Container } from "@/components/container";
 import { Section } from "@/components/section";
 import { Card } from "@/components/card";
@@ -13,14 +14,14 @@ export const metadata: Metadata = {
   description: "Guides, templates, and toolkits for bank switching, union organizing, and co-op formation.",
 };
 
-// Map resources to videos
-const videoMap: Record<string, string> = {
-  'bank-switch-toolkit': '/videos/resources.mp4',
-  'union-organizing-101': '/videos/resources1.mp4',
-  'worker-coop-formation-guide': '/videos/resources3.mp4',
-  'community-land-trust-primer': '/videos/resources4.mp4',
-  'policy-advocacy-toolkit': '/videos/resources5.mp4',
-  'chapter-organizer-handbook': '/videos/resources6.mp4',
+// Map resources to media (videos or images)
+const mediaMap: Record<string, { type: 'video' | 'image', src: string }> = {
+  'bank-switch-toolkit': { type: 'image', src: '/images/resourcenew.png' },
+  'union-organizing-101': { type: 'image', src: '/images/resourcenew1.png' },
+  'worker-coop-formation-guide': { type: 'image', src: '/images/resourcenew2.png' },
+  'community-land-trust-primer': { type: 'image', src: '/images/resourcenew3.png' },
+  'policy-advocacy-toolkit': { type: 'image', src: '/images/resourcenew4.png' },
+  'chapter-organizer-handbook': { type: 'video', src: '/videos/resourcenew.mp4' },
 };
 
 const iconMap = {
@@ -216,21 +217,31 @@ export default async function ResourcesPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {resources.map((resource, index) => {
               const Icon = iconMap[resource.icon as keyof typeof iconMap] || FileText;
-              const video = videoMap[resource.slug] || '/videos/resources.mp4';
+              const media = mediaMap[resource.slug] || { type: 'video', src: '/videos/resourcenew.mp4' };
               
               return (
                 <Link key={resource.slug} href={`/resources/${resource.slug}`}>
                   <Card className="group overflow-hidden hover:border-accent/50 transition-all duration-300 hover:shadow-xl h-full flex flex-col">
-                    {/* Video */}
+                    {/* Media (Video or Image) */}
                     <div className="relative overflow-hidden bg-card">
-                      <video
-                        src={video}
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                        className="w-full h-auto group-hover:scale-105 transition-transform duration-300"
-                      />
+                      {media.type === 'video' ? (
+                        <video
+                          src={media.src}
+                          autoPlay
+                          loop
+                          muted
+                          playsInline
+                          className="w-full h-auto group-hover:scale-105 transition-transform duration-300"
+                        />
+                      ) : (
+                        <Image
+                          src={media.src}
+                          alt={resource.title}
+                          width={800}
+                          height={450}
+                          className="w-full h-auto group-hover:scale-105 transition-transform duration-300"
+                        />
+                      )}
                       <div className="absolute inset-0 bg-gradient-to-t from-bg/60 via-transparent to-transparent pointer-events-none" />
                       
                       {/* Category Badge */}
