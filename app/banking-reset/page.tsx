@@ -2,8 +2,10 @@ import { Container } from "@/components/container";
 import { Section } from "@/components/section";
 import { Card } from "@/components/card";
 import { CTAButton } from "@/components/cta-button";
+import { StructuredData } from "@/components/structured-data";
 import { CheckCircle2, ArrowRight, DollarSign } from "lucide-react";
 import type { Metadata } from "next";
+import { createFAQSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Banking Reset — Switch from Big Banks to Credit Unions in Canada",
@@ -45,13 +47,34 @@ const structuredData = {
   totalTime: "P30D"
 };
 
+const faqSchema = createFAQSchema([
+  {
+    question: "Are credit unions safe? Is my money protected?",
+    answer: "Yes. Credit unions are insured by provincial deposit insurance (up to $250,000 in most provinces) or CDIC, just like big banks. They're regulated by OSFI and provincial authorities."
+  },
+  {
+    question: "Can I still use ATMs and online banking?",
+    answer: "Yes. Credit unions share ATM networks (Acculink, Exchange) with 3,000+ fee-free ATMs Canada-wide. Most offer full online/mobile banking, e-transfers, and bill payments."
+  },
+  {
+    question: "Will switching hurt my credit score?",
+    answer: "No. Closing bank accounts doesn't affect credit scores. Only closing credit cards impacts your score (keep those open or transfer them separately)."
+  },
+  {
+    question: "What if I have a mortgage with a Big 5 bank?",
+    answer: "You can still switch your checking/savings. Keep your mortgage until renewal, then refinance with a credit union (they often offer better rates)."
+  },
+  {
+    question: "How does this hurt Big 5 banks?",
+    answer: "Banks need deposits to lend. A $10B outflow triggers credit rating reviews by Moody's/S&P, regulatory scrutiny by OSFI, and forces them to raise capital or cut lending to billionaires."
+  }
+]);
+
 export default function BankingResetPage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-      />
+      <StructuredData data={structuredData} />
+      <StructuredData data={faqSchema} />
       <Section className="py-12 md:py-20">
         <Container>
           {/* Hero Section */}
